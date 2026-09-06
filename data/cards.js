@@ -1,5 +1,5 @@
 // 教科モンスターバトル：カード定義
-// カードはモンスター定義を直接変更せず、カード側の表示・成長データを追加できる構成にする。
+// カード本体はモンスター定義から独立。背景・フレーム・表示素材を後から差し替えられる。
 window.BATTLE_CARDS = [
   {id:'purun-slime',name:'ぷるんスライム',monsterId:'purun-slime',rarity:'normal'},
   {id:'komorin-bat',name:'こもりんバット',monsterId:'komorin-bat',rarity:'normal'},
