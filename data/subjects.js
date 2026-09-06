@@ -14,18 +14,3 @@ window.getRandomSubjectLabel = function(grade) {
   const list = window.getSubjectsForGrade(grade);
   return list[Math.floor(Math.random() * list.length)];
 };
-(function(){
-  function addScript(src){
-    return new Promise(function(resolve,reject){
-      if(document.querySelector('script[src="'+src+'"]')){resolve();return;}
-      const s=document.createElement('script');s.src=src;s.onload=resolve;s.onerror=reject;document.head.appendChild(s);
-    });
-  }
-  function load(){
-    if(window.__BATTLE_MODULE_LOADING__)return;
-    window.__BATTLE_MODULE_LOADING__=true;
-    const link=document.createElement('link');link.rel='stylesheet';link.href='css/battle.css';document.head.appendChild(link);
-    addScript('data/monsters.js').then(function(){return addScript('data/cards.js');}).then(function(){return addScript('js/battle-ui.js');}).then(function(){return addScript('js/battle.js');}).catch(function(err){console.error('Battle modules failed to load',err);});
-  }
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
-})();
