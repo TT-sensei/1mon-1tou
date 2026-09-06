@@ -1,5 +1,5 @@
 // 小学1年・英語｜やさしい4たく
-// 教科としての英語学習に加えて、英語に親しむための問題。
+// 英語に親しむための、あいさつ・色・数・どうぶつなどの問題。
 window.QUESTION_BANK = window.QUESTION_BANK || {};
 window.QUESTION_BANK['1-english'] = [
 {id:'g1-en-001',grade:1,subject:'英語',type:'choice',question:'「Hello」は どんな あいさつ？',choices:['こんにちは','さようなら','ありがとう','おやすみ'],answer:'こんにちは',hint:'あったときに つかう あいさつだよ。'},
@@ -9,5 +9,27 @@ window.QUESTION_BANK['1-english'] = [
 {id:'g1-en-005',grade:1,subject:'英語',type:'choice',question:'「one」は いくつ？',choices:['1','2','3','4'],answer:'1',hint:'one、two、three と かぞえてみよう。'},
 {id:'g1-en-006',grade:1,subject:'英語',type:'choice',question:'「cat」は どれ？',choices:['ねこ','いぬ','とり','うさぎ'],answer:'ねこ',hint:'にゃーと なく どうぶつだよ。'},
 {id:'g1-en-007',grade:1,subject:'英語',type:'choice',question:'「red」は どの いろ？',choices:['あか','あお','きいろ','みどり'],answer:'あか',hint:'りんごに おおい いろだよ。'},
-{id:'g1-en-008',grade:1,subject:'英語',type:'choice',question:'「Yes」は どんな いみ？',choices:['はい','いいえ','ありがとう','またね'],answer:'はい',hint:'「そうです」と こたえるときに つかうよ。'}
+{id:'g1-en-008',grade:1,subject:'英語',type:'choice',question:'「Yes」は どんな いみ？',choices:['はい','いいえ','ありがとう','またね'],answer:'はい',hint:'「そうです」と こたえるときに つかうよ。'},
+{id:'g1-en-009',grade:1,subject:'英語',type:'choice',question:'「Goodbye」は どんな いみ？',choices:['さようなら','こんにちは','ありがとう','おはよう'],answer:'さようなら',hint:'わかれるときの ことばだよ。'},
+{id:'g1-en-010',grade:1,subject:'英語',type:'choice',question:'「Sorry」は どんな いみ？',choices:['ごめんなさい','ありがとう','こんにちは','はい'],answer:'ごめんなさい',hint:'あやまるときに つかうよ。'},
+{id:'g1-en-011',grade:1,subject:'英語',type:'choice',question:'「No」は どんな いみ？',choices:['いいえ','はい','ありがとう','またね'],answer:'いいえ',hint:'Yesの はんたいだよ。'},
+{id:'g1-en-012',grade:1,subject:'英語',type:'choice',question:'「two」は いくつ？',choices:['1','2','3','4'],answer:'2',hint:'one の つぎだよ。'},
+{id:'g1-en-013',grade:1,subject:'英語',type:'choice',question:'「three」は いくつ？',choices:['2','3','4','5'],answer:'3',hint:'one、two、three と かぞえよう。'},
+{id:'g1-en-014',grade:1,subject:'英語',type:'choice',question:'「four」は いくつ？',choices:['3','4','5','6'],answer:'4',hint:'threeの つぎだよ。'},
+{id:'g1-en-015',grade:1,subject:'英語',type:'choice',question:'「five」は いくつ？',choices:['4','5','6','7'],answer:'5',hint:'oneから かぞえてみよう。'},
+{id:'g1-en-016',grade:1,subject:'英語',type:'choice',question:'「blue」は どの いろ？',choices:['あお','あか','しろ','くろ'],answer:'あお',hint:'そらや うみの いろだよ。'},
+{id:'g1-en-017',grade:1,subject:'英語',type:'choice',question:'「yellow」は どの いろ？',choices:['きいろ','みどり','あお','むらさき'],answer:'きいろ',hint:'たいようの ような いろだよ。'},
+{id:'g1-en-018',grade:1,subject:'英語',type:'choice',question:'「green」は どの いろ？',choices:['みどり','あか','しろ','くろ'],answer:'みどり',hint:'はっぱの いろだよ。'},
+{id:'g1-en-019',grade:1,subject:'英語',type:'choice',question:'「white」は どの いろ？',choices:['しろ','あお','きいろ','あか'],answer:'しろ',hint:'ゆきの ような いろだよ。'},
+{id:'g1-en-020',grade:1,subject:'英語',type:'choice',question:'「black」は どの いろ？',choices:['くろ','しろ','みどり','あか'],answer:'くろ',hint:'よるの そらの ような いろだよ。'},
+{id:'g1-en-021',grade:1,subject:'英語',type:'choice',question:'「dog」は どれ？',choices:['いぬ','ねこ','さかな','とり'],answer:'いぬ',hint:'わんわんと なく どうぶつだよ。'},
+{id:'g1-en-022',grade:1,subject:'英語',type:'choice',question:'「bird」は どれ？',choices:['とり','いぬ','ねこ','うさぎ'],answer:'とり',hint:'つばさで そらを とぶよ。'},
+{id:'g1-en-023',grade:1,subject:'英語',type:'choice',question:'「fish」は どれ？',choices:['さかな','とり','いぬ','ねこ'],answer:'さかな',hint:'みずの なかを およぐよ。'},
+{id:'g1-en-024',grade:1,subject:'英語',type:'choice',question:'「rabbit」は どれ？',choices:['うさぎ','ねこ','いぬ','ぞう'],answer:'うさぎ',hint:'ながい みみが あるよ。'},
+{id:'g1-en-025',grade:1,subject:'英語',type:'choice',question:'「apple」は どれ？',choices:['りんご','バナナ','パン','みかん'],answer:'りんご',hint:'あかや みどりの くだものだよ。'},
+{id:'g1-en-026',grade:1,subject:'英語',type:'choice',question:'「banana」は どれ？',choices:['バナナ','りんご','ぶどう','いちご'],answer:'バナナ',hint:'きいろい くだものだよ。'},
+{id:'g1-en-027',grade:1,subject:'英語',type:'choice',question:'「star」は どれ？',choices:['ほし','つき','たいよう','くも'],answer:'ほし',hint:'よるの そらで ひかるよ。'},
+{id:'g1-en-028',grade:1,subject:'英語',type:'choice',question:'「sun」は どれ？',choices:['たいよう','つき','ほし','あめ'],answer:'たいよう',hint:'ひるの そらで かがやくよ。'},
+{id:'g1-en-029',grade:1,subject:'英語',type:'choice',question:'「happy」は どんな きもち？',choices:['うれしい','かなしい','ねむい','おこった'],answer:'うれしい',hint:'にこにこ している きもちだよ。'},
+{id:'g1-en-030',grade:1,subject:'英語',type:'choice',question:'「I like cats.」は どんな いみ？',choices:['ねこが すきです','ねこが きらいです','いぬが すきです','ねこを みます'],answer:'ねこが すきです',hint:'likeは「すき」という いみだよ。'}
 ];
