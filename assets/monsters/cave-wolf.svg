@@ -1,0 +1,2 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img">
+<defs><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="7" flood-opacity=".32"/></filter></defs><g filter="url(#s)"><path fill="#7d8aa4" stroke="#293247" stroke-width="13" d="m70 257 19-158 49 34 22-66 22 66 49-34 19 158c-53 30-126 30-180 0Z"/><path fill="#aebbd1" stroke="#293247" stroke-width="11" d="m114 183 46-17 46 17-46 67Z"/><circle cx="125" cy="151" r="12" fill="#202738"/><circle cx="195" cy="151" r="12" fill="#202738"/></g></svg>
