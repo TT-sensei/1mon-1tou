@@ -2,7 +2,7 @@
 window.QUESTION_BANK = window.QUESTION_BANK || {};
 window.QUESTION_BANK['1-math'] = [
 {id:'g1-math-001',grade:1,subject:'算数',type:'choice',question:'2 と 3 を あわせると いくつ？',choices:['4','5','6','7'],answer:'5',hint:'2から 3つ かぞえてみよう。'},
-{id:'g1-math-002',grade:1,subject:'算数',type:'choice',question:'5 は いくつ？',choices:['さん','よん','ご','ろく'],answer:'ご',hint:'1、2、3、4、5 と かぞえてみよう。'},
+{id:'g1-math-002',grade:1,subject:'算数',type:'choice',question:'「5」の よみかたは どれ？',choices:['さん','よん','ご','ろく'],answer:'ご',hint:'1、2、3、4、5 と かぞえてみよう。'},
 {id:'g1-math-003',grade:1,subject:'算数',type:'choice',question:'7 より 1 おおきい かずは？',choices:['6','7','8','9'],answer:'8',hint:'7の つぎの かずだよ。'},
 {id:'g1-math-004',grade:1,subject:'算数',type:'choice',question:'9 から 2 ひくと いくつ？',choices:['6','7','8','9'],answer:'7',hint:'9から 2つ もどってみよう。'},
 {id:'g1-math-005',grade:1,subject:'算数',type:'choice',question:'3 と 4、どちらが おおきい？',choices:['3','4','おなじ','わからない'],answer:'4',hint:'かずを ならべて くらべよう。'},
@@ -10,5 +10,25 @@ window.QUESTION_BANK['1-math'] = [
 {id:'g1-math-007',grade:1,subject:'算数',type:'choice',question:'まるい かたちは どれ？',choices:['○','△','□','▭'],answer:'○',hint:'ころころ ころがりそうな かたちだよ。'},
 {id:'g1-math-008',grade:1,subject:'算数',type:'choice',question:'1、2、3、4 の つぎは？',choices:['3','4','5','6'],answer:'5',hint:'かずを じゅんばんに かぞえてみよう。'},
 {id:'g1-math-009',grade:1,subject:'算数',type:'choice',question:'6 と 2 を あわせると いくつ？',choices:['7','8','9','10'],answer:'8',hint:'6に 2を たしてみよう。'},
-{id:'g1-math-010',grade:1,subject:'算数',type:'choice',question:'10 より 1 ちいさい かずは？',choices:['8','9','10','11'],answer:'9',hint:'10の まえの かずだよ。'}
+{id:'g1-math-010',grade:1,subject:'算数',type:'choice',question:'10 より 1 ちいさい かずは？',choices:['8','9','10','11'],answer:'9',hint:'10の まえの かずだよ。'},
+{id:'g1-math-011',grade:1,subject:'算数',type:'choice',question:'1 と 4 を あわせると？',choices:['3','4','5','6'],answer:'5',hint:'1から 4つ すすんでみよう。'},
+{id:'g1-math-012',grade:1,subject:'算数',type:'choice',question:'8 と 1 を あわせると？',choices:['7','8','9','10'],answer:'9',hint:'8の つぎを 1つ かぞえよう。'},
+{id:'g1-math-013',grade:1,subject:'算数',type:'choice',question:'5 から 1 ひくと？',choices:['3','4','5','6'],answer:'4',hint:'5から 1つ もどろう。'},
+{id:'g1-math-014',grade:1,subject:'算数',type:'choice',question:'7 から 3 ひくと？',choices:['3','4','5','6'],answer:'4',hint:'7、6、5、4 と かぞえよう。'},
+{id:'g1-math-015',grade:1,subject:'算数',type:'choice',question:'4 と 4 は おなじ？',choices:['おなじ','4が おおきい','5が おおきい','くらべられない'],answer:'おなじ',hint:'どちらも 4 だよ。'},
+{id:'g1-math-016',grade:1,subject:'算数',type:'choice',question:'2 と 6、ちいさい かずは？',choices:['2','6','おなじ','10'],answer:'2',hint:'すうじを ならべてみよう。'},
+{id:'g1-math-017',grade:1,subject:'算数',type:'choice',question:'9 と 7、おおきい かずは？',choices:['7','8','9','おなじ'],answer:'9',hint:'9は 7より うしろの かずだよ。'},
+{id:'g1-math-018',grade:1,subject:'算数',type:'choice',question:'2、4、6 の つぎは？',choices:['5','7','8','9'],answer:'8',hint:'2ずつ おおきく なっているよ。'},
+{id:'g1-math-019',grade:1,subject:'算数',type:'choice',question:'10、9、8 の つぎは？',choices:['6','7','8','9'],answer:'7',hint:'1ずつ ちいさく なっているよ。'},
+{id:'g1-math-020',grade:1,subject:'算数',type:'choice',question:'さんかくの かたちは どれ？',choices:['○','△','□','▭'],answer:'△',hint:'3つの へんが ある かたちだよ。'},
+{id:'g1-math-021',grade:1,subject:'算数',type:'choice',question:'しかくの かたちは どれ？',choices:['○','△','□','☆'],answer:'□',hint:'4つの へんが ある かたちだよ。'},
+{id:'g1-math-022',grade:1,subject:'算数',type:'choice',question:'3 と 3 を あわせると？',choices:['5','6','7','8'],answer:'6',hint:'3に 3を たしてみよう。'},
+{id:'g1-math-023',grade:1,subject:'算数',type:'choice',question:'5 と 2 を あわせると？',choices:['6','7','8','9'],answer:'7',hint:'5から 2つ すすもう。'},
+{id:'g1-math-024',grade:1,subject:'算数',type:'choice',question:'8 から 4 ひくと？',choices:['3','4','5','6'],answer:'4',hint:'8、7、6、5、4 と もどろう。'},
+{id:'g1-math-025',grade:1,subject:'算数',type:'choice',question:'9 から 1 ひくと？',choices:['7','8','9','10'],answer:'8',hint:'9の まえの かずだよ。'},
+{id:'g1-math-026',grade:1,subject:'算数',type:'choice',question:'6 より 1 おおきい かずは？',choices:['5','6','7','8'],answer:'7',hint:'6の つぎの かずだよ。'},
+{id:'g1-math-027',grade:1,subject:'算数',type:'choice',question:'4 より 1 ちいさい かずは？',choices:['2','3','4','5'],answer:'3',hint:'4の まえの かずだよ。'},
+{id:'g1-math-028',grade:1,subject:'算数',type:'choice',question:'10 と 5、どちらが おおきい？',choices:['5','10','おなじ','わからない'],answer:'10',hint:'10は 5より おおきい かずだよ。'},
+{id:'g1-math-029',grade:1,subject:'算数',type:'choice',question:'「8」の よみかたは？',choices:['ろく','なな','はち','きゅう'],answer:'はち',hint:'6、7、8 と かぞえてみよう。'},
+{id:'g1-math-030',grade:1,subject:'算数',type:'choice',question:'0 と 5、どちらが ちいさい？',choices:['0','5','おなじ','10'],answer:'0',hint:'0は ものが ないときの かずだよ。'}
 ];
