@@ -3,7 +3,7 @@ import { renderCard, cardImage } from './card-render.js';
 
 let active=null;
 const pick=(list)=>list[Math.floor(Math.random()*list.length)];
-function cardFromId(id){const card=(window.BATTLE_CARDS||[]).find((item)=>item.id===id||item.monsterId===id);if(card?.naviSrc)return {...card};const monsterId=card?.monsterId||id;const monster=(window.BATTLE_MONSTERS||[]).find((item)=>item.id===monsterId);if(!monster)return null;return {...monster,...(card||{}),id:card?.id||monster.id,monsterId:monster.id,name:card?.name||monster.name,src:cardImage({...monster,...(card||{})})||monster.src}}
+function cardFromId(id){const card=(window.BATTLE_CARDS||[]).find((item)=>item.id===id||item.monsterId===id);const monsterId=card?.monsterId||id;const monster=(window.BATTLE_MONSTERS||[]).find((item)=>item.id===monsterId);if(!monster)return null;return {...monster,...(card||{}),id:card?.id||monster.id,monsterId:monster.id,name:card?.name||monster.name,src:cardImage({...monster,...(card||{})})||monster.src}}
 function normalizeTeam(team){const ids=Array.isArray(team)?team:[];const normalized=ids.map((item)=>typeof item==='string'?cardFromId(item):cardFromId(item?.id||item?.monsterId)).filter(Boolean);return normalized.length?normalized.slice(0,3):['purun-slime','komorin-bat','kinoko'].map(cardFromId).filter(Boolean)}
 function subjectMonster(subject,index){const all=window.BATTLE_MONSTERS||[];const rank=index===0?'zako':index===1?'evolved':'boss';const same=all.filter((m)=>m.rank===rank&&m.subject===subject);const rankOnly=all.filter((m)=>m.rank===rank);return pick(same.length?same:rankOnly.length?rankOnly:all)}
 function bestCardIndex(){const i=active.team.findIndex(c=>c.subject===active.monster.subject);return i>=0?i:0}
