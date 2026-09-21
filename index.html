@@ -58,6 +58,23 @@
   <div class="panel">
     <h2 id="cardsTitle" class="title">🃏 モンスターカード</h2>
     <p class="muted">カードをタップしてチームに入れることができます。最大3枚。</p>
+    <div class="card-tools">
+      <div class="card-tool-row"><span>教科</span><div class="card-filters">
+        <button class="filter-btn selected" data-card-filter="all">すべて</button>
+        <button class="filter-btn" data-card-filter="国語">国語</button>
+        <button class="filter-btn" data-card-filter="算数">算数</button>
+        <button class="filter-btn" data-card-filter="理科">理科</button>
+        <button class="filter-btn" data-card-filter="社会">社会</button>
+        <button class="filter-btn" data-card-filter="英語">英語</button>
+        <button class="filter-btn" data-card-filter="生活">生活</button>
+      </div></div>
+      <div class="card-tool-row"><span>並び順</span><div class="card-filters">
+        <button class="filter-btn selected" data-card-sort="selected">チーム優先</button>
+        <button class="filter-btn" data-card-sort="rarity">レア度</button>
+        <button class="filter-btn" data-card-sort="subject">教科</button>
+        <button class="filter-btn" data-card-sort="name">名前</button>
+      </div><span id="cardCount" class="card-count"></span></div>
+    </div>
     <div id="cardsGrid" class="cards"></div>
   </div>
 </section>
