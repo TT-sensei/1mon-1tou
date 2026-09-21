@@ -1,25 +1,11 @@
 const BASE='https://tt-sensei.github.io/1mon-1tou/assets/cards';
 const NAVI='https://tt-sensei.github.io/navi-character-/assets/web/fantasy/monsters';
-const REMOTE_MONSTERS={
-  'purun-slime':`${NAVI}/zako/purun-little-magic-slime.webp`,
-  'komorin-bat':`${NAVI}/zako/komorin-little-night-bat.webp`,
-  'kinoko':`${NAVI}/zako/kinoko-apple-mushroom.webp`,
-  'cave-wolf':`${NAVI}/zako/mofu-wolf-frost-pup.webp`,
-  'forest-goblin':`${NAVI}/zako/root-tangle-goblin.webp`,
-  'candy-slug':`${NAVI}/zako/candy-coral-slug.webp`,
-  'cogwheel':`${NAVI}/zako/cogwheel-beetle.webp`
-};
-const BG={zako:['forest.jpeg','grassland.jpeg','hill.jpeg','stars.jpeg','sunset.jpeg','waterfall.jpeg'],boss:['palace.jpeg','sacred-place.jpeg','volcano.jpeg']};
-const escapeHtml=(value='')=>String(value).replace(/[&<>\"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+const LEGACY_MONSTERS={'purun-slime':'zako/purun-little-magic-slime.webp','komorin-bat':'zako/komorin-little-night-bat.webp','kinoko':'zako/kinoko-apple-mushroom.webp','cave-wolf':'zako/mofu-wolf-frost-pup.webp','forest-goblin':'zako/root-tangle-goblin.webp','candy-slug':'zako/candy-coral-slug.webp','cogwheel':'zako/cogwheel-beetle.webp','slime-king':'boss/aqua-slime-king.webp','flame-dragon':'boss/crimson-inferno-dragon.webp'};
+const BG={sunset:'sunset.jpeg','starry-sky':'starry-sky.jpeg',waterfall:'waterfall.jpeg',grassland:'grassland.jpeg',hill:'hill.jpeg',volcano:'volcano.jpeg',forest:'forest.jpeg',palace:'palace.jpeg'};
+const escapeHtml=(value='')=>String(value).replace(/[&<>\\"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','\\"':'&quot;',"'":'&#39;'}[c]));
 function rankKey(card){return card?.rank==='boss'||card?.rarity==='boss'?'boss':'zako'}
-function backgroundFor(card){const list=BG[rankKey(card)];const index=Math.abs(String(card?.id||'').split('').reduce((n,c)=>n+c.charCodeAt(0),0))%list.length;return `${BASE}/backgrounds/${rankKey(card)}/${list[index]}`}
-function frameFor(card){return `${BASE}/frames/${rankKey(card)==='boss'?'boss':card?.rank==='evolved'?'zako-evolved':'zako'}.png`}
-export function cardImage(card){return REMOTE_MONSTERS[card?.monsterId||card?.id]||card?.src||''}
-export function renderCard(card,{className='',showInfo=true,selected=false,mini=false}={}){
-  const name=escapeHtml(card?.name||'モンスター');
-  const rarity=card?.rarity==='boss'?'BOSS':card?.rarity==='rare'?'RARE':card?.rank==='evolved'?'EVOLVED':'NORMAL';
-  const image=escapeHtml(cardImage(card));
-  const bg=escapeHtml(backgroundFor(card));
-  const frame=escapeHtml(frameFor(card));
-  return `<div class="battle-card ${className} ${selected?'is-selected':''} ${mini?'is-mini':''}"><div class="card-art"><img class="card-bg" src="${bg}" alt=""><div class="card-glow"></div><img class="card-monster" src="${image}" alt="${name}" loading="lazy"><img class="card-frame" src="${frame}" alt=""></div>${showInfo?`<div class="card-info"><span class="card-rarity">${rarity}</span><b>${name}</b></div>`:''}</div>`;
-}
+function monsterPath(card){const id=card?.monsterId||card?.id||'';if(LEGACY_MONSTERS[id])return LEGACY_MONSTERS[id];const rank=card?.rank||((window.BATTLE_MONSTERS||[]).find(m=>m.id===id)?.rank)||'zako';return (rank==='boss'?'boss/':rank==='evolved'?'evolved/':'zako/')+id+'.webp'}
+export function cardImage(card){return NAVI+'/'+monsterPath(card)}
+function backgroundFor(card){const file=BG[card?.background]||BG[(rankKey(card)==='boss'?'palace':'forest')];return 'https://tt-sensei.github.io/navi-character-/assets/fantasy/cards/backgrounds/'+file}
+function frameFor(card){return BASE+'/frames/'+(rankKey(card)==='boss'?'boss':card?.rank==='evolved'?'zako-evolved':'zako')+'.png'}
+export function renderCard(card,{className='',showInfo=true,selected=false,mini=false}={}){const name=escapeHtml(card?.name||'モンスター');const rarity=card?.rarity==='boss'?'BOSS':card?.rarity==='rare'?'RARE':card?.rank==='evolved'?'EVOLVED':'NORMAL';const image=escapeHtml(cardImage(card));const bg=escapeHtml(backgroundFor(card));const frame=escapeHtml(frameFor(card));const effect=['holo','rainbow'].includes(card?.effect)?card.effect:'normal';const subject=escapeHtml(card?.subject||'');return '<div class="battle-card effect-'+effect+' '+className+' '+(selected?'is-selected ':'')+(mini?'is-mini':'')+'"><div class="card-art"><img class="card-bg" src="'+bg+'" alt=""><div class="card-glow"></div><div class="card-effect" aria-hidden="true"></div><img class="card-monster" src="'+image+'" alt="'+name+'" loading="lazy"><img class="card-frame" src="'+frame+'" alt=""></div>'+(showInfo?'<div class="card-info"><span class="card-rarity">'+rarity+'</span><b>'+name+'</b><small>'+subject+'</small></div>':'')+'</div>'}
