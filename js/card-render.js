@@ -4,7 +4,7 @@ const LEGACY_MONSTERS={'purun-slime':'zako/purun-little-magic-slime.webp','komor
 const BG={sunset:'sunset.jpeg','starry-sky':'starry-sky.jpeg',waterfall:'waterfall.jpeg',grassland:'grassland.jpeg',hill:'hill.jpeg',volcano:'volcano.jpeg',forest:'forest.jpeg',palace:'palace.jpeg'};
 const escapeHtml=(value='')=>String(value).replace(/[&<>\\"']/g,(c)=>({'&':'&amp;','<':'&lt;','>':'&gt;','\\"':'&quot;',"'":'&#39;'}[c]));
 function rankKey(card){return card?.rank==='boss'||card?.rarity==='boss'?'boss':'zako'}
-function monsterPath(card){const id=card?.monsterId||card?.id||'';if(LEGACY_MONSTERS[id])return LEGACY_MONSTERS[id];const rank=card?.rank||((window.BATTLE_MONSTERS||[]).find(m=>m.id===id)?.rank)||'zako';return (rank==='boss'?'boss/':rank==='evolved'?'evolved/':'zako/')+id+'.webp'}
+function monsterPath(card){const id=card?.monsterId||card?.id||'';if(LEGACY_MONSTERS[id])return LEGACY_MONSTERS[id];const rank=card?.rank||((window.BATTLE_MONSTERS||[]).find(m=>m.id===id)?.rank)||'zako';return (rank==='boss'?'boss/':rank==='evolved'?'zako-evolved/':'zako/')+id+'.webp'}
 export function cardImage(card){return NAVI+'/'+monsterPath(card)}
 function backgroundFor(card){const file=BG[card?.background]||BG[(rankKey(card)==='boss'?'palace':'forest')];return 'https://tt-sensei.github.io/navi-character-/assets/fantasy/cards/backgrounds/'+file}
 function frameFor(card){return BASE+'/frames/'+(rankKey(card)==='boss'?'boss':card?.rank==='evolved'?'zako-evolved':'zako')+'.png'}
