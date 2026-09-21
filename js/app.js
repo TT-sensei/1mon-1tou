@@ -15,7 +15,7 @@ function save(key,value){store.save(KEYS[key]||key,value)}
 function points(){return Number(load('points',0))||0}
 function setPoints(v){save('points',Math.max(0,Number(v)||0));updatePoints()}
 function addPoints(v){setPoints(points()+(Number(v)||0))}
-function updatePoints(){$('#points').textContent=String(points());$('#settingsPoints').textContent=String(points())}
+function updatePoints(){const p=String(points());$('#points').textContent=p;$('#settingsPoints').textContent=p;const home=$('#homePoints');if(home)home.textContent=p}
 function show(id){stopBattle();document.querySelectorAll('.screen').forEach(x=>x.classList.remove('active'));document.getElementById(id)?.classList.add('active');window.scrollTo(0,0);if(id==='cards')renderCards();if(id==='packs')renderPack();if(id==='review')renderReview();if(id==='settings')updatePoints()}
 function monsterMeta(id){return (window.BATTLE_MONSTERS||[]).find(x=>x.id===id)||null}
 function cardMeta(id){const card=(window.BATTLE_CARDS||[]).find(x=>x.id===id);const monster=monsterMeta(card?.monsterId||id);return monster?{...monster,...(card||{}),id:card?.id||monster.id,monsterId:monster.id,name:card?.name||monster.name,src:monster.src}:null}
