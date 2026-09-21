@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0e1727">
+<meta name="theme-color" content="#f5f3ee">
 <title>教科モンスターバトル｜1問1とう</title>
 <link rel="stylesheet" href="https://tt-sensei.github.io/edu-effects/css/edu-effects.css">
 <link rel="stylesheet" href="https://tt-sensei.github.io/edu-effects/css/edu-learning.css">
@@ -23,16 +23,22 @@
 
 <main>
 <section id="home" class="screen active" aria-labelledby="homeTitle">
-  <div class="panel hero">
-    <h1 id="homeTitle">教科モンスターバトル</h1>
-    <p>1問とく → カードがこうげき！<br>問題に答えながらモンスターをたおそう。</p>
-    <div class="menu">
-      <button class="btn primary" data-action="setup">⚔️ バトルする</button>
-      <button class="btn" data-action="cards">🃏 カード・チーム</button>
-      <button class="btn" data-action="packs">🎁 カードパック</button>
-      <button class="btn" data-action="review">📚 まちがえた問題</button>
-      <button class="btn" data-action="settings">⚙️ せってい</button>
+  <div class="home-shell">
+    <div class="home-heading">
+      <div>
+        <p class="eyebrow">1問1とう</p>
+        <h1 id="homeTitle">教科モンスターバトル</h1>
+        <p class="home-lead">1問とく。カードがこうげきする。<br>学びながら、モンスターに挑戦しよう。</p>
+      </div>
+      <div class="home-rule" aria-hidden="true"><span></span><i></i><span></span></div>
     </div>
+    <div class="home-actions">
+      <button class="home-action main" data-action="setup"><span class="action-index">01</span><span class="action-title">バトルする</span><span class="action-note">学年と教科をえらんでスタート</span><span class="action-arrow">→</span></button>
+      <button class="home-action" data-action="cards"><span class="action-index">02</span><span class="action-title">カード・チーム</span><span class="action-note">3枚のデッキをつくる</span><span class="action-arrow">→</span></button>
+      <button class="home-action" data-action="packs"><span class="action-index">03</span><span class="action-title">カードパック</span><span class="action-note">カードを集める</span><span class="action-arrow">→</span></button>
+      <button class="home-action" data-action="review"><span class="action-index">04</span><span class="action-title">まちがえた問題</span><span class="action-note">もう一度、できるようにする</span><span class="action-arrow">→</span></button>
+    </div>
+    <div class="home-footer"><button class="home-settings" data-action="settings">せってい</button><span>カードP <b id="homePoints">0</b></span></div>
   </div>
 </section>
 
