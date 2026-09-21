@@ -5,7 +5,7 @@ import { renderCard } from './card-render.js';
 const store=new StorageManager('1mon-1tou');
 const $=(s)=>document.querySelector(s);
 const KEYS={points:'points',team:'team',owned:'owned',review:'review'};
-const fallbackTeam=['riku','sora','kai'];
+const fallbackTeam=['purun-slime','komorin-bat','kinoko'];
 function load(key,fallback){return store.load(KEYS[key]||key,fallback)}
 function save(key,value){store.save(KEYS[key]||key,value)}
 function points(){return Number(load('points',0))||0}
