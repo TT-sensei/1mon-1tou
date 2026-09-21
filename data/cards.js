@@ -1,6 +1,6 @@
 // 教科モンスターバトル：カードカタログ
 // catalog.json の180体を元に、モンスター×得意教科×エフェクト×背景を組み合わせて生成。
-// 180体 × 3教科 × 3エフェクト × 8背景 = 12,960種類。
+// 180体 × 6教科 × 3エフェクト × 8背景 = 25,920種類。
 // 既存localStorageの27IDは互換カードとして残す。
 const SUBJECTS=['国語','算数','理科','社会','英語','生活'];
 const BACKGROUNDS=['sunset','starry-sky','waterfall','grassland','hill','volcano','forest','palace'];
@@ -19,9 +19,8 @@ const LEGACY=[
 function makeCard(m,subject,effect,background,id){return {id:id||m.id+'__'+subject+'__'+effect+'__'+background,name:m.name,monsterId:m.id,rarity:m.rank==='boss'?'boss':m.rank==='evolved'?'rare':'normal',rank:m.rank,subject,effect,background}}
 const cards=[];
 (window.BATTLE_MONSTERS||[]).forEach(m=>{
-  const start=SUBJECTS.indexOf(m.subject);
-  const subjects=[0,2,4].map(n=>SUBJECTS[(start+n)%SUBJECTS.length]);
-  subjects.forEach(subject=>EFFECTS.forEach(effect=>BACKGROUNDS.forEach(background=>cards.push(makeCard(m,subject,effect,background)))));
+  // すべてのモンスターに6教科すべての得意教科カードを用意する。
+  SUBJECTS.forEach(subject=>EFFECTS.forEach(effect=>BACKGROUNDS.forEach(background=>cards.push(makeCard(m,subject,effect,background)))));
 });
 const legacyCards=LEGACY.map(([id,monsterId,subject])=>makeCard((window.BATTLE_MONSTERS||[]).find(m=>m.id===monsterId)||{id:monsterId,name:monsterId,rank:'zako'},subject,'normal',(monsterId==='aqua-slime-king'||monsterId==='crimson-inferno-dragon')?'palace':'forest',id));
 window.BATTLE_CARDS=[...legacyCards,...cards];
