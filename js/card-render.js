@@ -14,7 +14,7 @@ const escapeHtml=(value='')=>String(value).replace(/[&<>\"']/g,(c)=>({'&':'&amp;
 function rankKey(card){return card?.rank==='boss'||card?.rarity==='boss'?'boss':'zako'}
 function backgroundFor(card){const list=BG[rankKey(card)];const index=Math.abs(String(card?.id||'').split('').reduce((n,c)=>n+c.charCodeAt(0),0))%list.length;return `${BASE}/backgrounds/${rankKey(card)}/${list[index]}`}
 function frameFor(card){return `${BASE}/frames/${rankKey(card)==='boss'?'boss':card?.rank==='evolved'?'zako-evolved':'zako'}.png`}
-export function cardImage(card){return card?.naviSrc||REMOTE_MONSTERS[card?.monsterId||card?.id]||card?.src||''}
+export function cardImage(card){return REMOTE_MONSTERS[card?.monsterId||card?.id]||card?.src||''}
 export function renderCard(card,{className='',showInfo=true,selected=false,mini=false}={}){
   const name=escapeHtml(card?.name||'モンスター');
   const rarity=card?.rarity==='boss'?'BOSS':card?.rarity==='rare'?'RARE':card?.rank==='evolved'?'EVOLVED':'NORMAL';
