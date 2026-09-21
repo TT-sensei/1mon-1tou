@@ -1,46 +1,28 @@
-// 教科モンスターバトル：カード定義
-// monsterId = 同じナビアン本体。
-// subject = このカードの「得意な教科」。モンスター側の弱点(subject)とは別管理。
-// 同じナビアンでも、得意な教科が違うカードを持てる設計。
-
-window.BATTLE_CARDS = [
-  {id:'purun-slime',name:'ぷるんスライム',monsterId:'purun-slime',rarity:'normal',subject:'算数'},
-  {id:'purun-slime-kokugo',name:'ぷるんスライム',monsterId:'purun-slime',rarity:'normal',subject:'国語'},
-  {id:'purun-slime-rika',name:'ぷるんスライム',monsterId:'purun-slime',rarity:'normal',subject:'理科'},
-
-  {id:'komorin-bat',name:'こもりんバット',monsterId:'komorin-bat',rarity:'normal',subject:'国語'},
-  {id:'komorin-bat-sansu',name:'こもりんバット',monsterId:'komorin-bat',rarity:'normal',subject:'算数'},
-  {id:'komorin-bat-shakai',name:'こもりんバット',monsterId:'komorin-bat',rarity:'normal',subject:'社会'},
-
-  {id:'kinoko',name:'きのこっこ',monsterId:'kinoko',rarity:'normal',subject:'生活'},
-  {id:'kinoko-rika',name:'きのこっこ',monsterId:'kinoko',rarity:'normal',subject:'理科'},
-  {id:'kinoko-kokugo',name:'きのこっこ',monsterId:'kinoko',rarity:'normal',subject:'国語'},
-
-  {id:'cave-wolf',name:'ケイブウルフ',monsterId:'cave-wolf',rarity:'rare',subject:'理科'},
-  {id:'cave-wolf-eigo',name:'ケイブウルフ',monsterId:'cave-wolf',rarity:'rare',subject:'英語'},
-  {id:'cave-wolf-sansu',name:'ケイブウルフ',monsterId:'cave-wolf',rarity:'rare',subject:'算数'},
-
-  {id:'forest-goblin',name:'フォレストゴブリン',monsterId:'forest-goblin',rarity:'rare',subject:'社会'},
-  {id:'forest-goblin-kokugo',name:'フォレストゴブリン',monsterId:'forest-goblin',rarity:'rare',subject:'国語'},
-  {id:'forest-goblin-rika',name:'フォレストゴブリン',monsterId:'forest-goblin',rarity:'rare',subject:'理科'},
-
-  {id:'candy-slug',name:'キャンディスラッグ',monsterId:'candy-slug',rarity:'normal',subject:'英語'},
-  {id:'candy-slug-sansu',name:'キャンディスラッグ',monsterId:'candy-slug',rarity:'normal',subject:'算数'},
-  {id:'candy-slug-kokugo',name:'キャンディスラッグ',monsterId:'candy-slug',rarity:'normal',subject:'国語'},
-
-  {id:'cogwheel',name:'コグホイール',monsterId:'cogwheel',rarity:'rare',subject:'算数'},
-  {id:'cogwheel-rika',name:'コグホイール',monsterId:'cogwheel',rarity:'rare',subject:'理科'},
-  {id:'cogwheel-shakai',name:'コグホイール',monsterId:'cogwheel',rarity:'rare',subject:'社会'},
-
-  {id:'slime-king',name:'スライムキング',monsterId:'slime-king',rarity:'boss',subject:'国語'},
-  {id:'slime-king-shakai',name:'スライムキング',monsterId:'slime-king',rarity:'boss',subject:'社会'},
-  {id:'slime-king-sansu',name:'スライムキング',monsterId:'slime-king',rarity:'boss',subject:'算数'},
-
-  {id:'flame-dragon',name:'フレイムドラゴン',monsterId:'flame-dragon',rarity:'boss',subject:'理科'},
-  {id:'flame-dragon-sansu',name:'フレイムドラゴン',monsterId:'flame-dragon',rarity:'boss',subject:'算数'},
-  {id:'flame-dragon-shakai',name:'フレイムドラゴン',monsterId:'flame-dragon',rarity:'boss',subject:'社会'}
+// 教科モンスターバトル：カードカタログ
+// catalog.json の180体を元に、モンスター×得意教科×エフェクト×背景を組み合わせて生成。
+// 180体 × 3教科 × 3エフェクト × 8背景 = 12,960種類。
+// 既存localStorageの27IDは互換カードとして残す。
+const SUBJECTS=['国語','算数','理科','社会','英語','生活'];
+const BACKGROUNDS=['sunset','starry-sky','waterfall','grassland','hill','volcano','forest','palace'];
+const EFFECTS=['normal','holo','rainbow'];
+const LEGACY=[
+['purun-slime','purun-little-magic-slime','算数'],['purun-slime-kokugo','purun-little-magic-slime','国語'],['purun-slime-rika','purun-little-magic-slime','理科'],
+['komorin-bat','komorin-little-night-bat','国語'],['komorin-bat-sansu','komorin-little-night-bat','算数'],['komorin-bat-shakai','komorin-little-night-bat','社会'],
+['kinoko','kinoko-apple-mushroom','生活'],['kinoko-rika','kinoko-apple-mushroom','理科'],['kinoko-kokugo','kinoko-apple-mushroom','国語'],
+['cave-wolf','mofu-wolf-frost-pup','理科'],['cave-wolf-eigo','mofu-wolf-frost-pup','英語'],['cave-wolf-sansu','mofu-wolf-frost-pup','算数'],
+['forest-goblin','root-tangle-goblin','社会'],['forest-goblin-kokugo','root-tangle-goblin','国語'],['forest-goblin-rika','root-tangle-goblin','理科'],
+['candy-slug','candy-coral-slug','英語'],['candy-slug-sansu','candy-coral-slug','算数'],['candy-slug-kokugo','candy-coral-slug','国語'],
+['cogwheel','cogwheel-beetle','算数'],['cogwheel-rika','cogwheel-beetle','理科'],['cogwheel-shakai','cogwheel-beetle','社会'],
+['slime-king','aqua-slime-king','国語'],['slime-king-shakai','aqua-slime-king','社会'],['slime-king-sansu','aqua-slime-king','算数'],
+['flame-dragon','crimson-inferno-dragon','理科'],['flame-dragon-sansu','crimson-inferno-dragon','算数'],['flame-dragon-shakai','crimson-inferno-dragon','社会']
 ];
-
-window.getBattleCard=function(id){
-  return (window.BATTLE_CARDS||[]).find(card=>card.id===id)||null;
-};
+function makeCard(m,subject,effect,background,id){return {id:id||m.id+'__'+subject+'__'+effect+'__'+background,name:m.name,monsterId:m.id,rarity:m.rank==='boss'?'boss':m.rank==='evolved'?'rare':'normal',rank:m.rank,subject,effect,background}}
+const cards=[];
+(window.BATTLE_MONSTERS||[]).forEach(m=>{
+  const start=SUBJECTS.indexOf(m.subject);
+  const subjects=[0,2,4].map(n=>SUBJECTS[(start+n)%SUBJECTS.length]);
+  subjects.forEach(subject=>EFFECTS.forEach(effect=>BACKGROUNDS.forEach(background=>cards.push(makeCard(m,subject,effect,background)))));
+});
+const legacyCards=LEGACY.map(([id,monsterId,subject])=>makeCard((window.BATTLE_MONSTERS||[]).find(m=>m.id===monsterId)||{id:monsterId,name:monsterId,rank:'zako'},subject,'normal',(monsterId==='aqua-slime-king'||monsterId==='crimson-inferno-dragon')?'palace':'forest',id));
+window.BATTLE_CARDS=[...legacyCards,...cards];
+window.getBattleCard=function(id){return (window.BATTLE_CARDS||[]).find(card=>card.id===id)||null};
