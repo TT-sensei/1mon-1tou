@@ -5154,7 +5154,7 @@ window.QUESTION_BANK['3-english'] = [
 
 window.QUESTION_BANK['4-english'] = [
   {
-    "id": "g4-english-009",
+    "id": "g4-english-001",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5169,7 +5169,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "How manyは数をたずねる表現だよ。"
   },
   {
-    "id": "g4-english-010",
+    "id": "g4-english-002",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5184,7 +5184,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I like ～で好きなものを伝えられるよ。"
   },
   {
-    "id": "g4-english-011",
+    "id": "g4-english-003",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5199,7 +5199,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "dayは「日」や「曜日」に関係する言葉だよ。"
   },
   {
-    "id": "g4-english-012",
+    "id": "g4-english-004",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5214,7 +5214,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の名前を覚えよう。"
   },
   {
-    "id": "g4-english-013",
+    "id": "g4-english-005",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5229,7 +5229,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "can playで「～をすることができる」と伝えられるよ。"
   },
   {
-    "id": "g4-english-014",
+    "id": "g4-english-006",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5244,7 +5244,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "好きなものをたずねる表現だよ。"
   },
   {
-    "id": "g4-english-015",
+    "id": "g4-english-007",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5259,7 +5259,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "天気を表す言い方だよ。"
   },
   {
-    "id": "g4-english-016",
+    "id": "g4-english-008",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5274,7 +5274,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "別れるときに使う表現だよ。"
   },
   {
-    "id": "g4-english-017",
+    "id": "g4-english-009",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5289,7 +5289,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "colorは色という意味だよ。"
   },
   {
-    "id": "g4-english-018",
+    "id": "g4-english-010",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5304,7 +5304,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I like ～で好きなものを伝えるよ。"
   },
   {
-    "id": "g4-english-019",
+    "id": "g4-english-011",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -5319,7 +5319,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の名前を覚えよう。"
   },
   {
-    "id": "g4-english-020",
+    "id": "g4-english-012",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
