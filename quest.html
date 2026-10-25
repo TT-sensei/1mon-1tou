@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="ナビアンのカードと一緒に、問題を解いて冒険しよう。">
+  <title>ナビアン・クエスト｜1問1とう</title>
+  <link rel="stylesheet" href="css/quest.css">
+</head>
+<body>
+<div class="app-shell">
+  <header class="topbar">
+    <button class="brand" data-action="home" aria-label="ホームへ">
+      <span class="brand-mark">1</span>
+      <span class="brand-copy"><strong>ナビアン・クエスト</strong><small>1問1とう</small></span>
+    </button>
+    <div class="top-stats" aria-label="きろく">
+      <div class="top-stat"><span>カードP</span><strong id="topPoints">0</strong></div>
+      <div class="top-stat"><span>なかま</span><strong id="topOwned">3<small> / 180</small></strong></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="screen-home" class="screen active" aria-labelledby="homeTitle">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">LEARN · GROW · ADVENTURE</p>
+          <h1 id="homeTitle">とくほど、<br><span>ナビアン</span>が育つ。</h1>
+          <p class="hero-lead">一問の正解が、カードの力になる。<br>自分のチームで、学びの冒険に出発しよう。</p>
+          <div class="hero-actions">
+            <button class="button primary large" data-action="setup"><span>クエストへ</span><span class="button-arrow">→</span></button>
+            <button class="button quiet" data-action="training">まちがいを特訓</button>
+          </div>
+          <p class="hero-note">まちがえても大丈夫。ヒントを見て、もう一度考えよう。</p>
+        </div>
+        <div class="hero-showcase">
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+          <div id="heroCardStack" class="hero-card-stack" aria-label="チームのカード"></div>
+          <div class="hero-sticker"><span>YOUR</span><strong>TEAM</strong></div>
+        </div>
+      </div>
+
+      <div class="dashboard">
+        <div class="dashboard-heading"><div><p class="eyebrow">YOUR JOURNEY</p><h2>冒険のきろく</h2></div><span class="muted">この端末に保存されます</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><span class="stat-icon mint">✓</span><div><strong id="statCorrect">0</strong><span>正解した問題</span></div></article>
+          <article class="stat-card"><span class="stat-icon amber">✦</span><div><strong id="statClears">0</strong><span>クエストクリア</span></div></article>
+          <article class="stat-card"><span class="stat-icon blue">▦</span><div><strong id="statCollection">3 / 180</strong><span>なかまのカード</span></div></article>
+          <article class="stat-card"><span class="stat-icon coral">↻</span><div><strong id="statMistakes">0</strong><span>特訓する問題</span></div></article>
+        </div>
+      </div>
+
+      <div class="home-shortcuts">
+        <button class="shortcut-card" data-action="team"><span class="shortcut-icon blue">▣</span><span><strong>チーム編成</strong><small>3枚のカードをえらぼう</small></span><span class="shortcut-arrow">→</span></button>
+        <button class="shortcut-card" data-action="collection"><span class="shortcut-icon amber">✧</span><span><strong>カード図鑑</strong><small>新しい仲間を見つけよう</small></span><span class="shortcut-arrow">→</span></button>
+        <button class="shortcut-card" data-action="training"><span class="shortcut-icon mint">◎</span><span><strong>特訓道場</strong><small>まちがえた問題を克服しよう</small></span><span class="shortcut-arrow">→</span></button>
+      </div>
+      <footer class="home-foot"><span>学び方は、自分でえらべる。</span><span>1問1とう · ナビアン・クエスト</span></footer>
+    </section>
+
+    <section id="screen-setup" class="screen" aria-labelledby="setupTitle" hidden>
+      <div class="page-heading">
+        <button class="back-button" data-action="home">← ホーム</button>
+        <div><p class="eyebrow">READY FOR ADVENTURE</p><h1 id="setupTitle">どんな冒険に出る？</h1><p class="muted">学年と教科をえらんで、今の自分に合う問題に挑戦しよう。</p></div>
+      </div>
+      <div class="setup-layout">
+        <section class="panel setup-panel">
+          <div class="panel-heading"><span class="step-number">01</span><div><h2>学年をえらぶ</h2><p>今遊べる問題から選べます。</p></div></div>
+          <div id="gradeChoices" class="grade-choices"></div>
+          <div class="panel-heading subject-heading"><span class="step-number">02</span><div><h2>教科をえらぶ</h2><p>ひとつの教科でも、ミックスでもOK。</p></div></div>
+          <div id="subjectChoices" class="subject-choices"></div>
+          <p id="setupMessage" class="setup-message" aria-live="polite">問題を読み込んでいます。</p>
+          <div class="setup-bottom"><div><strong id="setupQuestionCount">5問</strong><span id="setupModeText">・クエストバトル</span></div><button id="startSetupButton" class="button primary large">クエスト開始 <span class="button-arrow">→</span></button></div>
+        </section>
+        <aside class="panel side-note">
+          <div class="side-note-symbol">✦</div><h2>ヒントは、<br>いつでも味方。</h2>
+          <p>わからない問題が出たら、ヒントを使って考え直せます。まちがえた問題は特訓帳に残るので、あとから何度でも練習できます。</p>
+          <div class="rule-row"><span class="rule-dot green"></span><span>正解でカードPと経験値</span></div>
+          <div class="rule-row"><span class="rule-dot yellow"></span><span>得意教科のカードはスキル発動</span></div>
+          <div class="rule-row"><span class="rule-dot blue-dot"></span><span>カード集めは自分で選べる</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="screen-battle" class="screen" aria-labelledby="battleTitle" hidden>
+      <div class="battle-toolbar">
+        <button class="back-button" data-action="leave-run">← やめる</button>
+        <div class="battle-title-group"><p class="eyebrow" id="battleModeEyebrow">NAVIAN QUEST</p><h1 id="battleTitle">クエストバトル</h1></div>
+        <div class="battle-counter"><strong id="battleQuestionCount">1 / 5</strong><span id="battleSubjectLabel">1年・国語</span></div>
+      </div>
+      <div class="run-progress" id="runProgress" aria-label="問題の進み具合"></div>
+      <div id="battleLayout" class="battle-layout">
+        <aside id="enemyPanel" class="panel enemy-panel">
+          <div class="panel-heading compact"><div><p class="eyebrow">OPPONENT</p><h2 id="enemyName">ナビアン</h2></div><span id="enemyRank" class="rank-pill">ナビアン</span></div>
+          <div id="enemyCard" class="enemy-card"></div>
+          <div class="enemy-subject-line"><span>得意教科</span><strong id="enemySubject">算数</strong></div>
+          <div class="enemy-health"><div><span>パワー</span><strong><span id="enemyHp">10</span> / <span id="enemyMaxHp">10</span></strong></div><div class="health-track"><i id="enemyHpBar"></i></div></div>
+          <p id="enemyStatus" class="enemy-status">正解して、カードの力を見せよう。</p>
+        </aside>
+
+        <section class="panel question-panel">
+          <div class="question-topline"><span id="questionBadge" class="question-badge">1年・国語</span><span id="comboBadge" class="combo-badge">連続正解 0</span></div>
+          <div class="question-number">QUESTION <strong id="questionNumber">01</strong></div>
+          <h2 id="questionText" class="question-text">問題を読み込んでいます。</h2>
+          <div id="answerChoices" class="answer-choices"></div>
+          <div id="feedbackPanel" class="feedback-panel" hidden aria-live="polite">
+            <div id="feedbackSymbol" class="feedback-symbol">✓</div>
+            <div class="feedback-copy"><strong id="feedbackTitle">正解！</strong><p id="feedbackBody"></p><div id="feedbackActions" class="feedback-actions"></div></div>
+          </div>
+          <p class="question-footnote">あせらず、問題を最後まで読んでから答えよう。</p>
+        </section>
+
+        <aside id="partyPanel" class="panel party-panel">
+          <div class="panel-heading compact"><div><p class="eyebrow">YOUR TEAM</p><h2>いっしょに戦う仲間</h2></div></div>
+          <p class="party-help">問題ごとにカードが交代。正解すると経験値がたまります。</p>
+          <div id="teamRail" class="team-rail"></div>
+          <div id="practiceBuddy" class="practice-buddy" hidden><span class="buddy-mark">◎</span><strong>特訓モード</strong><p>相手も制限時間もありません。覚えることに集中しよう。</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen" aria-labelledby="resultTitle" hidden>
+      <div class="result-shell">
+        <div id="resultMark" class="result-mark">✦</div><p class="eyebrow" id="resultEyebrow">QUEST REPORT</p>
+        <h1 id="resultTitle">クエストクリア！</h1>
+        <p id="resultLead" class="result-lead">よくがんばったね。</p>
+        <div id="resultStats" class="result-stats"></div>
+        <div id="resultLevelUps" class="levelup-list"></div>
+        <p id="resultLearningNote" class="result-learning-note"></p>
+        <div class="result-actions"><button class="button primary large" data-action="replay">もう一度挑戦 <span class="button-arrow">→</span></button><button class="button secondary" data-action="training">特訓する</button><button class="button quiet" data-action="home">ホームへ</button></div>
+      </div>
+    </section>
+
+    <section id="screen-training" class="screen" aria-labelledby="trainingTitle" hidden>
+      <div class="page-heading">
+        <button class="back-button" data-action="home">← ホーム</button>
+        <div><p class="eyebrow">LEARN FROM EVERY TRY</p><h1 id="trainingTitle">特訓道場</h1><p class="muted">まちがいは、できるようになるための手がかり。</p></div>
+      </div>
+      <div class="training-layout">
+        <section class="panel training-main">
+          <div class="training-intro"><span class="training-emblem">◎</span><div><h2>まちがえた問題を、味方にする。</h2><p>2回続けてヒントなしで正解すると、特訓帳から卒業します。</p></div></div>
+          <div class="training-count-line"><strong id="trainingDueCount">0問</strong><span>特訓帳にのこっている問題</span></div>
+          <div id="mistakeList" class="mistake-list"></div>
+          <button id="startMistakesButton" class="button primary large full" data-action="practice-mistakes">まちがい問題で特訓 <span class="button-arrow">→</span></button>
+        </section>
+        <aside class="panel training-options">
+          <p class="eyebrow">CHOOSE YOUR PRACTICE</p><h2>教科を選んで練習</h2><p>バトルではなく、問題に集中してじっくり取り組めます。ここでもカードの経験値がたまります。</p><button class="button secondary full" data-action="choose-practice">教科別に特訓する →</button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="screen-team" class="screen" aria-labelledby="teamTitle" hidden>
+      <div class="page-heading">
+        <button class="back-button" data-action="home">← ホーム</button>
+        <div><p class="eyebrow">BUILD YOUR TEAM</p><h1 id="teamTitle">チーム編成</h1><p class="muted">いっしょに冒険するカードを、最大3枚選ぼう。</p></div>
+      </div>
+      <div class="panel">
+        <div class="panel-heading"><div><h2>出発チーム</h2><p id="teamSelectedCount">3 / 3枚 選択中</p></div><button class="button secondary" data-action="collection">カードをさがす →</button></div>
+        <div id="teamGrid" class="owned-card-grid"></div>
+      </div>
+    </section>
+
+    <section id="screen-collection" class="screen" aria-labelledby="collectionTitle" hidden>
+      <div class="page-heading">
+        <button class="back-button" data-action="home">← ホーム</button>
+        <div><p class="eyebrow">NAVIAN LIBRARY</p><h1 id="collectionTitle">ナビアン図鑑</h1><p class="muted">ほしい仲間を自分で選んで集めよう。ランダムなカードパックはありません。</p></div>
+      </div>
+      <div class="panel collection-panel">
+        <div class="collection-toolbar">
+          <div id="collectionFilters" class="filter-row">
+            <button class="filter-chip active" data-filter="all">すべて</button>
+            <button class="filter-chip" data-filter="owned">なかま</button>
+            <button class="filter-chip" data-filter="unowned">まだ出会っていない</button>
+          </div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="collectionSearch" type="search" placeholder="名前・教科でさがす" autocomplete="off"></label>
+        </div>
+        <div class="collection-summary"><span id="collectionCount">180体</span><span>カードP <strong id="collectionPoints">0</strong></span></div>
+        <div id="collectionGrid" class="collection-grid"></div>
+        <div class="collection-more-wrap"><button id="moreCardsButton" class="button secondary" data-action="more-cards">もっと見る</button></div>
+      </div>
+    </section>
+  </main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</div>
+
+<script src="data/subjects.js"></script>
+<script src="data/monsters.js"></script>
+<script type="module" src="js/quest.js"></script>
+</body>
+</html>
