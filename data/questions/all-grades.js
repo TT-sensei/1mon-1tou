@@ -5454,3 +5454,609 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "午後に使うあいさつだよ。"
   }
 ];
+
+window.QUESTION_BANK['5-english'] = [
+  {
+    "id": "g5-english-001",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I like music.」の意味は？",
+    "choices": [
+      "私は音楽が好きです",
+      "私は音楽を聞きません",
+      "音楽はどこですか",
+      "私は先生です"
+    ],
+    "answer": "私は音楽が好きです",
+    "hint": "I like ～で「～が好き」と伝えられるよ。"
+  },
+  {
+    "id": "g5-english-002",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What sport do you like?」の意味は？",
+    "choices": [
+      "どんなスポーツが好きですか",
+      "何時に起きますか",
+      "どこに住んでいますか",
+      "何色が好きですか"
+    ],
+    "answer": "どんなスポーツが好きですか",
+    "hint": "sportはスポーツのことだよ。"
+  },
+  {
+    "id": "g5-english-003",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I can swim.」の意味は？",
+    "choices": [
+      "私は泳げます",
+      "私は泳ぎません",
+      "私は走れます",
+      "私は歌えます"
+    ],
+    "answer": "私は泳げます",
+    "hint": "canは「～できる」という意味だよ。"
+  },
+  {
+    "id": "g5-english-004",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What do you want to be?」は何をたずねている？",
+    "choices": [
+      "将来何になりたいか",
+      "何を食べたいか",
+      "どこへ行きたいか",
+      "何時に寝るか"
+    ],
+    "answer": "将来何になりたいか",
+    "hint": "want to beで「～になりたい」という気持ちを表せるよ。"
+  },
+  {
+    "id": "g5-english-005",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「library」の意味は？",
+    "choices": [
+      "図書館",
+      "病院",
+      "駅",
+      "公園"
+    ],
+    "answer": "図書館",
+    "hint": "本を借りたり読んだりする場所だよ。"
+  },
+  {
+    "id": "g5-english-006",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「usually」に近い意味は？",
+    "choices": [
+      "たいてい",
+      "まったく～ない",
+      "昨日",
+      "とても"
+    ],
+    "answer": "たいてい",
+    "hint": "ふだんよくすることを表す言葉だよ。"
+  },
+  {
+    "id": "g5-english-007",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I went to the park.」の意味は？",
+    "choices": [
+      "私は公園へ行きました",
+      "私は公園へ行きます",
+      "私は公園にいますか",
+      "私は公園が好きです"
+    ],
+    "answer": "私は公園へ行きました",
+    "hint": "wentはgoの過去形だよ。"
+  },
+  {
+    "id": "g5-english-008",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「When is your birthday?」の意味は？",
+    "choices": [
+      "誕生日はいつですか",
+      "誕生日はどこですか",
+      "何歳ですか",
+      "何が好きですか"
+    ],
+    "answer": "誕生日はいつですか",
+    "hint": "Whenは「いつ」をたずねる言葉だよ。"
+  },
+  {
+    "id": "g5-english-009",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Monday」の次の日は？",
+    "choices": [
+      "Tuesday",
+      "Friday",
+      "Sunday",
+      "Saturday"
+    ],
+    "answer": "Tuesday",
+    "hint": "曜日を順番に思い出そう。"
+  },
+  {
+    "id": "g5-english-010",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How many apples?」は何をたずねている？",
+    "choices": [
+      "りんごはいくつ",
+      "りんごはいくら",
+      "りんごは何色",
+      "りんごはどこ"
+    ],
+    "answer": "りんごはいくつ",
+    "hint": "How manyは数をたずねる表現だよ。"
+  },
+  {
+    "id": "g5-english-011",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I have two brothers.」の意味は？",
+    "choices": [
+      "兄弟が2人います",
+      "姉妹が2人います",
+      "友達が2人います",
+      "犬が2匹います"
+    ],
+    "answer": "兄弟が2人います",
+    "hint": "brotherは兄または弟のことだよ。"
+  },
+  {
+    "id": "g5-english-012",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What time is it?」の意味は？",
+    "choices": [
+      "今何時ですか",
+      "今日は何曜日ですか",
+      "どこにいますか",
+      "何をしますか"
+    ],
+    "answer": "今何時ですか",
+    "hint": "timeは時間のことだよ。"
+  },
+  {
+    "id": "g5-english-013",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「cabbage」の意味は？",
+    "choices": [
+      "キャベツ",
+      "にんじん",
+      "じゃがいも",
+      "たまねぎ"
+    ],
+    "answer": "キャベツ",
+    "hint": "野菜の名前を覚えよう。"
+  },
+  {
+    "id": "g5-english-014",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I study English every day.」の意味は？",
+    "choices": [
+      "私は毎日英語を勉強します",
+      "私は昨日英語を勉強しました",
+      "私は英語を教えます",
+      "私は英語が読めません"
+    ],
+    "answer": "私は毎日英語を勉強します",
+    "hint": "every dayは「毎日」だよ。"
+  },
+  {
+    "id": "g5-english-015",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Could you help me?」はどんな表現？",
+    "choices": [
+      "手伝ってもらえますか",
+      "ありがとう",
+      "おめでとう",
+      "また明日"
+    ],
+    "answer": "手伝ってもらえますか",
+    "hint": "相手にていねいにお願いするときの表現だよ。"
+  },
+  {
+    "id": "g5-english-016",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「There are three books.」の意味は？",
+    "choices": [
+      "本が3冊あります",
+      "本が1冊あります",
+      "本はありません",
+      "本は高いです"
+    ],
+    "answer": "本が3冊あります",
+    "hint": "There are ～で複数のものがあることを表せるよ。"
+  },
+  {
+    "id": "g5-english-017",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Which season do you like?」の意味は？",
+    "choices": [
+      "どの季節が好きですか",
+      "どの教科が好きですか",
+      "何時に起きますか",
+      "どこへ行きますか"
+    ],
+    "answer": "どの季節が好きですか",
+    "hint": "seasonは季節のことだよ。"
+  },
+  {
+    "id": "g5-english-018",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「beautiful」に近い意味は？",
+    "choices": [
+      "美しい",
+      "速い",
+      "小さい",
+      "難しい"
+    ],
+    "answer": "美しい",
+    "hint": "景色などをほめるときにも使う言葉だよ。"
+  },
+  {
+    "id": "g5-english-019",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I want to visit Kyoto.」の意味は？",
+    "choices": [
+      "京都を訪れたいです",
+      "京都に住んでいます",
+      "京都から来ました",
+      "京都はどこですか"
+    ],
+    "answer": "京都を訪れたいです",
+    "hint": "want to visitで「訪れたい」と言えるよ。"
+  },
+  {
+    "id": "g5-english-020",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Why do you like summer?」への理由の答えは？",
+    "choices": [
+      "Because I can swim.",
+      "At seven.",
+      "It's blue.",
+      "I'm twelve."
+    ],
+    "answer": "Because I can swim.",
+    "hint": "Whyは理由をたずねる言葉。Becauseで理由を答えられるよ。"
+  }
+];
+
+window.QUESTION_BANK['6-english'] = [
+  {
+    "id": "g6-english-001",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I usually get up at seven.」の意味は？",
+    "choices": [
+      "私はたいてい7時に起きます",
+      "私は7時に寝ます",
+      "私は昨日7時に出発しました",
+      "私は7歳です"
+    ],
+    "answer": "私はたいてい7時に起きます",
+    "hint": "usuallyは「たいてい」、get upは「起きる」だよ。"
+  },
+  {
+    "id": "g6-english-002",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What did you do yesterday?」の意味は？",
+    "choices": [
+      "昨日何をしましたか",
+      "明日何をしますか",
+      "何が好きですか",
+      "どこに住んでいますか"
+    ],
+    "answer": "昨日何をしましたか",
+    "hint": "didがあるので、過去のことをたずねているよ。"
+  },
+  {
+    "id": "g6-english-003",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I visited my grandmother.」の意味は？",
+    "choices": [
+      "祖母を訪ねました",
+      "祖母に手紙を書きます",
+      "祖母と住んでいます",
+      "祖母が来ます"
+    ],
+    "answer": "祖母を訪ねました",
+    "hint": "visitedはvisit（訪ねる）の過去形だよ。"
+  },
+  {
+    "id": "g6-english-004",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How can I get to the station?」の意味は？",
+    "choices": [
+      "駅へはどう行けばよいですか",
+      "駅は何時に開きますか",
+      "駅はどこで生まれましたか",
+      "駅で何を食べますか"
+    ],
+    "answer": "駅へはどう行けばよいですか",
+    "hint": "道順をたずねる表現だよ。"
+  },
+  {
+    "id": "g6-english-005",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「important」の意味は？",
+    "choices": [
+      "大切な",
+      "おいしい",
+      "にぎやかな",
+      "短い"
+    ],
+    "answer": "大切な",
+    "hint": "大事なことを説明するときに使うよ。"
+  },
+  {
+    "id": "g6-english-006",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I want to be a nurse.」の意味は？",
+    "choices": [
+      "看護師になりたいです",
+      "看護師に会いました",
+      "看護師を知っています",
+      "看護師になりました"
+    ],
+    "answer": "看護師になりたいです",
+    "hint": "want to beで将来の希望を伝えられるよ。"
+  },
+  {
+    "id": "g6-english-007",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How was your weekend?」の意味は？",
+    "choices": [
+      "週末はどうでしたか",
+      "週末は何曜日ですか",
+      "週末はどこですか",
+      "週末は何時ですか"
+    ],
+    "answer": "週末はどうでしたか",
+    "hint": "過ごした時間の感想をたずねる表現だよ。"
+  },
+  {
+    "id": "g6-english-008",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I enjoyed playing tennis.」の意味は？",
+    "choices": [
+      "テニスをして楽しみました",
+      "テニスを教えます",
+      "テニスができません",
+      "テニスを買いました"
+    ],
+    "answer": "テニスをして楽しみました",
+    "hint": "enjoyedは「楽しんだ」という意味だよ。"
+  },
+  {
+    "id": "g6-english-009",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How long does it take?」の意味は？",
+    "choices": [
+      "どのくらい時間がかかりますか",
+      "どのくらい重いですか",
+      "何歳ですか",
+      "何人いますか"
+    ],
+    "answer": "どのくらい時間がかかりますか",
+    "hint": "How longは長さや時間をたずねることがあるよ。"
+  },
+  {
+    "id": "g6-english-010",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「You should get some rest.」の意味は？",
+    "choices": [
+      "少し休んだほうがいいよ",
+      "走り続けて",
+      "ここに来ないで",
+      "本を貸して"
+    ],
+    "answer": "少し休んだほうがいいよ",
+    "hint": "shouldは助言をするときに使えるよ。"
+  },
+  {
+    "id": "g6-english-011",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「different」の意味は？",
+    "choices": [
+      "ちがった",
+      "同じ",
+      "静かな",
+      "高価な"
+    ],
+    "answer": "ちがった",
+    "hint": "same（同じ）と反対に近い意味だよ。"
+  },
+  {
+    "id": "g6-english-012",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I have never been to Okinawa.」の意味は？",
+    "choices": [
+      "沖縄へ行ったことがありません",
+      "沖縄に住んでいます",
+      "沖縄へ毎年行きます",
+      "沖縄から帰りました"
+    ],
+    "answer": "沖縄へ行ったことがありません",
+    "hint": "have never been to ～で「～へ行ったことがない」と表せるよ。"
+  },
+  {
+    "id": "g6-english-013",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Could you tell me the way?」の意味は？",
+    "choices": [
+      "道を教えてもらえますか",
+      "名前を教えてください",
+      "手紙を書いてください",
+      "写真を見せてください"
+    ],
+    "answer": "道を教えてもらえますか",
+    "hint": "道順をたずねるていねいな表現だよ。"
+  },
+  {
+    "id": "g6-english-014",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「because」の意味は？",
+    "choices": [
+      "なぜなら",
+      "しかし",
+      "そして",
+      "たとえば"
+    ],
+    "answer": "なぜなら",
+    "hint": "理由を説明するときに使うよ。"
+  },
+  {
+    "id": "g6-english-015",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「My favorite subject is science.」の意味は？",
+    "choices": [
+      "私の好きな教科は理科です",
+      "理科の先生はだれですか",
+      "理科は難しいです",
+      "私は理科を勉強しません"
+    ],
+    "answer": "私の好きな教科は理科です",
+    "hint": "favoriteは「いちばん好きな」という意味だよ。"
+  },
+  {
+    "id": "g6-english-016",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「If it is sunny tomorrow, I will play soccer.」の意味は？",
+    "choices": [
+      "明日晴れたらサッカーをします",
+      "昨日晴れたのでサッカーをしました",
+      "今日は雨です",
+      "サッカーは好きではありません"
+    ],
+    "answer": "明日晴れたらサッカーをします",
+    "hint": "Ifは「もし～なら」という条件を表すよ。"
+  },
+  {
+    "id": "g6-english-017",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What do you think about this idea?」の意味は？",
+    "choices": [
+      "この考えについてどう思いますか",
+      "この考えはどこですか",
+      "この考えはいつですか",
+      "この考えはいくらですか"
+    ],
+    "answer": "この考えについてどう思いますか",
+    "hint": "think aboutで「～について考える」という意味だよ。"
+  },
+  {
+    "id": "g6-english-018",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「We must protect nature.」の意味は？",
+    "choices": [
+      "私たちは自然を守らなければなりません",
+      "私たちは自然を売ります",
+      "自然はありません",
+      "自然を忘れましょう"
+    ],
+    "answer": "私たちは自然を守らなければなりません",
+    "hint": "mustは「～しなければならない」という意味だよ。"
+  },
+  {
+    "id": "g6-english-019",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I am looking forward to the school trip.」の意味は？",
+    "choices": [
+      "修学旅行を楽しみにしています",
+      "修学旅行から帰りました",
+      "修学旅行に行けません",
+      "修学旅行は昨日でした"
+    ],
+    "answer": "修学旅行を楽しみにしています",
+    "hint": "look forward to ～で「～を楽しみにする」と言えるよ。"
+  },
+  {
+    "id": "g6-english-020",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Which is the best way to save water?」の意味は？",
+    "choices": [
+      "水を節約する最もよい方法はどれですか",
+      "水は何色ですか",
+      "水はどこで買いますか",
+      "水を何時に飲みますか"
+    ],
+    "answer": "水を節約する最もよい方法はどれですか",
+    "hint": "save waterは「水を節約する」という意味だよ。"
+  }
+];
