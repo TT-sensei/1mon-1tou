@@ -2869,5 +2869,125 @@ window.QUESTION_BANK['3-english'] = [
     ],
     "answer": "My name is Yuki.",
     "hint": "My name is ～で名前を伝えられるよ。"
+  },
+  {
+    "id": "g3-english-013",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「blue」は何色？",
+    "choices": [
+      "青",
+      "赤",
+      "黄色",
+      "黒"
+    ],
+    "answer": "青",
+    "hint": "blueは青色だよ。"
+  },
+  {
+    "id": "g3-english-014",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「apple」はどれ？",
+    "choices": [
+      "りんご",
+      "バナナ",
+      "ぶどう",
+      "もも"
+    ],
+    "answer": "りんご",
+    "hint": "くだものの名前だよ。"
+  },
+  {
+    "id": "g3-english-015",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How are you?」への返事として自然なのは？",
+    "choices": [
+      "I'm fine, thank you.",
+      "My name is pencil.",
+      "It's Monday morning.",
+      "Good night, color."
+    ],
+    "answer": "I'm fine, thank you.",
+    "hint": "元気かどうかをたずねる表現だよ。"
+  },
+  {
+    "id": "g3-english-016",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What's this?」の意味は？",
+    "choices": [
+      "これは何ですか",
+      "何色ですか",
+      "何時ですか",
+      "どこですか"
+    ],
+    "answer": "これは何ですか",
+    "hint": "thisは「これ」という意味だよ。"
+  },
+  {
+    "id": "g3-english-017",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I can swim.」の意味は？",
+    "choices": [
+      "私は泳げます",
+      "私は走ります",
+      "私は魚です",
+      "私は泳ぎません"
+    ],
+    "answer": "私は泳げます",
+    "hint": "canは「～できる」という意味だよ。"
+  },
+  {
+    "id": "g3-english-018",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Goodbye.」の意味は？",
+    "choices": [
+      "さようなら",
+      "ありがとう",
+      "おはよう",
+      "ごめんなさい"
+    ],
+    "answer": "さようなら",
+    "hint": "別れるときのあいさつだよ。"
+  },
+  {
+    "id": "g3-english-019",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「yellow」は何色？",
+    "choices": [
+      "黄色",
+      "緑",
+      "白",
+      "青"
+    ],
+    "answer": "黄色",
+    "hint": "yellowは黄色だよ。"
+  },
+  {
+    "id": "g3-english-020",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Do you like soccer?」への答えとして自然なのは？",
+    "choices": [
+      "Yes, I do.",
+      "I am soccer.",
+      "It is blue.",
+      "Good morning night."
+    ],
+    "answer": "Yes, I do.",
+    "hint": "好きかどうかをたずねているよ。"
   }
 ];
