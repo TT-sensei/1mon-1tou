@@ -20,6 +20,7 @@ const defaults = {
   team: STARTER_CARDS.slice(),
   xp: {},
   review: {},
+  dailyRewards: {},
   stats: { totalCorrect: 0, firstTryCorrect: 0, questsCleared: 0, masteredReview: 0, sessions: 0, wrongAttempts: 0 }
 };
 let state = readState();
@@ -50,6 +51,7 @@ function readState() {
     team: team.length ? team : owned.slice(0, 3),
     xp: saved.xp && typeof saved.xp === 'object' ? saved.xp : {},
     review: saved.review && typeof saved.review === 'object' ? saved.review : {},
+    dailyRewards: saved.dailyRewards && typeof saved.dailyRewards === 'object' ? saved.dailyRewards : {},
     stats: { ...defaults.stats, ...(saved.stats || {}) }
   };
 }
@@ -276,6 +278,9 @@ function startRun(mode, questions, grade, subject) {
     enemyMaxHp: Math.max(2, cleanQuestions.length * 2),
     enemyHp: Math.max(2, cleanQuestions.length * 2),
     pointsEarned: 0,
+    rewardKey: ['quest', 'practice'].includes(mode) ? (new Date().toLocaleDateString('sv-SE') + '-grade-' + grade) : null,
+    rewardEligible: ['quest', 'practice'].includes(mode) && !state.dailyRewards[new Date().toLocaleDateString('sv-SE') + '-grade-' + grade],
+    rewardMultiplier: Math.max(1, Math.min(3, Number(grade) || 1)),
     levelUps: [],
     masteredThisRun: 0
   };
@@ -476,7 +481,9 @@ function handleCorrect(q, firstTry) {
   const cardId = active.team[active.cardIndex];
   checkLevelUp(cardId);
   const isQuest = active.mode === 'quest';
-  const points = isQuest ? (firstTry ? 10 : 5) : (firstTry ? 5 : 3);
+  const basePoints = isQuest ? (firstTry ? 10 : 5) : (firstTry ? 5 : 3);
+  // The first completed run per grade each day earns full rewards. Repeating easier grades is practice, not a point-farming shortcut.
+  const points = active.rewardEligible ? basePoints * active.rewardMultiplier : Math.max(1, Math.floor(basePoints / 5));
   state.points += points;
   active.pointsEarned += points;
 
@@ -561,12 +568,13 @@ function finishRun() {
   if (!active) return;
   const isQuest = active.mode === 'quest';
   const cleared = isQuest && active.enemyHp <= 0;
-  const finishReward = isQuest ? (cleared ? 25 : 5) : 0;
+  const finishReward = isQuest ? (cleared ? (active.rewardEligible ? 25 * active.rewardMultiplier : 3) : (active.rewardEligible ? 5 * active.rewardMultiplier : 1)) : 0;
   if (finishReward) {
     state.points += finishReward;
     active.pointsEarned += finishReward;
   }
   state.stats.sessions = (Number(state.stats.sessions) || 0) + 1;
+  if (active.rewardEligible && active.rewardKey) state.dailyRewards[active.rewardKey] = true;
   if (cleared) state.stats.questsCleared = (Number(state.stats.questsCleared) || 0) + 1;
   saveState();
   renderResult(cleared);
