@@ -5332,5 +5332,125 @@ window.QUESTION_BANK['4-english'] = [
     ],
     "answer": "I'm fine, thank you.",
     "hint": "元気かどうかをたずねる表現だよ。"
+  },
+  {
+    "id": "g4-english-013",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What time is it?」は何をたずねている？",
+    "choices": [
+      "何時か",
+      "何色か",
+      "何曜日か",
+      "何個か"
+    ],
+    "answer": "何時か",
+    "hint": "timeは時刻という意味だよ。"
+  },
+  {
+    "id": "g4-english-014",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I can swim.」の意味は？",
+    "choices": [
+      "泳げます",
+      "走れます",
+      "歌えます",
+      "食べられます"
+    ],
+    "answer": "泳げます",
+    "hint": "canは「～できる」という意味だよ。"
+  },
+  {
+    "id": "g4-english-015",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「orange」は何色？",
+    "choices": [
+      "オレンジ色",
+      "青",
+      "紫",
+      "黒"
+    ],
+    "answer": "オレンジ色",
+    "hint": "orangeはくだものの名前でもあり、色の名前でもあるよ。"
+  },
+  {
+    "id": "g4-english-016",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Do you like soccer?」への「いいえ」の答えは？",
+    "choices": [
+      "No, I don't.",
+      "No, I am.",
+      "No, it is.",
+      "No, I can."
+    ],
+    "answer": "No, I don't.",
+    "hint": "Do you like ～?にはNo, I don't.と答えられるよ。"
+  },
+  {
+    "id": "g4-english-017",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Wednesday」の意味は？",
+    "choices": [
+      "水曜日",
+      "月曜日",
+      "金曜日",
+      "日曜日"
+    ],
+    "answer": "水曜日",
+    "hint": "曜日の名前を覚えよう。"
+  },
+  {
+    "id": "g4-english-018",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I have a dog.」の意味は？",
+    "choices": [
+      "犬を飼っています",
+      "犬が好きですか",
+      "犬は何色ですか",
+      "犬が泳げます"
+    ],
+    "answer": "犬を飼っています",
+    "hint": "I have ～で持っているものや飼っているものを伝えられるよ。"
+  },
+  {
+    "id": "g4-english-019",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What's your name?」への返事として自然なのは？",
+    "choices": [
+      "My name is Hana.",
+      "I'm fine.",
+      "It's sunny.",
+      "I like blue."
+    ],
+    "answer": "My name is Hana.",
+    "hint": "名前をたずねる表現だよ。"
+  },
+  {
+    "id": "g4-english-020",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Good afternoon.」の意味は？",
+    "choices": [
+      "こんにちは",
+      "おはよう",
+      "おやすみ",
+      "さようなら"
+    ],
+    "answer": "こんにちは",
+    "hint": "午後に使うあいさつだよ。"
   }
 ];
