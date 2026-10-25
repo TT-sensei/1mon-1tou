@@ -1,12 +1,17 @@
 import { StorageManager, AnswerChecker } from 'https://tt-sensei.github.io/edu-components/index.js';
 import { renderCard } from './card-render.js';
+import '../data/questions/all-grades.js';
 
 const $ = (selector) => document.querySelector(selector);
 const store = new StorageManager('1mon-1tou-quest');
 const checker = new AnswerChecker({ eventTarget: window });
 const QUESTION_CATALOG = {
-  1: ['国語', '算数', '生活', '英語'],
-  2: ['国語', '算数', '生活', '英語']
+  1: ['国語', '算数', '生活'],
+  2: ['国語', '算数', '生活'],
+  3: ['国語', '算数', '理科', '社会', '英語'],
+  4: ['国語', '算数', '理科', '社会', '英語'],
+  5: ['国語', '算数', '理科', '社会'],
+  6: ['国語', '算数', '理科', '社会']
 };
 const STARTER_CARDS = ['purun-little-magic-slime', 'komorin-little-night-bat', 'kinoko-apple-mushroom'];
 const SUBJECT_ICON = { '国語': '📖', '算数': '＋', '理科': '✦', '社会': '⌖', '英語': 'A', '生活': '❀' };
