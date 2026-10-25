@@ -397,6 +397,7 @@ function explanationText(q) {
 
 function recordMistake(q) {
   const id = q.id || ('q-' + (q.grade || active.grade) + '-' + (q.subject || active.subject) + '-' + String(q.question).slice(0, 20));
+  if (!q.id) q.id = id;
   const old = state.review[id] || {};
   state.review[id] = {
     ...q,
@@ -821,6 +822,12 @@ $('#collectionSearch').addEventListener('input', (event) => {
   collectionSearch = event.target.value || '';
   collectionLimit = 24;
   renderCollection();
+});
+$('#collectionSearch').addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    renderCollection();
+  }
 });
 
 renderHome();
