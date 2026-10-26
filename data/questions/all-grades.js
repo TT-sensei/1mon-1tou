@@ -301,9 +301,7 @@ window.QUESTION_BANK['3-japanese'] = [
     ],
     "answer": "内容のまとまりを示すため",
     "hint": "段落ごとに、何について書いているか考えよう。"
-  }
-,
-
+  },
   {
     "id": "g3-japanese-021",
     "grade": 3,
@@ -453,6 +451,21 @@ window.QUESTION_BANK['3-japanese'] = [
     ],
     "answer": "話す順番を決めておく",
     "hint": "初め・中・終わりを意識すると伝わりやすいよ。"
+  },
+  {
+    "id": "g3-japanese-031",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「しかし」はどんな関係を表す言葉？",
+    "choices": [
+      "反対",
+      "理由",
+      "順番",
+      "例"
+    ],
+    "answer": "反対",
+    "hint": "前の内容と反対のことを続けるときに使うよ。"
   }
 ];
 
@@ -756,9 +769,7 @@ window.QUESTION_BANK['3-math'] = [
     ],
     "answer": "70円",
     "hint": "10円が7まい分だよ。"
-  }
-,
-
+  },
   {
     "id": "g3-math-021",
     "grade": 3,
@@ -908,6 +919,21 @@ window.QUESTION_BANK['3-math'] = [
     ],
     "answer": "それぞれ等しい",
     "hint": "たて同士、横同士の長さを比べよう。"
+  },
+  {
+    "id": "g3-math-031",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "6 × 7 は？",
+    "choices": [
+      "36",
+      "42",
+      "48",
+      "49"
+    ],
+    "answer": "42",
+    "hint": "九九を使って考えよう。"
   }
 ];
 
@@ -1361,6 +1387,21 @@ window.QUESTION_BANK['3-science'] = [
     ],
     "answer": "小さくなる",
     "hint": "もののふるえ方と音の大きさには関係があるよ。"
+  },
+  {
+    "id": "g3-science-031",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "昆虫の足は何本？",
+    "choices": [
+      "4本",
+      "6本",
+      "8本",
+      "10本"
+    ],
+    "answer": "6本",
+    "hint": "昆虫の足はむねから6本出ているよ。"
   }
 ];
 
@@ -1814,6 +1855,21 @@ window.QUESTION_BANK['3-social'] = [
     ],
     "answer": "そこで働く人の工夫が分かる",
     "hint": "見学やインタビューで、仕事の工夫を直接知れるよ。"
+  },
+  {
+    "id": "g3-social-031",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地図で学校や病院などを表す記号を何という？",
+    "choices": [
+      "地図記号",
+      "単位",
+      "目盛り",
+      "標語"
+    ],
+    "answer": "地図記号",
+    "hint": "地図記号で施設の場所が分かりやすくなるよ。"
   }
 ];
 
@@ -2117,9 +2173,7 @@ window.QUESTION_BANK['4-japanese'] = [
     ],
     "answer": "内容のまとまりを示すため",
     "hint": "段落ごとの内容をつかもう。"
-  }
-,
-
+  },
   {
     "id": "g4-japanese-021",
     "grade": 4,
@@ -2269,6 +2323,21 @@ window.QUESTION_BANK['4-japanese'] = [
     ],
     "answer": "大事なところをはっきり話す",
     "hint": "声の大きさや速さを工夫しよう。"
+  },
+  {
+    "id": "g4-japanese-031",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「なぜなら」は、どんな内容を続けるときに使う？",
+    "choices": [
+      "理由",
+      "反対の意見",
+      "場所",
+      "時刻"
+    ],
+    "answer": "理由",
+    "hint": "考えの理由を説明するときに使うよ。"
   }
 ];
 
@@ -2722,6 +2791,21 @@ window.QUESTION_BANK['4-math'] = [
     ],
     "answer": "折れ線グラフ",
     "hint": "時間にともなう変化が分かりやすいよ。"
+  },
+  {
+    "id": "g4-math-031",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3.5 − 1.2 は？",
+    "choices": [
+      "2.3",
+      "2.7",
+      "1.3",
+      "4.7"
+    ],
+    "answer": "2.3",
+    "hint": "小数点をそろえて計算しよう。"
   }
 ];
 
@@ -3175,6 +3259,21 @@ window.QUESTION_BANK['4-science'] = [
     ],
     "answer": "温度と様子の変化",
     "hint": "温度を記録すると変化の関係を調べられるよ。"
+  },
+  {
+    "id": "g4-science-031",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "液体の水が冷えて氷になる変化を何という？",
+    "choices": [
+      "凝固",
+      "蒸発",
+      "融解",
+      "沸騰"
+    ],
+    "answer": "凝固",
+    "hint": "液体が固体になる変化だよ。"
   }
 ];
 
@@ -3628,6 +3727,21 @@ window.QUESTION_BANK['4-social'] = [
     ],
     "answer": "道路や鉄道、バスの路線",
     "hint": "人や物がどう移動するかが分かるよ。"
+  },
+  {
+    "id": "g4-social-031",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地図上の長さと実際の距離の関係を表すものは？",
+    "choices": [
+      "縮尺",
+      "方位",
+      "標高",
+      "気温"
+    ],
+    "answer": "縮尺",
+    "hint": "縮尺を使って実際の距離を考えられるよ。"
   }
 ];
 
@@ -4386,9 +4500,7 @@ window.QUESTION_BANK['5-math'] = [
     ],
     "answer": "辺の長さも角の大きさも等しい",
     "hint": "正多角形は辺も角も同じ大きさだよ。"
-  }
-,
-
+  },
   {
     "id": "g5-math-021",
     "grade": 5,
@@ -4538,6 +4650,21 @@ window.QUESTION_BANK['5-math'] = [
     ],
     "answer": "12km",
     "hint": "道のり＝速さ×時間だよ。"
+  },
+  {
+    "id": "g5-math-031",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1.2 × 3 は？",
+    "choices": [
+      "3.6",
+      "4.2",
+      "0.4",
+      "36"
+    ],
+    "answer": "3.6",
+    "hint": "1.2を3回分と考えよう。"
   }
 ];
 
@@ -4991,6 +5118,21 @@ window.QUESTION_BANK['5-science'] = [
     ],
     "answer": "雲や風、気圧などの観測",
     "hint": "複数の観測情報を合わせて考えるよ。"
+  },
+  {
+    "id": "g5-science-031",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水にとけた食塩を取り出す方法として適切なのは？",
+    "choices": [
+      "水を蒸発させる",
+      "磁石で引きつける",
+      "ふるいにかける",
+      "紙でこすだけ"
+    ],
+    "answer": "水を蒸発させる",
+    "hint": "水を蒸発させると食塩が残るよ。"
   }
 ];
 
@@ -5749,9 +5891,7 @@ window.QUESTION_BANK['6-japanese'] = [
     ],
     "answer": "理由を聞き、共通点や違いを整理する",
     "hint": "互いの根拠を比べながら考えよう。"
-  }
-,
-
+  },
   {
     "id": "g6-japanese-021",
     "grade": 6,
@@ -5901,6 +6041,21 @@ window.QUESTION_BANK['6-japanese'] = [
     ],
     "answer": "資料の内容と自分の意見を区別する",
     "hint": "根拠と自分の考えを分かるように書こう。"
+  },
+  {
+    "id": "g6-japanese-031",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "あるものを別のものになぞらえる表現を何という？",
+    "choices": [
+      "比喩",
+      "要約",
+      "引用",
+      "対話"
+    ],
+    "answer": "比喩",
+    "hint": "たとえを使って印象を伝える表現だよ。"
   }
 ];
 
@@ -6657,9 +6812,7 @@ window.QUESTION_BANK['6-science'] = [
     ],
     "answer": "生態系のつながりを保つため",
     "hint": "生き物は互いに関わりながら生きているよ。"
-  }
-,
-
+  },
   {
     "id": "g6-science-021",
     "grade": 6,
@@ -6809,6 +6962,21 @@ window.QUESTION_BANK['6-science'] = [
     ],
     "answer": "血液",
     "hint": "血液は酸素や養分などを体の各部へ運ぶよ。"
+  },
+  {
+    "id": "g6-science-031",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "でんぷんがあるかを調べるときに使う液体は？",
+    "choices": [
+      "ヨウ素液",
+      "石灰水",
+      "食塩水",
+      "酢"
+    ],
+    "answer": "ヨウ素液",
+    "hint": "でんぷんがあると青むらさき色に変わるよ。"
   }
 ];
 
@@ -8018,9 +8186,7 @@ window.QUESTION_BANK['4-english'] = [
     ],
     "answer": "こんにちは",
     "hint": "午後に使うあいさつだよ。"
-  }
-,
-
+  },
   {
     "id": "g4-english-021",
     "grade": 4,
@@ -8170,6 +8336,21 @@ window.QUESTION_BANK['4-english'] = [
     ],
     "answer": "Yes, I can.",
     "hint": "Can you ～?にはYes, I can.と答えられるよ。"
+  },
+  {
+    "id": "g4-english-031",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「How old are you?」の意味は？",
+    "choices": [
+      "何歳ですか",
+      "何時ですか",
+      "何色ですか",
+      "どこですか"
+    ],
+    "answer": "何歳ですか",
+    "hint": "年齢をたずねる表現だよ。"
   }
 ];
 
