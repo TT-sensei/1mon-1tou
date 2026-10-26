@@ -631,8 +631,8 @@ function renderResult(cleared) {
   ];
   $('#resultStats').innerHTML = stats.map((item) => '<div class="result-stat"><strong>' + item.value + '</strong><span>' + item.label + '</span></div>').join('');
   $('#resultLevelUps').innerHTML = active.levelUps.map((item) => '<div class="levelup-note">' + item.name + 'が Lv.' + item.to + ' にレベルアップ！ +10P</div>').join('');
-  let note = isQuest ? (cleared ? '得意教科のカードと、連続正解が勝利を助けたよ。次は別の教科にも挑戦してみよう。' : 'まちがえた問題は特訓帳に保存されています。ヒントを使って練習すると、次の挑戦につながります。') : '特訓帳の問題は、2回続けてヒントなしで正解すると克服になります。';
-  if (active.masteredThisRun > 0) note += '\n' + active.masteredThisRun + '問が特訓帳を卒業しました。';
+  let note = isQuest ? (cleared ? '得意教科のカードと、連続正解が勝利を助けたよ。次は別の教科にも挑戦してみよう。' : 'まちがえた問題は復習リストに保存されます。ヒントを使って練習し、時間をおいてもう一度挑戦しよう。') : '正解した問題は、1日後・3日後・7日後・14日後・30日後と復習の間隔が広がります。';
+  if (active.masteredThisRun > 0) note += '\n' + active.masteredThisRun + '問が定着レベルに到達したよ。これからも間隔をあけて復習しよう。';
   $('#resultLearningNote').textContent = note;
 }
 
