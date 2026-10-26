@@ -1211,9 +1211,7 @@ window.QUESTION_BANK['3-science'] = [
     ],
     "answer": "6本",
     "hint": "昆虫の足は胸の部分についているよ。"
-  }
-,
-
+  },
   {
     "id": "g3-science-021",
     "grade": 3,
@@ -1309,15 +1307,15 @@ window.QUESTION_BANK['3-science'] = [
     "grade": 3,
     "subject": "理科",
     "type": "choice",
-    "question": "磁石のN極とS極を近づけると？",
+    "question": "植物の体を支え、葉や花をつける部分は？",
     "choices": [
-      "引き合う",
-      "しりぞけ合う",
-      "必ず熱くなる",
-      "磁力がなくなる"
+      "茎",
+      "根",
+      "花びら",
+      "種"
     ],
-    "answer": "引き合う",
-    "hint": "ちがう極どうしは引き合うよ。"
+    "answer": "茎",
+    "hint": "根から吸い上げた水などが通り、葉や花を支える部分だよ。"
   },
   {
     "id": "g3-science-028",
@@ -1666,9 +1664,7 @@ window.QUESTION_BANK['3-social'] = [
     ],
     "answer": "危険な場所や安全な歩き方",
     "hint": "危ない場所を知り、安全に通る方法を考えよう。"
-  }
-,
-
+  },
   {
     "id": "g3-social-021",
     "grade": 3,
@@ -1734,15 +1730,15 @@ window.QUESTION_BANK['3-social'] = [
     "grade": 3,
     "subject": "社会",
     "type": "choice",
-    "question": "地図の縮尺が1:10000のとき、地図の1cmは実際の何cm？",
+    "question": "地図で北・東・南・西などの向きを何という？",
     "choices": [
-      "10000cm",
-      "1000cm",
-      "100cm",
-      "100000cm"
+      "方位",
+      "縮尺",
+      "地図記号",
+      "標高"
     ],
-    "answer": "10000cm",
-    "hint": "縮尺は地図上と実際の長さの比を表すよ。"
+    "answer": "方位",
+    "hint": "地図を見るときは、方位を確かめると位置関係が分かりやすいよ。"
   },
   {
     "id": "g3-social-026",
@@ -2576,9 +2572,7 @@ window.QUESTION_BANK['4-math'] = [
     ],
     "answer": "90度",
     "hint": "直角の大きさを覚えよう。"
-  }
-,
-
+  },
   {
     "id": "g4-math-021",
     "grade": 4,
@@ -2614,15 +2608,15 @@ window.QUESTION_BANK['4-math'] = [
     "grade": 4,
     "subject": "算数",
     "type": "choice",
-    "question": "360 ÷ 6 は？",
+    "question": "3/4 − 1/4 は？",
     "choices": [
-      "60",
-      "50",
-      "70",
-      "600"
+      "1/2",
+      "2/8",
+      "1/4",
+      "3/4"
     ],
-    "answer": "60",
-    "hint": "36÷6を考えてから位を確かめよう。"
+    "answer": "1/2",
+    "hint": "分母が同じなので、分子どうしを引こう。"
   },
   {
     "id": "g4-math-024",
@@ -3031,9 +3025,7 @@ window.QUESTION_BANK['4-science'] = [
     ],
     "answer": "金属",
     "hint": "金属は電気を通しやすいものが多いよ。"
-  }
-,
-
+  },
   {
     "id": "g4-science-021",
     "grade": 4,
@@ -3129,15 +3121,15 @@ window.QUESTION_BANK['4-science'] = [
     "grade": 4,
     "subject": "理科",
     "type": "choice",
-    "question": "水が水蒸気になる変化を何という？",
+    "question": "人の体を支え、内臓を守るはたらきがあるものは？",
     "choices": [
-      "蒸発",
-      "凝結",
-      "凍結",
-      "融解"
+      "骨",
+      "血液",
+      "胃",
+      "皮ふだけ"
     ],
-    "answer": "蒸発",
-    "hint": "液体の水が気体の水蒸気になる変化だよ。"
+    "answer": "骨",
+    "hint": "骨格は体を支え、体の大切な部分を守っているよ。"
   },
   {
     "id": "g4-science-028",
@@ -3486,9 +3478,7 @@ window.QUESTION_BANK['4-social'] = [
     ],
     "answer": "資源を再利用しやすくするため",
     "hint": "分別すると資源として使えるものがあるよ。"
-  }
-,
-
+  },
   {
     "id": "g4-social-021",
     "grade": 4,
@@ -3524,15 +3514,15 @@ window.QUESTION_BANK['4-social'] = [
     "grade": 4,
     "subject": "社会",
     "type": "choice",
-    "question": "水をきれいにして川などへ戻す施設は？",
+    "question": "日本の首都はどこ？",
     "choices": [
-      "下水処理場",
-      "浄水場だけ",
-      "消防署",
-      "図書館"
+      "東京",
+      "大阪",
+      "京都",
+      "札幌"
     ],
-    "answer": "下水処理場",
-    "hint": "使い終わった水をきれいにする施設だよ。"
+    "answer": "東京",
+    "hint": "国会や中央省庁などが集まっている都市だよ。"
   },
   {
     "id": "g4-social-024",
@@ -4851,9 +4841,7 @@ window.QUESTION_BANK['5-science'] = [
     ],
     "answer": "天気の変化を調べる",
     "hint": "複数の観測結果を合わせて天気を考えよう。"
-  }
-,
-
+  },
   {
     "id": "g5-science-021",
     "grade": 5,
@@ -4979,15 +4967,15 @@ window.QUESTION_BANK['5-science'] = [
     "grade": 5,
     "subject": "理科",
     "type": "choice",
-    "question": "川の水が土地をけずるはたらきを何という？",
+    "question": "流れる水が土や石を下流へ運ぶはたらきを何という？",
     "choices": [
-      "侵食",
       "運搬",
+      "侵食",
       "堆積",
-      "凝固"
+      "蒸発"
     ],
-    "answer": "侵食",
-    "hint": "流れる水が地面をけずるはたらきだよ。"
+    "answer": "運搬",
+    "hint": "侵食はけずるはたらき、運搬は運ぶはたらきだよ。"
   },
   {
     "id": "g5-science-030",
@@ -6216,9 +6204,7 @@ window.QUESTION_BANK['6-math'] = [
     ],
     "answer": "直径×円周率",
     "hint": "円周は直径の約3.14倍だよ。"
-  }
-,
-
+  },
   {
     "id": "g6-math-021",
     "grade": 6,
@@ -6359,15 +6345,15 @@ window.QUESTION_BANK['6-math'] = [
     "grade": 6,
     "subject": "算数",
     "type": "choice",
-    "question": "データを小さい順に並べたとき、真ん中にくる値を何という？",
+    "question": "拡大図で対応する辺の長さが2倍になると、面積はもとの何倍？",
     "choices": [
-      "中央値",
-      "平均値",
-      "最大値",
-      "最頻値"
+      "4倍",
+      "2倍",
+      "6倍",
+      "8倍"
     ],
-    "answer": "中央値",
-    "hint": "データを順番に並べたときの中央の値だよ。"
+    "answer": "4倍",
+    "hint": "縦も横も2倍になるので、面積は2×2倍になるよ。"
   }
 ];
 
@@ -7126,9 +7112,7 @@ window.QUESTION_BANK['6-social'] = [
     ],
     "answer": "地球温暖化など地球規模の課題",
     "hint": "国境をこえる課題には国際協力が必要だよ。"
-  }
-,
-
+  },
   {
     "id": "g6-social-021",
     "grade": 6,
@@ -7149,15 +7133,15 @@ window.QUESTION_BANK['6-social'] = [
     "grade": 6,
     "subject": "社会",
     "type": "choice",
-    "question": "明治時代に身分制度を改め、近代国家づくりを進めた一連の変化は？",
+    "question": "明治時代に西洋の文化や生活様式が広まったことを何という？",
     "choices": [
-      "明治維新",
-      "大化の改新",
-      "応仁の乱",
-      "承久の乱"
+      "文明開化",
+      "参勤交代",
+      "鎖国",
+      "大化の改新"
     ],
-    "answer": "明治維新",
-    "hint": "明治政府は政治や社会のしくみを大きく変えたよ。"
+    "answer": "文明開化",
+    "hint": "明治時代には、服装や建物、制度などに西洋の影響が広がったよ。"
   },
   {
     "id": "g6-social-023",
@@ -7269,15 +7253,15 @@ window.QUESTION_BANK['6-social'] = [
     "grade": 6,
     "subject": "社会",
     "type": "choice",
-    "question": "国民が政治について考え、選挙で代表を選ぶことは何につながる？",
+    "question": "平安京に都が移された年は？",
     "choices": [
-      "政治への参加",
-      "法律をなくすこと",
-      "裁判を止めること",
-      "国会をなくすこと"
+      "794年",
+      "710年",
+      "1192年",
+      "1603年"
     ],
-    "answer": "政治への参加",
-    "hint": "選挙は国民が政治に参加する大切な方法だよ。"
+    "answer": "794年",
+    "hint": "「鳴くよ（794）うぐいす平安京」と覚えることがあるよ。"
   }
 ];
 
@@ -7581,23 +7565,21 @@ window.QUESTION_BANK['3-english'] = [
     ],
     "answer": "Yes, I do.",
     "hint": "好きかどうかをたずねているよ。"
-  }
-,
-
+  },
   {
     "id": "g3-english-021",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
-    "question": "「Goodbye.」の意味は？",
+    "question": "「five」の意味は？",
     "choices": [
-      "さようなら",
-      "ありがとう",
-      "おはよう",
-      "ごめんなさい"
+      "5",
+      "4",
+      "6",
+      "7"
     ],
-    "answer": "さようなら",
-    "hint": "別れるときのあいさつだよ。"
+    "answer": "5",
+    "hint": "fourの次の数だよ。"
   },
   {
     "id": "g3-english-022",
@@ -7724,15 +7706,15 @@ window.QUESTION_BANK['3-english'] = [
     "grade": 3,
     "subject": "英語",
     "type": "choice",
-    "question": "「How are you?」への返事として自然なのは？",
+    "question": "「It's sunny.」の意味は？",
     "choices": [
-      "I'm good, thank you.",
-      "It's a pencil.",
-      "I like red.",
-      "Good night."
+      "晴れです",
+      "雨です",
+      "くもりです",
+      "雪です"
     ],
-    "answer": "I'm good, thank you.",
-    "hint": "元気かどうかをたずねられたときの返事だよ。"
+    "answer": "晴れです",
+    "hint": "sunnyは太陽が出て晴れている天気だよ。"
   }
 ];
 
