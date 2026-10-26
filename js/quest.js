@@ -405,16 +405,31 @@ function explanationText(q) {
   return '正解を確認して、次の問題に進もう。';
 }
 
+const REVIEW_INTERVALS = [1, 3, 7, 14, 30];
+
+function reviewDueAt(entry) {
+  return Number(entry.nextReviewAt) || 0;
+}
+
+function scheduleReview(entry, days) {
+  entry.intervalDays = days;
+  entry.nextReviewAt = Date.now() + days * 24 * 60 * 60 * 1000;
+}
+
 function recordMistake(q) {
   const id = q.id || ('q-' + (q.grade || active.grade) + '-' + (q.subject || active.subject) + '-' + String(q.question).slice(0, 20));
   if (!q.id) q.id = id;
   const old = state.review[id] || {};
   state.review[id] = {
+    ...old,
     ...q,
     id,
     wrongCount: (Number(old.wrongCount) || 0) + 1,
     correctStreak: 0,
-    lastWrongAt: Date.now()
+    reviewLevel: 0,
+    lastWrongAt: Date.now(),
+    nextReviewAt: Date.now(),
+    intervalDays: 0
   };
   state.stats.wrongAttempts = (Number(state.stats.wrongAttempts) || 0) + 1;
 }
@@ -422,15 +437,23 @@ function recordMistake(q) {
 function applyReviewCorrect(q, firstTry) {
   if (!q.id || !state.review[q.id]) return;
   const entry = state.review[q.id];
-  entry.correctStreak = firstTry ? (Number(entry.correctStreak) || 0) + 1 : 0;
   entry.lastReviewedAt = Date.now();
-  if (entry.correctStreak >= 2) {
-    delete state.review[q.id];
+  if (!firstTry) {
+    entry.correctStreak = 0;
+    entry.reviewLevel = 0;
+    scheduleReview(entry, 0);
+    entry.nextReviewAt = Date.now() + 10 * 60 * 1000;
+    return;
+  }
+  entry.correctStreak = (Number(entry.correctStreak) || 0) + 1;
+  entry.reviewLevel = Math.min(REVIEW_INTERVALS.length, (Number(entry.reviewLevel) || 0) + 1);
+  if (entry.reviewLevel >= REVIEW_INTERVALS.length) {
     state.stats.masteredReview = (Number(state.stats.masteredReview) || 0) + 1;
     state.points += 10;
     active.pointsEarned += 10;
     active.masteredThisRun += 1;
   }
+  scheduleReview(entry, REVIEW_INTERVALS[Math.min(entry.reviewLevel - 1, REVIEW_INTERVALS.length - 1)]);
 }
 
 function checkLevelUp(cardId) {
@@ -613,9 +636,12 @@ function renderResult(cleared) {
 }
 
 function beginReviewRun() {
-  const due = Object.values(state.review).sort((a, b) => (b.lastWrongAt || 0) - (a.lastWrongAt || 0));
+  const now = Date.now();
+  const due = Object.values(state.review)
+    .filter((q) => reviewDueAt(q) <= now)
+    .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0));
   if (!due.length) {
-    notify('特訓帳は空っぽ！ 教科別の特訓に進もう。');
+    notify('いま復習する問題はないよ。次の復習時間を待つか、教科別の特訓に進もう。');
     renderTraining();
     return;
   }
@@ -626,32 +652,41 @@ function beginReviewRun() {
 
 function renderTraining() {
   updateHeader();
-  const due = Object.values(state.review).sort((a, b) => (b.lastWrongAt || 0) - (a.lastWrongAt || 0));
+  const all = Object.values(state.review);
+  const now = Date.now();
+  const due = all.filter((q) => reviewDueAt(q) <= now)
+    .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0));
+  const later = all.filter((q) => reviewDueAt(q) > now)
+    .sort((a, b) => (a.nextReviewAt || 0) - (b.nextReviewAt || 0));
   $('#trainingDueCount').textContent = due.length + '問';
   $('#startMistakesButton').disabled = due.length === 0;
+  $('#startMistakesButton').textContent = due.length ? 'いま復習する（' + due.length + '問） →' : '復習する問題はありません';
   const list = $('#mistakeList');
   list.innerHTML = '';
-  if (!due.length) {
+  if (!all.length) {
     const empty = document.createElement('div');
     empty.className = 'empty-state';
-    empty.textContent = 'まだ特訓する問題はありません。クエストや教科別の練習で、学びを進めよう。';
+    empty.textContent = 'まだ特訓する問題はありません。クエストでまちがえた問題は、ここに保存されるよ。';
     list.appendChild(empty);
     return;
   }
-  due.slice(0, 5).forEach((q) => {
+  const visible = due.concat(later).slice(0, 5);
+  visible.forEach((q) => {
     const item = document.createElement('article');
     item.className = 'mistake-item';
     const title = document.createElement('strong');
     title.textContent = q.question || '問題';
     const detail = document.createElement('small');
-    detail.textContent = (q.grade || '?') + '年・' + (q.subject || '教科') + '　まちがい ' + (q.wrongCount || 1) + '回';
+    const isDue = reviewDueAt(q) <= now;
+    const status = isDue ? '復習どき' : '次の復習：' + new Date(q.nextReviewAt).toLocaleDateString('ja-JP');
+    detail.textContent = (q.grade || '?') + '年・' + (q.subject || '教科') + '　まちがい ' + (q.wrongCount || 1) + '回　・　' + status;
     item.append(title, detail);
     list.appendChild(item);
   });
-  if (due.length > 5) {
+  if (all.length > 5) {
     const more = document.createElement('p');
     more.className = 'muted';
-    more.textContent = 'ほか ' + (due.length - 5) + '問';
+    more.textContent = 'ほか ' + (all.length - 5) + '問';
     list.appendChild(more);
   }
 }
