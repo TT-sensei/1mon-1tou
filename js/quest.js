@@ -446,8 +446,9 @@ function applyReviewCorrect(q, firstTry) {
     return;
   }
   entry.correctStreak = (Number(entry.correctStreak) || 0) + 1;
-  entry.reviewLevel = Math.min(REVIEW_INTERVALS.length, (Number(entry.reviewLevel) || 0) + 1);
-  if (entry.reviewLevel >= REVIEW_INTERVALS.length) {
+  const previousLevel = Number(entry.reviewLevel) || 0;
+  entry.reviewLevel = Math.min(REVIEW_INTERVALS.length, previousLevel + 1);
+  if (previousLevel < REVIEW_INTERVALS.length && entry.reviewLevel >= REVIEW_INTERVALS.length) {
     state.stats.masteredReview = (Number(state.stats.masteredReview) || 0) + 1;
     state.points += 10;
     active.pointsEarned += 10;
