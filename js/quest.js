@@ -213,11 +213,13 @@ async function renderSetup() {
   mixed.innerHTML = '<span class="subject-symbol">✧</span><span>ミックス</span><small>全教科から出題</small>';
   $('#subjectChoices').appendChild(mixed);
   const count = selectedSubject === '__mix' ? mixedCount : (setupCounts[selectedSubject] || 0);
-  const questionCount = Math.min(runMode === 'quest' ? 10 : 8, count);
-  $('#setupQuestionCount').textContent = questionCount + '問';
+  const questionCount = Math.min(8, count);
+  $('#setupQuestionCount').textContent = runMode === 'quest' ? '全3戦' : questionCount + '問';
   $('#setupModeText').textContent = runMode === 'quest' ? '・クエストバトル' : '・特訓モード';
   $('#startSetupButton').innerHTML = (runMode === 'quest' ? 'クエスト開始' : '特訓をはじめる') + ' <span class="button-arrow">→</span>';
-  $('#setupMessage').textContent = count ? (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'から、' + questionCount + '問出題します。') : 'この学年には、まだ選べる問題がありません。';
+  $('#setupMessage').textContent = count ? (runMode === 'quest'
+    ? (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'の敵3体を、全部倒すまでバトルします。')
+    : (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'から、' + questionCount + '問出題します。')) : 'この学年には、まだ選べる問題がありません。';
   $('#startSetupButton').disabled = count < 1;
 }
 
@@ -254,22 +256,60 @@ async function beginSetupRun() {
     button.disabled = false;
     return;
   }
-  const limit = runMode === 'quest' ? 10 : 8;
+  const limit = runMode === 'quest' ? pool.length : 8;
   const questions = shuffle(pool).slice(0, Math.min(limit, pool.length));
   lastConfig = { mode: runMode, grade: selectedGrade, subject: selectedSubject };
   startRun(runMode, questions, selectedGrade, selectedSubject);
   button.disabled = false;
 }
 
-function pickEnemy(grade, subject) {
-  const rank = grade <= 2 ? 'zako' : grade <= 4 ? 'evolved' : 'boss';
-  let pool = monsterCatalog.filter((monster) => monster.rank === rank);
+const ENEMY_HP = { zako: 5, evolved: 8, boss: 12 };
+const ENEMY_STARS = { zako: '⭐', evolved: '⭐⭐', boss: '⭐⭐⭐' };
+
+function pickEnemyOfRank(rank, subject, excluded) {
+  let pool = monsterCatalog.filter((m) => m.rank === rank && !excluded.includes(m.id));
   if (subject && subject !== '__mix' && subject !== 'まちがい特訓') {
-    const matching = pool.filter((monster) => monster.subject === subject);
+    const matching = pool.filter((m) => m.subject === subject);
     if (matching.length) pool = matching;
   }
-  if (!pool.length) pool = monsterCatalog;
+  if (!pool.length) pool = monsterCatalog.filter((m) => !excluded.includes(m.id));
   return pool[Math.floor(Math.random() * pool.length)] || monsterCatalog[0] || null;
+}
+
+function waveRanksFor(grade) {
+  if (grade <= 2) return ['zako', 'zako', 'evolved'];
+  if (grade <= 4) return ['zako', 'evolved', 'boss'];
+  return ['evolved', 'evolved', 'boss'];
+}
+
+function enemyPatternFor(monster) {
+  const text = String((monster && monster.id) || '');
+  let hash = 0;
+  for (let i = 0; i < text.length; i += 1) hash = (hash * 17 + text.charCodeAt(i)) >>> 0;
+  return hash % 5 < 2 ? 'charger' : 'steady';
+}
+
+function buildWaves(grade, subject) {
+  const waves = [];
+  const excluded = [];
+  for (const rank of waveRanksFor(grade)) {
+    const enemy = pickEnemyOfRank(rank, subject, excluded);
+    if (enemy) {
+      waves.push(enemy);
+      excluded.push(enemy.id);
+    }
+  }
+  return waves;
+}
+
+function enemyNextAction() {
+  if (!active || !active.enemy) return { type: 'attack', damage: 1 };
+  const rankDamage = { zako: 1, evolved: 2, boss: 2 }[active.enemy.rank] || 1;
+  if (active.enemyPattern === 'charger') {
+    if (active.enemyCharged) return { type: 'big', damage: rankDamage * 2 };
+    if (active.enemyTurn % 3 === 1) return { type: 'charge', damage: 0 };
+  }
+  return { type: 'attack', damage: rankDamage };
 }
 
 function startRun(mode, questions, grade, subject) {
@@ -279,7 +319,8 @@ function startRun(mode, questions, grade, subject) {
     return;
   }
   const selectedTeam = teamIds();
-  const enemy = mode === 'quest' ? pickEnemy(grade, subject) : null;
+  const waves = mode === 'quest' ? buildWaves(grade, subject) : [];
+  const enemy = waves[0] || null;
   active = {
     mode,
     grade,
@@ -301,12 +342,18 @@ function startRun(mode, questions, grade, subject) {
     handUsed: [],
     guardUp: false,
     cheerUp: false,
-    teamMaxHp: 20,
-    teamHp: 20,
+    teamMaxHp: 24,
+    teamHp: 24,
     teamDown: false,
+    waves,
+    waveIndex: 0,
     enemy,
-    enemyMaxHp: enemy ? ({ zako: 8, evolved: 12, boss: 16 }[enemy.rank] || 10) : 0,
-    enemyHp: enemy ? ({ zako: 8, evolved: 12, boss: 16 }[enemy.rank] || 10) : 0,
+    enemyPattern: enemy ? enemyPatternFor(enemy) : 'steady',
+    enemyCharged: false,
+    enemyTurn: 0,
+    questCleared: false,
+    enemyMaxHp: enemy ? (ENEMY_HP[enemy.rank] || 8) : 0,
+    enemyHp: enemy ? (ENEMY_HP[enemy.rank] || 8) : 0,
     pointsEarned: 0,
     rewardKey: ['quest', 'practice'].includes(mode) ? (new Date().toLocaleDateString('sv-SE') + '-grade-' + grade) : null,
     rewardEligible: ['quest', 'practice'].includes(mode) && !state.dailyRewards[new Date().toLocaleDateString('sv-SE') + '-grade-' + grade],
@@ -383,13 +430,34 @@ function drawEnemy() {
   const enemy = active.enemy;
   const card = cardFor(enemy.id);
   $('#enemyName').textContent = enemy.name;
-  $('#enemyRank').textContent = RANK_NAME[enemy.rank] || 'ナビアン';
+  $('#enemyRank').textContent = (RANK_NAME[enemy.rank] || 'ナビアン') + ' ' + (ENEMY_STARS[enemy.rank] || '');
+  const waveEl = $('#enemyWave');
+  if (waveEl) waveEl.textContent = '第' + (active.waveIndex + 1) + '戦 / 全' + active.waves.length + '戦';
   $('#enemyCard').innerHTML = renderCard(card, { showInfo: true, className: active.enemyHp <= 0 ? 'enemy-defeated' : '' });
   $('#enemySubject').textContent = enemy.subject || 'とくになし';
   $('#enemyHp').textContent = String(active.enemyHp);
   $('#enemyMaxHp').textContent = String(active.enemyMaxHp);
   $('#enemyHpBar').style.width = (active.enemyHp / active.enemyMaxHp * 100) + '%';
-  $('#enemyStatus').textContent = active.enemyHp <= 0 ? '撃破！残りの問題にも挑戦しよう。' : '正解して、カードの力を見せよう。';
+  if (active.enemyHp <= 0) {
+    $('#enemyStatus').textContent = '撃破！';
+  } else if (active.enemyPattern === 'charger') {
+    $('#enemyStatus').textContent = '力をためて、大きなこうげきをすることがある。『まもり』が効くよ。';
+  } else {
+    $('#enemyStatus').textContent = '毎回こうげきしてくる。油断しないで進もう。';
+  }
+  const nextEl = $('#enemyNext');
+  if (nextEl) {
+    if (active.enemyHp <= 0) {
+      nextEl.textContent = '';
+    } else {
+      const next = enemyNextAction();
+      nextEl.textContent = next.type === 'charge'
+        ? 'つぎの番： 力をためる'
+        : next.type === 'big'
+          ? 'つぎの番： 大こうげき（' + next.damage + '）！ 『まもり』でふせげる'
+          : 'つぎの番： こうげき（' + next.damage + '）';
+    }
+  }
   $('#enemyCard').classList.toggle('is-defeated', active.enemyHp <= 0);
 }
 
@@ -410,13 +478,17 @@ function drawQuestion() {
   const q = active.question;
   active.displayChoices = Array.isArray(q.choices) ? shuffle(q.choices) : [];
   active.locked = false;
-  $('#battleQuestionCount').textContent = (active.index + 1) + ' / ' + active.questions.length;
+  $('#battleQuestionCount').textContent = active.mode === 'quest'
+    ? '第' + (active.waveIndex + 1) + '戦 ・ ' + (active.index + 1) + '問目'
+    : (active.index + 1) + ' / ' + active.questions.length;
   $('#battleSubjectLabel').textContent = (q.grade || active.grade) + '年・' + (q.subject || active.subject);
   $('#questionNumber').textContent = String(active.index + 1).padStart(2, '0');
   $('#questionBadge').textContent = (q.grade || active.grade) + '年・' + (q.subject || active.subject);
   $('#questionText').textContent = q.question;
   $('#comboBadge').textContent = '連続正解 ' + active.combo;
-  $('#runProgress').innerHTML = active.questions.map((_, index) => '<span class="progress-step' + (index < active.index ? ' done' : index === active.index ? ' current' : '') + '"></span>').join('');
+  $('#runProgress').innerHTML = active.mode === 'quest'
+    ? active.waves.map((_, index) => '<span class="progress-step' + (index < active.waveIndex || (index === active.waveIndex && active.enemyHp <= 0) ? ' done' : index === active.waveIndex ? ' current' : '') + '"></span>').join('')
+    : active.questions.map((_, index) => '<span class="progress-step' + (index < active.index ? ' done' : index === active.index ? ' current' : '') + '"></span>').join('');
   $('#feedbackPanel').hidden = true;
   $('#feedbackPanel').classList.remove('miss');
   const choices = $('#answerChoices');
@@ -635,6 +707,14 @@ function handleCorrect(q, firstTry) {
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
     notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + cheerNote);
+    if (active.enemyHp <= 0) {
+      if (active.waveIndex >= active.waves.length - 1) {
+        active.questCleared = true;
+        notes.push('さいごの敵を倒した！');
+      } else {
+        notes.push('撃破！ 次の敵が近づいてくる…（進むとチームパワー+6）');
+      }
+    }
     let healedAmount = 0;
     if (skill === 'heal') {
       const before = active.teamHp;
@@ -716,20 +796,50 @@ function revealAnswer() {
 function advanceQuestion() {
   if (!active) return;
   active.index += 1;
+  if (active.mode === 'quest' && active.questCleared) {
+    finishRun();
+    return;
+  }
   if (active.index >= active.questions.length) {
     finishRun();
     return;
   }
-  if (active.mode === 'quest' && active.enemyHp > 0) {
-    const enemyDamage = { zako: 1, evolved: 2, boss: 2 }[active.enemy.rank] || 1;
-    if (active.guardUp) {
+  if (active.mode === 'quest' && active.enemyHp <= 0 && active.waveIndex < active.waves.length - 1) {
+    active.waveIndex += 1;
+    active.enemy = active.waves[active.waveIndex];
+    active.enemyMaxHp = ENEMY_HP[active.enemy.rank] || 8;
+    active.enemyHp = active.enemyMaxHp;
+    active.enemyPattern = enemyPatternFor(active.enemy);
+    active.enemyCharged = false;
+    active.enemyTurn = 0;
+    active.handUsed = [];
+    const heal = Math.min(6, active.teamMaxHp - active.teamHp);
+    active.teamHp += heal;
+    notify('第' + (active.waveIndex + 1) + '戦！ ' + active.enemy.name + ' があらわれた！');
+    drawEnemy();
+    drawPartyArea();
+    if (heal > 0) spawnFloater($('#teamPower'), '+' + heal, 'heal');
+  } else if (active.mode === 'quest' && active.enemyHp > 0) {
+    const next = enemyNextAction();
+    if (next.type === 'charge') {
+      active.enemyCharged = true;
+      notify(active.enemy.name + ' は力をためている…');
+      const enemyCard = $('#enemyCard');
+      if (enemyCard) {
+        enemyCard.classList.remove('enemy-attacking');
+        void enemyCard.offsetWidth;
+        enemyCard.classList.add('enemy-attacking');
+      }
+    } else if (active.guardUp) {
       active.guardUp = false;
+      if (next.type === 'big') active.enemyCharged = false;
       notify('⛨ まもりが、相手の攻撃をふせいだ！');
       spawnFloater($('#teamPower'), 'ふせいだ！', 'buff');
     } else {
-      active.teamHp = Math.max(0, active.teamHp - enemyDamage);
-      notify('相手の攻撃！ チームパワー -' + enemyDamage);
-      spawnFloater($('#teamPower'), '-' + enemyDamage, '');
+      active.teamHp = Math.max(0, active.teamHp - next.damage);
+      if (next.type === 'big') active.enemyCharged = false;
+      notify(next.type === 'big' ? '大こうげき！ チームパワー -' + next.damage : '相手の攻撃！ チームパワー -' + next.damage);
+      spawnFloater($('#teamPower'), '-' + next.damage, next.type === 'big' ? 'big' : '');
       const teamPowerEl = $('#teamPower');
       teamPowerEl.classList.remove('hit-shake');
       void teamPowerEl.offsetWidth;
@@ -741,6 +851,8 @@ function advanceQuestion() {
         enemyCard.classList.add('enemy-attacking');
       }
     }
+    active.enemyTurn += 1;
+    drawEnemy();
     if (active.teamHp <= 0) {
       active.teamDown = true;
       finishRun();
@@ -762,7 +874,7 @@ function advanceQuestion() {
 function finishRun() {
   if (!active) return;
   const isQuest = active.mode === 'quest';
-  if (isQuest && active.teamDown) {
+  if (isQuest && active.index < active.questions.length) {
     active.questions = active.questions.slice(0, Math.max(1, active.index));
   }
   const cleared = isQuest && active.enemyHp <= 0;
@@ -787,7 +899,7 @@ function renderResult(cleared) {
   $('#resultEyebrow').textContent = isQuest ? 'QUEST REPORT' : 'PRACTICE REPORT';
   $('#resultTitle').textContent = isQuest ? (cleared ? 'クエストクリア！' : (active.teamDown ? 'おつかれさま！' : 'あと少し！')) : '特訓完了！';
   if (isQuest && cleared) {
-    $('#resultLead').textContent = 'ナビアンを撃破！問題に向き合ったことが、次の力になる。';
+    $('#resultLead').textContent = '敵を全部倒してクエストクリア！問題に向き合ったことが、次の力になる。';
   } else if (isQuest && active.teamDown) {
     $('#resultLead').textContent = 'チームが休憩に入ったよ。受け取ったカードPはそのまま使える。特訓して、カードを育てて、また挑戦しよう。';
   } else if (isQuest) {

@@ -17,7 +17,7 @@
     </button>
     <div class="top-stats" aria-label="きろく">
       <div class="top-stat"><span>カードP</span><strong id="topPoints">0</strong></div>
-      <div class="top-stat"><span>なかま</span><strong id="topOwned">3<small> / 180</small></strong></div>
+      <div class="top-stat"><span>なかま</span><strong id="topOwned">3<small> / 241</small></strong></div>
     </div>
   </header>
 
@@ -47,7 +47,7 @@
         <div class="stats-grid">
           <article class="stat-card"><span class="stat-icon mint">✓</span><div><strong id="statCorrect">0</strong><span>正解した問題</span></div></article>
           <article class="stat-card"><span class="stat-icon amber">✦</span><div><strong id="statClears">0</strong><span>クエストクリア</span></div></article>
-          <article class="stat-card"><span class="stat-icon blue">▦</span><div><strong id="statCollection">3 / 180</strong><span>なかまのカード</span></div></article>
+          <article class="stat-card"><span class="stat-icon blue">▦</span><div><strong id="statCollection">3 / 241</strong><span>なかまのカード</span></div></article>
           <article class="stat-card"><span class="stat-icon coral">↻</span><div><strong id="statMistakes">0</strong><span>復習リスト</span></div></article>
         </div>
       </div>
@@ -93,11 +93,12 @@
       <div class="run-progress" id="runProgress" aria-label="問題の進み具合"></div>
       <div id="battleLayout" class="battle-layout">
         <aside id="enemyPanel" class="panel enemy-panel">
-          <div class="panel-heading compact"><div><p class="eyebrow">OPPONENT</p><h2 id="enemyName">ナビアン</h2></div><span id="enemyRank" class="rank-pill">ナビアン</span></div>
+          <div class="panel-heading compact"><div><p class="eyebrow">OPPONENT</p><h2 id="enemyName">ナビアン</h2></div><span class="enemy-pills"><span id="enemyWave" class="wave-pill"></span><span id="enemyRank" class="rank-pill">ナビアン</span></span></div>
           <div id="enemyCard" class="enemy-card"></div>
           <div class="enemy-subject-line"><span>得意教科</span><strong id="enemySubject">算数</strong></div>
           <div class="enemy-health"><div><span>パワー</span><strong><span id="enemyHp">10</span> / <span id="enemyMaxHp">10</span></strong></div><div class="health-track"><i id="enemyHpBar"></i></div></div>
           <p id="enemyStatus" class="enemy-status">正解して、カードの力を見せよう。</p>
+          <p id="enemyNext" class="enemy-next"></p>
         </aside>
 
         <section class="panel question-panel">
@@ -186,7 +187,7 @@
           </div>
           <label class="search-box"><span aria-hidden="true">⌕</span><input id="collectionSearch" type="search" placeholder="名前・教科でさがす" autocomplete="off"></label>
         </div>
-        <div class="collection-summary"><span id="collectionCount">180体</span><span>カードP <strong id="collectionPoints">0</strong></span></div>
+        <div class="collection-summary"><span id="collectionCount">241体</span><span>カードP <strong id="collectionPoints">0</strong></span></div>
         <div id="collectionGrid" class="collection-grid"></div>
         <div class="collection-more-wrap"><button id="moreCardsButton" class="button secondary" data-action="more-cards">もっと見る</button></div>
       </div>
