@@ -491,9 +491,7 @@ function drawQuestion() {
   active.displayChoices = Array.isArray(q.choices) ? shuffle(q.choices) : [];
   active.locked = false;
   if (active.mode === 'quest') {
-    active.panel = null;
-    active.panelBoostApplied = false;
-    active.panelOrder = shuffle([1, 2, 3]);
+    active.panel = { colors: randomPanelColors() };
     active.questionShownAt = Date.now();
   }
   $('#battleQuestionCount').textContent = active.mode === 'quest'
@@ -538,26 +536,23 @@ function drawQuestion() {
     row.append(input, submit);
     choices.appendChild(row);
   }
-  if (active.mode === 'quest' && !active.panel) {
-    choices.querySelectorAll('button').forEach((b) => { b.disabled = true; });
-    const typed = $('#typedAnswer');
-    if (typed) typed.disabled = true;
-  }
   drawPanels();
   drawPreHint();
   drawPartyArea();
 }
 
+function randomPanelColors() {
+  const r = Math.random();
+  return r < 0.5 ? 1 : r < 0.85 ? 2 : 3;
+}
+
 function drawPanels() {
   const box = $('#panelChoices');
   if (!box) return;
-  if (!active || active.mode !== 'quest') { box.hidden = true; box.innerHTML = ''; return; }
-  const order = active.panelOrder || [1, 2, 3];
-  box.innerHTML = '<span class="panel-choices-label">パネルをえらぼう</span>' + order.map((colors) => {
-    const label = colors === 1 ? 'あんしん' : colors === 2 ? 'かいしん 50%' : 'かいしん確定';
-    const sub = colors === 1 ? 'そのまま発動' : colors === 2 ? '当たれば2倍' : '必ず2倍・ミスで敵+1';
-    return '<button type="button" class="panel-choice colors-' + colors + (active.panel && active.panel.colors === colors ? ' selected' : '') + '" data-action="select-panel" data-colors="' + colors + '"><span class="panel-orbs">' + '<i></i>'.repeat(colors) + '</span><strong>' + label + '</strong><small>' + sub + '</small></button>';
-  }).join('');
+  if (!active || active.mode !== 'quest' || !active.panel) { box.hidden = true; box.innerHTML = ''; return; }
+  const colors = active.panel.colors;
+  const label = colors === 1 ? 'あんしんパネル' : colors === 2 ? 'かいしんパネル（当たれば2倍）' : '大かいしんパネル（必ず2倍！）';
+  box.innerHTML = '<span class="panel-choices-label">この問題のパネル</span><div class="panel-indicator colors-' + colors + '"><span class="panel-orbs">' + '<i></i>'.repeat(colors) + '</span><strong>' + label + '</strong></div>';
   box.hidden = false;
 }
 
@@ -683,10 +678,6 @@ function spawnFloater(anchor, text, className) {
 
 function handleAnswer(selected) {
   if (!active || active.locked) return;
-  if (active.mode === 'quest' && !active.panel) {
-    notify('まずパネルを選んでね。');
-    return;
-  }
   if (selected === undefined || selected === null || String(selected).trim() === '') {
     notify('答えを選ぶか、入力してね。');
     return;
@@ -835,13 +826,7 @@ function handleWrong(q) {
     active.attempts = 1;
     active.combo = 0;
     $('#comboBadge').textContent = '連続正解 0';
-    let boostNote = '';
-    if (active.mode === 'quest' && active.panel && active.panel.colors === 3 && !active.panelBoostApplied) {
-      active.panelBoostApplied = true;
-      active.enemyBoost = 1;
-      boostNote = '\n3色パネルの効果で、相手の次の攻撃が +1 されるよ。';
-    }
-    feedback('おしい！ ヒントを見よう', hintText(q) + boostNote, [
+    feedback('おしい！ ヒントを見よう', hintText(q), [
       { name: 'retry-question', label: 'もう一度こたえる', className: 'primary' },
       { name: 'show-answer', label: '答えを見て次へ', className: 'secondary' }
     ], true);
@@ -1235,15 +1220,6 @@ function handleAction(action, button) {
   }
   if (action === 'show-answer') { revealAnswer(); return; }
   if (action === 'next-question') { advanceQuestion(); return; }
-  if (action === 'select-panel') {
-    if (!active || active.mode !== 'quest' || active.locked) return;
-    active.panel = { colors: Number(button.dataset.colors) || 1 };
-    document.querySelectorAll('#answerChoices button').forEach((b) => { b.disabled = false; });
-    const typed = $('#typedAnswer');
-    if (typed) typed.disabled = false;
-    drawPanels();
-    return;
-  }
   if (action === 'select-card') {
     if (!active || active.mode !== 'quest' || active.locked) return;
     const index = Number(button.dataset.index);
