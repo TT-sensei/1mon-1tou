@@ -94,7 +94,9 @@ function cardFor(id) {
     monsterId: monster.id,
     rarity: monster.rank === 'boss' ? 'boss' : monster.rank === 'evolved' ? 'rare' : 'normal',
     skill: skillFor(monster),
-    effect: 'normal',
+    skillName: (SKILLS[skillFor(monster)] || SKILLS.attack).name,
+    skillIcon: (SKILLS[skillFor(monster)] || SKILLS.attack).icon,
+    effect: monster.rank === 'boss' ? 'rainbow' : monster.rank === 'evolved' ? 'holo' : 'normal',
     background: monster.rank === 'boss' ? 'palace' : monster.rank === 'evolved' ? 'hill' : 'forest'
   };
 }
@@ -560,6 +562,16 @@ function castAnswer(value, expected) {
   return String(value).trim();
 }
 
+function spawnFloater(anchor, text, className) {
+  if (!anchor) return;
+  const el = document.createElement('span');
+  el.className = 'floater' + (className ? ' ' + className : '');
+  el.textContent = text;
+  el.style.left = (50 + (Math.random() * 16 - 8)) + '%';
+  anchor.appendChild(el);
+  setTimeout(() => el.remove(), 1000);
+}
+
 function handleAnswer(selected) {
   if (!active || active.locked) return;
   if (selected === undefined || selected === null || String(selected).trim() === '') {
@@ -623,10 +635,12 @@ function handleCorrect(q, firstTry) {
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
     notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + cheerNote);
+    let healedAmount = 0;
     if (skill === 'heal') {
       const before = active.teamHp;
       active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3));
-      notes.push('チームパワーが ' + (active.teamHp - before) + ' 回復した。');
+      healedAmount = active.teamHp - before;
+      notes.push('チームパワーが ' + healedAmount + ' 回復した。');
     }
     if (skill === 'guard') {
       active.guardUp = true;
@@ -641,12 +655,30 @@ function handleCorrect(q, firstTry) {
       notes.push('全員のカードが戻ってきた！');
     }
     drawEnemy();
+    spawnFloater($('#enemyCard'), '-' + damage, cheerNote ? 'big' : '');
+    const enemyEl = $('#enemyCard');
+    enemyEl.classList.remove('hit-shake');
+    void enemyEl.offsetWidth;
+    enemyEl.classList.add('hit-shake');
+    active.firedIndex = active.selectedCard;
+    if (skill === 'heal' && healedAmount > 0) spawnFloater($('#teamPower'), '+' + healedAmount, 'heal');
+    if (skill === 'guard') spawnFloater($('#teamPower'), 'まもり！', 'buff');
+    if (skill === 'cheer') spawnFloater($('#teamPower'), 'おうえん！', 'buff');
   } else {
     active.combo = firstTry ? active.combo + 1 : 0;
   }
   applyReviewCorrect(q, firstTry);
   saveState();
   drawPartyArea();
+  if (isQuest && active.firedIndex !== undefined && active.firedIndex !== null) {
+    const handEl = document.querySelector('.hand-card[data-index="' + active.firedIndex + '"]');
+    if (handEl) {
+      handEl.classList.remove('fired');
+      void handEl.offsetWidth;
+      handEl.classList.add('fired');
+    }
+    active.firedIndex = null;
+  }
   $('#comboBadge').textContent = '連続正解 ' + active.combo;
   feedback(firstTry ? '正解！' : 'よく考えたね！', notes.join('\n') + '\n' + explanationText(q), [
     { name: 'next-question', label: '次の問題へ →', className: 'primary' }
@@ -693,9 +725,15 @@ function advanceQuestion() {
     if (active.guardUp) {
       active.guardUp = false;
       notify('⛨ まもりが、相手の攻撃をふせいだ！');
+      spawnFloater($('#teamPower'), 'ふせいだ！', 'buff');
     } else {
       active.teamHp = Math.max(0, active.teamHp - enemyDamage);
       notify('相手の攻撃！ チームパワー -' + enemyDamage);
+      spawnFloater($('#teamPower'), '-' + enemyDamage, '');
+      const teamPowerEl = $('#teamPower');
+      teamPowerEl.classList.remove('hit-shake');
+      void teamPowerEl.offsetWidth;
+      teamPowerEl.classList.add('hit-shake');
       const enemyCard = $('#enemyCard');
       if (enemyCard) {
         enemyCard.classList.remove('enemy-attacking');
@@ -859,6 +897,8 @@ function costFor(monster) {
 
 function renderCollection() {
   updateHeader();
+  const packButton = $('#packButton');
+  if (packButton) packButton.disabled = state.points < PACK_COST;
   const search = collectionSearch.trim().toLocaleLowerCase('ja');
   let list = monsterCatalog.filter((monster) => {
     const owned = state.owned.includes(monster.id);
@@ -915,6 +955,62 @@ function toggleTeam(id) {
   renderTeam();
   renderCollection();
   renderHome();
+}
+
+const PACK_COST = 100;
+const PACK_SIZE = 3;
+const PACK_BONUS_POINTS = 30;
+const CARD_BACK_URL = 'https://tt-sensei.github.io/1mon-1tou/assets/cards/backs/card-back.jpeg';
+let packSlots = [];
+
+function drawPackMonster(excluded) {
+  const unowned = monsterCatalog.filter((m) => !state.owned.includes(m.id) && !excluded.includes(m.id));
+  if (!unowned.length) return null;
+  const roll = Math.random();
+  const rank = roll < 0.06 ? 'boss' : roll < 0.30 ? 'evolved' : 'zako';
+  const order = [rank, 'zako', 'evolved', 'boss'];
+  for (const r of order) {
+    const pool = unowned.filter((m) => m.rank === r);
+    if (pool.length) return pool[Math.floor(Math.random() * pool.length)];
+  }
+  return unowned[Math.floor(Math.random() * unowned.length)];
+}
+
+function buyPack() {
+  if (state.points < PACK_COST) {
+    notify('カードPが足りないよ。クエストで集めよう。');
+    return;
+  }
+  state.points -= PACK_COST;
+  packSlots = [];
+  const drawn = [];
+  for (let i = 0; i < PACK_SIZE; i += 1) {
+    const monster = drawPackMonster(drawn);
+    if (monster) {
+      drawn.push(monster.id);
+      packSlots.push({ type: 'monster', id: monster.id });
+    } else {
+      packSlots.push({ type: 'bonus' });
+    }
+  }
+  drawn.forEach((id) => { if (!state.owned.includes(id)) state.owned.push(id); });
+  const bonusCount = packSlots.filter((slot) => slot.type === 'bonus').length;
+  if (bonusCount) state.points += bonusCount * PACK_BONUS_POINTS;
+  saveState();
+  updateHeader();
+  renderPack();
+  $('#packOverlay').hidden = false;
+}
+
+function renderPack() {
+  $('#packCards').innerHTML = packSlots.map((slot, index) => {
+    const front = '<button type="button" class="pack-face front" data-action="flip-pack" data-index="' + index + '" aria-label="カードを開く"><img src="' + CARD_BACK_URL + '" alt=""></button>';
+    if (slot.type === 'bonus') {
+      return '<div class="pack-slot" data-pack-slot="' + index + '"><div class="pack-flip">' + front + '<div class="pack-face back"><div class="pack-bonus"><span>カードP</span><strong>+' + PACK_BONUS_POINTS + 'P</strong><small>全員集合済みのボーナス</small></div></div></div></div>';
+    }
+    const card = cardFor(slot.id);
+    return '<div class="pack-slot" data-pack-slot="' + index + '"><div class="pack-flip">' + front + '<div class="pack-face back">' + renderCard(card, { showInfo: true }) + '<span class="pack-new">NEW!</span></div></div></div>';
+  }).join('');
 }
 
 function recruit(id) {
@@ -982,6 +1078,17 @@ function handleAction(action, button) {
   if (action === 'toggle-team') { toggleTeam(button.dataset.id); return; }
   if (action === 'recruit') { recruit(button.dataset.id); return; }
   if (action === 'more-cards') { collectionLimit += 24; renderCollection(); return; }
+  if (action === 'buy-pack') { buyPack(); return; }
+  if (action === 'flip-pack') {
+    const slot = document.querySelector('[data-pack-slot="' + button.dataset.index + '"]');
+    if (slot) slot.classList.add('flipped');
+    return;
+  }
+  if (action === 'close-pack') {
+    $('#packOverlay').hidden = true;
+    renderCollection();
+    return;
+  }
 }
 
 document.addEventListener('click', (event) => {

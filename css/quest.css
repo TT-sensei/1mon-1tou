@@ -57,3 +57,44 @@ main{padding-top:20px}.screen{display:none}.screen.active{display:block}
 .enemy-attacking{animation:enemy-lunge .45s ease}
 @keyframes enemy-lunge{0%{transform:translateX(0)}30%{transform:translateX(14px) scale(1.03)}100%{transform:translateX(0)}}
 @media(max-width:560px){.hand-card{grid-template-columns:1fr;text-align:center;padding:6px;gap:5px}.hand-card.selected{padding:5px}.hand-card-art .battle-card{width:56px;margin:auto}.hand-card-info{justify-items:center}.hand-card-info strong{font-size:9px}.hand-card-info small{font-size:8px}}
+/* カードの輝き・スキルリボン・演出・パック（カード改修） */
+.effect-holo .card-effect{opacity:.45;background:linear-gradient(125deg,#ff4cae55,#39e6ff55,#ffe84f44,#8d67ff55,#ff4cae55);background-size:220% 220%;animation:cardHolo 5s ease-in-out infinite alternate}
+.effect-rainbow .card-effect{opacity:.7;background:linear-gradient(118deg,#ff006655,#ffd40055,#00dcff66,#6946ff66,#ff4bb866);background-size:240% 240%;animation:cardHolo 3.6s ease-in-out infinite alternate}
+.effect-rainbow .card-glow{background:radial-gradient(circle at 50% 43%,#ffffff66,transparent 38%),linear-gradient(135deg,#ffffff22,#ffffff05 42%,#ffffff33)}
+.effect-holo .card-monster,.effect-rainbow .card-monster{filter:drop-shadow(0 10px 7px #000b) saturate(1.1)}
+@keyframes cardHolo{from{background-position:0% 0%}to{background-position:100% 100%}}
+.rarity-boss{box-shadow:0 0 0 2px #e9b949,0 12px 28px #b8860b45,0 9px 20px #1f34451e}
+.rarity-rare{box-shadow:0 0 0 2px #9fc3e8,0 10px 24px #3a6ea53d,0 9px 20px #1f34451e}
+.card-skill{position:absolute;z-index:6;top:7px;left:7px;padding:3px 8px;border-radius:99px;background:#101827d9;color:#ffd968;font-size:10px;font-weight:1000;box-shadow:0 3px 8px #0006;pointer-events:none}
+.enemy-card{position:relative}
+.floater{position:absolute;z-index:30;left:50%;top:34%;transform:translate(-50%,0);font-size:26px;font-weight:1000;color:#e2483a;text-shadow:0 2px 0 #fff,0 4px 10px #0003;pointer-events:none;animation:floaterRise .95s ease-out forwards;white-space:nowrap}
+.floater.big{font-size:37px;color:#f59e0b}
+.floater.heal{color:#2f9e6e;font-size:23px}
+.floater.buff{color:#2c5d8a;font-size:19px}
+@keyframes floaterRise{0%{opacity:0;transform:translate(-50%,8px) scale(.7)}18%{opacity:1;transform:translate(-50%,0) scale(1.12)}100%{opacity:0;transform:translate(-50%,-52px) scale(1)}}
+.hit-shake{animation:hitShake .4s ease}
+@keyframes hitShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}45%{transform:translateX(6px)}70%{transform:translateX(-4px)}}
+.hand-card.fired{animation:cardFired .45s ease}
+@keyframes cardFired{0%{transform:translateY(-3px)}35%{transform:translateY(-13px) scale(1.045)}100%{transform:translateY(-3px)}}
+.pack-banner{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:16px;padding:16px;border:1px solid #eadfc0;border-radius:16px;background:linear-gradient(120deg,#fdf6dd,#fdeec9)}
+.pack-banner-copy{flex:1;min-width:200px}
+.pack-banner-copy strong{font-size:15px}
+.pack-banner-copy p{margin:4px 0 0;color:#7c6c3e;font-size:11px;line-height:1.7}
+.pack-overlay{position:fixed;inset:0;z-index:300;display:grid;place-items:center;padding:18px;background:rgb(19 39 71 / 72%)}
+.pack-overlay[hidden]{display:none}
+.pack-box{width:min(680px,100%);max-height:92vh;overflow:auto;padding:26px;border-radius:24px;background:#fff;text-align:center;box-shadow:0 24px 60px #0007}
+.pack-box h2{margin:4px 0 0;font-size:24px}
+.pack-lead{margin:8px 0 0;color:var(--muted);font-size:12px}
+.pack-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+.pack-slot{position:relative;perspective:700px}
+.pack-flip{position:relative;width:100%;aspect-ratio:3/4;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.2,.7,.3,1.25)}
+.pack-slot.flipped .pack-flip{transform:rotateY(180deg)}
+.pack-face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;overflow:hidden}
+.pack-face.front{cursor:pointer;box-shadow:0 10px 22px #0004;border:0;padding:0;background:none;width:100%;height:100%}
+.pack-face.front img{width:100%;height:100%;object-fit:cover;display:block}
+.pack-face.back{transform:rotateY(180deg)}
+.pack-face.back .battle-card{width:100%;height:100%}
+.pack-new{position:absolute;z-index:8;top:8px;right:8px;padding:4px 8px;border-radius:99px;background:#e2483a;color:#fff;font-size:10px;font-weight:1000;box-shadow:0 3px 8px #0005}
+.pack-bonus{display:grid;place-items:center;gap:4px;height:100%;border:2px dashed #d9c98a;border-radius:16px;background:#fdf8e3;color:#8a6d1d;font-weight:1000;padding:10px;font-size:13px;line-height:1.6}
+.pack-bonus small{font-weight:700;color:#a68d45}
+@media(max-width:560px){.pack-cards{gap:8px}.pack-box{padding:18px 12px}}

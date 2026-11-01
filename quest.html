@@ -171,9 +171,13 @@
     <section id="screen-collection" class="screen" aria-labelledby="collectionTitle" hidden>
       <div class="page-heading">
         <button class="back-button" data-action="home">← ホーム</button>
-        <div><p class="eyebrow">NAVIAN LIBRARY</p><h1 id="collectionTitle">ナビアン図鑑</h1><p class="muted">ほしい仲間を自分で選んで集めよう。ランダムなカードパックはありません。</p></div>
+        <div><p class="eyebrow">NAVIAN LIBRARY</p><h1 id="collectionTitle">ナビアン図鑑</h1><p class="muted">ほしい仲間を選んで集めることも、パックで新しい出会いを楽しむこともできるよ。</p></div>
       </div>
       <div class="panel collection-panel">
+        <div class="pack-banner">
+          <div class="pack-banner-copy"><strong>🎁 ランダムパック（3枚入り）</strong><p>まだ出会っていない仲間が出てきます。レアなボスナビが出ることも。かぶりは出ません。</p></div>
+          <button class="button primary" id="packButton" data-action="buy-pack">100Pでパックを開く</button>
+        </div>
         <div class="collection-toolbar">
           <div id="collectionFilters" class="filter-row">
             <button class="filter-chip active" data-filter="all">すべて</button>
@@ -188,6 +192,15 @@
       </div>
     </section>
   </main>
+  <div id="packOverlay" class="pack-overlay" hidden>
+    <div class="pack-box">
+      <p class="eyebrow">RANDOM PACK</p>
+      <h2>カードパック</h2>
+      <p class="pack-lead">カードをタップして開けよう！</p>
+      <div id="packCards" class="pack-cards"></div>
+      <div class="pack-actions"><button class="button primary large" data-action="close-pack">仲間を確認する →</button></div>
+    </div>
+  </div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 </div>
 
