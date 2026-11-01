@@ -17,6 +17,21 @@ const STARTER_CARDS = ['purun-little-magic-slime', 'komorin-little-night-bat', '
 const SUBJECT_ICON = { '国語': '📖', '算数': '＋', '理科': '✦', '社会': '⌖', '英語': 'A', '生活': '❀' };
 const RANK_NAME = { zako: 'ナビアン', evolved: 'エボナビ', boss: 'ボスナビ' };
 const RECRUIT_COST = { zako: 60, evolved: 120, boss: 240 };
+// カードのスキルはモンスターごとに固定。IDから決まるので、図鑑でもバトルでも同じスキルになる。
+const SKILLS = {
+  attack: { name: 'こうげき', icon: '⚔', short: '大きなダメージ' },
+  heal: { name: 'かいふく', icon: '✚', short: 'チームパワーを回復' },
+  guard: { name: 'まもり', icon: '⛨', short: '次の攻撃をふせぐ' },
+  wise: { name: 'さくせん', icon: '✦', short: 'ヒントを先に見られる' },
+  cheer: { name: 'おうえん', icon: '♪', short: '次のカードを2倍に' }
+};
+const SKILL_POOL = ['attack', 'attack', 'attack', 'attack', 'heal', 'guard', 'wise', 'cheer'];
+function skillFor(monster) {
+  const text = String((monster && monster.id) || '');
+  let hash = 0;
+  for (let i = 0; i < text.length; i += 1) hash = (hash * 31 + text.charCodeAt(i)) >>> 0;
+  return SKILL_POOL[hash % SKILL_POOL.length];
+}
 const monsterCatalog = Array.isArray(window.BATTLE_MONSTERS) ? window.BATTLE_MONSTERS : [];
 const monsterById = new Map(monsterCatalog.map((monster) => [monster.id, monster]));
 const defaults = {
@@ -78,6 +93,7 @@ function cardFor(id) {
     id: monster.id,
     monsterId: monster.id,
     rarity: monster.rank === 'boss' ? 'boss' : monster.rank === 'evolved' ? 'rare' : 'normal',
+    skill: skillFor(monster),
     effect: 'normal',
     background: monster.rank === 'boss' ? 'palace' : monster.rank === 'evolved' ? 'hill' : 'forest'
   };
@@ -195,7 +211,7 @@ async function renderSetup() {
   mixed.innerHTML = '<span class="subject-symbol">✧</span><span>ミックス</span><small>全教科から出題</small>';
   $('#subjectChoices').appendChild(mixed);
   const count = selectedSubject === '__mix' ? mixedCount : (setupCounts[selectedSubject] || 0);
-  const questionCount = Math.min(runMode === 'quest' ? 5 : 8, count);
+  const questionCount = Math.min(runMode === 'quest' ? 10 : 8, count);
   $('#setupQuestionCount').textContent = questionCount + '問';
   $('#setupModeText').textContent = runMode === 'quest' ? '・クエストバトル' : '・特訓モード';
   $('#startSetupButton').innerHTML = (runMode === 'quest' ? 'クエスト開始' : '特訓をはじめる') + ' <span class="button-arrow">→</span>';
@@ -236,7 +252,7 @@ async function beginSetupRun() {
     button.disabled = false;
     return;
   }
-  const limit = runMode === 'quest' ? 5 : 8;
+  const limit = runMode === 'quest' ? 10 : 8;
   const questions = shuffle(pool).slice(0, Math.min(limit, pool.length));
   lastConfig = { mode: runMode, grade: selectedGrade, subject: selectedSubject };
   startRun(runMode, questions, selectedGrade, selectedSubject);
@@ -279,9 +295,16 @@ function startRun(mode, questions, grade, subject) {
     skillUsed: [],
     team: selectedTeam,
     cardIndex: 0,
+    selectedCard: 0,
+    handUsed: [],
+    guardUp: false,
+    cheerUp: false,
+    teamMaxHp: 20,
+    teamHp: 20,
+    teamDown: false,
     enemy,
-    enemyMaxHp: Math.max(2, cleanQuestions.length * 2),
-    enemyHp: Math.max(2, cleanQuestions.length * 2),
+    enemyMaxHp: enemy ? ({ zako: 8, evolved: 12, boss: 16 }[enemy.rank] || 10) : 0,
+    enemyHp: enemy ? ({ zako: 8, evolved: 12, boss: 16 }[enemy.rank] || 10) : 0,
     pointsEarned: 0,
     rewardKey: ['quest', 'practice'].includes(mode) ? (new Date().toLocaleDateString('sv-SE') + '-grade-' + grade) : null,
     rewardEligible: ['quest', 'practice'].includes(mode) && !state.dailyRewards[new Date().toLocaleDateString('sv-SE') + '-grade-' + grade],
@@ -306,9 +329,51 @@ function renderBattle() {
   $('#practiceBuddy').hidden = isQuest;
   $('#battleModeEyebrow').textContent = isQuest ? 'NAVIAN QUEST' : 'PRACTICE STUDIO';
   $('#battleTitle').textContent = isQuest ? 'クエストバトル' : '特訓モード';
+  $('#teamPower').hidden = !isQuest;
+  $('#partyHelp').textContent = isQuest
+    ? 'カードを1枚えらんで、問題に正解すると発動。使う順番が勝負のポイント。'
+    : '問題ごとにカードが交代。正解すると経験値がたまります。';
   if (isQuest && active.enemy) drawEnemy();
-  drawParty();
+  drawPartyArea();
   drawQuestion();
+}
+
+function drawPartyArea() {
+  if (!active) return;
+  if (active.mode === 'quest') {
+    drawHand();
+    drawTeamPower();
+  } else {
+    drawParty();
+  }
+}
+
+function drawTeamPower() {
+  if (!active) return;
+  $('#teamHp').textContent = String(Math.max(0, active.teamHp));
+  $('#teamMaxHp').textContent = String(active.teamMaxHp);
+  $('#teamHpBar').style.width = Math.max(0, (active.teamHp / active.teamMaxHp) * 100) + '%';
+  const status = [];
+  if (active.guardUp) status.push('⛨ まもり中：次の攻撃をふせぐ');
+  if (active.cheerUp) status.push('♪ おうえん中：次のカードのダメージ2倍');
+  $('#teamStatus').textContent = status.join('　');
+}
+
+function drawHand() {
+  if (!active) return;
+  $('#teamRail').innerHTML = active.team.map((id, index) => {
+    const card = cardFor(id);
+    if (!card) return '';
+    const level = levelFor(state.xp[id] || 0);
+    const skill = SKILLS[card.skill] || SKILLS.attack;
+    const used = active.handUsed.includes(id);
+    const selected = index === active.selectedCard && !used;
+    return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
+      '<span class="hand-card-art">' + renderCard(card, { showInfo: false, mini: true }) + '</span>' +
+      '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + '</small>' +
+      '<span class="skill-chip">' + skill.icon + ' ' + skill.name + '：' + skill.short + '</span>' +
+      (used ? '<span class="used-label">休憩中</span>' : '') + '</span></button>';
+  }).join('');
 }
 
 function drawEnemy() {
@@ -381,7 +446,21 @@ function drawQuestion() {
     row.append(input, submit);
     choices.appendChild(row);
   }
-  drawParty();
+  drawPreHint();
+  drawPartyArea();
+}
+
+function drawPreHint() {
+  const box = $('#preHint');
+  if (!box) return;
+  if (!active || active.mode !== 'quest' || active.locked) { box.hidden = true; return; }
+  const card = cardFor(active.team[active.selectedCard]);
+  if (card && card.skill === 'wise' && !active.handUsed.includes(card.id)) {
+    box.textContent = '✦ ' + card.name + 'の「さくせん」： ' + hintText(active.question);
+    box.hidden = false;
+  } else {
+    box.hidden = true;
+  }
 }
 
 function feedback(title, body, actions, isMiss) {
@@ -507,9 +586,9 @@ function handleCorrect(q, firstTry) {
   state.stats.totalCorrect = (Number(state.stats.totalCorrect) || 0) + 1;
   if (firstTry) state.stats.firstTryCorrect = (Number(state.stats.firstTryCorrect) || 0) + 1;
 
-  const cardId = active.team[active.cardIndex];
-  checkLevelUp(cardId);
   const isQuest = active.mode === 'quest';
+  const cardId = isQuest ? active.team[active.selectedCard] : active.team[active.cardIndex];
+  checkLevelUp(cardId);
   const basePoints = isQuest ? (firstTry ? 10 : 5) : (firstTry ? 5 : 3);
   // The first completed run per grade each day earns full rewards. Repeating easier grades is practice, not a point-farming shortcut.
   const points = active.rewardEligible ? basePoints * active.rewardMultiplier : Math.max(1, Math.floor(basePoints / 5));
@@ -518,33 +597,56 @@ function handleCorrect(q, firstTry) {
 
   const notes = ['カードP +' + points + '。'];
   if (isQuest && active.enemyHp > 0) {
-    let damage = firstTry ? 2 : 1;
-    const currentCard = cardFor(cardId);
+    active.combo = firstTry ? active.combo + 1 : 0;
+    const card = cardFor(cardId);
+    const skill = card ? (card.skill || 'attack') : 'attack';
+    const skillInfo = SKILLS[skill] || SKILLS.attack;
+    const level = levelFor(state.xp[cardId] || 0);
     const qSubject = q.subject || active.subject;
-    if (firstTry && currentCard && currentCard.subject === qSubject && !active.skillUsed.includes(cardId)) {
-      damage += 1;
-      active.skillUsed.push(cardId);
-      notes.push(currentCard.name + 'の得意教科スキル！');
-    }
-    if (firstTry) {
-      active.combo += 1;
-      if (active.combo === 3 && !active.comboBonusUsed) {
-        damage += 1;
-        active.comboBonusUsed = true;
-        notes.push('3連続正解ボーナス！');
-      }
+    const subjectMatch = Boolean(card && card.subject === qSubject);
+    active.handUsed.push(cardId);
+    let damage = 0;
+    if (skill === 'attack') {
+      damage = ({ zako: 2, evolved: 3, boss: 4 }[card.rank] || 2) + (level >= 3 ? 1 : 0) + (level >= 5 ? 1 : 0);
+    } else if (skill === 'wise') {
+      damage = 3;
     } else {
-      active.combo = 0;
+      damage = 1;
+    }
+    if (subjectMatch) damage += 1;
+    if (!firstTry) damage = Math.max(1, Math.ceil(damage / 2));
+    let cheerNote = '';
+    if (active.cheerUp && damage > 0) {
+      damage *= 2;
+      active.cheerUp = false;
+      cheerNote = 'おうえん効果で2倍！';
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
-    notes.push('カードの攻撃：' + damage + 'ダメージ。');
+    notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + cheerNote);
+    if (skill === 'heal') {
+      const before = active.teamHp;
+      active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3));
+      notes.push('チームパワーが ' + (active.teamHp - before) + ' 回復した。');
+    }
+    if (skill === 'guard') {
+      active.guardUp = true;
+      notes.push('次の相手の攻撃をふせぐよ。');
+    }
+    if (skill === 'cheer') {
+      active.cheerUp = true;
+      notes.push('次のカードのダメージが2倍になるよ。');
+    }
+    if (active.handUsed.length >= active.team.length) {
+      active.handUsed = [];
+      notes.push('全員のカードが戻ってきた！');
+    }
     drawEnemy();
   } else {
     active.combo = firstTry ? active.combo + 1 : 0;
   }
   applyReviewCorrect(q, firstTry);
   saveState();
-  drawParty();
+  drawPartyArea();
   $('#comboBadge').textContent = '連続正解 ' + active.combo;
   feedback(firstTry ? '正解！' : 'よく考えたね！', notes.join('\n') + '\n' + explanationText(q), [
     { name: 'next-question', label: '次の問題へ →', className: 'primary' }
@@ -586,7 +688,33 @@ function advanceQuestion() {
     finishRun();
     return;
   }
-  active.cardIndex = (active.cardIndex + 1) % Math.max(1, active.team.length);
+  if (active.mode === 'quest' && active.enemyHp > 0) {
+    const enemyDamage = { zako: 1, evolved: 2, boss: 2 }[active.enemy.rank] || 1;
+    if (active.guardUp) {
+      active.guardUp = false;
+      notify('⛨ まもりが、相手の攻撃をふせいだ！');
+    } else {
+      active.teamHp = Math.max(0, active.teamHp - enemyDamage);
+      notify('相手の攻撃！ チームパワー -' + enemyDamage);
+      const enemyCard = $('#enemyCard');
+      if (enemyCard) {
+        enemyCard.classList.remove('enemy-attacking');
+        void enemyCard.offsetWidth;
+        enemyCard.classList.add('enemy-attacking');
+      }
+    }
+    if (active.teamHp <= 0) {
+      active.teamDown = true;
+      finishRun();
+      return;
+    }
+  }
+  if (active.mode === 'quest') {
+    const nextFree = active.team.findIndex((id) => !active.handUsed.includes(id));
+    active.selectedCard = nextFree >= 0 ? nextFree : 0;
+  } else {
+    active.cardIndex = (active.cardIndex + 1) % Math.max(1, active.team.length);
+  }
   active.question = active.questions[active.index];
   active.attempts = 0;
   active.locked = false;
@@ -596,6 +724,9 @@ function advanceQuestion() {
 function finishRun() {
   if (!active) return;
   const isQuest = active.mode === 'quest';
+  if (isQuest && active.teamDown) {
+    active.questions = active.questions.slice(0, Math.max(1, active.index));
+  }
   const cleared = isQuest && active.enemyHp <= 0;
   const finishReward = isQuest ? (cleared ? (active.rewardEligible ? 25 * active.rewardMultiplier : 3) : (active.rewardEligible ? 5 * active.rewardMultiplier : 1)) : 0;
   if (finishReward) {
@@ -616,9 +747,11 @@ function renderResult(cleared) {
   $('#resultMark').style.background = isQuest && !cleared ? 'var(--amber-soft)' : 'var(--green-soft)';
   $('#resultMark').style.color = isQuest && !cleared ? 'var(--amber)' : 'var(--green)';
   $('#resultEyebrow').textContent = isQuest ? 'QUEST REPORT' : 'PRACTICE REPORT';
-  $('#resultTitle').textContent = isQuest ? (cleared ? 'クエストクリア！' : 'あと少し！') : '特訓完了！';
+  $('#resultTitle').textContent = isQuest ? (cleared ? 'クエストクリア！' : (active.teamDown ? 'おつかれさま！' : 'あと少し！')) : '特訓完了！';
   if (isQuest && cleared) {
     $('#resultLead').textContent = 'ナビアンを撃破！問題に向き合ったことが、次の力になる。';
+  } else if (isQuest && active.teamDown) {
+    $('#resultLead').textContent = 'チームが休憩に入ったよ。受け取ったカードPはそのまま使える。特訓して、カードを育てて、また挑戦しよう。';
   } else if (isQuest) {
     $('#resultLead').textContent = 'あと少しでクリア。今回のポイントは受け取り、特訓してから再挑戦しよう。';
   } else {
@@ -752,7 +885,7 @@ function renderCollection() {
       : '<button class="button primary" data-action="recruit" data-id="' + monster.id + '"' + (state.points < costFor(monster) ? ' disabled' : '') + '>' + costFor(monster) + 'Pで仲間に</button>';
     return '<article class="collection-item' + (owned ? ' owned' : '') + '">' +
       '<div class="collection-art">' + renderCard(card, { showInfo: true }) + '</div>' +
-      '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + (owned ? '・Lv.' + level : '') + '</small></div>' +
+      '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + '・スキル：' + ((SKILLS[card.skill] || SKILLS.attack).name) + (owned ? '・Lv.' + level : '') + '</small></div>' +
       '<div class="collection-actions">' + action + '</div></article>';
   }).join('');
   if (!displayList.length) {
@@ -823,6 +956,17 @@ function handleAction(action, button) {
   }
   if (action === 'show-answer') { revealAnswer(); return; }
   if (action === 'next-question') { advanceQuestion(); return; }
+  if (action === 'select-card') {
+    if (!active || active.mode !== 'quest' || active.locked) return;
+    const index = Number(button.dataset.index);
+    const id = active.team[index];
+    if (id && !active.handUsed.includes(id)) {
+      active.selectedCard = index;
+      drawHand();
+      drawPreHint();
+    }
+    return;
+  }
   if (action === 'submit-typed') {
     if ($('#typedAnswer')) handleAnswer($('#typedAnswer').value);
     return;

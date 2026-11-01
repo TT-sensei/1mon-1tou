@@ -104,6 +104,7 @@
           <div class="question-topline"><span id="questionBadge" class="question-badge">1年・国語</span><span id="comboBadge" class="combo-badge">連続正解 0</span></div>
           <div class="question-number">QUESTION <strong id="questionNumber">01</strong></div>
           <h2 id="questionText" class="question-text">問題を読み込んでいます。</h2>
+          <div id="preHint" class="pre-hint" hidden></div>
           <div id="answerChoices" class="answer-choices"></div>
           <div id="feedbackPanel" class="feedback-panel" hidden aria-live="polite">
             <div id="feedbackSymbol" class="feedback-symbol">✓</div>
@@ -114,7 +115,12 @@
 
         <aside id="partyPanel" class="panel party-panel">
           <div class="panel-heading compact"><div><p class="eyebrow">YOUR TEAM</p><h2>いっしょに戦う仲間</h2></div></div>
-          <p class="party-help">問題ごとにカードが交代。正解すると経験値がたまります。</p>
+          <p class="party-help" id="partyHelp">問題ごとにカードが交代。正解すると経験値がたまります。</p>
+          <div id="teamPower" class="team-power" hidden>
+            <div class="team-power-head"><span>チームパワー</span><strong><span id="teamHp">20</span> / <span id="teamMaxHp">20</span></strong></div>
+            <div class="health-track team"><i id="teamHpBar"></i></div>
+            <p id="teamStatus" class="team-status"></p>
+          </div>
           <div id="teamRail" class="team-rail"></div>
           <div id="practiceBuddy" class="practice-buddy" hidden><span class="buddy-mark">◎</span><strong>特訓モード</strong><p>相手も制限時間もありません。覚えることに集中しよう。</p></div>
         </aside>
