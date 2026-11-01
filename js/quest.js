@@ -27,6 +27,7 @@ const SKILLS = {
   cheer: { name: 'おうえん', icon: '♪', short: '次のカードを2倍に' }
 };
 const SKILL_POOL = ['attack', 'attack', 'attack', 'attack', 'heal', 'guard', 'wise', 'cheer'];
+const CHARGE_COST = { zako: 4, evolved: 5, boss: 6 };
 function skillFor(monster) {
   const text = String((monster && monster.id) || '');
   let hash = 0;
@@ -306,11 +307,12 @@ function buildWaves(grade, subject) {
 function enemyNextAction() {
   if (!active || !active.enemy) return { type: 'attack', damage: 1 };
   const rankDamage = { zako: 1, evolved: 2, boss: 2 }[active.enemy.rank] || 1;
+  const boost = Number(active.enemyBoost) || 0;
   if (active.enemyPattern === 'charger') {
-    if (active.enemyCharged) return { type: 'big', damage: rankDamage * 2 };
+    if (active.enemyCharged) return { type: 'big', damage: rankDamage * 2 + boost };
     if (active.enemyTurn % 3 === 1) return { type: 'charge', damage: 0 };
   }
-  return { type: 'attack', damage: rankDamage };
+  return { type: 'attack', damage: rankDamage + boost };
 }
 
 function startRun(mode, questions, grade, subject) {
@@ -341,8 +343,12 @@ function startRun(mode, questions, grade, subject) {
     cardIndex: 0,
     selectedCard: 0,
     handUsed: [],
-    guardUp: false,
-    cheerUp: false,
+    guardBlocks: 0,
+    cheerMult: 0,
+    charges: {},
+    panel: null,
+    enemyBoost: 0,
+    questionShownAt: 0,
     teamMaxHp: 24,
     teamHp: 24,
     teamDown: false,
@@ -404,8 +410,8 @@ function drawTeamPower() {
   $('#teamMaxHp').textContent = String(active.teamMaxHp);
   $('#teamHpBar').style.width = Math.max(0, (active.teamHp / active.teamMaxHp) * 100) + '%';
   const status = [];
-  if (active.guardUp) status.push('⛨ まもり中：次の攻撃をふせぐ');
-  if (active.cheerUp) status.push('♪ おうえん中：次のカードのダメージ2倍');
+  if (active.guardBlocks > 0) status.push('⛨ まもり中：あと' + active.guardBlocks + '回ふせげる');
+  if (active.cheerMult > 0) status.push('♪ おうえん中：次のカードのダメージ' + active.cheerMult + '倍');
   $('#teamStatus').textContent = status.join('　');
 }
 
@@ -418,10 +424,15 @@ function drawHand() {
     const skill = SKILLS[card.skill] || SKILLS.attack;
     const used = active.handUsed.includes(id);
     const selected = index === active.selectedCard && !used;
-    return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
+    const cost = CHARGE_COST[card.rank] || 4;
+    const charge = Math.min(cost, Number(active.charges[id]) || 0);
+    const charged = charge >= cost;
+    const pips = '●'.repeat(charge) + '○'.repeat(Math.max(0, cost - charge));
+    return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + (charged && !used ? ' charged' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
       '<span class="hand-card-art">' + renderCard(card, { showInfo: false, mini: true }) + '</span>' +
       '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + '</small>' +
       '<span class="skill-chip">' + skill.icon + ' ' + skill.name + '：' + skill.short + '</span>' +
+      '<span class="charge-pips' + (charged ? ' full' : '') + '">' + (charged ? 'ひっさつOK！ ' : 'ひっさつ ') + pips + '</span>' +
       (used ? '<span class="used-label">休憩中</span>' : '') + '</span></button>';
   }).join('');
 }
@@ -479,6 +490,12 @@ function drawQuestion() {
   const q = active.question;
   active.displayChoices = Array.isArray(q.choices) ? shuffle(q.choices) : [];
   active.locked = false;
+  if (active.mode === 'quest') {
+    active.panel = null;
+    active.panelBoostApplied = false;
+    active.panelOrder = shuffle([1, 2, 3]);
+    active.questionShownAt = Date.now();
+  }
   $('#battleQuestionCount').textContent = active.mode === 'quest'
     ? '第' + (active.waveIndex + 1) + '戦 ・ ' + (active.index + 1) + '問目'
     : (active.index + 1) + ' / ' + active.questions.length;
@@ -521,8 +538,27 @@ function drawQuestion() {
     row.append(input, submit);
     choices.appendChild(row);
   }
+  if (active.mode === 'quest' && !active.panel) {
+    choices.querySelectorAll('button').forEach((b) => { b.disabled = true; });
+    const typed = $('#typedAnswer');
+    if (typed) typed.disabled = true;
+  }
+  drawPanels();
   drawPreHint();
   drawPartyArea();
+}
+
+function drawPanels() {
+  const box = $('#panelChoices');
+  if (!box) return;
+  if (!active || active.mode !== 'quest') { box.hidden = true; box.innerHTML = ''; return; }
+  const order = active.panelOrder || [1, 2, 3];
+  box.innerHTML = '<span class="panel-choices-label">パネルをえらぼう</span>' + order.map((colors) => {
+    const label = colors === 1 ? 'あんしん' : colors === 2 ? 'かいしん 50%' : 'かいしん確定';
+    const sub = colors === 1 ? 'そのまま発動' : colors === 2 ? '当たれば2倍' : '必ず2倍・ミスで敵+1';
+    return '<button type="button" class="panel-choice colors-' + colors + (active.panel && active.panel.colors === colors ? ' selected' : '') + '" data-action="select-panel" data-colors="' + colors + '"><span class="panel-orbs">' + '<i></i>'.repeat(colors) + '</span><strong>' + label + '</strong><small>' + sub + '</small></button>';
+  }).join('');
+  box.hidden = false;
 }
 
 function drawPreHint() {
@@ -647,6 +683,10 @@ function spawnFloater(anchor, text, className) {
 
 function handleAnswer(selected) {
   if (!active || active.locked) return;
+  if (active.mode === 'quest' && !active.panel) {
+    notify('まずパネルを選んでね。');
+    return;
+  }
   if (selected === undefined || selected === null || String(selected).trim() === '') {
     notify('答えを選ぶか、入力してね。');
     return;
@@ -690,6 +730,9 @@ function handleCorrect(q, firstTry) {
     const qSubject = q.subject || active.subject;
     const subjectMatch = Boolean(card && card.subject === qSubject);
     active.handUsed.push(cardId);
+    const chargeCost = CHARGE_COST[card.rank] || 4;
+    const special = (Number(active.charges[cardId]) || 0) >= chargeCost;
+    if (special) active.charges[cardId] = 0;
     let damage = 0;
     if (skill === 'attack') {
       damage = ({ zako: 2, evolved: 3, boss: 4 }[card.rank] || 2) + (level >= 3 ? 1 : 0) + (level >= 5 ? 1 : 0);
@@ -699,15 +742,30 @@ function handleCorrect(q, firstTry) {
       damage = 1;
     }
     if (subjectMatch) damage += 1;
+    const chainBonus = active.combo >= 6 ? 2 : active.combo >= 3 ? 1 : 0;
+    damage += chainBonus;
+    const speedBonus = firstTry && active.questionShownAt && (Date.now() - active.questionShownAt <= 7000) ? 1 : 0;
+    damage += speedBonus;
     if (!firstTry) damage = Math.max(1, Math.ceil(damage / 2));
-    let cheerNote = '';
-    if (active.cheerUp && damage > 0) {
+    let crit = false;
+    if (active.panel && firstTry) {
+      if (active.panel.colors === 3) crit = true;
+      else if (active.panel.colors === 2) crit = Math.random() < 0.5;
+    }
+    let effectNote = '';
+    if (special) {
+      damage = damage * 2 + 2;
+      effectNote = 'ひっさつわざ！';
+    } else if (crit) {
       damage *= 2;
-      active.cheerUp = false;
-      cheerNote = 'おうえん効果で2倍！';
+      effectNote = 'かいしん！';
+    } else if (active.cheerMult > 0 && damage > 0) {
+      damage *= active.cheerMult;
+      effectNote = 'おうえん効果で' + active.cheerMult + '倍！';
+      active.cheerMult = 0;
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
-    notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + cheerNote);
+    notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + (chainBonus ? '（チェイン +' + chainBonus + '）' : '') + (speedBonus ? '（はやい +1）' : '') + effectNote);
     if (active.enemyHp <= 0) {
       if (active.waveIndex >= active.waves.length - 1) {
         active.questCleared = true;
@@ -719,24 +777,28 @@ function handleCorrect(q, firstTry) {
     let healedAmount = 0;
     if (skill === 'heal') {
       const before = active.teamHp;
-      active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3));
+      active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3) * (special ? 2 : 1));
       healedAmount = active.teamHp - before;
       notes.push('チームパワーが ' + healedAmount + ' 回復した。');
     }
     if (skill === 'guard') {
-      active.guardUp = true;
-      notes.push('次の相手の攻撃をふせぐよ。');
+      active.guardBlocks = special ? 2 : 1;
+      notes.push(special ? '次の2回の攻撃をふせぐよ。' : '次の相手の攻撃をふせぐよ。');
     }
     if (skill === 'cheer') {
-      active.cheerUp = true;
-      notes.push('次のカードのダメージが2倍になるよ。');
+      active.cheerMult = special ? 3 : 2;
+      notes.push('次のカードのダメージが' + active.cheerMult + '倍になるよ。');
     }
     if (active.handUsed.length >= active.team.length) {
       active.handUsed = [];
       notes.push('全員のカードが戻ってきた！');
     }
+    active.team.forEach((id) => {
+      const cost = CHARGE_COST[(cardFor(id) || {}).rank] || 4;
+      active.charges[id] = Math.min(cost, (Number(active.charges[id]) || 0) + 1);
+    });
     drawEnemy();
-    spawnFloater($('#enemyCard'), '-' + damage, cheerNote ? 'big' : '');
+    spawnFloater($('#enemyCard'), '-' + damage, (special || crit) ? 'big' : '');
     const enemyEl = $('#enemyCard');
     enemyEl.classList.remove('hit-shake');
     void enemyEl.offsetWidth;
@@ -773,7 +835,13 @@ function handleWrong(q) {
     active.attempts = 1;
     active.combo = 0;
     $('#comboBadge').textContent = '連続正解 0';
-    feedback('おしい！ ヒントを見よう', hintText(q), [
+    let boostNote = '';
+    if (active.mode === 'quest' && active.panel && active.panel.colors === 3 && !active.panelBoostApplied) {
+      active.panelBoostApplied = true;
+      active.enemyBoost = 1;
+      boostNote = '\n3色パネルの効果で、相手の次の攻撃が +1 されるよ。';
+    }
+    feedback('おしい！ ヒントを見よう', hintText(q) + boostNote, [
       { name: 'retry-question', label: 'もう一度こたえる', className: 'primary' },
       { name: 'show-answer', label: '答えを見て次へ', className: 'secondary' }
     ], true);
@@ -831,13 +899,15 @@ function advanceQuestion() {
         void enemyCard.offsetWidth;
         enemyCard.classList.add('enemy-attacking');
       }
-    } else if (active.guardUp) {
-      active.guardUp = false;
+    } else if (active.guardBlocks > 0) {
+      active.guardBlocks -= 1;
+      active.enemyBoost = 0;
       if (next.type === 'big') active.enemyCharged = false;
       notify('⛨ まもりが、相手の攻撃をふせいだ！');
       spawnFloater($('#teamPower'), 'ふせいだ！', 'buff');
     } else {
       active.teamHp = Math.max(0, active.teamHp - next.damage);
+      active.enemyBoost = 0;
       if (next.type === 'big') active.enemyCharged = false;
       notify(next.type === 'big' ? '大こうげき！ チームパワー -' + next.damage : '相手の攻撃！ チームパワー -' + next.damage);
       spawnFloater($('#teamPower'), '-' + next.damage, next.type === 'big' ? 'big' : '');
@@ -1165,6 +1235,15 @@ function handleAction(action, button) {
   }
   if (action === 'show-answer') { revealAnswer(); return; }
   if (action === 'next-question') { advanceQuestion(); return; }
+  if (action === 'select-panel') {
+    if (!active || active.mode !== 'quest' || active.locked) return;
+    active.panel = { colors: Number(button.dataset.colors) || 1 };
+    document.querySelectorAll('#answerChoices button').forEach((b) => { b.disabled = false; });
+    const typed = $('#typedAnswer');
+    if (typed) typed.disabled = false;
+    drawPanels();
+    return;
+  }
   if (action === 'select-card') {
     if (!active || active.mode !== 'quest' || active.locked) return;
     const index = Number(button.dataset.index);
