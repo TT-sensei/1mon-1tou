@@ -48,7 +48,7 @@ window.QUESTION_BANK['2-math'] = window.QUESTION_BANK['2-math'].concat([
    "56"
   ],
   "answer": "62",
-  "hint": "一の位から じゅんに 計算しよう。"
+  "hint": "一のくらいから じゅんに 計算しよう。"
  },
  {
   "id": "g2-math-a02",

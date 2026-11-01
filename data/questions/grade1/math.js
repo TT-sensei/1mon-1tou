@@ -70,14 +70,14 @@ window.QUESTION_BANK['1-math'] = window.QUESTION_BANK['1-math'].concat([
   "grade": 1,
   "subject": "算数",
   "type": "choice",
-  "question": "とけいの 短いはりが 3、長いはりが 12 のときは 何時？",
+  "question": "とけいの みじかい はりが 3、ながい はりが 12 のときは なんじ？",
   "choices": [
-   "3時",
-   "12時",
-   "4時",
-   "3時半"
+   "3じ",
+   "12じ",
+   "4じ",
+   "3じはん"
   ],
-  "answer": "3時",
-  "hint": "短いはりが 時を あらわすよ。"
+  "answer": "3じ",
+  "hint": "みじかい はりが じかんを あらわすよ。"
  }
 ]);

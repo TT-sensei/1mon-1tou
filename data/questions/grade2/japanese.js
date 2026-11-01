@@ -30,7 +30,7 @@ window.QUESTION_BANK['2-japanese'] = [
 {id:'g2-jp-027',grade:2,subject:'国語',type:'choice',question:'「三人」の よみかたは？',choices:['さんにん','さんじん','みたり','さんり'],answer:'さんにん',hint:'人を かぞえる ときの よみかただよ。'},
 {id:'g2-jp-028',grade:2,subject:'国語',type:'choice',question:'「名前」の よみかたは？',choices:['なまえ','めいまえ','なまな','なまい'],answer:'なまえ',hint:'人や ものを よぶ ときの なまえだよ。'},
 {id:'g2-jp-029',grade:2,subject:'国語',type:'choice',question:'「黄色い ぼうし」で、いろを あらわす ことばは？',choices:['黄色い','ぼうし','で','い'],answer:'黄色い',hint:'どんな いろかを あらわしているよ。'},
-{id:'g2-jp-030',grade:2,subject:'国語',type:'choice',question:'「今日は 晴れです。」の「晴れ」の よみかたは？',choices:['はれ','くもり','あめ','ゆき'],answer:'はれ',hint:'太陽が でている てんきだよ。'}
+{id:'g2-jp-030',grade:2,subject:'国語',type:'choice',question:'「今日は 晴れです。」の「晴れ」の よみかたは？',choices:['はれ','くもり','あめ','ゆき'],answer:'はれ',hint:'たいようが でている てんきだよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）
@@ -48,22 +48,22 @@ window.QUESTION_BANK['2-japanese'] = window.QUESTION_BANK['2-japanese'].concat([
    "もとき"
   ],
   "answer": "げんき",
-  "hint": "体の調子がよい様子だよ。"
+  "hint": "からだの ちょうしが よい ようすだよ。"
  },
  {
   "id": "g2-japanese-a02",
   "grade": 2,
   "subject": "国語",
   "type": "choice",
-  "question": "「犬が走る。」の主語は？",
+  "question": "「上」の はんたいの いみの ことばは？",
   "choices": [
-   "犬が",
-   "走る",
-   "犬",
-   "が"
+   "下",
+   "中",
+   "左",
+   "右"
   ],
-  "answer": "犬が",
-  "hint": "「何がどうする」の「何が」だよ。"
+  "answer": "下",
+  "hint": "上と下は、はんたいの いみだよ。"
  },
  {
   "id": "g2-japanese-a03",

@@ -77,7 +77,7 @@ function syncHeaderToggles() {
   if (sb) { sb.textContent = soundOn ? '🔊 音 ON' : '🔇 音 OFF'; sb.setAttribute('aria-pressed', String(soundOn)); }
 }
 function syncFuriganaMode() {
-  const on = furiganaOn && active && Number(active.grade) <= 2;
+  const on = furiganaOn && active && (Number(active.grade) <= 2 || active.subject === '理科' || active.subject === '社会');
   document.body.dataset.furigana = on ? 'on' : 'off';
   if (window.NaviFurigana) window.NaviFurigana.refresh();
 }
