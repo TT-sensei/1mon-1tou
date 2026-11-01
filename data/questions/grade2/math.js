@@ -32,3 +32,52 @@ window.QUESTION_BANK['2-math'] = [
 {id:'g2-math-029',grade:2,subject:'算数',type:'choice',question:'100円の おかしを かって、50円を はらったら たりる？',choices:['たりる','たりない','おなじ','わからない'],answer:'たりない',hint:'100円の ほうが 50円より おおきいよ。'},
 {id:'g2-math-030',grade:2,subject:'算数',type:'choice',question:'20 + 20 + 20 は いくつ？',choices:['40','50','60','80'],answer:'60',hint:'20を 3こ たしてみよう。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['2-math'] = window.QUESTION_BANK['2-math'].concat([
+ {
+  "id": "g2-math-a01",
+  "grade": 2,
+  "subject": "算数",
+  "type": "choice",
+  "question": "34 ＋ 28 は？",
+  "choices": [
+   "62",
+   "52",
+   "64",
+   "56"
+  ],
+  "answer": "62",
+  "hint": "一の位から じゅんに 計算しよう。"
+ },
+ {
+  "id": "g2-math-a02",
+  "grade": 2,
+  "subject": "算数",
+  "type": "choice",
+  "question": "50cm と 50cm を 合わせると？",
+  "choices": [
+   "1m",
+   "10cm",
+   "100m",
+   "5m"
+  ],
+  "answer": "1m",
+  "hint": "100cm は 1m だよ。"
+ },
+ {
+  "id": "g2-math-a03",
+  "grade": 2,
+  "subject": "算数",
+  "type": "choice",
+  "question": "2時半の 30分前は？",
+  "choices": [
+   "2時",
+   "1時半",
+   "3時",
+   "2時15分"
+  ],
+  "answer": "2時",
+  "hint": "「半」は 30分のことだよ。"
+ }
+]);

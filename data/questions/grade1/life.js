@@ -32,3 +32,52 @@ window.QUESTION_BANK['1-life'] = [
 {id:'g1-life-029',grade:1,subject:'生活',type:'choice',question:'あさ、がっこうへ いくまえに たしかめると よいものは？',choices:['もちもの','テレビの おと','おもちゃの かず','くるまの かず'],answer:'もちもの',hint:'わすれものが ないか みてみよう。'},
 {id:'g1-life-030',grade:1,subject:'生活',type:'choice',question:'こまったことが あったとき、どうする？',choices:['せんせいや おうちの ひとに つたえる','ひとりで かくす','にげつづける','だまって がまんする'],answer:'せんせいや おうちの ひとに つたえる',hint:'こまったときは おとなに そうだんしよう。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['1-life'] = window.QUESTION_BANK['1-life'].concat([
+ {
+  "id": "g1-life-a01",
+  "grade": 1,
+  "subject": "生活",
+  "type": "choice",
+  "question": "あさがおの たねを まくのは、いつごろ？",
+  "choices": [
+   "春",
+   "秋",
+   "冬",
+   "真夏"
+  ],
+  "answer": "春",
+  "hint": "暖かくなるころに まくよ。"
+ },
+ {
+  "id": "g1-life-a02",
+  "grade": 1,
+  "subject": "生活",
+  "type": "choice",
+  "question": "学校で 使った 道具は、どうする？",
+  "choices": [
+   "もとの 場所に なおす",
+   "そのまま 置いておく",
+   "隠す",
+   "持って帰る"
+  ],
+  "answer": "もとの 場所に なおす",
+  "hint": "次に使う人のことを 考えよう。"
+ },
+ {
+  "id": "g1-life-a03",
+  "grade": 1,
+  "subject": "生活",
+  "type": "choice",
+  "question": "雨の日に 安全なのは？",
+  "choices": [
+   "明るい色の服を着る",
+   "走って渡る",
+   "傘を振り回す",
+   "水たまりで遊ぶ"
+  ],
+  "answer": "明るい色の服を着る",
+  "hint": "車から 見えやすい色が 安全だよ。"
+ }
+]);

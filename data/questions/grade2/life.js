@@ -32,3 +32,52 @@ window.QUESTION_BANK['2-life'] = [
 {id:'g2-life-029',grade:2,subject:'生活',type:'choice',question:'朝、学校へ 行くまえに たしかめると よいことは？',choices:['わすれものが ないか','テレビの 音を 大きくする','ゲームを つづける','ねる'],answer:'わすれものが ないか',hint:'時間割を 見て じゅんびしよう。'},
 {id:'g2-life-030',grade:2,subject:'生活',type:'choice',question:'友だちと いっしょに する とき、たいせつなのは？',choices:['なかよく そうだんする','じぶんだけで きめる','人の はなしを きかない','おして うばう'],answer:'なかよく そうだんする',hint:'おたがいの かんがえを きこう。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['2-life'] = window.QUESTION_BANK['2-life'].concat([
+ {
+  "id": "g2-life-a01",
+  "grade": 2,
+  "subject": "生活",
+  "type": "choice",
+  "question": "野さいが 育つために 大切なのは？",
+  "choices": [
+   "水と日光",
+   "水だけ",
+   "日光だけ",
+   "暗い場所"
+  ],
+  "answer": "水と日光",
+  "hint": "植物が育つ条件を 思い出そう。"
+ },
+ {
+  "id": "g2-life-a02",
+  "grade": 2,
+  "subject": "生活",
+  "type": "choice",
+  "question": "町の 見学をするときの 約束は？",
+  "choices": [
+   "静かに聞く",
+   "走り回る",
+   "勝手に触る",
+   "大きな声で話す"
+  ],
+  "answer": "静かに聞く",
+  "hint": "働く人の じゃまを しないようにしよう。"
+ },
+ {
+  "id": "g2-life-a03",
+  "grade": 2,
+  "subject": "生活",
+  "type": "choice",
+  "question": "生き物の 世話で、毎日 することは？",
+  "choices": [
+   "えさと水をあげる",
+   "時々見るだけ",
+   "何もしない",
+   "外に放す"
+  ],
+  "answer": "えさと水をあげる",
+  "hint": "命を預かる責任があるよ。"
+ }
+]);

@@ -32,3 +32,52 @@ window.QUESTION_BANK['2-japanese'] = [
 {id:'g2-jp-029',grade:2,subject:'国語',type:'choice',question:'「黄色い ぼうし」で、いろを あらわす ことばは？',choices:['黄色い','ぼうし','で','い'],answer:'黄色い',hint:'どんな いろかを あらわしているよ。'},
 {id:'g2-jp-030',grade:2,subject:'国語',type:'choice',question:'「今日は 晴れです。」の「晴れ」の よみかたは？',choices:['はれ','くもり','あめ','ゆき'],answer:'はれ',hint:'太陽が でている てんきだよ。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['2-japanese'] = window.QUESTION_BANK['2-japanese'].concat([
+ {
+  "id": "g2-japanese-a01",
+  "grade": 2,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「元気」の読み方は？",
+  "choices": [
+   "げんき",
+   "がんき",
+   "げんぎ",
+   "もとき"
+  ],
+  "answer": "げんき",
+  "hint": "体の調子がよい様子だよ。"
+ },
+ {
+  "id": "g2-japanese-a02",
+  "grade": 2,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「犬が走る。」の主語は？",
+  "choices": [
+   "犬が",
+   "走る",
+   "犬",
+   "が"
+  ],
+  "answer": "犬が",
+  "hint": "「何がどうする」の「何が」だよ。"
+ },
+ {
+  "id": "g2-japanese-a03",
+  "grade": 2,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「火山」の「山」の読み方は？",
+  "choices": [
+   "ざん",
+   "やま",
+   "たん",
+   "さんま"
+  ],
+  "answer": "ざん",
+  "hint": "「かざん」と読むよ。"
+ }
+]);

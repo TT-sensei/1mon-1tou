@@ -32,3 +32,52 @@ window.QUESTION_BANK['1-japanese'] = [
 {id:'g1-jp-029',grade:1,subject:'国語',type:'choice',question:'「しろい ゆき」の「しろい」は どれ？',choices:['しろい','ゆき','あおい','そら'],answer:'しろい',hint:'いろを あらわす ことばだよ。'},
 {id:'g1-jp-030',grade:1,subject:'国語',type:'choice',question:'「ぞうは おおきい。」ぞうは どう？',choices:['おおきい','ちいさい','みじかい','おそい'],answer:'おおきい',hint:'ぞうの からだを おもいうかべよう。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['1-japanese'] = window.QUESTION_BANK['1-japanese'].concat([
+ {
+  "id": "g1-japanese-a01",
+  "grade": 1,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「あ」から はじまる ことばは？",
+  "choices": [
+   "あめ",
+   "いぬ",
+   "うま",
+   "えき"
+  ],
+  "answer": "あめ",
+  "hint": "はじめの 音に ちゅうもくしよう。"
+ },
+ {
+  "id": "g1-japanese-a02",
+  "grade": 1,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「ねこが ねる。」で、うごきを あらわす ことばは？",
+  "choices": [
+   "ねる",
+   "ねこが",
+   "ねこ",
+   "が"
+  ],
+  "answer": "ねる",
+  "hint": "「どうする」を あらわす ことばだよ。"
+ },
+ {
+  "id": "g1-japanese-a03",
+  "grade": 1,
+  "subject": "国語",
+  "type": "choice",
+  "question": "「いぬ」を カタカナで かくと？",
+  "choices": [
+   "イヌ",
+   "イネ",
+   "ウヌ",
+   "インヌ"
+  ],
+  "answer": "イヌ",
+  "hint": "一文字ずつ かえてみよう。"
+ }
+]);

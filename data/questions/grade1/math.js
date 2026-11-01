@@ -32,3 +32,52 @@ window.QUESTION_BANK['1-math'] = [
 {id:'g1-math-029',grade:1,subject:'算数',type:'choice',question:'「8」の よみかたは？',choices:['ろく','なな','はち','きゅう'],answer:'はち',hint:'6、7、8 と かぞえてみよう。'},
 {id:'g1-math-030',grade:1,subject:'算数',type:'choice',question:'0 と 5、どちらが ちいさい？',choices:['0','5','おなじ','10'],answer:'0',hint:'0は ものが ないときの かずだよ。'}
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['1-math'] = window.QUESTION_BANK['1-math'].concat([
+ {
+  "id": "g1-math-a01",
+  "grade": 1,
+  "subject": "算数",
+  "type": "choice",
+  "question": "7 ＋ 2 は？",
+  "choices": [
+   "9",
+   "8",
+   "10",
+   "7"
+  ],
+  "answer": "9",
+  "hint": "7から 2つ かぞえよう。"
+ },
+ {
+  "id": "g1-math-a02",
+  "grade": 1,
+  "subject": "算数",
+  "type": "choice",
+  "question": "10 － 4 は？",
+  "choices": [
+   "6",
+   "5",
+   "7",
+   "4"
+  ],
+  "answer": "6",
+  "hint": "10から 4つ とってみよう。"
+ },
+ {
+  "id": "g1-math-a03",
+  "grade": 1,
+  "subject": "算数",
+  "type": "choice",
+  "question": "とけいの 短いはりが 3、長いはりが 12 のときは 何時？",
+  "choices": [
+   "3時",
+   "12時",
+   "4時",
+   "3時半"
+  ],
+  "answer": "3時",
+  "hint": "短いはりが 時を あらわすよ。"
+ }
+]);

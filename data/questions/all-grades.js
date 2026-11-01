@@ -2603,15 +2603,15 @@ window.QUESTION_BANK['4-math'] = [
     "grade": 4,
     "subject": "算数",
     "type": "choice",
-    "question": "1L は何mL？",
+    "question": "1L 200mL は何mL？",
     "choices": [
-      "1000mL",
-      "100mL",
-      "10mL",
-      "10 000mL"
+      "1 200mL",
+      "12 000mL",
+      "120mL",
+      "1 020mL"
     ],
-    "answer": "1000mL",
-    "hint": "1リットルは1000ミリリットルだよ。"
+    "answer": "1 200mL",
+    "hint": "1Lは1000mL。200mLを足そう。"
   },
   {
     "id": "g4-math-019",
@@ -4447,15 +4447,15 @@ window.QUESTION_BANK['5-math'] = [
     "grade": 5,
     "subject": "算数",
     "type": "choice",
-    "question": "1m²は何cm²？",
+    "question": "3m²は何cm²？",
     "choices": [
-      "10 000cm²",
-      "100cm²",
-      "1000cm²",
-      "1 000 000cm²"
+      "30 000cm²",
+      "300cm²",
+      "3 000cm²",
+      "30cm²"
     ],
-    "answer": "10 000cm²",
-    "hint": "1mは100cm。面積は縦と横をかけるよ。"
+    "answer": "30 000cm²",
+    "hint": "1m²は10 000cm²。3倍してみよう。"
   },
   {
     "id": "g5-math-018",
@@ -4657,15 +4657,15 @@ window.QUESTION_BANK['5-math'] = [
     "grade": 5,
     "subject": "算数",
     "type": "choice",
-    "question": "1.2 × 3 は？",
+    "question": "0.6 × 4 は？",
     "choices": [
-      "3.6",
-      "4.2",
-      "0.4",
-      "36"
+      "2.4",
+      "24",
+      "0.24",
+      "4.6"
     ],
-    "answer": "3.6",
-    "hint": "1.2を3回分と考えよう。"
+    "answer": "2.4",
+    "hint": "6×4=24 の小数点の位置に気をつけよう。"
   }
 ];
 
@@ -5385,15 +5385,15 @@ window.QUESTION_BANK['5-social'] = [
     "grade": 5,
     "subject": "社会",
     "type": "choice",
-    "question": "日本国憲法の三つの基本原則は？",
+    "question": "米づくりに適している土地は？",
     "choices": [
-      "国民主権・基本的人権の尊重・平和主義",
-      "鎖国・身分制度・武士政治",
-      "輸入・輸出・貿易",
-      "国会・内閣・裁判所"
+      "水が豊富で平らな土地",
+      "かたむいた山の斜面",
+      "砂の多い土地",
+      "雪が深い土地"
     ],
-    "answer": "国民主権・基本的人権の尊重・平和主義",
-    "hint": "三つの基本原則をセットで覚えよう。"
+    "answer": "水が豊富で平らな土地",
+    "hint": "田んぼには、水をためられる平らな土地が向いているよ。"
   },
   {
     "id": "g5-social-018",
@@ -5853,15 +5853,15 @@ window.QUESTION_BANK['6-japanese'] = [
     "grade": 6,
     "subject": "国語",
     "type": "choice",
-    "question": "「責任」の読み方は？",
+    "question": "「討論」の読み方は？",
     "choices": [
-      "せきにん",
-      "せきじん",
-      "せっにん",
-      "せきねん"
+      "とうろん",
+      "とうぎ",
+      "べんろん",
+      "とうだん"
     ],
-    "answer": "せきにん",
-    "hint": "自分の役割や行動について引き受けることだよ。"
+    "answer": "とうろん",
+    "hint": "意見を出し合って話し合うことだよ。"
   },
   {
     "id": "g6-japanese-019",
@@ -6111,15 +6111,15 @@ window.QUESTION_BANK['6-math'] = [
     "grade": 6,
     "subject": "算数",
     "type": "choice",
-    "question": "速さを求める式は？",
+    "question": "道のりを求める式は？",
     "choices": [
-      "道のり×時間",
-      "時間÷道のり",
-      "道のり＋時間",
-      "道のり÷時間"
+      "速さ×時間",
+      "速さ÷時間",
+      "時間÷速さ",
+      "速さ＋時間"
     ],
-    "answer": "道のり÷時間",
-    "hint": "単位時間あたりに進む道のりだよ。"
+    "answer": "速さ×時間",
+    "hint": "速さと時間をかけると、進んだ道のりになるよ。"
   },
   {
     "id": "g6-math-005",
@@ -6156,15 +6156,15 @@ window.QUESTION_BANK['6-math'] = [
     "grade": 6,
     "subject": "算数",
     "type": "choice",
-    "question": "正多角形の特徴は？",
+    "question": "点対称な図形について、正しいものは？",
     "choices": [
-      "辺の長さと角の大きさがすべて等しい",
-      "辺がすべて違う",
-      "角が一つだけ",
-      "必ず丸い"
+      "180度回すと元の形と重なる",
+      "鏡に映すと必ず重なる",
+      "辺がすべて曲がっている",
+      "角が1つだけある"
     ],
-    "answer": "辺の長さと角の大きさがすべて等しい",
-    "hint": "「正」は同じ形にそろっていることだよ。"
+    "answer": "180度回すと元の形と重なる",
+    "hint": "中心の点の周りに180度回して確かめよう。"
   },
   {
     "id": "g6-math-008",
@@ -7988,15 +7988,10 @@ window.QUESTION_BANK['4-english'] = [
     "grade": 4,
     "subject": "英語",
     "type": "choice",
-    "question": "「It's sunny.」の意味は？",
-    "choices": [
-      "晴れです",
-      "雨です",
-      "雪です",
-      "風がありません"
-    ],
-    "answer": "晴れです",
-    "hint": "天気を表す言い方だよ。"
+    "question": "「It's snowy.」の意味は？",
+    "choices": ["雪が降っている", "雨が降っている", "晴れている", "曇っている"],
+    "answer": "雪が降っている",
+    "hint": "snowy は雪の様子を表すよ。"
   },
   {
     "id": "g4-english-008",
@@ -8063,15 +8058,10 @@ window.QUESTION_BANK['4-english'] = [
     "grade": 4,
     "subject": "英語",
     "type": "choice",
-    "question": "「How are you?」への返事として自然なのは？",
-    "choices": [
-      "I'm fine, thank you.",
-      "My name is book.",
-      "It's blue day.",
-      "How many pencils?"
-    ],
-    "answer": "I'm fine, thank you.",
-    "hint": "元気かどうかをたずねる表現だよ。"
+    "question": "「How is the weather?」への答えで自然なのは？",
+    "choices": ["It's sunny.", "I'm fine.", "Yes, I can.", "I'm ten."],
+    "answer": "It's sunny.",
+    "hint": "天気を聞かれたら、天気を答えよう。"
   },
   {
     "id": "g4-english-013",
@@ -8093,15 +8083,10 @@ window.QUESTION_BANK['4-english'] = [
     "grade": 4,
     "subject": "英語",
     "type": "choice",
-    "question": "「I can swim.」の意味は？",
-    "choices": [
-      "泳げます",
-      "走れます",
-      "歌えます",
-      "食べられます"
-    ],
-    "answer": "泳げます",
-    "hint": "canは「～できる」という意味だよ。"
+    "question": "「I can cook.」の意味は？",
+    "choices": ["料理ができます", "泳げます", "走れます", "歌えます"],
+    "answer": "料理ができます",
+    "hint": "cook は「料理する」だよ。"
   },
   {
     "id": "g4-english-015",
@@ -8366,15 +8351,10 @@ window.QUESTION_BANK['5-english'] = [
     "grade": 5,
     "subject": "英語",
     "type": "choice",
-    "question": "「I like music.」の意味は？",
-    "choices": [
-      "私は音楽が好きです",
-      "私は音楽を聞きません",
-      "音楽はどこですか",
-      "私は先生です"
-    ],
-    "answer": "私は音楽が好きです",
-    "hint": "I like ～で「～が好き」と伝えられるよ。"
+    "question": "「I like reading.」の意味は？",
+    "choices": ["読書が好きです", "音楽が好きです", "走るのが好きです", "読書をします"],
+    "answer": "読書が好きです",
+    "hint": "reading は「読むこと」だよ。"
   },
   {
     "id": "g5-english-002",
@@ -8396,15 +8376,10 @@ window.QUESTION_BANK['5-english'] = [
     "grade": 5,
     "subject": "英語",
     "type": "choice",
-    "question": "「I can swim.」の意味は？",
-    "choices": [
-      "私は泳げます",
-      "私は泳ぎません",
-      "私は走れます",
-      "私は歌えます"
-    ],
-    "answer": "私は泳げます",
-    "hint": "canは「～できる」という意味だよ。"
+    "question": "「I can skate.」の意味は？",
+    "choices": ["スケートができます", "泳げます", "料理ができます", "踊れます"],
+    "answer": "スケートができます",
+    "hint": "skate は「スケートをする」だよ。"
   },
   {
     "id": "g5-english-004",
@@ -9265,3 +9240,1242 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "shouldは助言や「～したほうがよい」を表せるよ。"
   }
 ];
+
+// 追加問題（2026-11-01 点検での拡充）
+window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
+  {
+    "id": "g3-japanese-a01",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「花が咲く。」の述語にあたるものは？",
+    "choices": [
+      "咲く",
+      "花が",
+      "花",
+      "。"
+    ],
+    "answer": "咲く",
+    "hint": "「何が」に「どうする」と聞いてみよう。"
+  },
+  {
+    "id": "g3-japanese-a02",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「大きな声で歌う。」で、様子を表す言葉は？",
+    "choices": [
+      "大きな",
+      "声で",
+      "歌う",
+      "で"
+    ],
+    "answer": "大きな",
+    "hint": "「声」がどんな様子かを表しているよ。"
+  },
+  {
+    "id": "g3-japanese-a03",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「読む」の、ていねいな言い方は？",
+    "choices": [
+      "読みます",
+      "読まれる",
+      "読もう",
+      "読んだ"
+    ],
+    "answer": "読みます",
+    "hint": "「ます」をつける言い方だよ。"
+  },
+  {
+    "id": "g3-japanese-a04",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「さくら」をローマ字で書くと？",
+    "choices": [
+      "sakura",
+      "sagura",
+      "sakuraa",
+      "satyura"
+    ],
+    "answer": "sakura",
+    "hint": "一文字ずつローマ字にしてみよう。"
+  }
+]);
+window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
+  {
+    "id": "g3-math-a01",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "48 × 3 は？",
+    "choices": [
+      "144",
+      "124",
+      "154",
+      "134"
+    ],
+    "answer": "144",
+    "hint": "40×3 と 8×3 に分けて考えよう。"
+  },
+  {
+    "id": "g3-math-a02",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "200cm は何m？",
+    "choices": [
+      "2m",
+      "20m",
+      "200m",
+      "0.2m"
+    ],
+    "answer": "2m",
+    "hint": "100cmで1mだよ。"
+  },
+  {
+    "id": "g3-math-a03",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3時20分の40分後は、何時何分？",
+    "choices": [
+      "4時",
+      "3時50分",
+      "4時10分",
+      "3時60分"
+    ],
+    "answer": "4時",
+    "hint": "20分＋40分は60分で、1時間になるよ。"
+  },
+  {
+    "id": "g3-math-a04",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "63 ÷ 3 は？",
+    "choices": [
+      "21",
+      "18",
+      "24",
+      "31"
+    ],
+    "answer": "21",
+    "hint": "3×21=63 を確かめよう。"
+  }
+]);
+window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
+  {
+    "id": "g3-science-a01",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太陽がのぼる方角は？",
+    "choices": [
+      "東",
+      "西",
+      "北",
+      "南"
+    ],
+    "answer": "東",
+    "hint": "朝日はどちらの方角から来るかな。"
+  },
+  {
+    "id": "g3-science-a02",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "こん虫のあしは、何本？",
+    "choices": [
+      "6本",
+      "8本",
+      "4本",
+      "10本"
+    ],
+    "answer": "6本",
+    "hint": "あしは「むね」についているよ。"
+  },
+  {
+    "id": "g3-science-a03",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "日なたと日かげで、地面の温度が高いのは？",
+    "choices": [
+      "日なた",
+      "日かげ",
+      "どちらも同じ",
+      "月明かりの場所"
+    ],
+    "answer": "日なた",
+    "hint": "太陽の光が当たると温かくなるよ。"
+  },
+  {
+    "id": "g3-science-a04",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "チョウが育つ順番で正しいのは？",
+    "choices": [
+      "卵→幼虫→さなぎ→成虫",
+      "卵→さなぎ→幼虫→成虫",
+      "幼虫→卵→成虫→さなぎ",
+      "成虫→卵→さなぎ→幼虫"
+    ],
+    "answer": "卵→幼虫→さなぎ→成虫",
+    "hint": "さなぎの時期があるのがチョウの特徴だよ。"
+  }
+]);
+window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
+  {
+    "id": "g3-social-a01",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地図では、ふつう北はどの向きに表す？",
+    "choices": [
+      "上",
+      "下",
+      "右",
+      "左"
+    ],
+    "answer": "上",
+    "hint": "方位記号を確認しよう。"
+  },
+  {
+    "id": "g3-social-a02",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "消防署の仕事は？",
+    "choices": [
+      "火事を消したり、人助けをしたりする",
+      "品物を売る",
+      "電車を運転する",
+      "本を貸す"
+    ],
+    "answer": "火事を消したり、人助けをしたりする",
+    "hint": "命とくらしを守る仕事だよ。"
+  },
+  {
+    "id": "g3-social-a03",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地図記号「文」は、何を表す？",
+    "choices": [
+      "学校",
+      "病院",
+      "郵便局",
+      "駅"
+    ],
+    "answer": "学校",
+    "hint": "記号は、形や文字で場所を表しているよ。"
+  },
+  {
+    "id": "g3-social-a04",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "駅の近くに多いのは？",
+    "choices": [
+      "店やビル",
+      "田んぼだけ",
+      "山小屋",
+      "漁港"
+    ],
+    "answer": "店やビル",
+    "hint": "人が集まる場所には何が多いかな。"
+  }
+]);
+window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
+  {
+    "id": "g3-english-a01",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Thank you.」への返事として自然なのは？",
+    "choices": [
+      "You're welcome.",
+      "Good night.",
+      "See you.",
+      "I'm sorry."
+    ],
+    "answer": "You're welcome.",
+    "hint": "「どういたしまして」という意味だよ。"
+  },
+  {
+    "id": "g3-english-a02",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Let's play.」の意味は？",
+    "choices": [
+      "あそぼう",
+      "たべよう",
+      "ねよう",
+      "かえろう"
+    ],
+    "answer": "あそぼう",
+    "hint": "Let's は「いっしょに〜しよう」という誘いの言葉だよ。"
+  },
+  {
+    "id": "g3-english-a03",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「eight」はいくつ？",
+    "choices": ["8", "6", "9", "7"],
+    "answer": "8",
+    "hint": "英語の数の言い方を確認しよう。"
+  },
+  {
+    "id": "g3-english-a04",
+    "grade": 3,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Friday」は何曜日？",
+    "choices": [
+      "金曜日",
+      "月曜日",
+      "水曜日",
+      "日曜日"
+    ],
+    "answer": "金曜日",
+    "hint": "週の終わりの平日だよ。"
+  }
+]);
+window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
+  {
+    "id": "g4-japanese-a01",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「様子」の読み方は？",
+    "choices": [
+      "ようす",
+      "ようし",
+      "さまし",
+      "よす"
+    ],
+    "answer": "ようす",
+    "hint": "「ありさま」という意味の言葉だよ。"
+  },
+  {
+    "id": "g4-japanese-a02",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「始まる」の反対の意味の言葉は？",
+    "choices": [
+      "終わる",
+      "続く",
+      "集まる",
+      "広がる"
+    ],
+    "answer": "終わる",
+    "hint": "反対の意味になる言葉を考えよう。"
+  },
+  {
+    "id": "g4-japanese-a03",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「雨が上がる」の「上がる」の意味は？",
+    "choices": [
+      "やむ",
+      "高くなる",
+      "増える",
+      "のぼる"
+    ],
+    "answer": "やむ",
+    "hint": "ここでは天気について言っているよ。"
+  },
+  {
+    "id": "g4-japanese-a04",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「ただしい」を漢字で書くと？",
+    "choices": [
+      "正しい",
+      "正い",
+      "正しいい",
+      "正し"
+    ],
+    "answer": "正しい",
+    "hint": "「正」に「しい」を送るよ。"
+  }
+]);
+window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
+  {
+    "id": "g4-math-a01",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2.5 ＋ 1.7 は？",
+    "choices": [
+      "4.2",
+      "3.2",
+      "4.12",
+      "3.12"
+    ],
+    "answer": "4.2",
+    "hint": "小数点の位置をそろえて計算しよう。"
+  },
+  {
+    "id": "g4-math-a02",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "180 ÷ 6 は？",
+    "choices": [
+      "30",
+      "36",
+      "24",
+      "28"
+    ],
+    "answer": "30",
+    "hint": "6×30=180 を確かめよう。"
+  },
+  {
+    "id": "g4-math-a03",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2本の直線が垂直に交わるとき、できる角の大きさは？",
+    "choices": [
+      "90度",
+      "45度",
+      "180度",
+      "60度"
+    ],
+    "answer": "90度",
+    "hint": "直角の大きさだよ。"
+  },
+  {
+    "id": "g4-math-a04",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "折れ線グラフで読み取りやすいのは？",
+    "choices": [
+      "変化の様子",
+      "色の数",
+      "形の名前",
+      "ものの重さ"
+    ],
+    "answer": "変化の様子",
+    "hint": "点と点を結んで、移り変わりを表しているよ。"
+  }
+]);
+window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
+  {
+    "id": "g4-science-a01",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "豆電球がつくのは、どんなつなぎ方の回路？",
+    "choices": [
+      "輪のようにつながった回路",
+      "途中で切れた回路",
+      "電池だけの回路",
+      "電線だけの回路"
+    ],
+    "answer": "輪のようにつながった回路",
+    "hint": "電気が一周できる道が必要だよ。"
+  },
+  {
+    "id": "g4-science-a02",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ヘチマの花のうち、実になるのは？",
+    "choices": [
+      "めばな",
+      "おばな",
+      "どちらも同じ",
+      "実はならない"
+    ],
+    "answer": "めばな",
+    "hint": "めばなのもとがふくらんで実になるよ。"
+  },
+  {
+    "id": "g4-science-a03",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "夜の星は、どの方角へ動いて見える？",
+    "choices": [
+      "東から西",
+      "西から東",
+      "北から南",
+      "動かない"
+    ],
+    "answer": "東から西",
+    "hint": "太陽や月と同じ向きに動いて見えるよ。"
+  },
+  {
+    "id": "g4-science-a04",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水を熱してふっとうさせたとき、泡の正体は？",
+    "choices": [
+      "水じょう気",
+      "空気だけ",
+      "煙",
+      "氷"
+    ],
+    "answer": "水じょう気",
+    "hint": "水が姿を変えて気体になったものだよ。"
+  }
+]);
+window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
+  {
+    "id": "g4-social-a01",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "愛知県の県庁所在地は？",
+    "choices": [
+      "名古屋市",
+      "豊田市",
+      "岡崎市",
+      "岐阜市"
+    ],
+    "answer": "名古屋市",
+    "hint": "県の名前と市の名前が違うこともあるよ。"
+  },
+  {
+    "id": "g4-social-a02",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "これ以上処理できないごみを、最終処分場ではどうする？",
+    "choices": [
+      "うめる",
+      "燃やす",
+      "売る",
+      "川に流す"
+    ],
+    "answer": "うめる",
+    "hint": "安全に保管するための方法だよ。"
+  },
+  {
+    "id": "g4-social-a03",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の道具「洗濯板」は、何に使った？",
+    "choices": [
+      "洗濯物をこすって洗う",
+      "ごはんをたく",
+      "水をくむ",
+      "火をおこす"
+    ],
+    "answer": "洗濯物をこすって洗う",
+    "hint": "板のギザギザを使ったよ。"
+  },
+  {
+    "id": "g4-social-a04",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の都道府県の数は？",
+    "choices": [
+      "47",
+      "45",
+      "52",
+      "38"
+    ],
+    "answer": "47",
+    "hint": "1都1道2府43県を合わせよう。"
+  }
+]);
+window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
+  {
+    "id": "g4-english-a01",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What subject do you like?」への答えで自然なのは？",
+    "choices": [
+      "I like science.",
+      "I'm nine.",
+      "It's Monday.",
+      "Yes, I can."
+    ],
+    "answer": "I like science.",
+    "hint": "好きな教科を答えよう。"
+  },
+  {
+    "id": "g4-english-a02",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「library」はどこ？",
+    "choices": [
+      "図書館",
+      "体育館",
+      "音楽室",
+      "保健室"
+    ],
+    "answer": "図書館",
+    "hint": "本を読む場所だよ。"
+  },
+  {
+    "id": "g4-english-a03",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「It's rainy.」の意味は？",
+    "choices": [
+      "雨が降っている",
+      "雪が降っている",
+      "晴れている",
+      "風が強い"
+    ],
+    "answer": "雨が降っている",
+    "hint": "rainy は雨の様子を表すよ。"
+  },
+  {
+    "id": "g4-english-a04",
+    "grade": 4,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「Can you cook?」への「はい」の答えは？",
+    "choices": [
+      "Yes, I can.",
+      "No, I can't.",
+      "Yes, I do.",
+      "I'm cooking."
+    ],
+    "answer": "Yes, I can.",
+    "hint": "Can you で聞かれたら can で答えよう。"
+  }
+]);
+
+// 追加問題（2026-11-01 点検での拡充・第2弾）
+window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
+  {
+    "id": "g5-japanese-a01",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「弟が公園で走る。」の主語は？",
+    "choices": [
+      "弟が",
+      "公園で",
+      "走る",
+      "が"
+    ],
+    "answer": "弟が",
+    "hint": "「何がどうする」の「何が」だよ。"
+  },
+  {
+    "id": "g5-japanese-a02",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「そっと開ける」の「そっと」は、何を表す？",
+    "choices": [
+      "様子",
+      "時間",
+      "場所",
+      "数"
+    ],
+    "answer": "様子",
+    "hint": "動作の様子をくわしくする言葉だよ。"
+  },
+  {
+    "id": "g5-japanese-a03",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「行く」のていねいな言い方は？",
+    "choices": [
+      "行きます",
+      "いらっしゃる",
+      "参る",
+      "お行きになる"
+    ],
+    "answer": "行きます",
+    "hint": "「ます」をつけた言い方だよ。"
+  },
+  {
+    "id": "g5-japanese-a04",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「天地」の読み方は？",
+    "choices": [
+      "てんち",
+      "あめつち",
+      "てんじ",
+      "あまち"
+    ],
+    "answer": "てんち",
+    "hint": "空と地面の意味だよ。"
+  }
+]);
+window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
+  {
+    "id": "g5-math-a01",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3/4 ＋ 1/4 は？",
+    "choices": [
+      "1",
+      "4/8",
+      "2/4",
+      "1/2"
+    ],
+    "answer": "1",
+    "hint": "分母はそのままで、分子を足そう。"
+  },
+  {
+    "id": "g5-math-a02",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "三角形の内角の和は？",
+    "choices": [
+      "180度",
+      "90度",
+      "360度",
+      "270度"
+    ],
+    "answer": "180度",
+    "hint": "どの三角形でも同じだよ。"
+  },
+  {
+    "id": "g5-math-a03",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "0.8 ÷ 2 は？",
+    "choices": [
+      "0.4",
+      "4",
+      "0.04",
+      "1.6"
+    ],
+    "answer": "0.4",
+    "hint": "8÷2=4 の小数点の位置を考えよう。"
+  },
+  {
+    "id": "g5-math-a04",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "4人のテストの点数が 80、90、70、100 点のとき、平均は？",
+    "choices": [
+      "85点",
+      "80点",
+      "90点",
+      "75点"
+    ],
+    "answer": "85点",
+    "hint": "合計を人数で割ろう。"
+  }
+]);
+window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
+  {
+    "id": "g5-science-a01",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石の力を強くする方法は？",
+    "choices": [
+      "コイルの巻き数を増やす",
+      "電線を短くする",
+      "電池を外す",
+      "鉄心を抜く"
+    ],
+    "answer": "コイルの巻き数を増やす",
+    "hint": "巻き数と電流の大きさが関係しているよ。"
+  },
+  {
+    "id": "g5-science-a02",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ふりこが1往復する時間は、何によって決まる？",
+    "choices": [
+      "ふりこの長さ",
+      "おもりの重さ",
+      "ふれはば",
+      "糸の色"
+    ],
+    "answer": "ふりこの長さ",
+    "hint": "長いほどゆっくり動くよ。"
+  },
+  {
+    "id": "g5-science-a03",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "植物が種子を作るために必要なのは？",
+    "choices": [
+      "受粉",
+      "せん定",
+      "水やりだけ",
+      "日かげに置くこと"
+    ],
+    "answer": "受粉",
+    "hint": "めしべに花粉がつくことだよ。"
+  },
+  {
+    "id": "g5-science-a04",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "川の流れが速いところに多いのは？",
+    "choices": [
+      "大きな石",
+      "細かい砂",
+      "泥だけ",
+      "落ち葉だけ"
+    ],
+    "answer": "大きな石",
+    "hint": "流れが速いと、軽いものは下流へ運ばれるよ。"
+  }
+]);
+window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
+  {
+    "id": "g5-social-a01",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "自動車工場が多く集まる工業地帯は？",
+    "choices": [
+      "中京工業地帯",
+      "京浜工業地帯",
+      "北九州工業地帯",
+      "阪神工業地帯"
+    ],
+    "answer": "中京工業地帯",
+    "hint": "愛知県を中心とした地域だよ。"
+  },
+  {
+    "id": "g5-social-a02",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "米の生産がさかんで有名な県は？",
+    "choices": [
+      "新潟県",
+      "沖縄県",
+      "東京都",
+      "大阪府"
+    ],
+    "answer": "新潟県",
+    "hint": "広い平野と雪どけ水が関係しているよ。"
+  },
+  {
+    "id": "g5-social-a03",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本が外国から多く輸入しているものは？",
+    "choices": [
+      "原油（石油）",
+      "米",
+      "自動車",
+      "新幹線"
+    ],
+    "answer": "原油（石油）",
+    "hint": "エネルギー資源は海外に頼っているよ。"
+  },
+  {
+    "id": "g5-social-a04",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ニュースを伝える仕事で、いちばん大切なことは？",
+    "choices": [
+      "正確に伝えること",
+      "速く売ること",
+      "面白く作り変えること",
+      "秘密にすること"
+    ],
+    "answer": "正確に伝えること",
+    "hint": "事実を確かめてから伝えるよ。"
+  }
+]);
+window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
+  {
+    "id": "g5-english-a01",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I want to be a doctor.」の意味は？",
+    "choices": [
+      "医者になりたい",
+      "医者に会いたい",
+      "医者です",
+      "医者が好き"
+    ],
+    "answer": "医者になりたい",
+    "hint": "want to be は「〜になりたい」だよ。"
+  },
+  {
+    "id": "g5-english-a02",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「January」は何月？",
+    "choices": [
+      "1月",
+      "6月",
+      "10月",
+      "12月"
+    ],
+    "answer": "1月",
+    "hint": "一年の最初の月だよ。"
+  },
+  {
+    "id": "g5-english-a03",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「He plays soccer.」の意味は？",
+    "choices": [
+      "彼はサッカーをします",
+      "私はサッカーをします",
+      "彼はサッカーを見ます",
+      "彼はサッカーがほしい"
+    ],
+    "answer": "彼はサッカーをします",
+    "hint": "He は「彼は」だよ。"
+  },
+  {
+    "id": "g5-english-a04",
+    "grade": 5,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「It's seven thirty.」は何時何分？",
+    "choices": [
+      "7時30分",
+      "7時13分",
+      "8時30分",
+      "7時3分"
+    ],
+    "answer": "7時30分",
+    "hint": "thirty は30のことだよ。"
+  }
+]);
+window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
+  {
+    "id": "g6-japanese-a01",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「再会」の読み方は？",
+    "choices": [
+      "さいかい",
+      "さいえ",
+      "ざいかい",
+      "さいあい"
+    ],
+    "answer": "さいかい",
+    "hint": "また会うという意味だよ。"
+  },
+  {
+    "id": "g6-japanese-a02",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "慣用句「耳が痛い」の意味は？",
+    "choices": [
+      "自分の欠点を言われてつらい",
+      "耳の病気",
+      "音がうるさい",
+      "寒くて耳が痛い"
+    ],
+    "answer": "自分の欠点を言われてつらい",
+    "hint": "聞きたくないことを聞く様子だよ。"
+  },
+  {
+    "id": "g6-japanese-a03",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「具体」の反対の意味の言葉は？",
+    "choices": [
+      "抽象",
+      "詳細",
+      "実際",
+      "現実"
+    ],
+    "answer": "抽象",
+    "hint": "形のない考えを表す言葉だよ。"
+  },
+  {
+    "id": "g6-japanese-a04",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「著しい」の読み方は？",
+    "choices": [
+      "いちじるしい",
+      "ちょしい",
+      "あらわしい",
+      "しるしい"
+    ],
+    "answer": "いちじるしい",
+    "hint": "「目立ってはっきりしている」という意味だよ。"
+  }
+]);
+window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
+  {
+    "id": "g6-math-a01",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "xが2倍になると、yも2倍になる関係を何という？",
+    "choices": [
+      "比例",
+      "反比例",
+      "平均",
+      "割合"
+    ],
+    "answer": "比例",
+    "hint": "一方が増えると、他方も同じ割合で増えるよ。"
+  },
+  {
+    "id": "g6-math-a02",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "半径3cmの円の面積は？（円周率は3.14）",
+    "choices": [
+      "28.26cm²",
+      "18.84cm²",
+      "9.42cm²",
+      "3.14cm²"
+    ],
+    "answer": "28.26cm²",
+    "hint": "半径×半径×3.14 で求めよう。"
+  },
+  {
+    "id": "g6-math-a03",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3/5 ÷ 3 は？",
+    "choices": [
+      "1/5",
+      "9/5",
+      "5/3",
+      "3/5"
+    ],
+    "answer": "1/5",
+    "hint": "分子を3で割るか、逆数をかけて考えよう。"
+  },
+  {
+    "id": "g6-math-a04",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "コインを2枚投げるとき、表と裏の出方は全部で何通り？",
+    "choices": [
+      "4通り",
+      "2通り",
+      "3通り",
+      "8通り"
+    ],
+    "answer": "4通り",
+    "hint": "表表・表裏・裏表・裏裏を数えよう。"
+  }
+]);
+window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
+  {
+    "id": "g6-science-a01",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "月の形が変わって見えるのはなぜ？",
+    "choices": [
+      "太陽の光の当たり方が変わるから",
+      "月が回転して形を変えるから",
+      "地球が小さくなるから",
+      "雲が隠すから"
+    ],
+    "answer": "太陽の光の当たり方が変わるから",
+    "hint": "月自体の形は変わっていないよ。"
+  },
+  {
+    "id": "g6-science-a02",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "てこで、支点から力点までの距離を長くすると？",
+    "choices": [
+      "小さい力で動かせる",
+      "大きな力が必要になる",
+      "動かなくなる",
+      "重さが増える"
+    ],
+    "answer": "小さい力で動かせる",
+    "hint": "てこのはたらきは距離で変わるよ。"
+  },
+  {
+    "id": "g6-science-a03",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "草→バッタ→カエルの食べる・食べられるの関係で、カエルが食べるのは？",
+    "choices": [
+      "バッタ",
+      "草",
+      "土",
+      "水"
+    ],
+    "answer": "バッタ",
+    "hint": "つながりの向きを確かめよう。"
+  },
+  {
+    "id": "g6-science-a04",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "地層は、どうやってできる？",
+    "choices": [
+      "土や砂が積み重なってできる",
+      "火山だけでできる",
+      "地震だけでできる",
+      "月の引力でできる"
+    ],
+    "answer": "土や砂が積み重なってできる",
+    "hint": "流水のはたらきで運ばれて積もるよ。"
+  }
+]);
+window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
+  {
+    "id": "g6-social-a01",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "内閣の仕事は？",
+    "choices": [
+      "法律にもとづいて政治を行う",
+      "法律を作る",
+      "裁判をする",
+      "選挙だけを行う"
+    ],
+    "answer": "法律にもとづいて政治を行う",
+    "hint": "行政を担当する機関だよ。"
+  },
+  {
+    "id": "g6-social-a02",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "縄文時代の人々は、主に何を食べていた？",
+    "choices": [
+      "狩りや採集で得たもの",
+      "米だけ",
+      "パン",
+      "輸入した食品"
+    ],
+    "answer": "狩りや採集で得たもの",
+    "hint": "まだ米づくりが始まっていない時代だよ。"
+  },
+  {
+    "id": "g6-social-a03",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "国際連合の本部がある都市は？",
+    "choices": [
+      "ニューヨーク",
+      "ロンドン",
+      "パリ",
+      "東京"
+    ],
+    "answer": "ニューヨーク",
+    "hint": "アメリカの都市だよ。"
+  },
+  {
+    "id": "g6-social-a04",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本で選挙に投票できるのは、何歳から？",
+    "choices": [
+      "18歳",
+      "20歳",
+      "16歳",
+      "25歳"
+    ],
+    "answer": "18歳",
+    "hint": "2016年から引き下げられたよ。"
+  }
+]);
+window.QUESTION_BANK['6-english'] = window.QUESTION_BANK['6-english'].concat([
+  {
+    "id": "g6-english-a01",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「I went to Kyoto.」の意味は？",
+    "choices": [
+      "京都へ行きました",
+      "京都へ行きます",
+      "京都にいます",
+      "京都が好きです"
+    ],
+    "answer": "京都へ行きました",
+    "hint": "went は go の過去の形だよ。"
+  },
+  {
+    "id": "g6-english-a02",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「bigger」が表すのは？",
+    "choices": [
+      "大きさ",
+      "小ささ",
+      "速さだけ",
+      "明るさ"
+    ],
+    "answer": "大きさ",
+    "hint": "big の比べる形（比較級）だよ。"
+  },
+  {
+    "id": "g6-english-a03",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「She can sing well.」の意味は？",
+    "choices": [
+      "彼女は上手に歌えます",
+      "彼女は歌を聞きます",
+      "私は上手に歌えます",
+      "彼女は歌が好きです"
+    ],
+    "answer": "彼女は上手に歌えます",
+    "hint": "She は「彼女は」、well は「上手に」だよ。"
+  },
+  {
+    "id": "g6-english-a04",
+    "grade": 6,
+    "subject": "英語",
+    "type": "choice",
+    "question": "「What time do you get up?」への答えで自然なのは？",
+    "choices": [
+      "At six.",
+      "I'm fine.",
+      "Yes, I do.",
+      "In spring."
+    ],
+    "answer": "At six.",
+    "hint": "起きる時刻を答えよう。"
+  }
+]);

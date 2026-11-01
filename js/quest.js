@@ -44,6 +44,44 @@ const defaults = {
   dailyRewards: {},
   stats: { totalCorrect: 0, firstTryCorrect: 0, questsCleared: 0, masteredReview: 0, sessions: 0, wrongAttempts: 0 }
 };
+// 効果音（sounds-recipe- のレシピを利用。読み込めなくても学習本体は続く）
+let soundOn = true;
+let furiganaOn = true;
+try {
+  soundOn = localStorage.getItem('edu:1mon-1tou-quest:sound') !== 'off';
+  furiganaOn = localStorage.getItem('edu:1mon-1tou-quest:furigana') !== 'off';
+} catch (e) { /* 既定値のまま */ }
+let soundRecipes = [];
+import('https://tt-sensei.github.io/sounds-recipe-/sounds.js')
+  .then((mod) => { soundRecipes = Array.isArray(mod.soundList) ? mod.soundList : []; })
+  .catch(() => { soundRecipes = []; });
+let audioCtx = null;
+function playSe(id) {
+  if (!soundOn || !soundRecipes.length) return;
+  const recipe = soundRecipes.find((item) => item.id === id);
+  if (!recipe) return;
+  try {
+    if (!audioCtx) {
+      const AC = window.AudioContext || window.webkitAudioContext;
+      if (!AC) return;
+      audioCtx = new AC();
+    }
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    recipe.play(audioCtx, 0.7);
+  } catch (e) { /* 音が出なくても続ける */ }
+}
+function syncHeaderToggles() {
+  const fb = $('#furiganaBtn');
+  if (fb) { fb.textContent = 'ふりがな ' + (furiganaOn ? 'ON' : 'OFF'); fb.setAttribute('aria-pressed', String(furiganaOn)); }
+  const sb = $('#soundBtn');
+  if (sb) { sb.textContent = soundOn ? '🔊 音 ON' : '🔇 音 OFF'; sb.setAttribute('aria-pressed', String(soundOn)); }
+}
+function syncFuriganaMode() {
+  const on = furiganaOn && active && Number(active.grade) <= 2;
+  document.body.dataset.furigana = on ? 'on' : 'off';
+  if (window.NaviFurigana) window.NaviFurigana.refresh();
+}
+
 let state = readState();
 let selectedGrade = 1;
 let selectedSubject = '国語';
@@ -120,6 +158,10 @@ function updateHeader() {
 }
 
 function showScreen(id) {
+  if (id !== 'screen-battle' && id !== 'screen-result') {
+    document.body.dataset.furigana = 'off';
+    if (window.NaviFurigana) window.NaviFurigana.refresh();
+  }
   document.querySelectorAll('.screen').forEach((screen) => {
     screen.classList.toggle('active', screen.id === id);
     screen.hidden = screen.id !== id;
@@ -264,7 +306,7 @@ async function beginSetupRun() {
   button.disabled = false;
 }
 
-const ENEMY_HP = { zako: 5, evolved: 8, boss: 12 };
+const ENEMY_HP = { zako: 7, evolved: 12, boss: 18 };
 const ENEMY_STARS = { zako: '⭐', evolved: '⭐⭐', boss: '⭐⭐⭐' };
 
 function pickEnemyOfRank(rank, subject, excluded) {
@@ -305,7 +347,7 @@ function buildWaves(grade, subject) {
 
 function enemyNextAction() {
   if (!active || !active.enemy) return { type: 'attack', damage: 1 };
-  const rankDamage = { zako: 1, evolved: 2, boss: 2 }[active.enemy.rank] || 1;
+  const rankDamage = { zako: 1, evolved: 2, boss: 3 }[active.enemy.rank] || 1;
   const boost = Number(active.enemyBoost) || 0;
   if (active.enemyPattern === 'charger') {
     if (active.enemyCharged) return { type: 'big', damage: rankDamage * 2 + boost };
@@ -315,6 +357,7 @@ function enemyNextAction() {
 }
 
 function startRun(mode, questions, grade, subject) {
+  playSe('start');
   const cleanQuestions = Array.isArray(questions) ? questions.filter((q) => q && q.question && q.answer !== undefined) : [];
   if (!cleanQuestions.length) {
     notify('出題できる問題がありません。');
@@ -377,6 +420,7 @@ function startRun(mode, questions, grade, subject) {
 }
 
 function renderBattle() {
+  syncFuriganaMode();
   if (!active) return;
   const isQuest = active.mode === 'quest';
   $('#battleLayout').classList.toggle('practice-layout', !isQuest);
@@ -634,8 +678,8 @@ function applyReviewCorrect(q, firstTry) {
   entry.reviewLevel = Math.min(REVIEW_INTERVALS.length, previousLevel + 1);
   if (previousLevel < REVIEW_INTERVALS.length && entry.reviewLevel >= REVIEW_INTERVALS.length) {
     state.stats.masteredReview = (Number(state.stats.masteredReview) || 0) + 1;
-    state.points += 10;
-    active.pointsEarned += 10;
+    state.points += 3;
+    active.pointsEarned += 3;
     active.masteredThisRun += 1;
   }
   scheduleReview(entry, REVIEW_INTERVALS[Math.min(entry.reviewLevel - 1, REVIEW_INTERVALS.length - 1)]);
@@ -647,8 +691,9 @@ function checkLevelUp(cardId) {
   state.xp[cardId] = oldXp + 1;
   const newLevel = levelFor(state.xp[cardId]);
   if (newLevel > oldLevel) {
-    state.points += 10;
-    active.pointsEarned += 10;
+    playSe('levelup');
+    state.points += 3;
+    active.pointsEarned += 3;
     active.levelUps.push({ id: cardId, name: (cardFor(cardId) || {}).name || 'ナビアン', from: oldLevel, to: newLevel });
   }
 }
@@ -704,9 +749,9 @@ function handleCorrect(q, firstTry) {
   const isQuest = active.mode === 'quest';
   const cardId = isQuest ? active.team[active.selectedCard] : active.team[active.cardIndex];
   checkLevelUp(cardId);
-  const basePoints = isQuest ? (firstTry ? 10 : 5) : (firstTry ? 5 : 3);
+  const basePoints = isQuest ? (firstTry ? 3 : 2) : (firstTry ? 2 : 1);
   // The first completed run per grade each day earns full rewards. Repeating easier grades is practice, not a point-farming shortcut.
-  const points = active.rewardEligible ? basePoints * active.rewardMultiplier : Math.max(1, Math.floor(basePoints / 5));
+  const points = active.rewardEligible ? basePoints : Math.max(1, Math.floor(basePoints / 5));
   state.points += points;
   active.pointsEarned += points;
 
@@ -761,7 +806,7 @@ function handleCorrect(q, firstTry) {
         active.questCleared = true;
         notes.push('さいごの敵を倒した！');
       } else {
-        notes.push('撃破！ 次の敵が近づいてくる…（進むとチームパワー+6）');
+        notes.push('撃破！ 次の敵が近づいてくる…（進むとチームパワー+4）');
       }
     }
     let healedAmount = 0;
@@ -783,10 +828,7 @@ function handleCorrect(q, firstTry) {
       active.handUsed = [];
       notes.push('全員のカードが戻ってきた！');
     }
-    active.team.forEach((id) => {
-      const cost = CHARGE_COST[(cardFor(id) || {}).rank] || 4;
-      active.charges[id] = Math.min(cost, (Number(active.charges[id]) || 0) + 1);
-    });
+    active.charges[cardId] = Math.min(chargeCost, (Number(active.charges[cardId]) || 0) + 2);
     drawEnemy();
     spawnFloater($('#enemyCard'), '-' + damage, (special || crit) ? 'big' : '');
     const enemyEl = $('#enemyCard');
@@ -795,6 +837,7 @@ function handleCorrect(q, firstTry) {
     enemyEl.classList.add('hit-shake');
     active.firedIndex = active.selectedCard;
     if (skill === 'heal' && healedAmount > 0) spawnFloater($('#teamPower'), '+' + healedAmount, 'heal');
+    playSe(special ? 'finale' : crit ? 'bonus' : active.combo >= 3 ? 'combo3' : 'correct');
     if (skill === 'guard') spawnFloater($('#teamPower'), 'まもり！', 'buff');
     if (skill === 'cheer') spawnFloater($('#teamPower'), 'おうえん！', 'buff');
   } else {
@@ -825,6 +868,7 @@ function handleWrong(q) {
     active.attempts = 1;
     active.combo = 0;
     $('#comboBadge').textContent = '連続正解 0';
+    playSe('softFail');
     feedback('おしい！ ヒントを見よう', hintText(q), [
       { name: 'retry-question', label: 'もう一度こたえる', className: 'primary' },
       { name: 'show-answer', label: '答えを見て次へ', className: 'secondary' }
@@ -839,6 +883,7 @@ function handleWrong(q) {
 }
 
 function revealAnswer() {
+  playSe('answer');
   if (!active) return;
   const q = active.question;
   feedback('答えを確認しよう', '正解：' + String(q.answer) + '\n' + explanationText(q), [
@@ -866,8 +911,9 @@ function advanceQuestion() {
     active.enemyCharged = false;
     active.enemyTurn = 0;
     active.handUsed = [];
-    const heal = Math.min(6, active.teamMaxHp - active.teamHp);
+    const heal = Math.min(4, active.teamMaxHp - active.teamHp);
     active.teamHp += heal;
+    playSe('stageClear');
     notify('第' + (active.waveIndex + 1) + '戦！ ' + active.enemy.name + ' があらわれた！');
     drawEnemy();
     drawPartyArea();
@@ -890,6 +936,7 @@ function advanceQuestion() {
       notify('⛨ まもりが、相手の攻撃をふせいだ！');
       spawnFloater($('#teamPower'), 'ふせいだ！', 'buff');
     } else {
+      playSe('bossHit');
       active.teamHp = Math.max(0, active.teamHp - next.damage);
       active.enemyBoost = 0;
       if (next.type === 'big') active.enemyCharged = false;
@@ -933,11 +980,12 @@ function finishRun() {
     active.questions = active.questions.slice(0, Math.max(1, active.index));
   }
   const cleared = isQuest && active.enemyHp <= 0;
-  const finishReward = isQuest ? (cleared ? (active.rewardEligible ? 25 * active.rewardMultiplier : 3) : (active.rewardEligible ? 5 * active.rewardMultiplier : 1)) : 0;
+  const finishReward = isQuest ? (cleared ? (active.rewardEligible ? 8 : 3) : (active.rewardEligible ? 2 : 1)) : 0;
   if (finishReward) {
     state.points += finishReward;
     active.pointsEarned += finishReward;
   }
+  playSe(cleared ? 'clear' : 'practice');
   state.stats.sessions = (Number(state.stats.sessions) || 0) + 1;
   if (active.rewardEligible && active.rewardKey) state.dailyRewards[active.rewardKey] = true;
   if (cleared) state.stats.questsCleared = (Number(state.stats.questsCleared) || 0) + 1;
@@ -1122,7 +1170,7 @@ function toggleTeam(id) {
 
 const PACK_COST = 100;
 const PACK_SIZE = 3;
-const PACK_BONUS_POINTS = 30;
+const PACK_BONUS_POINTS = 10;
 const CARD_BACK_URL = 'https://tt-sensei.github.io/1mon-1tou/assets/cards/backs/card-back.jpeg';
 let packSlots = [];
 
@@ -1182,6 +1230,20 @@ function startTrainingFromSetup() {
 }
 
 function handleAction(action, button) {
+  if (action === 'toggle-furigana') {
+    furiganaOn = !furiganaOn;
+    try { localStorage.setItem('edu:1mon-1tou-quest:furigana', furiganaOn ? 'on' : 'off'); } catch (e) { /* 保存できなくても続ける */ }
+    syncHeaderToggles();
+    syncFuriganaMode();
+    return;
+  }
+  if (action === 'toggle-sound') {
+    soundOn = !soundOn;
+    try { localStorage.setItem('edu:1mon-1tou-quest:sound', soundOn ? 'on' : 'off'); } catch (e) { /* 保存できなくても続ける */ }
+    syncHeaderToggles();
+    if (soundOn) playSe('soundOn');
+    return;
+  }
   if (action === 'home') { showScreen('screen-home'); return; }
   if (action === 'setup') { openSetup('quest'); return; }
   if (action === 'choose-practice') { startTrainingFromSetup(); return; }
@@ -1225,8 +1287,8 @@ function handleAction(action, button) {
   }
   if (action === 'toggle-team') { toggleTeam(button.dataset.id); return; }
   if (action === 'more-cards') { collectionLimit += 24; renderCollection(); return; }
-  if (action === 'buy-pack') { buyPack(); return; }
-  if (action === 'flip-pack') {
+  if (action === 'buy-pack') { playSe('chest'); buyPack(); return; }
+  if (action === 'flip-pack') { playSe('pageTurn');
     const slot = document.querySelector('[data-pack-slot="' + button.dataset.index + '"]');
     if (slot) slot.classList.add('flipped');
     return;
@@ -1279,3 +1341,4 @@ $('#collectionSearch').addEventListener('keydown', (event) => {
 
 renderHome();
 updateHeader();
+syncHeaderToggles();
