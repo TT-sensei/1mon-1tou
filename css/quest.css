@@ -103,3 +103,19 @@ main{padding-top:20px}.screen{display:none}.screen.active{display:block}
 .wave-pill{padding:5px 8px;border-radius:99px;background:#e8f0fe;color:#2c5d8a;font-size:9px;font-weight:900;white-space:nowrap}
 .enemy-next{margin:8px 0 0;padding:8px 10px;border-radius:10px;background:#fdf3e0;color:#8a6d1d;font-size:10.5px;font-weight:900;line-height:1.6}
 .enemy-next:empty{display:none}
+/* バトル新レイアウト：上段=敵と問題、下段=手札5枚 */
+.battle-layout{grid-template-columns:minmax(215px,.8fr) minmax(0,1.7fr);grid-template-areas:'enemy question' 'party party'}
+.battle-layout .enemy-panel{grid-area:enemy}
+.battle-layout .question-panel{grid-area:question;min-height:380px}
+.battle-layout .party-panel{grid-area:party}
+.battle-layout.practice-layout{grid-template-columns:minmax(0,1fr) minmax(220px,.45fr);grid-template-areas:'question party'}
+.battle-layout.practice-layout .question-panel{grid-area:question;min-height:450px}
+.battle-layout.practice-layout .party-panel{grid-area:party}
+.battle-layout:not(.practice-layout) .team-rail{grid-template-columns:repeat(5,minmax(0,1fr));align-items:stretch}
+.battle-layout:not(.practice-layout) .hand-card{grid-template-columns:1fr;gap:7px;padding:9px}
+.battle-layout:not(.practice-layout) .hand-card.selected{padding:8px}
+.battle-layout:not(.practice-layout) .hand-card-art .battle-card{width:min(102px,100%);margin:0 auto}
+.battle-layout:not(.practice-layout) .team-power{max-width:520px}
+@media(max-width:1060px){.battle-layout{grid-template-columns:minmax(180px,.8fr) minmax(0,1.6fr)}.battle-layout.practice-layout{grid-template-columns:minmax(0,1fr) minmax(220px,.45fr)}}
+@media(max-width:820px){.battle-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:'question question' 'enemy party'}.battle-layout:not(.practice-layout) .team-rail{grid-template-columns:repeat(5,minmax(96px,1fr));overflow-x:auto;padding-bottom:4px}.battle-layout.practice-layout{grid-template-columns:1fr;grid-template-areas:'question' 'party'}}
+@media(max-width:560px){.battle-layout{grid-template-columns:1fr;grid-template-areas:'question' 'enemy' 'party'}.battle-layout:not(.practice-layout) .team-rail{grid-template-columns:repeat(5,minmax(92px,1fr))}}

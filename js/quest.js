@@ -17,6 +17,7 @@ const STARTER_CARDS = ['purun-little-magic-slime', 'komorin-little-night-bat', '
 const SUBJECT_ICON = { '国語': '📖', '算数': '＋', '理科': '✦', '社会': '⌖', '英語': 'A', '生活': '❀' };
 const RANK_NAME = { zako: 'ナビアン', evolved: 'エボナビ', boss: 'ボスナビ' };
 const RECRUIT_COST = { zako: 60, evolved: 120, boss: 240 };
+const MAX_TEAM = 5;
 // カードのスキルはモンスターごとに固定。IDから決まるので、図鑑でもバトルでも同じスキルになる。
 const SKILLS = {
   attack: { name: 'こうげき', icon: '⚔', short: '大きなダメージ' },
@@ -62,13 +63,13 @@ function readState() {
   const ownedSaved = Array.isArray(saved.owned) ? saved.owned.filter((id) => validIds.has(id)) : [];
   const owned = Array.from(new Set(ownedSaved.length ? ownedSaved : STARTER_CARDS)).filter((id) => validIds.has(id)).slice(0, 180);
   const teamSaved = Array.isArray(saved.team) ? saved.team.filter((id) => owned.includes(id)) : [];
-  const team = Array.from(new Set(teamSaved)).slice(0, 3);
+  const team = Array.from(new Set(teamSaved)).slice(0, MAX_TEAM);
   return {
     ...defaults,
     ...saved,
     points: Math.max(0, Number(saved.points) || 0),
     owned: owned.length ? owned : STARTER_CARDS.filter((id) => validIds.has(id)),
-    team: team.length ? team : owned.slice(0, 3),
+    team: team.length ? team : owned.slice(0, MAX_TEAM),
     xp: saved.xp && typeof saved.xp === 'object' ? saved.xp : {},
     review: saved.review && typeof saved.review === 'object' ? saved.review : {},
     dailyRewards: saved.dailyRewards && typeof saved.dailyRewards === 'object' ? saved.dailyRewards : {},
@@ -102,8 +103,8 @@ function cardFor(id) {
 }
 
 function teamIds() {
-  const valid = state.team.filter((id) => state.owned.includes(id) && monsterById.has(id)).slice(0, 3);
-  return valid.length ? valid : state.owned.filter((id) => monsterById.has(id)).slice(0, 3);
+  const valid = state.team.filter((id) => state.owned.includes(id) && monsterById.has(id)).slice(0, MAX_TEAM);
+  return valid.length ? valid : state.owned.filter((id) => monsterById.has(id)).slice(0, MAX_TEAM);
 }
 
 function updateHeader() {
@@ -977,7 +978,7 @@ function renderTraining() {
 
 function renderTeam() {
   const ids = state.owned.slice();
-  $('#teamSelectedCount').textContent = teamIds().length + ' / 3枚 選択中';
+  $('#teamSelectedCount').textContent = teamIds().length + ' / ' + MAX_TEAM + '枚 選択中';
   const grid = $('#teamGrid');
   grid.innerHTML = '';
   ids.forEach((id) => {
@@ -1057,8 +1058,8 @@ function toggleTeam(id) {
     }
     state.team = team.filter((item) => item !== id);
   } else {
-    if (team.length >= 3) {
-      notify('チームは3枚まで。先にはずすカードを選んでね。');
+    if (team.length >= MAX_TEAM) {
+      notify('チームは' + MAX_TEAM + '枚まで。先にはずすカードを選んでね。');
       return;
     }
     state.team = team.concat(id);
