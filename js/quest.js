@@ -16,7 +16,6 @@ const QUESTION_CATALOG = {
 const STARTER_CARDS = ['purun-little-magic-slime', 'komorin-little-night-bat', 'kinoko-apple-mushroom'];
 const SUBJECT_ICON = { '国語': '📖', '算数': '＋', '理科': '✦', '社会': '⌖', '英語': 'A', '生活': '❀' };
 const RANK_NAME = { zako: 'ナビアン', evolved: 'エボナビ', boss: 'ボスナビ' };
-const RECRUIT_COST = { zako: 60, evolved: 120, boss: 240 };
 const MAX_TEAM = 5;
 // カードのスキルはモンスターごとに固定。IDから決まるので、図鑑でもバトルでも同じスキルになる。
 const SKILLS = {
@@ -1059,10 +1058,6 @@ function renderTeam() {
   });
 }
 
-function costFor(monster) {
-  return RECRUIT_COST[monster.rank] || 60;
-}
-
 function renderCollection() {
   updateHeader();
   const packButton = $('#packButton');
@@ -1090,7 +1085,7 @@ function renderCollection() {
     const level = levelFor(state.xp[monster.id] || 0);
     const action = owned
       ? '<button class="button ' + (selected ? 'secondary' : '') + '" data-action="toggle-team" data-id="' + monster.id + '">' + (selected ? 'チームからはずす' : 'チームに入れる') + '</button>'
-      : '<button class="button primary" data-action="recruit" data-id="' + monster.id + '"' + (state.points < costFor(monster) ? ' disabled' : '') + '>' + costFor(monster) + 'Pで仲間に</button>';
+      : '<span class="pack-hint">🎁 ランダムパックで出会えるよ</span>';
     return '<article class="collection-item' + (owned ? ' owned' : '') + '">' +
       '<div class="collection-art">' + renderCard(card, { showInfo: true }) + '</div>' +
       '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + '・スキル：' + ((SKILLS[card.skill] || SKILLS.attack).name) + (owned ? '・Lv.' + level : '') + '</small></div>' +
@@ -1181,21 +1176,6 @@ function renderPack() {
   }).join('');
 }
 
-function recruit(id) {
-  const monster = monsterById.get(id);
-  if (!monster || state.owned.includes(id)) return;
-  const cost = costFor(monster);
-  if (state.points < cost) {
-    notify('あと' + (cost - state.points) + 'Pためると仲間にできるよ。');
-    return;
-  }
-  state.points -= cost;
-  state.owned.push(id);
-  saveState();
-  renderCollection();
-  notify(monster.name + 'が仲間になった！');
-}
-
 function startTrainingFromSetup() {
   runMode = 'practice';
   openSetup('practice');
@@ -1244,7 +1224,6 @@ function handleAction(action, button) {
     return;
   }
   if (action === 'toggle-team') { toggleTeam(button.dataset.id); return; }
-  if (action === 'recruit') { recruit(button.dataset.id); return; }
   if (action === 'more-cards') { collectionLimit += 24; renderCollection(); return; }
   if (action === 'buy-pack') { buyPack(); return; }
   if (action === 'flip-pack') {
