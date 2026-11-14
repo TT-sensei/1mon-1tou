@@ -812,6 +812,7 @@ const CHAIN_TIERS = [
   { at: 2, name: 'コンボ！', cls: 'tier-1' }
 ];
 let chainBannerTimer = null;
+let battleLogTimer = null;
 function chainTierFor(combo) {
   return CHAIN_TIERS.find((tier) => combo >= tier.at) || null;
 }
@@ -1034,6 +1035,8 @@ function handleCorrect(q, firstTry) {
     if (logEl) {
       logEl.textContent = '✓ 正解！ ' + notes.join(' ');
       logEl.hidden = false;
+      if (battleLogTimer) window.clearTimeout(battleLogTimer);
+      battleLogTimer = window.setTimeout(() => { logEl.hidden = true; }, 2600);
     }
     const runRef = active;
     window.setTimeout(() => { if (active === runRef) advanceQuestion(); }, 1150);
