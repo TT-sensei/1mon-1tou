@@ -30,7 +30,31 @@ window.QUESTION_BANK['2-math'] = [
 {id:'g2-math-027', cat:'計算',grade:2,subject:'算数',type:'choice',question:'24 + 30 は いくつ？',choices:['44','54','64','74'],answer:'54',hint:'十のくらいを たしてみよう。'},
 {id:'g2-math-028', cat:'計算',grade:2,subject:'算数',type:'choice',question:'65 - 20 は いくつ？',choices:['35','45','55','85'],answer:'45',hint:'10が 2こ へるよ。'},
 {id:'g2-math-029', cat:'計算',grade:2,subject:'算数',type:'choice',question:'100円の おかしを かって、50円を はらったら たりる？',choices:['たりる','たりない','おなじ','わからない'],answer:'たりない',hint:'100円の ほうが 50円より おおきいよ。'},
-{id:'g2-math-030', cat:'計算',grade:2,subject:'算数',type:'choice',question:'20 + 20 + 20 は いくつ？',choices:['40','50','60','80'],answer:'60',hint:'20を 3こ たしてみよう。'}
+{id:'g2-math-030', cat:'計算',grade:2,subject:'算数',type:'choice',question:'20 + 20 + 20 は いくつ？',choices:['40','50','60','80'],answer:'60',hint:'20を 3こ たしてみよう。'},
+{id:'g2-math-n01', cat:'図形',grade:2,subject:'算数',type:'choice',question:'長方形には かどが いくつ ある？',choices:['4つ','3つ','5つ','2つ'],answer:'4つ',hint:'長方形は 四角形の なかまだよ。'},
+{id:'g2-math-n02', cat:'図形',grade:2,subject:'算数',type:'choice',question:'正方形の 4つの 辺の 長さは？',choices:['全部 同じ','全部 ちがう','2つだけ 同じ','3つだけ 同じ'],answer:'全部 同じ',hint:'正方形の 特ちょうだよ。'},
+{id:'g2-math-n03', cat:'図形',grade:2,subject:'算数',type:'choice',question:'正方形の 辺は 何本？',choices:['4本','6本','5本','3本'],answer:'4本',hint:'四角形の 辺を かぞえよう。'},
+{id:'g2-math-n04', cat:'図形',grade:2,subject:'算数',type:'choice',question:'直角の かどが ある 形は どれ？',choices:['長方形','まる','おうぎ形','ほし形'],answer:'長方形',hint:'長方形の かどは 全部 直角だよ。'},
+{id:'g2-math-n05', cat:'図形',grade:2,subject:'算数',type:'choice',question:'円には かどが いくつ ある？',choices:['4つ','2つ','0','1つ'],answer:'0',hint:'まるい 形には かどが ないよ。'},
+{id:'g2-math-n06', cat:'図形',grade:2,subject:'算数',type:'choice',question:'はこの 形で、長方形の 面だけで できているのは？',choices:['球','三すい','直方体','円柱'],answer:'直方体',hint:'ティッシュの はこを おもいうかべよう。'},
+{id:'g2-math-n07', cat:'図形',grade:2,subject:'算数',type:'choice',question:'サイコロの 形は？',choices:['立方体','円柱','球','直方体'],answer:'立方体',hint:'どの 面も 正方形だよ。'},
+{id:'g2-math-n08', cat:'図形',grade:2,subject:'算数',type:'choice',question:'ボールの 形は？',choices:['直方体','立方体','球','円柱'],answer:'球',hint:'どこから 見ても まるいよ。'},
+{id:'g2-math-n09', cat:'図形',grade:2,subject:'算数',type:'choice',question:'かんづめの 形に ちかいのは？',choices:['三すい','球','立方体','円柱'],answer:'円柱',hint:'上と 下が まるいよ。'},
+{id:'g2-math-n10', cat:'図形',grade:2,subject:'算数',type:'choice',question:'正方形と 長方形の ちがいは？',choices:['かどの 数','辺の 長さが 全部 同じか どうか','色','大きさだけ'],answer:'辺の 長さが 全部 同じか どうか',hint:'かどの 数は どちらも 4つだよ。'},
+{id:'g2-math-n11', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'3m は 何cm？',choices:['300cm','103cm','3000cm','30cm'],answer:'300cm',hint:'1m=100cmだから、3mは 3ばいだよ。'},
+{id:'g2-math-n12', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1L は 何dL？',choices:['100dL','5dL','10dL','2dL'],answer:'10dL',hint:'リットルと デシリットルの かんけいだよ。'},
+{id:'g2-math-n13', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'2L は 何dL？',choices:['2dL','12dL','200dL','20dL'],answer:'20dL',hint:'1L=10dL だよ。'},
+{id:'g2-math-n14', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'時計で 5時の とき、短い はりは どこを さす？',choices:['5','6','12','10'],answer:'5',hint:'短い はりが じこくだよ。'},
+{id:'g2-math-n15', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'30分 たつと、長い はりは どれだけ 動く？',choices:['半周','動かない','1周','4分の1周'],answer:'半周',hint:'30分は 1時間の 半分だよ。'},
+{id:'g2-math-n16', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'2m は 何cm？',choices:['2000cm','120cm','200cm','20cm'],answer:'200cm',hint:'1m=100cm だから 2mは その 2倍だよ。'},
+{id:'g2-math-n17', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'水の かさを はかる たんいは どれ？',choices:['センチメートル','グラム','リットル','メートル'],answer:'リットル',hint:'かさは リットルで あらわすよ。'},
+{id:'g2-math-n18', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1日は 何時間？',choices:['60時間','24時間','12時間','10時間'],answer:'24時間',hint:'午前と 午後が 12時間ずつだよ。'},
+{id:'g2-math-n19', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'午前9時の 1時間 後は？',choices:['午前8時','午後9時','午前10時','午前11時'],answer:'午前10時',hint:'じこくを 1時間 すすめるよ。'},
+{id:'g2-math-n20', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'500mL と 1L では、多いのは？',choices:['わからない','同じ','1L','500mL'],answer:'1L',hint:'1L = 1000mL だよ。'},
+{id:'g2-math-n21', cat:'計算',grade:2,subject:'算数',type:'choice',question:'47 + 28 は いくつ？',choices:['75','65','76','74'],answer:'75',hint:'一のくらいから 計算しよう。'},
+{id:'g2-math-n22', cat:'計算',grade:2,subject:'算数',type:'choice',question:'83 - 46 は いくつ？',choices:['36','43','37','47'],answer:'37',hint:'くり下がりに 気をつけよう。'},
+{id:'g2-math-n23', cat:'計算',grade:2,subject:'算数',type:'choice',question:'7 × 3 は いくつ？',choices:['18','24','21','27'],answer:'21',hint:'7の 段を おもいだそう。'},
+{id:'g2-math-n24', cat:'計算',grade:2,subject:'算数',type:'choice',question:'4 × 6 は いくつ？',choices:['24','28','26','20'],answer:'24',hint:'4の 段だよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

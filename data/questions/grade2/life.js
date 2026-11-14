@@ -30,7 +30,31 @@ window.QUESTION_BANK['2-life'] = [
 {id:'g2-life-027', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'きせつが かわると、かわるものの ひとつは？',choices:['きおんや ふくそう','名前','学校の ばしょ','曜日の じゅんばん'],answer:'きおんや ふくそう',hint:'夏と 冬では ふくが ちがうね。'},
 {id:'g2-life-028', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'公園を つかったあと、よい ことは？',choices:['ごみを もちかえる','ごみを おく','ゆうぐを こわす','花を たくさん とる'],answer:'ごみを もちかえる',hint:'みんなが つかう ばしょを きれいに しよう。'},
 {id:'g2-life-029', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'朝、学校へ 行くまえに たしかめると よいことは？',choices:['わすれものが ないか','テレビの 音を 大きくする','ゲームを つづける','ねる'],answer:'わすれものが ないか',hint:'じかんわりを 見て じゅんびしよう。'},
-{id:'g2-life-030', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'友だちと いっしょに する とき、たいせつなのは？',choices:['なかよく そうだんする','じぶんだけで きめる','人の はなしを きかない','おして うばう'],answer:'なかよく そうだんする',hint:'おたがいの かんがえを きこう。'}
+{id:'g2-life-030', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'友だちと いっしょに する とき、たいせつなのは？',choices:['なかよく そうだんする','じぶんだけで きめる','人の はなしを きかない','おして うばう'],answer:'なかよく そうだんする',hint:'おたがいの かんがえを きこう。'},
+{id:'g2-life-n01', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'春に さく 花の ひとつは？',choices:['チューリップ','水仙は冬','コスモス','ひまわり'],answer:'チューリップ',hint:'春の 花だよ。'},
+{id:'g2-life-n02', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'秋に 木の はが なる 色は？',choices:['紫だけ','青','赤や 黄色','緑のまま'],answer:'赤や 黄色',hint:'もみじは 赤く なるよ。'},
+{id:'g2-life-n03', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'冬に そとで 見られるのは？',choices:['せみの ぬけがら','さくら','ひまわり','霜や 氷'],answer:'霜や 氷',hint:'寒い 朝に できるよ。'},
+{id:'g2-life-n04', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'夏に 多い 天気は？',choices:['寒い 日','晴れて あつい 日','雪の 日','霜の 日'],answer:'晴れて あつい 日',hint:'夏は 日ざしが 強いよ。'},
+{id:'g2-life-n05', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'季節が かわると 変わる ものは？',choices:['川の 名前','山の 形','気温や 着る もの','学校の 名前'],answer:'気温や 着る もの',hint:'季節で くらしが 変わるよ。'},
+{id:'g2-life-n06', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'秋に とれる くだものの ひとつは？',choices:['すいか','いちご','さくらんぼ','かき'],answer:'かき',hint:'秋の くだものだよ。'},
+{id:'g2-life-n07', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'春に 見られる むしの ひとつは？',choices:['せみ','こおろぎ','ちょう','ほたる'],answer:'ちょう',hint:'花の まわりを とぶよ。'},
+{id:'g2-life-n08', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'野さいを そだてる とき、水やりの ほかに 大切なのは？',choices:['暗い 所','寒い 風','日光','さわぐ こと'],answer:'日光',hint:'植物は 日光が 必要だよ。'},
+{id:'g2-life-n09', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'ミニトマトの 実が 赤くなるのは いつごろ？',choices:['夏','秋の おわりだけ','春の はじめ','冬'],answer:'夏',hint:'暑い 季節に 実るよ。'},
+{id:'g2-life-n10', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'虫を かんさつするとき、使うと よい 道具は？',choices:['虫めがね','はさみ','定規','のり'],answer:'虫めがね',hint:'大きく 見えるよ。'},
+{id:'g2-life-n11', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'ダンゴムシが すきな 場所は？',choices:['水の 中','木の てっぺん','明るい 乾燥した 所','じめじめした 暗い 所'],answer:'じめじめした 暗い 所',hint:'石の 下などに いるよ。'},
+{id:'g2-life-n12', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'さつまいもは 植物の どの 部分？',choices:['根','葉','実','花'],answer:'根',hint:'土の 中で 大きくなるよ。'},
+{id:'g2-life-n13', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'生きものを かう とき、大切なのは？',choices:['外に にがす','えさを あげない','最後まで せわを する','大きく なったら すてる'],answer:'最後まで せわを する',hint:'命を あずかる ことだよ。'},
+{id:'g2-life-n14', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'あさがおの 種を まく 季節は？',choices:['冬','春','秋','夏の おわり'],answer:'春',hint:'暖かく なってから まくよ。'},
+{id:'g2-life-n15', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'信号が 赤の ときは？',choices:['止まって 待つ','目を つぶる','走って わたる','わたる'],answer:'止まって 待つ',hint:'赤は「止まれ」だよ。'},
+{id:'g2-life-n16', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'信号が 青に なったら、まず することは？',choices:['友だちと 話す','すぐ 走る','右左を 見て たしかめる','目を つぶって わたる'],answer:'右左を 見て たしかめる',hint:'車が 止まったか たしかめよう。'},
+{id:'g2-life-n17', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'外から 帰ったら することは？',choices:['手洗いと うがい','すぐ 遊ぶ','おやつを 食べる だけ','すぐ ねる'],answer:'手洗いと うがい',hint:'ばいきんを 落とそう。'},
+{id:'g2-life-n18', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'知らない 人に 声を かけられたら？',choices:['ついて 行く','ついて 行かないで 近くの 大人に 知らせる','いっしょに 車に 乗る','ものを もらう'],answer:'ついて 行かないで 近くの 大人に 知らせる',hint:'安全の 約束だよ。'},
+{id:'g2-life-n19', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'ものを 大切に 使うと どうなる？',choices:['なくなる','長く 使える','汚れる','すぐ こわれる'],answer:'長く 使える',hint:'ていねいに 扱おう。'},
+{id:'g2-life-n20', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'あぶない 場所を 見つけたら？',choices:['さわって みる','そこで 遊ぶ','友だちを よぶ','近くの 大人に 知らせる'],answer:'近くの 大人に 知らせる',hint:'大人に 伝えるのが 安全だよ。'},
+{id:'g2-life-n21', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'まち たんけんで 見つけられる たてものは？',choices:['山','郵便局','雲','海'],answer:'郵便局',hint:'まちの 施設だよ。'},
+{id:'g2-life-n22', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'まちで はたらく 人の ひとつは？',choices:['パン屋さん','王子さま','農家だけ','漁師だけ'],answer:'パン屋さん',hint:'まちの 店の 人だよ。'},
+{id:'g2-life-n23', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'町の 見学で 守る 約束は？',choices:['走り回る','静かに 見学する','勝手に さわる','大きな 声を 出す'],answer:'静かに 見学する',hint:'見学先の 迷惑に ならないように しよう。'},
+{id:'g2-life-n24', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'公園を 使った あとは？',choices:['ベンチを 汚す','花を 摘む','ごみを 置いて いく','ごみを 持ち帰る'],answer:'ごみを 持ち帰る',hint:'次に 使う 人の ことを 考えよう。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

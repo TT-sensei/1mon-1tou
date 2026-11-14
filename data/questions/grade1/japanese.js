@@ -30,7 +30,31 @@ window.QUESTION_BANK['1-japanese'] = [
 {id:'g1-jp-027', cat:'その他',grade:1,subject:'国語',type:'choice',question:'「おなかが すいた。」とき、することは？',choices:['ごはんを たべる','ねる','はしる','おふろに はいる'],answer:'ごはんを たべる',hint:'おなかが すいたら なにを するかな？'},
 {id:'g1-jp-028', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「そと」の はんたいは？',choices:['なか','うえ','みぎ','まえ'],answer:'なか',hint:'おうちの そとと うちを くらべよう。'},
 {id:'g1-jp-029', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「しろい ゆき」の「しろい」は どれ？',choices:['しろい','ゆき','あおい','そら'],answer:'しろい',hint:'いろを あらわす ことばだよ。'},
-{id:'g1-jp-030', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ぞうは おおきい。」ぞうは どう？',choices:['おおきい','ちいさい','みじかい','おそい'],answer:'おおきい',hint:'ぞうの からだを おもいうかべよう。'}
+{id:'g1-jp-030', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ぞうは おおきい。」ぞうは どう？',choices:['おおきい','ちいさい','みじかい','おそい'],answer:'おおきい',hint:'ぞうの からだを おもいうかべよう。'},
+{id:'g1-jp-n01', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「たろうが ボールを なげた。」で、なげた ものは？',choices:['て','たろう','ゆか','ボール'],answer:'ボール',hint:'だれが なにを したか、文を よんで みよう。'},
+{id:'g1-jp-n02', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ねこが さかなを たべた。」で、たべたのは だれ？',choices:['いぬ','ねこ','とり','さかな'],answer:'ねこ',hint:'「が」の まえを みると、うごいた 人が わかるよ。'},
+{id:'g1-jp-n03', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「あめが ふって、じめんが ぬれた。」で、ぬれたのは どこ？',choices:['くも','そら','じめん','かさ'],answer:'じめん',hint:'文の あとのはんぶんに こたえが あるよ。'},
+{id:'g1-jp-n04', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「うさぎが にんじんを かじった。」で、かじった ものは？',choices:['はな','くさ','にんじん','うさぎ'],answer:'にんじん',hint:'「を」の まえの ことばに ちゅうもくしよう。'},
+{id:'g1-jp-n05', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「こうえんで こどもが あそんだ。」で、あそんだ ばしょは？',choices:['こうえん','いえ','がっこう','みせ'],answer:'こうえん',hint:'「で」の まえは ばしょを あらわすよ。'},
+{id:'g1-jp-n06', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「とりが そらを とんだ。」で、とんだのは だれ？',choices:['くも','かぜ','とり','そら'],answer:'とり',hint:'「が」の まえを よく よもう。'},
+{id:'g1-jp-n07', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「はなが きれいに さいた。」で、さいたのは なに？',choices:['つち','はな','き','はっぱ'],answer:'はな',hint:'どうなったかを あらわす ことばの まえを みよう。'},
+{id:'g1-jp-n08', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「いぬが ボールを おいかけた。」で、おいかけた ものは？',choices:['こども','いぬ','ボール','ねこ'],answer:'ボール',hint:'「を」の まえの ことばだよ。'},
+{id:'g1-jp-n09', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「あかが みずを のんだ。」あかは なにを した？',choices:['みずで あそんだ','みずを のんだ','みずを こぼした','みずを みた'],answer:'みずを のんだ',hint:'文の うごきを あらわす ところを よもう。'},
+{id:'g1-jp-n10', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「大きな ぞうが ゆっくり あるいた。」で、ぞうは どう あるいた？',choices:['ゆっくり','しずかに','たのしく','はやく'],answer:'ゆっくり',hint:'「どう」の ようすを あらわす ことばを さがそう。'},
+{id:'g1-jp-n11', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「さかなが みずの なかを およいだ。」で、およいだ ばしょは？',choices:['みずの なか','じめん','きの うえ','そら'],answer:'みずの なか',hint:'「を」の あと、「の なか」が ばしょの ヒントだよ。'},
+{id:'g1-jp-n12', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「おかあさんが パンを やいた。」で、やいたのは だれ？',choices:['おとうさん','おかあさん','こども','パン'],answer:'おかあさん',hint:'「が」の まえの 人を みつけよう。'},
+{id:'g1-jp-n13', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「かぜが つよく ふいた。」で、かぜは どう ふいた？',choices:['ゆっくり','すこし','つよく','しずかに'],answer:'つよく',hint:'ようすを あらわす ことばは どれかな。'},
+{id:'g1-jp-n14', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「こどもが 本を よんだ。」で、よんだ ものは？',choices:['え','本','てがみ','うた'],answer:'本',hint:'「を」の まえを みよう。'},
+{id:'g1-jp-n15', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「りんごが 木から おちた。」で、おちたのは なに？',choices:['木','りんご','とり','はっぱ'],answer:'りんご',hint:'さいしょの ことばに ちゅうもくしよう。'},
+{id:'g1-jp-n16', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「せんせいが うたを うたった。」で、うたったのは だれ？',choices:['うた','せんせい','こども','がっこう'],answer:'せんせい',hint:'「が」の まえの 人だよ。'},
+{id:'g1-jp-n17', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「あおい とりが 木に とまった。」で、とまった ばしょは？',choices:['木','じめん','かわ','そら'],answer:'木',hint:'「に」の まえが ばしょを あらわすよ。'},
+{id:'g1-jp-n18', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ねずみが チーズを たべた。」で、たべた ものは？',choices:['ミルク','パン','チーズ','ねずみ'],answer:'チーズ',hint:'「を」の まえの ことばだよ。'},
+{id:'g1-jp-n19', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ゆきが しろく つもった。」で、つもったのは なに？',choices:['くも','あめ','こおり','ゆき'],answer:'ゆき',hint:'文の はじめの ことばを みよう。'},
+{id:'g1-jp-n20', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ともだちと なかよく あそんだ。」で、だれと あそんだ？',choices:['ともだち','せんせい','かぞく','いぬ'],answer:'ともだち',hint:'「と」の まえの 人を みつけよう。'},
+{id:'g1-jp-n21', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ひろい」の はんたいは どれ？',choices:['ながい','せまい','おおきい','たかい'],answer:'せまい',hint:'はんたいの いみの ことばを かんがえよう。'},
+{id:'g1-jp-n22', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「くらい」の はんたいは どれ？',choices:['あかるい','しろい','つよい','まるい'],answer:'あかるい',hint:'あかるさの はんたいだよ。'},
+{id:'g1-jp-n23', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「カ」ではじまる ことばは どれ？',choices:['あめ','かさ','うみ','いぬ'],answer:'かさ',hint:'さいしょの おとを こえに だして みよう。'},
+{id:'g1-jp-n24', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ありがとう」の あいさつを いうのは どんなとき？',choices:['ねるとき','たすけて もらったとき','あさ おきたとき','ごはんの まえ'],answer:'たすけて もらったとき',hint:'かんしゃの きもちを つたえる ことばだよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）
