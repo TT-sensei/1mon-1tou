@@ -26,11 +26,11 @@ const RANK_NAME = { zako: 'ナビアン', evolved: 'エボナビ', boss: 'ボス
 const MAX_TEAM = 5;
 // カードのスキルはモンスターごとに固定。IDから決まるので、図鑑でもバトルでも同じスキルになる。
 const SKILLS = {
-  attack: { name: 'こうげき', icon: '⚔', short: '大きなダメージ' },
-  heal: { name: 'かいふく', icon: '✚', short: 'チームパワーを回復' },
-  guard: { name: 'まもり', icon: '⛨', short: '次の攻撃をふせぐ' },
-  wise: { name: 'さくせん', icon: '✦', short: 'ヒントを先に見られる' },
-  cheer: { name: 'おうえん', icon: '♪', short: '次のカードを2倍に' }
+  attack: { name: 'こうげき', icon: '⚔', short: '大きなダメージ', role: 'パワー型' },
+  heal: { name: 'かいふく', icon: '✚', short: 'チームパワーを回復', role: 'サポート型' },
+  guard: { name: 'まもり', icon: '⛨', short: '次の攻撃をふせぐ', role: 'ガード型' },
+  wise: { name: 'さくせん', icon: '✦', short: 'ヒントを先に見られる', role: 'テクニック型' },
+  cheer: { name: 'おうえん', icon: '♪', short: '次のカードを2倍に', role: 'サポート型' }
 };
 const SKILL_POOL = ['attack', 'attack', 'attack', 'attack', 'heal', 'guard', 'wise', 'cheer'];
 const CHARGE_COST = { zako: 4, evolved: 5, boss: 6 };
@@ -463,6 +463,10 @@ function startRun(mode, questions, grade, subject) {
   } else {
     lastConfig = { mode, grade, subject };
   }
+  active.bossHits = 0;
+  active.weaknessOpen = false;
+  const startLog = $('#battleLog');
+  if (startLog) { startLog.hidden = true; startLog.textContent = ''; }
   showScreen('screen-battle');
   renderBattle();
 }
@@ -522,7 +526,7 @@ function drawHand() {
     const pips = '●'.repeat(charge) + '○'.repeat(Math.max(0, cost - charge));
     return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + (charged && !used ? ' charged' : '') + (active.leveledCards && active.leveledCards.includes(id) ? ' leveled' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
       '<span class="hand-card-art">' + renderCard(card, { showInfo: false, mini: true }) + '</span>' +
-      '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + '</small>' +
+      '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + ' ・ ' + skill.role + '</small>' +
       '<span class="skill-chip">' + skill.icon + ' ' + card.skillName + '：' + skill.short + '</span>' +
       '<span class="charge-pips' + (charged ? ' full' : '') + '">' + (charged ? (level >= 5 ? '真ひっさつOK！ ' : 'ひっさつOK！ ') : 'ひっさつ ') + pips + '</span>' +
       (used ? '<span class="used-label">休憩中</span>' : '') + '</span></button>';
@@ -537,6 +541,10 @@ function drawEnemy() {
   $('#enemyRank').textContent = (RANK_NAME[enemy.rank] || 'ナビアン') + ' ' + (ENEMY_STARS[enemy.rank] || '');
   const waveEl = $('#enemyWave');
   if (waveEl) waveEl.textContent = '第' + (active.waveIndex + 1) + '戦 · ' + waveRoleFor(active.waveIndex, active.world);
+  const layoutEl = $('#battleLayout');
+  if (layoutEl) layoutEl.dataset.boss = active.enemy && active.enemy.rank === 'boss' ? 'true' : '';
+  const weakEl = $('#enemyWeak');
+  if (weakEl) weakEl.hidden = !(active.weaknessOpen && active.enemy && active.enemy.rank === 'boss');
   $('#enemyCard').innerHTML = renderCard({ ...card, questLevel: 0 }, { showInfo: true, className: active.enemyHp <= 0 ? 'enemy-defeated' : '' });
   const worldBgImg = $('#enemyCard').querySelector('.card-bg');
   if (worldBgImg && active.mode === 'quest') worldBgImg.src = BG_BASE + worldFor(active.world).bg;
@@ -751,9 +759,9 @@ function checkLevelUp(cardId) {
 }
 
 const CHAIN_TIERS = [
-  { at: 8, name: 'スーパーチェイン！', cls: 'tier-3' },
-  { at: 5, name: 'グレートチェイン！', cls: 'tier-2' },
-  { at: 3, name: 'チェイン！', cls: 'tier-1' }
+  { at: 6, name: 'スーパーチェイン！', cls: 'tier-3' },
+  { at: 4, name: 'スーパーコンボ！', cls: 'tier-2' },
+  { at: 2, name: 'コンボ！', cls: 'tier-1' }
 ];
 let chainBannerTimer = null;
 function chainTierFor(combo) {
@@ -857,6 +865,13 @@ function handleCorrect(q, firstTry) {
     const qSubject = q.subject || active.subject;
     const subjectMatch = Boolean(card && card.subject === qSubject);
     active.handUsed.push(cardId);
+    if (active.enemy && active.enemy.rank === 'boss' && !active.weaknessOpen) {
+      active.bossHits = (active.bossHits || 0) + 1;
+      if (active.bossHits >= 2) {
+        active.weaknessOpen = true;
+        notes.push('弱点オープン！ ダメージ+1！');
+      }
+    }
     const chargeCost = CHARGE_COST[card.rank] || 4;
     const special = (Number(active.charges[cardId]) || 0) >= chargeCost;
     if (special) active.charges[cardId] = 0;
@@ -872,6 +887,7 @@ function handleCorrect(q, firstTry) {
     if (subjectMatch) damage += 1;
     const chainBonus = active.combo >= 6 ? 2 : active.combo >= 3 ? 1 : 0;
     damage += chainBonus;
+    if (active.weaknessOpen) damage += 1;
     const speedBonus = firstTry && active.questionShownAt && (Date.now() - active.questionShownAt <= 7000) ? 1 : 0;
     damage += speedBonus;
     if (!firstTry) damage = Math.max(1, Math.ceil(damage / 2));
@@ -894,7 +910,7 @@ function handleCorrect(q, firstTry) {
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
     trackCardStat(cardId, 'damage', damage);
-    notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + (chainBonus ? '（チェイン +' + chainBonus + '）' : '') + (speedBonus ? '（はやい +1）' : '') + effectNote);
+    notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + (chainBonus ? '（チェイン +' + chainBonus + '）' : '') + (active.weaknessOpen ? '（弱点 +1）' : '') + (speedBonus ? '（はやい +1）' : '') + effectNote);
     if (active.enemyHp <= 0) {
       if (active.waveIndex >= active.waves.length - 1) {
         active.questCleared = true;
@@ -923,7 +939,7 @@ function handleCorrect(q, firstTry) {
       active.handUsed = [];
       notes.push('全員のカードが戻ってきた！');
     }
-    active.charges[cardId] = Math.min(chargeCost, (Number(active.charges[cardId]) || 0) + 2);
+    active.charges[cardId] = Math.min(chargeCost, (Number(active.charges[cardId]) || 0) + 2 + (firstTry && active.combo >= 3 ? 1 : 0));
     drawEnemy();
     spawnFloater($('#enemyCard'), '-' + damage, (special || crit) ? 'big' : '');
     const enemyEl = $('#enemyCard');
@@ -952,9 +968,20 @@ function handleCorrect(q, firstTry) {
     active.firedIndex = null;
   }
   updateComboBadge();
-  feedback(firstTry ? '正解！' : 'よく考えたね！', notes.join('\n') + '\n' + explanationText(q), [
-    { name: 'next-question', label: '次の問題へ →', className: 'primary' }
-  ], false);
+  if (isQuest) {
+    $('#feedbackPanel').hidden = true;
+    const logEl = $('#battleLog');
+    if (logEl) {
+      logEl.textContent = '✓ 正解！ ' + notes.join(' ');
+      logEl.hidden = false;
+    }
+    const runRef = active;
+    window.setTimeout(() => { if (active === runRef) advanceQuestion(); }, 1150);
+  } else {
+    feedback(firstTry ? '正解！' : 'よく考えたね！', notes.join('\n') + '\n' + explanationText(q), [
+      { name: 'next-question', label: '次の問題へ →', className: 'primary' }
+    ], false);
+  }
 }
 
 function handleWrong(q) {
@@ -1006,6 +1033,8 @@ function advanceQuestion() {
     active.enemyHp = active.enemyMaxHp;
     active.enemyPattern = enemyPatternFor(active.enemy);
     active.enemyCharged = false;
+    active.bossHits = 0;
+    active.weaknessOpen = false;
     active.enemyTurn = 0;
     active.handUsed = [];
     const heal = Math.min(4, active.teamMaxHp - active.teamHp);
@@ -1082,6 +1111,12 @@ function finishRun() {
     state.points += finishReward;
     active.pointsEarned += finishReward;
   }
+  const bossDefeated = cleared && active.waves && active.waves.length > 0 && active.waves[active.waves.length - 1].rank === 'boss';
+  if (bossDefeated) {
+    active.bossBonus = active.rewardEligible ? 7 : 2;
+    state.points += active.bossBonus;
+    active.pointsEarned += active.bossBonus;
+  }
   playSe(cleared ? 'clear' : 'practice');
   state.stats.sessions = (Number(state.stats.sessions) || 0) + 1;
   if (active.rewardEligible && active.rewardKey) state.dailyRewards[active.rewardKey] = true;
@@ -1130,6 +1165,7 @@ function renderResult(cleared) {
     }
   }
   $('#resultLevelUps').innerHTML = active.levelUps.map((item) => '<div class="levelup-note">' + item.name + 'が Lv.' + item.to + ' にレベルアップ！ +3P</div>').join('');
+  if (active.bossBonus) $('#resultLevelUps').innerHTML += '<div class="levelup-note">ボス撃破ボーナス！ カードP +' + active.bossBonus + '</div>';
   let note = isQuest ? (cleared ? '得意教科のカードと、連続正解が勝利を助けたよ。次は別の教科にも挑戦してみよう。' : 'まちがえた問題は復習リストに保存されます。ヒントを使って練習し、時間をおいてもう一度挑戦しよう。') : '正解した問題は、1日後・3日後・7日後・14日後・30日後と復習の間隔が広がります。';
   if (active.masteredThisRun > 0) note += '\n' + active.masteredThisRun + '問が定着レベルに到達したよ。これからも間隔をあけて復習しよう。';
   $('#resultLearningNote').textContent = note;
@@ -1252,7 +1288,7 @@ function renderCollection() {
       : '<span class="pack-hint">🎁 ランダムパックで出会えるよ</span>';
     return '<article class="collection-item' + (owned ? ' owned' : '') + '">' +
       '<div class="collection-art">' + renderCard(card, { showInfo: true }) + '</div>' +
-      '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + '・スキル：' + ((SKILLS[card.skill] || SKILLS.attack).name) + (owned ? '・Lv.' + level : '') + '</small></div>' +
+      '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + '・スキル：' + ((SKILLS[card.skill] || SKILLS.attack).name) + '（' + ((SKILLS[card.skill] || SKILLS.attack).role || '') + '）' + (owned ? '・Lv.' + level : '') + '</small></div>' +
       '<div class="collection-actions">' + favButton + action + '</div></article>';
   }).join('');
   if (!displayList.length) {

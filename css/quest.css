@@ -212,3 +212,12 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .home-fav-empty{font-size:12px}
 .collection-actions{display:flex;align-items:stretch}
 .collection-actions .button{flex:1}
+
+/* フェーズ4（2026-11-14）: バトル画面の再設計（正解時は演出のみで進行、ボス戦） */
+.battle-log{margin-top:13px;padding:10px 13px;border-radius:12px;background:#eef7f1;border:1px solid #cfe7d9;color:#33523f;font-size:12px;font-weight:800;line-height:1.6}
+.health-track i{transition:width .5s ease}
+.enemy-weak{display:inline-block;margin-top:9px;padding:4px 10px;border-radius:99px;background:#fdeeda;border:1px solid #f3cf8f;color:#a35b12;font-size:10px;font-weight:1000}
+.battle-layout[data-boss="true"] .enemy-card{width:min(228px,100%)}
+.battle-layout[data-boss="true"] .health-track{height:14px}
+.battle-layout[data-boss="true"] .enemy-health strong{font-size:13px;color:#a33b2e}
+.battle-layout[data-boss="true"] .enemy-panel{border:1px solid #f0d9b5}
