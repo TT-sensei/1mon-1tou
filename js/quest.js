@@ -48,6 +48,7 @@ const defaults = {
   team: STARTER_CARDS.slice(),
   xp: {},
   world: 'forest',
+  favorites: [],
   review: {},
   dailyRewards: {},
   stats: { totalCorrect: 0, firstTryCorrect: 0, questsCleared: 0, masteredReview: 0, sessions: 0, wrongAttempts: 0 }
@@ -121,6 +122,7 @@ function readState() {
     review: saved.review && typeof saved.review === 'object' ? saved.review : {},
     dailyRewards: saved.dailyRewards && typeof saved.dailyRewards === 'object' ? saved.dailyRewards : {},
     world: WORLDS.some((w) => w.id === saved.world) ? saved.world : 'forest',
+    favorites: Array.isArray(saved.favorites) ? saved.favorites.filter((id) => validIds.has(id)) : [],
     stats: { ...defaults.stats, ...(saved.stats || {}) }
   };
 }
@@ -137,14 +139,17 @@ function levelFor(xp) {
 function cardFor(id) {
   const monster = monsterById.get(id);
   if (!monster) return null;
+  const questLevel = levelFor(state.xp[monster.id] || 0);
+  const skill = skillFor(monster);
   return {
     ...monster,
     id: monster.id,
     monsterId: monster.id,
     rarity: monster.rank === 'boss' ? 'boss' : monster.rank === 'evolved' ? 'rare' : 'normal',
-    skill: skillFor(monster),
-    skillName: (SKILLS[skillFor(monster)] || SKILLS.attack).name,
-    skillIcon: (SKILLS[skillFor(monster)] || SKILLS.attack).icon,
+    skill,
+    questLevel,
+    skillName: (questLevel >= 5 ? '真・' : '') + (SKILLS[skill] || SKILLS.attack).name,
+    skillIcon: (SKILLS[skill] || SKILLS.attack).icon,
     effect: monster.rank === 'boss' ? 'rainbow' : monster.rank === 'evolved' ? 'holo' : 'normal',
     background: monster.rank === 'boss' ? 'palace' : monster.rank === 'evolved' ? 'hill' : 'forest'
   };
@@ -200,6 +205,13 @@ function renderHome() {
     const card = cardFor(id);
     return '<div class="hero-card">' + renderCard(card, { showInfo: false }) + '<span class="hero-card-name">' + card.name + '</span></div>';
   }).join('');
+  const favEl = $('#homeFavorites');
+  if (favEl) {
+    const favs = (state.favorites || []).filter((id) => state.owned.includes(id)).slice(0, 5);
+    favEl.innerHTML = favs.length
+      ? favs.map((id) => { const c = cardFor(id); return '<div class="home-fav-item">' + renderCard(c, { mini: true, showInfo: false }) + '<span>' + c.name + ' Lv.' + c.questLevel + '</span></div>'; }).join('')
+      : '<p class="muted home-fav-empty">まだいないよ。カード図鑑で、気に入ったカードの☆を押してみよう。</p>';
+  }
 }
 
 function openSetup(mode) {
@@ -511,8 +523,8 @@ function drawHand() {
     return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + (charged && !used ? ' charged' : '') + (active.leveledCards && active.leveledCards.includes(id) ? ' leveled' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
       '<span class="hand-card-art">' + renderCard(card, { showInfo: false, mini: true }) + '</span>' +
       '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + '</small>' +
-      '<span class="skill-chip">' + skill.icon + ' ' + skill.name + '：' + skill.short + '</span>' +
-      '<span class="charge-pips' + (charged ? ' full' : '') + '">' + (charged ? 'ひっさつOK！ ' : 'ひっさつ ') + pips + '</span>' +
+      '<span class="skill-chip">' + skill.icon + ' ' + card.skillName + '：' + skill.short + '</span>' +
+      '<span class="charge-pips' + (charged ? ' full' : '') + '">' + (charged ? (level >= 5 ? '真ひっさつOK！ ' : 'ひっさつOK！ ') : 'ひっさつ ') + pips + '</span>' +
       (used ? '<span class="used-label">休憩中</span>' : '') + '</span></button>';
   }).join('');
 }
@@ -525,7 +537,7 @@ function drawEnemy() {
   $('#enemyRank').textContent = (RANK_NAME[enemy.rank] || 'ナビアン') + ' ' + (ENEMY_STARS[enemy.rank] || '');
   const waveEl = $('#enemyWave');
   if (waveEl) waveEl.textContent = '第' + (active.waveIndex + 1) + '戦 · ' + waveRoleFor(active.waveIndex, active.world);
-  $('#enemyCard').innerHTML = renderCard(card, { showInfo: true, className: active.enemyHp <= 0 ? 'enemy-defeated' : '' });
+  $('#enemyCard').innerHTML = renderCard({ ...card, questLevel: 0 }, { showInfo: true, className: active.enemyHp <= 0 ? 'enemy-defeated' : '' });
   const worldBgImg = $('#enemyCard').querySelector('.card-bg');
   if (worldBgImg && active.mode === 'quest') worldBgImg.src = BG_BASE + worldFor(active.world).bg;
   $('#enemySubject').textContent = enemy.subject || 'とくになし';
@@ -848,6 +860,7 @@ function handleCorrect(q, firstTry) {
     const chargeCost = CHARGE_COST[card.rank] || 4;
     const special = (Number(active.charges[cardId]) || 0) >= chargeCost;
     if (special) active.charges[cardId] = 0;
+    const trueSpecial = special && level >= 5;
     let damage = 0;
     if (skill === 'attack') {
       damage = ({ zako: 2, evolved: 3, boss: 4 }[card.rank] || 2) + (level >= 3 ? 1 : 0) + (level >= 5 ? 1 : 0);
@@ -869,8 +882,8 @@ function handleCorrect(q, firstTry) {
     }
     let effectNote = '';
     if (special) {
-      damage = damage * 2 + 2;
-      effectNote = 'ひっさつわざ！';
+      damage = damage * 2 + 2 + (trueSpecial ? 2 : 0);
+      effectNote = trueSpecial ? '真ひっさつわざ！' : 'ひっさつわざ！';
     } else if (crit) {
       damage *= 2;
       effectNote = 'かいしん！';
@@ -893,17 +906,17 @@ function handleCorrect(q, firstTry) {
     let healedAmount = 0;
     if (skill === 'heal') {
       const before = active.teamHp;
-      active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3) * (special ? 2 : 1));
+      active.teamHp = Math.min(active.teamMaxHp, active.teamHp + (firstTry ? 5 : 3) * (special ? 2 : 1) + (trueSpecial ? 2 : 0));
       healedAmount = active.teamHp - before;
       notes.push('チームパワーが ' + healedAmount + ' 回復した。');
     }
     if (healedAmount > 0) trackCardStat(cardId, 'heal', healedAmount);
     if (skill === 'guard') {
-      active.guardBlocks = special ? 2 : 1;
-      notes.push(special ? '次の2回の攻撃をふせぐよ。' : '次の相手の攻撃をふせぐよ。');
+      active.guardBlocks = special ? (trueSpecial ? 3 : 2) : 1;
+      notes.push(special ? '次の' + active.guardBlocks + '回の攻撃をふせぐよ。' : '次の相手の攻撃をふせぐよ。');
     }
     if (skill === 'cheer') {
-      active.cheerMult = special ? 3 : 2;
+      active.cheerMult = special ? (trueSpecial ? 4 : 3) : 2;
       notes.push('次のカードのダメージが' + active.cheerMult + '倍になるよ。');
     }
     if (active.handUsed.length >= active.team.length) {
@@ -1215,6 +1228,7 @@ function renderCollection() {
     const owned = state.owned.includes(monster.id);
     if (collectionFilter === 'owned' && !owned) return false;
     if (collectionFilter === 'unowned' && owned) return false;
+    if (collectionFilter === 'favorite' && !state.favorites.includes(monster.id)) return false;
     if (!search) return true;
     return (monster.name + ' ' + (monster.subject || '') + ' ' + (RANK_NAME[monster.rank] || '')).toLocaleLowerCase('ja').includes(search);
   });
@@ -1231,19 +1245,32 @@ function renderCollection() {
     const selected = state.team.includes(monster.id);
     const card = cardFor(monster.id);
     const level = levelFor(state.xp[monster.id] || 0);
+    const fav = state.favorites.includes(monster.id);
+    const favButton = owned ? '<button class="fav-toggle' + (fav ? ' is-fav' : '') + '" data-favorite="' + monster.id + '" aria-pressed="' + String(fav) + '" aria-label="お気に入り">' + (fav ? '⭐' : '☆') + '</button>' : '';
     const action = owned
       ? '<button class="button ' + (selected ? 'secondary' : '') + '" data-action="toggle-team" data-id="' + monster.id + '">' + (selected ? 'チームからはずす' : 'チームに入れる') + '</button>'
       : '<span class="pack-hint">🎁 ランダムパックで出会えるよ</span>';
     return '<article class="collection-item' + (owned ? ' owned' : '') + '">' +
       '<div class="collection-art">' + renderCard(card, { showInfo: true }) + '</div>' +
       '<div class="collection-meta"><strong>' + monster.name + '</strong><small>' + (monster.subject || 'とくになし') + '・' + (RANK_NAME[monster.rank] || 'ナビアン') + '・スキル：' + ((SKILLS[card.skill] || SKILLS.attack).name) + (owned ? '・Lv.' + level : '') + '</small></div>' +
-      '<div class="collection-actions">' + action + '</div></article>';
+      '<div class="collection-actions">' + favButton + action + '</div></article>';
   }).join('');
   if (!displayList.length) {
-    $('#collectionGrid').innerHTML = '<div class="empty-state">見つかりませんでした。検索する言葉を変えてみよう。</div>';
+    $('#collectionGrid').innerHTML = collectionFilter === 'favorite'
+      ? '<div class="empty-state">まだお気に入りがいないよ。カードの☆を押して登録しよう。</div>'
+      : '<div class="empty-state">見つかりませんでした。検索する言葉を変えてみよう。</div>';
   }
   $('#moreCardsButton').hidden = list.length <= collectionLimit;
   document.querySelectorAll('[data-filter]').forEach((button) => button.classList.toggle('active', button.dataset.filter === collectionFilter));
+}
+
+function toggleFavorite(id) {
+  if (!state.owned.includes(id)) return;
+  state.favorites = state.favorites.includes(id)
+    ? state.favorites.filter((x) => x !== id)
+    : [...state.favorites, id];
+  saveState();
+  renderCollection();
 }
 
 function toggleTeam(id) {
@@ -1419,6 +1446,10 @@ document.addEventListener('click', (event) => {
     state.world = selectedWorld;
     saveState();
     renderSetup();
+    return;
+  }
+  if (button.dataset.favorite) {
+    toggleFavorite(button.dataset.favorite);
     return;
   }
   if (button.dataset.filter) {

@@ -188,3 +188,27 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .battle-layout[data-world="sea"] .enemy-panel{background:linear-gradient(180deg,#e8f3fb,#fdfefd)}
 .battle-layout[data-world="volcano"] .enemy-panel{background:linear-gradient(180deg,#fdf0e2,#fdfefd)}
 .battle-layout[data-world="snow"] .enemy-panel{background:linear-gradient(180deg,#edf4f9,#fdfefd)}
+
+/* フェーズ3（2026-11-14）: レベルで増えるカードの枠・演出と、お気に入り */
+.battle-card.lv2 .card-effect{background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.4) 48%,transparent 62%);opacity:.65}
+.battle-card.lv3{box-shadow:0 0 0 3px #bccdd8,0 8px 20px rgba(90,120,140,.30)}
+.battle-card.lv3 .card-info{background:linear-gradient(90deg,#33475c,#24344a)}
+.battle-card.lv4{box-shadow:0 0 0 3px #c3d3de,0 0 20px rgba(165,195,220,.7)}
+.battle-card.lv4 .card-effect{background:radial-gradient(circle at 25% 30%,rgba(255,255,255,.9) 0 2px,transparent 3.5px),radial-gradient(circle at 70% 58%,rgba(255,255,255,.85) 0 2px,transparent 3.5px),radial-gradient(circle at 48% 82%,rgba(255,255,255,.75) 0 1.5px,transparent 3px);animation:lvSparkle 2.4s ease-in-out infinite}
+.battle-card.lv5{box-shadow:0 0 0 3px #e9b949,0 0 24px rgba(233,185,73,.8)}
+.battle-card.lv5 .card-info{background:linear-gradient(90deg,#7a5410,#5c3f0a)}
+.battle-card.lv5 .card-effect{background:linear-gradient(115deg,transparent 25%,rgba(255,215,120,.5) 45%,rgba(170,220,255,.4) 55%,transparent 75%);background-size:250% 100%;animation:lvShine 3s linear infinite}
+.card-crown{position:absolute;top:3px;right:5px;z-index:6;font-size:19px;line-height:1;transform:rotate(14deg);filter:drop-shadow(0 2px 3px rgba(0,0,0,.35));pointer-events:none}
+@keyframes lvSparkle{0%,100%{opacity:.35}50%{opacity:.95}}
+@keyframes lvShine{0%{background-position:120% 0}100%{background-position:-120% 0}}
+.fav-toggle{flex:0 0 auto;width:38px;border-radius:11px;border:1px solid #e2e8ea;background:#fff;font-size:17px;cursor:pointer;color:#b6a23a}
+.fav-toggle.is-fav{background:#fdf3d0;border-color:#ecd27a}
+.home-favorites{margin-top:18px}
+.home-favorites-head{display:flex;align-items:baseline;gap:10px;margin-bottom:9px;flex-wrap:wrap}
+.home-favorites-head h3{font-size:15px;margin:0}
+.home-favorites-row{display:flex;gap:10px;flex-wrap:wrap}
+.home-fav-item{width:86px;display:grid;gap:4px;justify-items:center;text-align:center}
+.home-fav-item span{font-size:10px;font-weight:800}
+.home-fav-empty{font-size:12px}
+.collection-actions{display:flex;align-items:stretch}
+.collection-actions .button{flex:1}

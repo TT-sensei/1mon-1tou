@@ -54,6 +54,11 @@
         </div>
       </div>
 
+      <div class="home-favorites">
+        <div class="home-favorites-head"><h3>⭐ お気に入りのナビアン</h3><span class="muted">カード図鑑で⭐をつけると、ここに並びます</span></div>
+        <div id="homeFavorites" class="home-favorites-row"></div>
+      </div>
+
       <div class="home-shortcuts">
         <button class="shortcut-card" data-action="team"><span class="shortcut-icon blue">▣</span><span><strong>チーム編成</strong><small>5枚のカードをえらぼう</small></span><span class="shortcut-arrow">→</span></button>
         <button class="shortcut-card" data-action="collection"><span class="shortcut-icon amber">✧</span><span><strong>カード図鑑</strong><small>新しい仲間を見つけよう</small></span><span class="shortcut-arrow">→</span></button>
@@ -192,6 +197,7 @@
           <div id="collectionFilters" class="filter-row">
             <button class="filter-chip active" data-filter="all">すべて</button>
             <button class="filter-chip" data-filter="owned">なかま</button>
+            <button class="filter-chip" data-filter="favorite">⭐ お気に入り</button>
             <button class="filter-chip" data-filter="unowned">まだ出会っていない</button>
           </div>
           <label class="search-box"><span aria-hidden="true">⌕</span><input id="collectionSearch" type="search" placeholder="名前・教科でさがす" autocomplete="off"></label>
