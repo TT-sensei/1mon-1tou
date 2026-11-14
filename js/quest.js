@@ -515,6 +515,7 @@ function startRun(mode, questions, grade, subject) {
   if (startLog) { startLog.hidden = true; startLog.textContent = ''; }
   showScreen('screen-battle');
   renderBattle();
+  if (mode === 'quest') showStageBanner('第1戦 ' + waveRoleFor(0, active.world));
 }
 
 function renderBattle() {
@@ -523,6 +524,7 @@ function renderBattle() {
   const isQuest = active.mode === 'quest';
   $('#battleLayout').classList.toggle('practice-layout', !isQuest);
   $('#battleLayout').dataset.world = isQuest ? (active.world || 'forest') : '';
+  $('#battleLayout').style.setProperty('--world-bg', 'url(' + BG_BASE + (isQuest ? worldFor(active.world).bg : 'forest.jpeg') + ')');
   $('#enemyPanel').hidden = !isQuest;
   $('#practiceBuddy').hidden = isQuest;
   $('#battleModeEyebrow').textContent = isQuest ? 'NAVIAN QUEST' : 'PRACTICE STUDIO';
@@ -855,6 +857,17 @@ function castAnswer(value, expected) {
   return String(value).trim();
 }
 
+function flashStage(kind) {
+  const el = $('#battleLayout'); if (!el) return;
+  el.classList.remove('fx-hit', 'fx-hurt', 'fx-special');
+  void el.offsetWidth; el.classList.add(kind);
+}
+function showStageBanner(text) {
+  const b = $('#stageBanner'); if (!b) return;
+  b.hidden = true; void b.offsetWidth;
+  b.textContent = text; b.hidden = false;
+  setTimeout(() => { b.hidden = true; }, 1700);
+}
 function spawnFloater(anchor, text, className) {
   if (!anchor) return;
   const el = document.createElement('span');
@@ -992,6 +1005,7 @@ function handleCorrect(q, firstTry) {
     enemyEl.classList.remove('hit-shake');
     void enemyEl.offsetWidth;
     enemyEl.classList.add('hit-shake');
+    flashStage((special || crit) ? 'fx-special' : 'fx-hit');
     active.firedIndex = active.selectedCard;
     if (skill === 'heal' && healedAmount > 0) spawnFloater($('#teamPower'), '+' + healedAmount, 'heal');
     playSe(special ? 'finale' : crit ? 'bonus' : active.combo >= 3 ? 'combo3' : 'correct');
@@ -1086,6 +1100,7 @@ function advanceQuestion() {
     const heal = Math.min(4, active.teamMaxHp - active.teamHp);
     active.teamHp += heal;
     playSe('stageClear');
+    showStageBanner('第' + (active.waveIndex + 1) + '戦 ' + waveRoleFor(active.waveIndex, active.world));
     notify('第' + (active.waveIndex + 1) + '戦！ ' + waveRoleFor(active.waveIndex, active.world) + ' ' + active.enemy.name + ' があらわれた！');
     drawEnemy();
     drawPartyArea();
@@ -1109,6 +1124,7 @@ function advanceQuestion() {
       spawnFloater($('#teamPower'), 'ふせいだ！', 'buff');
     } else {
       playSe('bossHit');
+      flashStage('fx-hurt');
       active.teamHp = Math.max(0, active.teamHp - next.damage);
       active.enemyBoost = 0;
       if (next.type === 'big') active.enemyCharged = false;

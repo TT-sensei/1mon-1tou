@@ -7,6 +7,7 @@
   <meta name="description" content="ナビアンのカードと一緒に、問題を解いて冒険しよう。">
   <title>ナビアン・クエスト｜1問1とう</title>
   <link rel="stylesheet" href="css/quest.css">
+  <link rel="stylesheet" href="css/battle-arena.css">
 </head>
 <body>
 <div class="app-shell">
@@ -119,6 +120,7 @@
       </div>
       <div class="run-progress" id="runProgress" aria-label="問題の進み具合"></div>
       <div id="battleLayout" class="battle-layout">
+        <div id="stageBanner" class="stage-banner" hidden></div>
         <aside id="enemyPanel" class="panel enemy-panel">
           <div class="panel-heading compact"><div><p class="eyebrow">OPPONENT</p><h2 id="enemyName">ナビアン</h2></div><span class="enemy-pills"><span id="enemyWave" class="wave-pill"></span><span id="enemyRank" class="rank-pill">ナビアン</span></span></div>
           <div id="enemyCard" class="enemy-card"></div>
