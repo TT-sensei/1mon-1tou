@@ -13,6 +13,13 @@ const QUESTION_CATALOG = {
   5: ['国語', '算数', '理科', '社会', '英語'],
   6: ['国語', '算数', '理科', '社会', '英語']
 };
+const BG_BASE = 'https://tt-sensei.github.io/navi-character-/assets/fantasy/cards/backgrounds/';
+const WORLDS = [
+  { id: 'forest', name: 'はじまりの森', icon: '🌲', bg: 'forest.jpeg', hpBonus: 0 },
+  { id: 'sea', name: 'なみの海辺', icon: '🌊', bg: 'sea.jpeg', hpBonus: 0 },
+  { id: 'volcano', name: 'ほのおの火山', icon: '🌋', bg: 'volcano-light.jpeg', hpBonus: 2 },
+  { id: 'snow', name: 'こおりの雪原', icon: '❄', bg: 'snowfield.jpeg', hpBonus: 2 }
+];
 const STARTER_CARDS = ['purun-little-magic-slime', 'komorin-little-night-bat', 'kinoko-apple-mushroom'];
 const SUBJECT_ICON = { '国語': '📖', '算数': '＋', '理科': '✦', '社会': '⌖', '英語': 'A', '生活': '❀' };
 const RANK_NAME = { zako: 'ナビアン', evolved: 'エボナビ', boss: 'ボスナビ' };
@@ -40,6 +47,7 @@ const defaults = {
   owned: STARTER_CARDS.slice(),
   team: STARTER_CARDS.slice(),
   xp: {},
+  world: 'forest',
   review: {},
   dailyRewards: {},
   stats: { totalCorrect: 0, firstTryCorrect: 0, questsCleared: 0, masteredReview: 0, sessions: 0, wrongAttempts: 0 }
@@ -85,6 +93,7 @@ function syncFuriganaMode() {
 let state = readState();
 let selectedGrade = 1;
 let selectedSubject = '国語';
+let selectedWorld = state.world || 'forest';
 let runMode = 'quest';
 let active = null;
 let lastConfig = null;
@@ -111,6 +120,7 @@ function readState() {
     xp: saved.xp && typeof saved.xp === 'object' ? saved.xp : {},
     review: saved.review && typeof saved.review === 'object' ? saved.review : {},
     dailyRewards: saved.dailyRewards && typeof saved.dailyRewards === 'object' ? saved.dailyRewards : {},
+    world: WORLDS.some((w) => w.id === saved.world) ? saved.world : 'forest',
     stats: { ...defaults.stats, ...(saved.stats || {}) }
   };
 }
@@ -255,13 +265,21 @@ async function renderSetup() {
   const mixed = createButton('', 'subject-choice mix' + (selectedSubject === '__mix' ? ' selected' : ''), { 'data-subject': '__mix', 'aria-pressed': String(selectedSubject === '__mix') });
   mixed.innerHTML = '<span class="subject-symbol">✧</span><span>ミックス</span><small>全教科から出題</small>';
   $('#subjectChoices').appendChild(mixed);
+  const worldBlock = $('#worldBlock');
+  if (worldBlock) {
+    worldBlock.hidden = runMode !== 'quest';
+    if (runMode === 'quest') {
+      const today = todayWorldId();
+      $('#worldChoices').innerHTML = WORLDS.map((w) => '<button type="button" class="world-choice' + (selectedWorld === w.id ? ' selected' : '') + '" data-world="' + w.id + '" aria-pressed="' + String(selectedWorld === w.id) + '"><img src="' + BG_BASE + w.bg + '" alt=""><span class="world-choice-body"><strong>' + w.icon + ' ' + w.name + '</strong><small>' + (w.hpBonus ? '敵が少し強い' : '敵の強さはふつう') + '</small></span>' + (today === w.id ? '<span class="world-today">今日のおすすめ</span>' : '') + '</button>').join('');
+    }
+  }
   const count = selectedSubject === '__mix' ? mixedCount : (setupCounts[selectedSubject] || 0);
   const questionCount = Math.min(8, count);
   $('#setupQuestionCount').textContent = runMode === 'quest' ? '全3戦' : questionCount + '問';
   $('#setupModeText').textContent = runMode === 'quest' ? '・クエストバトル' : '・特訓モード';
   $('#startSetupButton').innerHTML = (runMode === 'quest' ? 'クエスト開始' : '特訓をはじめる') + ' <span class="button-arrow">→</span>';
   $('#setupMessage').textContent = count ? (runMode === 'quest'
-    ? (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'の敵3体を、全部倒すまでバトルします。')
+    ? (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + '、' + worldFor(selectedWorld).name + 'の敵3体を、全部倒すまでバトルします。')
     : (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'から、' + questionCount + '問出題します。')) : 'この学年には、まだ選べる問題がありません。';
   $('#startSetupButton').disabled = count < 1;
 }
@@ -306,6 +324,20 @@ async function beginSetupRun() {
   button.disabled = false;
 }
 
+function worldFor(id) { return WORLDS.find((w) => w.id === id) || WORLDS[0]; }
+function todayWorldId() {
+  const now = new Date();
+  const day = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+  return WORLDS[day % WORLDS.length].id;
+}
+function waveRoleFor(index, worldId) {
+  if (index <= 0) return '見張り番';
+  if (index === 1) return '守護者';
+  return worldFor(worldId).name + 'のボス';
+}
+function enemyMaxHpFor(rank, worldId) {
+  return (ENEMY_HP[rank] || 8) + (worldId ? (worldFor(worldId).hpBonus || 0) : 0);
+}
 const ENEMY_HP = { zako: 7, evolved: 12, boss: 18 };
 const ENEMY_STARS = { zako: '⭐', evolved: '⭐⭐', boss: '⭐⭐⭐' };
 
@@ -370,6 +402,7 @@ function startRun(mode, questions, grade, subject) {
     mode,
     grade,
     subject,
+    world: mode === 'quest' ? selectedWorld : null,
     questions: cleanQuestions,
     index: 0,
     question: cleanQuestions[0],
@@ -404,7 +437,7 @@ function startRun(mode, questions, grade, subject) {
     enemyCharged: false,
     enemyTurn: 0,
     questCleared: false,
-    enemyMaxHp: enemy ? (ENEMY_HP[enemy.rank] || 8) : 0,
+    enemyMaxHp: enemy ? enemyMaxHpFor(enemy.rank, mode === 'quest' ? selectedWorld : null) : 0,
     enemyHp: enemy ? (ENEMY_HP[enemy.rank] || 8) : 0,
     pointsEarned: 0,
     rewardKey: ['quest', 'practice'].includes(mode) ? (new Date().toLocaleDateString('sv-SE') + '-grade-' + grade) : null,
@@ -427,6 +460,7 @@ function renderBattle() {
   if (!active) return;
   const isQuest = active.mode === 'quest';
   $('#battleLayout').classList.toggle('practice-layout', !isQuest);
+  $('#battleLayout').dataset.world = isQuest ? (active.world || 'forest') : '';
   $('#enemyPanel').hidden = !isQuest;
   $('#practiceBuddy').hidden = isQuest;
   $('#battleModeEyebrow').textContent = isQuest ? 'NAVIAN QUEST' : 'PRACTICE STUDIO';
@@ -490,8 +524,10 @@ function drawEnemy() {
   $('#enemyName').textContent = enemy.name;
   $('#enemyRank').textContent = (RANK_NAME[enemy.rank] || 'ナビアン') + ' ' + (ENEMY_STARS[enemy.rank] || '');
   const waveEl = $('#enemyWave');
-  if (waveEl) waveEl.textContent = '第' + (active.waveIndex + 1) + '戦 / 全' + active.waves.length + '戦';
+  if (waveEl) waveEl.textContent = '第' + (active.waveIndex + 1) + '戦 · ' + waveRoleFor(active.waveIndex, active.world);
   $('#enemyCard').innerHTML = renderCard(card, { showInfo: true, className: active.enemyHp <= 0 ? 'enemy-defeated' : '' });
+  const worldBgImg = $('#enemyCard').querySelector('.card-bg');
+  if (worldBgImg && active.mode === 'quest') worldBgImg.src = BG_BASE + worldFor(active.world).bg;
   $('#enemySubject').textContent = enemy.subject || 'とくになし';
   $('#enemyHp').textContent = String(active.enemyHp);
   $('#enemyMaxHp').textContent = String(active.enemyMaxHp);
@@ -953,7 +989,7 @@ function advanceQuestion() {
   if (active.mode === 'quest' && active.enemyHp <= 0 && active.waveIndex < active.waves.length - 1) {
     active.waveIndex += 1;
     active.enemy = active.waves[active.waveIndex];
-    active.enemyMaxHp = ENEMY_HP[active.enemy.rank] || 8;
+    active.enemyMaxHp = enemyMaxHpFor(active.enemy.rank, active.world);
     active.enemyHp = active.enemyMaxHp;
     active.enemyPattern = enemyPatternFor(active.enemy);
     active.enemyCharged = false;
@@ -962,7 +998,7 @@ function advanceQuestion() {
     const heal = Math.min(4, active.teamMaxHp - active.teamHp);
     active.teamHp += heal;
     playSe('stageClear');
-    notify('第' + (active.waveIndex + 1) + '戦！ ' + active.enemy.name + ' があらわれた！');
+    notify('第' + (active.waveIndex + 1) + '戦！ ' + waveRoleFor(active.waveIndex, active.world) + ' ' + active.enemy.name + ' があらわれた！');
     drawEnemy();
     drawPartyArea();
     if (heal > 0) spawnFloater($('#teamPower'), '+' + heal, 'heal');
@@ -1375,6 +1411,13 @@ document.addEventListener('click', (event) => {
   }
   if (button.dataset.subject) {
     selectedSubject = button.dataset.subject;
+    renderSetup();
+    return;
+  }
+  if (button.dataset.world) {
+    selectedWorld = button.dataset.world;
+    state.world = selectedWorld;
+    saveState();
     renderSetup();
     return;
   }

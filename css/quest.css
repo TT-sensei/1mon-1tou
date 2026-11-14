@@ -174,3 +174,17 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .result-mvp{margin-top:12px;padding:11px 14px;border-radius:13px;background:#eef7f1;color:#2e6b4f;font-size:13px;font-weight:900;text-align:center}
 
 .home-foot-link{color:#7d8f95;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+
+/* フェーズ2（2026-11-14）: ワールド選択と敵パネルのテーマ */
+.world-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.world-choice{position:relative;display:flex;align-items:center;gap:11px;padding:8px;border:1px solid #dce4e5;border-radius:14px;background:#fbfcfc;color:var(--ink);font:inherit;text-align:left;cursor:pointer}
+.world-choice img{width:52px;height:64px;object-fit:cover;border-radius:9px;flex:0 0 auto}
+.world-choice-body{display:grid;gap:2px;min-width:0}
+.world-choice-body strong{font-size:13px}
+.world-choice-body small{font-size:10px;color:var(--muted)}
+.world-choice.selected{border:2px solid #3f9d78;background:#eef7f1;padding:7px}
+.world-today{position:absolute;top:6px;right:6px;padding:3px 7px;border-radius:99px;background:#f6c453;color:#6b4e00;font-size:8px;font-weight:1000}
+.battle-layout[data-world="forest"] .enemy-panel{background:linear-gradient(180deg,#f0f7e8,#fdfefd)}
+.battle-layout[data-world="sea"] .enemy-panel{background:linear-gradient(180deg,#e8f3fb,#fdfefd)}
+.battle-layout[data-world="volcano"] .enemy-panel{background:linear-gradient(180deg,#fdf0e2,#fdfefd)}
+.battle-layout[data-world="snow"] .enemy-panel{background:linear-gradient(180deg,#edf4f9,#fdfefd)}
