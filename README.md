@@ -4,7 +4,7 @@
 
 ## 新しい試作版：ナビアン・クエスト
 
-[ナビアン・クエストを開く](https://tt-sensei.github.io/1mon-1tou/quest.html)
+[ナビアン・クエストを開く](https://tt-sensei.github.io/1mon-1tou/)
 
 既存版を残したまま、ゲームの中心をゼロから組み直した試作版です。ナビアンをカードにして問題に挑み、カードを育て、間違えた問題を特訓し、図鑑から好きな仲間を選んで集めます。試作版は既存版と別の保存領域を使います。
 
@@ -22,8 +22,9 @@
 
 ## 構成
 
-- index.html：既存版の画面の骨格
-- quest.html：ナビアン・クエストの試作版
+- index.html：ナビアン・クエスト（正式版）の画面
+- battle.html：従来版（教科モンスターバトル）の画面
+- quest.html：トップページへの案内（旧アドレス用）
 - css/app.css、css/battle.css：既存版の画面
 - css/quest.css：試作版の画面
 - js/app.js、js/battle.js：既存版の画面遷移・カード・バトル処理

@@ -172,3 +172,5 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 @keyframes levelGlow{0%,100%{box-shadow:0 0 0 2px #f6d67c}50%{box-shadow:0 0 0 4px #f9e29a,0 8px 20px #e9b94977}}
 .result-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
 .result-mvp{margin-top:12px;padding:11px 14px;border-radius:13px;background:#eef7f1;color:#2e6b4f;font-size:13px;font-weight:900;text-align:center}
+
+.home-foot-link{color:#7d8f95;font-weight:800;text-decoration:underline;text-underline-offset:3px}
