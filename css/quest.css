@@ -227,3 +227,48 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .category-choice{min-height:42px;padding:8px 14px;border:1px solid #dce4e5;border-radius:99px;background:#fbfcfc;color:var(--ink);font-size:12px;font-weight:900;box-shadow:0 2px 0 #e2e7e6}
 .category-choice small{color:var(--muted);font-size:10px;font-weight:800}
 .category-choice.selected{background:var(--blue-soft);border:2px solid #71afcf;color:#1f6488;padding:7px 13px}
+
+/* ホームのワクワク演出（2026-11-14） */
+@keyframes heroFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+.hero-card .battle-card{animation:heroFloat 3.8s ease-in-out infinite}
+.hero-card:nth-child(2) .battle-card{animation-delay:.6s}
+.hero-card:nth-child(3) .battle-card{animation-delay:1.2s}
+.hero-card:nth-child(4) .battle-card{animation-delay:.3s}
+.hero-card:nth-child(5) .battle-card{animation-delay:.9s}
+.hero-sparkles{position:absolute;inset:0;z-index:0;pointer-events:none}
+.hero-sparkles i{position:absolute;color:#e9b949;opacity:0;font-style:normal;animation:twinkle 3.6s ease-in-out infinite}
+.hero-sparkles i:before{content:"✦"}
+.hero-sparkles i:nth-child(1){left:6%;top:12%;font-size:15px}
+.hero-sparkles i:nth-child(2){left:22%;top:64%;font-size:11px;animation-delay:.7s}
+.hero-sparkles i:nth-child(3){left:44%;top:8%;font-size:12px;animation-delay:1.3s}
+.hero-sparkles i:nth-child(4){left:63%;top:70%;font-size:16px;animation-delay:.4s}
+.hero-sparkles i:nth-child(5){left:78%;top:16%;font-size:11px;animation-delay:1.8s}
+.hero-sparkles i:nth-child(6){left:90%;top:52%;font-size:14px;animation-delay:1s}
+.hero-sparkles i:nth-child(7){left:35%;top:82%;font-size:10px;animation-delay:2.2s}
+.hero-sparkles i:nth-child(8){left:55%;top:38%;font-size:10px;animation-delay:2.7s}
+@keyframes twinkle{0%,100%{opacity:0;transform:scale(.6) rotate(0deg)}50%{opacity:.95;transform:scale(1.15) rotate(20deg)}}
+@keyframes ctaPulse{0%,100%{box-shadow:0 6px 16px #2f7d5f33}50%{box-shadow:0 6px 24px #2f7d5f66,0 0 0 6px #5cac8c26}}
+.hero-actions .button.primary{animation:ctaPulse 2.4s ease-in-out infinite}
+@keyframes riseIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+#screen-home.active .hero{animation:riseIn .45s ease both}
+#screen-home.active .today-adventure{animation:riseIn .45s ease .05s both}
+#screen-home.active .dashboard{animation:riseIn .45s ease .1s both}
+#screen-home.active .home-favorites{animation:riseIn .45s ease .16s both}
+#screen-home.active .home-shortcuts{animation:riseIn .45s ease .22s both}
+.today-adventure{display:flex;align-items:center;gap:14px;width:100%;margin-top:16px;padding:10px 16px 10px 10px;border:1px solid #e7e8e1;border-radius:20px;background:#fff;box-shadow:var(--shadow);text-align:left;color:var(--ink);cursor:pointer;transition:transform .15s ease,box-shadow .15s ease}
+.today-adventure:hover{transform:translateY(-2px)}
+.today-adventure:active{transform:translateY(1px)}
+.today-adventure img{width:150px;height:74px;object-fit:cover;border-radius:14px;flex:0 0 auto;background:#dfe9e4}
+.today-adventure-copy{display:grid;gap:1px;min-width:0}
+.today-adventure-copy small{color:#a35b12;font-size:10px;font-weight:1000;letter-spacing:.08em}
+.today-adventure-copy strong{font-size:19px}
+.today-adventure-copy span{color:var(--muted);font-size:11px}
+.today-adventure-go{margin-left:auto;flex:0 0 auto;padding:10px 14px;border-radius:99px;background:var(--green,#3d9970);color:#fff;font-size:12px;font-weight:1000;white-space:nowrap}
+.collection-progress{margin-top:14px;padding:13px 15px;border:1px solid #edf0ee;border-radius:16px;background:#fbfcfc}
+.collection-progress-head{display:flex;align-items:center;justify-content:space-between;font-size:12px;font-weight:900}
+.collection-progress-head strong{font-variant-numeric:tabular-nums}
+.collection-progress-track{height:10px;margin-top:8px;border-radius:99px;background:#e8ebea;overflow:hidden}
+.collection-progress-track i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#5cac8c,#9bcf85);transition:width .8s ease}
+.collection-progress p{margin:8px 0 0;font-size:11px}
+@media(max-width:560px){.today-adventure img{width:96px;height:64px}.today-adventure-copy strong{font-size:16px}.today-adventure-go{padding:8px 10px;font-size:11px}}
+@media (prefers-reduced-motion: reduce){.hero-card .battle-card,.hero-sparkles i,.hero-actions .button.primary,#screen-home.active .hero,#screen-home.active .today-adventure,#screen-home.active .dashboard,#screen-home.active .home-favorites,#screen-home.active .home-shortcuts{animation:none}}

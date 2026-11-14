@@ -39,10 +39,17 @@
         <div class="hero-showcase">
           <div class="hero-orbit orbit-one"></div>
           <div class="hero-orbit orbit-two"></div>
+          <div class="hero-sparkles" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
           <div id="heroCardStack" class="hero-card-stack" aria-label="チームのカード"></div>
           <div class="hero-sticker"><span>YOUR</span><strong>TEAM</strong></div>
         </div>
       </div>
+
+      <button class="today-adventure" data-action="today-world">
+        <img id="todayWorldImg" alt="">
+        <span class="today-adventure-copy"><small>今日のおすすめワールド</small><strong id="todayWorldName">はじまりの森</strong><span id="todayWorldNote">敵の強さはふつう</span></span>
+        <span class="today-adventure-go">このワールドで出発 →</span>
+      </button>
 
       <div class="dashboard">
         <div class="dashboard-heading"><div><p class="eyebrow">YOUR JOURNEY</p><h2>冒険のきろく</h2></div><span class="muted">この端末に保存されます</span></div>
@@ -51,6 +58,11 @@
           <article class="stat-card"><span class="stat-icon amber">✦</span><div><strong id="statClears">0</strong><span>クエストクリア</span></div></article>
           <article class="stat-card"><span class="stat-icon blue">▦</span><div><strong id="statCollection">3 / 241</strong><span>なかまのカード</span></div></article>
           <article class="stat-card"><span class="stat-icon coral">↻</span><div><strong id="statMistakes">0</strong><span>復習リスト</span></div></article>
+        </div>
+        <div class="collection-progress">
+          <div class="collection-progress-head"><span>カード図鑑の進み具合</span><strong id="collectionProgressText">3 / 241</strong></div>
+          <div class="collection-progress-track"><i id="collectionProgressBar"></i></div>
+          <p id="collectionProgressNote" class="muted"></p>
         </div>
       </div>
 

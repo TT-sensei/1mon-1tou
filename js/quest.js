@@ -172,6 +172,29 @@ function updateHeader() {
   if ($('#statCollection')) $('#statCollection').textContent = ownedCount + ' / ' + monsterCatalog.length;
   if ($('#statMistakes')) $('#statMistakes').textContent = String(Object.keys(state.review).length);
   if ($('#collectionPoints')) $('#collectionPoints').textContent = points;
+  fillHomeExtras();
+}
+
+function fillHomeExtras() {
+  const today = worldFor(todayWorldId());
+  const tImg = $('#todayWorldImg');
+  if (tImg) { tImg.src = BG_BASE + today.bg; tImg.alt = today.name; }
+  const tName = $('#todayWorldName');
+  if (tName) tName.textContent = today.icon + ' ' + today.name;
+  const tNote = $('#todayWorldNote');
+  if (tNote) tNote.textContent = today.hpBonus ? '敵が少し強いワールド。育ったカードで挑戦！' : '敵の強さはふつう。はじめての冒険にもぴったり。';
+  const ownedCount = state.owned.length;
+  const total = monsterCatalog.length || 241;
+  const bar = $('#collectionProgressBar');
+  if (bar) bar.style.width = Math.round(ownedCount / total * 100) + '%';
+  const pText = $('#collectionProgressText');
+  if (pText) pText.textContent = ownedCount + ' / ' + total;
+  const pNote = $('#collectionProgressNote');
+  if (pNote) {
+    const milestones = [10, 30, 50, 100, 150, 200, total];
+    const next = milestones.find((m) => ownedCount < m);
+    pNote.textContent = next ? ('あと ' + (next - ownedCount) + ' 体で ' + next + ' 体に届くよ。クエストやカードパックで、仲間を増やそう。') : 'ぜんぶ集まった！ 図鑑コンプリート、おめでとう！';
+  }
 }
 
 function showScreen(id) {
@@ -1432,6 +1455,13 @@ function handleAction(action, button) {
   }
   if (action === 'home') { showScreen('screen-home'); return; }
   if (action === 'setup') { openSetup('quest'); return; }
+  if (action === 'today-world') {
+    selectedWorld = todayWorldId();
+    state.world = selectedWorld;
+    saveState();
+    openSetup('quest');
+    return;
+  }
   if (action === 'choose-practice') { startTrainingFromSetup(); return; }
   if (action === 'training' || action === 'review') { showScreen('screen-training'); return; }
   if (action === 'team') { showScreen('screen-team'); return; }
