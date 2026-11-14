@@ -3,7 +3,7 @@
 window.QUESTION_BANK = window.QUESTION_BANK || {};
 window.QUESTION_BANK['3-japanese'] = [
   {
-    "id": "g3-japanese-001",
+    "id": "g3-japanese-001", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -18,7 +18,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "何がどうする、の「何が」に注目しよう。"
   },
   {
-    "id": "g3-japanese-002",
+    "id": "g3-japanese-002", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -33,7 +33,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "動作を表す言葉だよ。"
   },
   {
-    "id": "g3-japanese-003",
+    "id": "g3-japanese-003", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -48,7 +48,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "気持ちを表す言葉を比べよう。"
   },
   {
-    "id": "g3-japanese-004",
+    "id": "g3-japanese-004", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -58,7 +58,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "病気のときに世話になる場所だよ。"
   },
   {
-    "id": "g3-japanese-005",
+    "id": "g3-japanese-005", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -73,7 +73,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "どこで読んだのかな。"
   },
   {
-    "id": "g3-japanese-006",
+    "id": "g3-japanese-006", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -88,7 +88,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "大きさを比べる言葉だよ。"
   },
   {
-    "id": "g3-japanese-007",
+    "id": "g3-japanese-007", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -103,7 +103,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "どんなふうに走るかを表しているよ。"
   },
   {
-    "id": "g3-japanese-008",
+    "id": "g3-japanese-008", "cat": "よみとり",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -118,7 +118,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "人物が何を言い、どう動いたかに注目しよう。"
   },
   {
-    "id": "g3-japanese-009",
+    "id": "g3-japanese-009", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -133,7 +133,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "五十音順に並んでいるよ。"
   },
   {
-    "id": "g3-japanese-010",
+    "id": "g3-japanese-010", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -148,7 +148,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "前のことを受けて、結果をつなぐ言葉だよ。"
   },
   {
-    "id": "g3-japanese-011",
+    "id": "g3-japanese-011", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -163,7 +163,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "説明や手順を順番に伝えるときに使うよ。"
   },
   {
-    "id": "g3-japanese-012",
+    "id": "g3-japanese-012", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -178,7 +178,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "「海岸（かいがん）」の「海」の読み方だよ。"
   },
   {
-    "id": "g3-japanese-013",
+    "id": "g3-japanese-013", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -193,7 +193,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "考えたことや、その理由を伝えるよ。"
   },
   {
-    "id": "g3-japanese-014",
+    "id": "g3-japanese-014", "cat": "その他",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -208,7 +208,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "相手の考えを聞いてから、自分の意見を伝えよう。"
   },
   {
-    "id": "g3-japanese-015",
+    "id": "g3-japanese-015", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -223,7 +223,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "種類がたくさんあることを表すよ。"
   },
   {
-    "id": "g3-japanese-016",
+    "id": "g3-japanese-016", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -238,7 +238,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "心配がなく、落ち着いていることだよ。"
   },
   {
-    "id": "g3-japanese-017",
+    "id": "g3-japanese-017", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -253,7 +253,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "だれがどうしたのか、文の主語に注目しよう。"
   },
   {
-    "id": "g3-japanese-018",
+    "id": "g3-japanese-018", "cat": "よみとり",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -268,7 +268,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "「そのあと」「次の日」などが手がかりになるよ。"
   },
   {
-    "id": "g3-japanese-019",
+    "id": "g3-japanese-019", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -283,7 +283,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "みんなの前で考えなどを伝えることだよ。"
   },
   {
-    "id": "g3-japanese-020",
+    "id": "g3-japanese-020", "cat": "よみとり",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -298,7 +298,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "段落ごとに、何について書いているか考えよう。"
   },
   {
-    "id": "g3-japanese-021",
+    "id": "g3-japanese-021", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -313,7 +313,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "物語に出てくる人や生き物のことだよ。"
   },
   {
-    "id": "g3-japanese-022",
+    "id": "g3-japanese-022", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -328,7 +328,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "反対の意味になる言葉を考えよう。"
   },
   {
-    "id": "g3-japanese-023",
+    "id": "g3-japanese-023", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -343,7 +343,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "文の終わりを表す記号だよ。"
   },
   {
-    "id": "g3-japanese-024",
+    "id": "g3-japanese-024", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -358,7 +358,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "前に思っていたこととちがうときに使うよ。"
   },
   {
-    "id": "g3-japanese-025",
+    "id": "g3-japanese-025", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -373,7 +373,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "二つ以上のもののちがいを見つける言葉だよ。"
   },
   {
-    "id": "g3-japanese-026",
+    "id": "g3-japanese-026", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -388,7 +388,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "具体的な例を示すときに使うよ。"
   },
   {
-    "id": "g3-japanese-027",
+    "id": "g3-japanese-027", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -403,7 +403,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "相手を思いやる行動を表す言葉だよ。"
   },
   {
-    "id": "g3-japanese-028",
+    "id": "g3-japanese-028", "cat": "その他",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -418,7 +418,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "読み手に内容が伝わるかを考えよう。"
   },
   {
-    "id": "g3-japanese-029",
+    "id": "g3-japanese-029", "cat": "漢字",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -433,7 +433,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "危険がなく、安心できることだよ。"
   },
   {
-    "id": "g3-japanese-030",
+    "id": "g3-japanese-030", "cat": "その他",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -448,7 +448,7 @@ window.QUESTION_BANK['3-japanese'] = [
     "hint": "初め・中・終わりを意識すると伝わりやすいよ。"
   },
   {
-    "id": "g3-japanese-031",
+    "id": "g3-japanese-031", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -466,7 +466,7 @@ window.QUESTION_BANK['3-japanese'] = [
 
 window.QUESTION_BANK['3-math'] = [
   {
-    "id": "g3-math-001",
+    "id": "g3-math-001", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -481,7 +481,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "一の位から順に計算しよう。"
   },
   {
-    "id": "g3-math-002",
+    "id": "g3-math-002", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -496,7 +496,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "十の位からくり下がりを考えよう。"
   },
   {
-    "id": "g3-math-003",
+    "id": "g3-math-003", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -511,7 +511,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "七八を思い出そう。"
   },
   {
-    "id": "g3-math-004",
+    "id": "g3-math-004", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -526,7 +526,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "7に何をかけると56かな。"
   },
   {
-    "id": "g3-math-005",
+    "id": "g3-math-005", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -541,7 +541,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "1mは100cmだよ。"
   },
   {
-    "id": "g3-math-006",
+    "id": "g3-math-006", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -556,7 +556,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "三角形の「三」に注目。"
   },
   {
-    "id": "g3-math-007",
+    "id": "g3-math-007", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -571,7 +571,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "角が4つで、辺も同じ長さだよ。"
   },
   {
-    "id": "g3-math-008",
+    "id": "g3-math-008", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -586,7 +586,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "3を6回分と考えよう。"
   },
   {
-    "id": "g3-math-009",
+    "id": "g3-math-009", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -601,7 +601,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "七八（しちは）五十六だよ。"
   },
   {
-    "id": "g3-math-010",
+    "id": "g3-math-010", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -616,7 +616,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "8に何をかけると72になるかな。"
   },
   {
-    "id": "g3-math-011",
+    "id": "g3-math-011", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -631,7 +631,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "百の位、十の位に分けて考えよう。"
   },
   {
-    "id": "g3-math-012",
+    "id": "g3-math-012", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -646,7 +646,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "600から200を引き、さらに50を引こう。"
   },
   {
-    "id": "g3-math-013",
+    "id": "g3-math-013", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -661,7 +661,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "キログラムとグラムの関係を思い出そう。"
   },
   {
-    "id": "g3-math-014",
+    "id": "g3-math-014", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -676,7 +676,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "1リットルは1000ミリリットルだよ。"
   },
   {
-    "id": "g3-math-015",
+    "id": "g3-math-015", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -691,7 +691,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "1時間は何分かな。"
   },
   {
-    "id": "g3-math-016",
+    "id": "g3-math-016", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -706,7 +706,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "全体を3つに分けたうちの1つ分だよ。"
   },
   {
-    "id": "g3-math-017",
+    "id": "g3-math-017", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -721,7 +721,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "分母が同じときは、分子を比べよう。"
   },
   {
-    "id": "g3-math-018",
+    "id": "g3-math-018", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -736,7 +736,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "正三角形は3つの辺の長さが同じだよ。"
   },
   {
-    "id": "g3-math-019",
+    "id": "g3-math-019", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -751,7 +751,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "円のまわりをぐるっと囲む長さに関係する言葉だよ。"
   },
   {
-    "id": "g3-math-020",
+    "id": "g3-math-020", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -766,7 +766,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "10円が7まい分だよ。"
   },
   {
-    "id": "g3-math-021",
+    "id": "g3-math-021", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -781,7 +781,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "4の段の九九を使おう。"
   },
   {
-    "id": "g3-math-022",
+    "id": "g3-math-022", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -796,7 +796,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "9の段の九九を思い出そう。"
   },
   {
-    "id": "g3-math-023",
+    "id": "g3-math-023", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -811,7 +811,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "一の位から順にくり下がりに気をつけよう。"
   },
   {
-    "id": "g3-math-024",
+    "id": "g3-math-024", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -826,7 +826,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "48を2回分と考えよう。"
   },
   {
-    "id": "g3-math-025",
+    "id": "g3-math-025", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -841,7 +841,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "1時間は60分だよ。"
   },
   {
-    "id": "g3-math-026",
+    "id": "g3-math-026", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -856,7 +856,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "同じ長さの辺が4本あるよ。"
   },
   {
-    "id": "g3-math-027",
+    "id": "g3-math-027", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -871,7 +871,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "全体を4等分した1つ分だよ。"
   },
   {
-    "id": "g3-math-028",
+    "id": "g3-math-028", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -886,7 +886,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "百の位と十の位をそろえて考えよう。"
   },
   {
-    "id": "g3-math-029",
+    "id": "g3-math-029", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -901,7 +901,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "6×7で求められるよ。"
   },
   {
-    "id": "g3-math-030",
+    "id": "g3-math-030", "cat": "図形",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -916,7 +916,7 @@ window.QUESTION_BANK['3-math'] = [
     "hint": "たて同士、横同士の長さを比べよう。"
   },
   {
-    "id": "g3-math-031",
+    "id": "g3-math-031", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -934,7 +934,7 @@ window.QUESTION_BANK['3-math'] = [
 
 window.QUESTION_BANK['3-science'] = [
   {
-    "id": "g3-science-001",
+    "id": "g3-science-001", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -949,7 +949,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "植物の育ち方を観察して考えよう。"
   },
   {
-    "id": "g3-science-002",
+    "id": "g3-science-002", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -964,7 +964,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "頭・胸・腹に分かれるよ。"
   },
   {
-    "id": "g3-science-003",
+    "id": "g3-science-003", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -979,7 +979,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "磁石は鉄を引きつけるよ。"
   },
   {
-    "id": "g3-science-004",
+    "id": "g3-science-004", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -994,7 +994,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "地球は西から東へ回転しているよ。"
   },
   {
-    "id": "g3-science-005",
+    "id": "g3-science-005", "cat": "風とゴムのはたらき",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1009,7 +1009,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "風の向きや強さを測るよ。"
   },
   {
-    "id": "g3-science-006",
+    "id": "g3-science-006", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1024,7 +1024,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "音の出るものに触れるとふるえを感じることがあるよ。"
   },
   {
-    "id": "g3-science-007",
+    "id": "g3-science-007", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1039,7 +1039,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "条件をそろえて比べよう。"
   },
   {
-    "id": "g3-science-008",
+    "id": "g3-science-008", "cat": "その他",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1054,7 +1054,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "加熱したときの変化を観察しよう。"
   },
   {
-    "id": "g3-science-009",
+    "id": "g3-science-009", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1069,7 +1069,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "チョウはさなぎになる完全変態をするよ。"
   },
   {
-    "id": "g3-science-010",
+    "id": "g3-science-010", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1084,7 +1084,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "幼虫は葉を食べて大きくなるよ。"
   },
   {
-    "id": "g3-science-011",
+    "id": "g3-science-011", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1099,7 +1099,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "気づいたことを絵や言葉で記録しよう。"
   },
   {
-    "id": "g3-science-012",
+    "id": "g3-science-012", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1114,7 +1114,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "太陽の位置が変わると、かげも変わるよ。"
   },
   {
-    "id": "g3-science-013",
+    "id": "g3-science-013", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1129,7 +1129,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "目を傷めるおそれがあるので、太陽を直接見ないでね。"
   },
   {
-    "id": "g3-science-014",
+    "id": "g3-science-014", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1144,7 +1144,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "N極どうし、S極どうしはしりぞけ合うよ。"
   },
   {
-    "id": "g3-science-015",
+    "id": "g3-science-015", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1159,7 +1159,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "ちがう極どうしは引き合うよ。"
   },
   {
-    "id": "g3-science-016",
+    "id": "g3-science-016", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1169,7 +1169,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "日光はまっすぐ進む性質があるよ。"
   },
   {
-    "id": "g3-science-017",
+    "id": "g3-science-017", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1184,7 +1184,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "音の大きさと、もののふるえ方を比べてみよう。"
   },
   {
-    "id": "g3-science-018",
+    "id": "g3-science-018", "cat": "風とゴムのはたらき",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1199,7 +1199,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "風の強さと風車の回り方を比べよう。"
   },
   {
-    "id": "g3-science-019",
+    "id": "g3-science-019", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1214,7 +1214,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "光をさえぎると、光と反対側にかげができるよ。"
   },
   {
-    "id": "g3-science-020",
+    "id": "g3-science-020", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1229,7 +1229,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "昆虫の足は胸の部分についているよ。"
   },
   {
-    "id": "g3-science-021",
+    "id": "g3-science-021", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1244,7 +1244,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "根は水などを取り入れるはたらきがあるよ。"
   },
   {
-    "id": "g3-science-022",
+    "id": "g3-science-022", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1259,7 +1259,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "花のあとに実ができ、その中に種ができる植物が多いよ。"
   },
   {
-    "id": "g3-science-023",
+    "id": "g3-science-023", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1274,7 +1274,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "光が鏡ではね返ることを反射というよ。"
   },
   {
-    "id": "g3-science-024",
+    "id": "g3-science-024", "cat": "風とゴムのはたらき",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1289,7 +1289,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "引っぱられたゴムには、もどろうとする力がはたらくよ。"
   },
   {
-    "id": "g3-science-025",
+    "id": "g3-science-025", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1304,7 +1304,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "太陽が高いときは、かげが短くなりやすいよ。"
   },
   {
-    "id": "g3-science-026",
+    "id": "g3-science-026", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1319,7 +1319,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "昆虫のあしは、むねから6本出ているよ。"
   },
   {
-    "id": "g3-science-027",
+    "id": "g3-science-027", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1334,7 +1334,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "根から吸い上げた水などが通り、葉や花を支える部分だよ。"
   },
   {
-    "id": "g3-science-028",
+    "id": "g3-science-028", "cat": "風とゴムのはたらき",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1344,7 +1344,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "ゴムののびと力の大きさを比べよう。"
   },
   {
-    "id": "g3-science-029",
+    "id": "g3-science-029", "cat": "その他",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1359,7 +1359,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "水がこおると固体の氷になるよ。"
   },
   {
-    "id": "g3-science-030",
+    "id": "g3-science-030", "cat": "光・音・電気・磁石",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1374,7 +1374,7 @@ window.QUESTION_BANK['3-science'] = [
     "hint": "もののふるえ方と音の大きさには関係があるよ。"
   },
   {
-    "id": "g3-science-031",
+    "id": "g3-science-031", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -1392,7 +1392,7 @@ window.QUESTION_BANK['3-science'] = [
 
 window.QUESTION_BANK['3-social'] = [
   {
-    "id": "g3-social-001",
+    "id": "g3-social-001", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1407,7 +1407,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "土地の高さや形を調べる地図だよ。"
   },
   {
-    "id": "g3-social-002",
+    "id": "g3-social-002", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1422,7 +1422,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "買う人の立場で考えよう。"
   },
   {
-    "id": "g3-social-003",
+    "id": "g3-social-003", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1437,7 +1437,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "自分の安全を守って知らせよう。"
   },
   {
-    "id": "g3-social-004",
+    "id": "g3-social-004", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1452,7 +1452,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "みんなの暮らしを支える仕事だよ。"
   },
   {
-    "id": "g3-social-005",
+    "id": "g3-social-005", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1467,7 +1467,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "地図記号には場所を示す決まりがあるよ。"
   },
   {
-    "id": "g3-social-006",
+    "id": "g3-social-006", "cat": "市の移り変わり",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1482,7 +1482,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "実際の資料から昔の様子を知ろう。"
   },
   {
-    "id": "g3-social-007",
+    "id": "g3-social-007", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1497,7 +1497,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "作物に合う環境を整えるよ。"
   },
   {
-    "id": "g3-social-008",
+    "id": "g3-social-008", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1512,7 +1512,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "火事や災害から地域を守るよ。"
   },
   {
-    "id": "g3-social-009",
+    "id": "g3-social-009", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1527,7 +1527,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "地図の方位を確かめよう。"
   },
   {
-    "id": "g3-social-010",
+    "id": "g3-social-010", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1542,7 +1542,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "地図上の長さが実際にどれくらいかを表すよ。"
   },
   {
-    "id": "g3-social-011",
+    "id": "g3-social-011", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1557,7 +1557,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "品物は店に届き、売り場に並べられるよ。"
   },
   {
-    "id": "g3-social-012",
+    "id": "g3-social-012", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1572,7 +1572,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "食品などには産地が表示されていることがあるよ。"
   },
   {
-    "id": "g3-social-013",
+    "id": "g3-social-013", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1587,7 +1587,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "日ごろの備えが火事を防ぐことにつながるよ。"
   },
   {
-    "id": "g3-social-014",
+    "id": "g3-social-014", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1602,7 +1602,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "緊急車両が安全に活動できるようにしよう。"
   },
   {
-    "id": "g3-social-015",
+    "id": "g3-social-015", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1617,7 +1617,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "分別すると、資源として再利用できるものがあるよ。"
   },
   {
-    "id": "g3-social-016",
+    "id": "g3-social-016", "cat": "市の移り変わり",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1632,7 +1632,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "今の町と比べると、変化を見つけられるよ。"
   },
   {
-    "id": "g3-social-017",
+    "id": "g3-social-017", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1647,7 +1647,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "聞いたことは、あとで分かるように記録しよう。"
   },
   {
-    "id": "g3-social-018",
+    "id": "g3-social-018", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1662,7 +1662,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "決まった記号で、地図の情報を読み取りやすくするよ。"
   },
   {
-    "id": "g3-social-019",
+    "id": "g3-social-019", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1677,7 +1677,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "気温や雨の量は作物の成長に関係するよ。"
   },
   {
-    "id": "g3-social-020",
+    "id": "g3-social-020", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1692,7 +1692,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "危ない場所を知り、安全に通る方法を考えよう。"
   },
   {
-    "id": "g3-social-021",
+    "id": "g3-social-021", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1707,7 +1707,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "住民票などの手続きや地域のサービスを行うよ。"
   },
   {
-    "id": "g3-social-022",
+    "id": "g3-social-022", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1722,7 +1722,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "建物などを分かりやすく示すためのしるしだよ。"
   },
   {
-    "id": "g3-social-023",
+    "id": "g3-social-023", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1737,7 +1737,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "生産地から店まで、品物を運ぶ人がいるよ。"
   },
   {
-    "id": "g3-social-024",
+    "id": "g3-social-024", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1752,7 +1752,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "地域の安全を守るために協力しているよ。"
   },
   {
-    "id": "g3-social-025",
+    "id": "g3-social-025", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1767,7 +1767,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "地図を見るときは、方位を確かめると位置関係が分かりやすいよ。"
   },
   {
-    "id": "g3-social-026",
+    "id": "g3-social-026", "cat": "市の移り変わり",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1782,7 +1782,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "昔と今を比べる資料になるよ。"
   },
   {
-    "id": "g3-social-027",
+    "id": "g3-social-027", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1797,7 +1797,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "目的に合うか、値段や表示を確かめよう。"
   },
   {
-    "id": "g3-social-028",
+    "id": "g3-social-028", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1812,7 +1812,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "安全のために、信頼できる大人に伝えよう。"
   },
   {
-    "id": "g3-social-029",
+    "id": "g3-social-029", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1827,7 +1827,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "作物に合った環境を整えることが大切だよ。"
   },
   {
-    "id": "g3-social-030",
+    "id": "g3-social-030", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1842,7 +1842,7 @@ window.QUESTION_BANK['3-social'] = [
     "hint": "見学やインタビューで、仕事の工夫を直接知れるよ。"
   },
   {
-    "id": "g3-social-031",
+    "id": "g3-social-031", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -1860,7 +1860,7 @@ window.QUESTION_BANK['3-social'] = [
 
 window.QUESTION_BANK['4-japanese'] = [
   {
-    "id": "g4-japanese-001",
+    "id": "g4-japanese-001", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1875,7 +1875,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "前の内容と反対の内容につなぐよ。"
   },
   {
-    "id": "g4-japanese-002",
+    "id": "g4-japanese-002", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1890,7 +1890,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "筆者が一番伝えたいことを探そう。"
   },
   {
-    "id": "g4-japanese-003",
+    "id": "g4-japanese-003", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1905,7 +1905,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "「必要な道具」のように使うよ。"
   },
   {
-    "id": "g4-japanese-004",
+    "id": "g4-japanese-004", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1920,7 +1920,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "どんなふうに読むかを表すよ。"
   },
   {
-    "id": "g4-japanese-005",
+    "id": "g4-japanese-005", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1935,7 +1935,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "場面の様子を比べよう。"
   },
   {
-    "id": "g4-japanese-006",
+    "id": "g4-japanese-006", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1950,7 +1950,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "目標のために続けて取り組むことだよ。"
   },
   {
-    "id": "g4-japanese-007",
+    "id": "g4-japanese-007", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1965,7 +1965,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "理由を説明するときの言葉だよ。"
   },
   {
-    "id": "g4-japanese-008",
+    "id": "g4-japanese-008", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1980,7 +1980,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "中心となる内容を選ぼう。"
   },
   {
-    "id": "g4-japanese-009",
+    "id": "g4-japanese-009", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -1995,7 +1995,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "前の内容と反対のことを続けるときに使うよ。"
   },
   {
-    "id": "g4-japanese-010",
+    "id": "g4-japanese-010", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2010,7 +2010,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "音を聞きもらさないようにすることだよ。"
   },
   {
-    "id": "g4-japanese-011",
+    "id": "g4-japanese-011", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2025,7 +2025,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "大切な言葉や段落のまとまりを手がかりにしよう。"
   },
   {
-    "id": "g4-japanese-012",
+    "id": "g4-japanese-012", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2040,7 +2040,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "一つの行動で二つのよい結果があることだよ。"
   },
   {
-    "id": "g4-japanese-013",
+    "id": "g4-japanese-013", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2055,7 +2055,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "意味が反対になる言葉のことだよ。"
   },
   {
-    "id": "g4-japanese-014",
+    "id": "g4-japanese-014", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2070,7 +2070,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "なぜそう考えるのかを伝えよう。"
   },
   {
-    "id": "g4-japanese-015",
+    "id": "g4-japanese-015", "cat": "その他",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2085,7 +2085,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "俳句は五・七・五の十七音を基本とするよ。"
   },
   {
-    "id": "g4-japanese-016",
+    "id": "g4-japanese-016", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2100,7 +2100,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "目標に向かって力をつくすことだよ。"
   },
   {
-    "id": "g4-japanese-017",
+    "id": "g4-japanese-017", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2115,7 +2115,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "登場人物の行動や言葉に注目しよう。"
   },
   {
-    "id": "g4-japanese-018",
+    "id": "g4-japanese-018", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2125,7 +2125,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "山や川などの眺めのことだよ。"
   },
   {
-    "id": "g4-japanese-019",
+    "id": "g4-japanese-019", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2140,7 +2140,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "大事な内容を別の言い方でまとめるときに使うよ。"
   },
   {
-    "id": "g4-japanese-020",
+    "id": "g4-japanese-020", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2155,7 +2155,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "段落ごとの内容をつかもう。"
   },
   {
-    "id": "g4-japanese-021",
+    "id": "g4-japanese-021", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2170,7 +2170,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "物事を順番に説明するときに便利だよ。"
   },
   {
-    "id": "g4-japanese-022",
+    "id": "g4-japanese-022", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2180,7 +2180,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "様子をよく見ることだよ。"
   },
   {
-    "id": "g4-japanese-023",
+    "id": "g4-japanese-023", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2195,7 +2195,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "難しいことを考えるときに使うよ。"
   },
   {
-    "id": "g4-japanese-024",
+    "id": "g4-japanese-024", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2210,7 +2210,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "前後の言葉や行動を比べてみよう。"
   },
   {
-    "id": "g4-japanese-025",
+    "id": "g4-japanese-025", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2225,7 +2225,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "相手の意見を受け止めてから話すときに使えるよ。"
   },
   {
-    "id": "g4-japanese-026",
+    "id": "g4-japanese-026", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2240,7 +2240,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "最初の文字から順に探そう。"
   },
   {
-    "id": "g4-japanese-027",
+    "id": "g4-japanese-027", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2255,7 +2255,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "力を合わせて取り組むことだよ。"
   },
   {
-    "id": "g4-japanese-028",
+    "id": "g4-japanese-028", "cat": "よみとり",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2270,7 +2270,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "段落ごとに何が大切か考えよう。"
   },
   {
-    "id": "g4-japanese-029",
+    "id": "g4-japanese-029", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2285,7 +2285,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "心と心が通じ合うことを表すよ。"
   },
   {
-    "id": "g4-japanese-030",
+    "id": "g4-japanese-030", "cat": "その他",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2300,7 +2300,7 @@ window.QUESTION_BANK['4-japanese'] = [
     "hint": "声の大きさや速さを工夫しよう。"
   },
   {
-    "id": "g4-japanese-031",
+    "id": "g4-japanese-031", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -2318,7 +2318,7 @@ window.QUESTION_BANK['4-japanese'] = [
 
 window.QUESTION_BANK['4-math'] = [
   {
-    "id": "g4-math-001",
+    "id": "g4-math-001", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2333,7 +2333,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "小数第一位をそろえて計算しよう。"
   },
   {
-    "id": "g4-math-002",
+    "id": "g4-math-002", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2348,7 +2348,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "12を3倍してから小数点を考えよう。"
   },
   {
-    "id": "g4-math-003",
+    "id": "g4-math-003", "cat": "単位・量",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2363,7 +2363,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "キロは1000を表すよ。"
   },
   {
-    "id": "g4-math-004",
+    "id": "g4-math-004", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2378,7 +2378,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "同じ平面で交わらない直線だよ。"
   },
   {
-    "id": "g4-math-005",
+    "id": "g4-math-005", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2393,7 +2393,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "正方形の角を思い出そう。"
   },
   {
-    "id": "g4-math-006",
+    "id": "g4-math-006", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2408,7 +2408,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "8×7を計算して、十の位を考えよう。"
   },
   {
-    "id": "g4-math-007",
+    "id": "g4-math-007", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2423,7 +2423,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "6の段で24になる数だよ。"
   },
   {
-    "id": "g4-math-008",
+    "id": "g4-math-008", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2438,7 +2438,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "面積は何個分あるかで考えるよ。"
   },
   {
-    "id": "g4-math-009",
+    "id": "g4-math-009", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2453,7 +2453,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "位ごとに分けて計算しよう。"
   },
   {
-    "id": "g4-math-010",
+    "id": "g4-math-010", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2468,7 +2468,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "位ごとのくり下がりに気をつけよう。"
   },
   {
-    "id": "g4-math-011",
+    "id": "g4-math-011", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2483,7 +2483,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "24×10と24×3に分けて考えよう。"
   },
   {
-    "id": "g4-math-012",
+    "id": "g4-math-012", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2498,7 +2498,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "位ごとに分けて考えよう。"
   },
   {
-    "id": "g4-math-013",
+    "id": "g4-math-013", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2513,7 +2513,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "小数点をそろえて計算しよう。"
   },
   {
-    "id": "g4-math-014",
+    "id": "g4-math-014", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2528,7 +2528,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "分母が同じなら分子をたすよ。"
   },
   {
-    "id": "g4-math-015",
+    "id": "g4-math-015", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2543,7 +2543,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "面積は縦と横の長さをかけて求めるよ。"
   },
   {
-    "id": "g4-math-016",
+    "id": "g4-math-016", "cat": "その他",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2558,7 +2558,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "気温の変化などを見やすく表せるよ。"
   },
   {
-    "id": "g4-math-017",
+    "id": "g4-math-017", "cat": "単位・量",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2574,7 +2574,7 @@ window.QUESTION_BANK['4-math'] = [
     "explanation": "60分×60秒＝3600秒。"
   },
   {
-    "id": "g4-math-018",
+    "id": "g4-math-018", "cat": "単位・量",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2589,7 +2589,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "1Lは1000mL。200mLを足そう。"
   },
   {
-    "id": "g4-math-019",
+    "id": "g4-math-019", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2604,7 +2604,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "正方形は縦も横も同じ長さだよ。"
   },
   {
-    "id": "g4-math-020",
+    "id": "g4-math-020", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2619,7 +2619,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "直角の大きさを覚えよう。"
   },
   {
-    "id": "g4-math-021",
+    "id": "g4-math-021", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2634,7 +2634,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "一直線になった角が180度だよ。"
   },
   {
-    "id": "g4-math-022",
+    "id": "g4-math-022", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2649,7 +2649,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "小数点をそろえて計算しよう。"
   },
   {
-    "id": "g4-math-023",
+    "id": "g4-math-023", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2664,7 +2664,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "分母が同じなので、分子どうしを引こう。"
   },
   {
-    "id": "g4-math-024",
+    "id": "g4-math-024", "cat": "単位・量",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2679,7 +2679,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "1mは100cm。面積は縦と横の両方をかけるよ。"
   },
   {
-    "id": "g4-math-025",
+    "id": "g4-math-025", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2694,7 +2694,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "どんな三角形も3つの角を合わせると180度だよ。"
   },
   {
-    "id": "g4-math-026",
+    "id": "g4-math-026", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2709,7 +2709,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "分母が同じ分数は分子を比べよう。"
   },
   {
-    "id": "g4-math-027",
+    "id": "g4-math-027", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2724,7 +2724,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "24×3を計算し、最後に0をつけよう。"
   },
   {
-    "id": "g4-math-028",
+    "id": "g4-math-028", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2739,7 +2739,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "わり算の反対の計算、8×9で確かめよう。"
   },
   {
-    "id": "g4-math-029",
+    "id": "g4-math-029", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2754,7 +2754,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "一辺×一辺で求めるよ。"
   },
   {
-    "id": "g4-math-030",
+    "id": "g4-math-030", "cat": "その他",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2769,7 +2769,7 @@ window.QUESTION_BANK['4-math'] = [
     "hint": "時間にともなう変化が分かりやすいよ。"
   },
   {
-    "id": "g4-math-031",
+    "id": "g4-math-031", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -2787,7 +2787,7 @@ window.QUESTION_BANK['4-math'] = [
 
 window.QUESTION_BANK['4-science'] = [
   {
-    "id": "g4-science-001",
+    "id": "g4-science-001", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2802,7 +2802,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "水は温度が下がると氷になるよ。"
   },
   {
-    "id": "g4-science-002",
+    "id": "g4-science-002", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2817,7 +2817,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "温度による空気の体積の変化だよ。"
   },
   {
-    "id": "g4-science-003",
+    "id": "g4-science-003", "cat": "電気のはたらき",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2832,7 +2832,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "電流の向きが変わることに注目。"
   },
   {
-    "id": "g4-science-004",
+    "id": "g4-science-004", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2847,7 +2847,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "土の粒の間に水が入るよ。"
   },
   {
-    "id": "g4-science-005",
+    "id": "g4-science-005", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2862,7 +2862,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "太陽・地球・月の位置関係を考えよう。"
   },
   {
-    "id": "g4-science-006",
+    "id": "g4-science-006", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2877,7 +2877,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "同じ方法で記録すると変化が分かるよ。"
   },
   {
-    "id": "g4-science-007",
+    "id": "g4-science-007", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2892,7 +2892,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "流れる水が地面をけずり運ぶよ。"
   },
   {
-    "id": "g4-science-008",
+    "id": "g4-science-008", "cat": "電気のはたらき",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2907,7 +2907,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "回路が輪のようにつながる必要があるよ。"
   },
   {
-    "id": "g4-science-009",
+    "id": "g4-science-009", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2922,7 +2922,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "植物の成長に必要な条件を確かめよう。"
   },
   {
-    "id": "g4-science-010",
+    "id": "g4-science-010", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2937,7 +2937,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "歯で食べ物を小さくするよ。"
   },
   {
-    "id": "g4-science-011",
+    "id": "g4-science-011", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2952,7 +2952,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "空気はあたためると膨張する性質があるよ。"
   },
   {
-    "id": "g4-science-012",
+    "id": "g4-science-012", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2967,7 +2967,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "水が沸騰すると、水蒸気になるよ。"
   },
   {
-    "id": "g4-science-013",
+    "id": "g4-science-013", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2982,7 +2982,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "水はふつう0℃でこおり始めるよ。"
   },
   {
-    "id": "g4-science-014",
+    "id": "g4-science-014", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -2997,7 +2997,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "金属はあたためると膨張するよ。"
   },
   {
-    "id": "g4-science-015",
+    "id": "g4-science-015", "cat": "電気のはたらき",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3012,7 +3012,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "電流の向きが変わることが関係するよ。"
   },
   {
-    "id": "g4-science-016",
+    "id": "g4-science-016", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3027,7 +3027,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "冷たいコップの外側につく水滴も結露だよ。"
   },
   {
-    "id": "g4-science-017",
+    "id": "g4-science-017", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3042,7 +3042,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "呼吸で体内の二酸化炭素が空気に出るよ。"
   },
   {
-    "id": "g4-science-018",
+    "id": "g4-science-018", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3057,7 +3057,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "水が気体に変わることだよ。"
   },
   {
-    "id": "g4-science-019",
+    "id": "g4-science-019", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3072,7 +3072,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "どの方角に見えるか記録しよう。"
   },
   {
-    "id": "g4-science-020",
+    "id": "g4-science-020", "cat": "電気のはたらき",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3087,7 +3087,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "金属は電気を通しやすいものが多いよ。"
   },
   {
-    "id": "g4-science-021",
+    "id": "g4-science-021", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3102,7 +3102,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "口から入った食べ物は食道を通って胃へ進むよ。"
   },
   {
-    "id": "g4-science-022",
+    "id": "g4-science-022", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3117,7 +3117,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "体が多くの酸素を必要とするため、呼吸が速くなりやすいよ。"
   },
   {
-    "id": "g4-science-023",
+    "id": "g4-science-023", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3132,7 +3132,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "雲が少なく空が暗いと星を観察しやすいよ。"
   },
   {
-    "id": "g4-science-024",
+    "id": "g4-science-024", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3147,7 +3147,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "雨量計で降った雨の量を調べるよ。"
   },
   {
-    "id": "g4-science-025",
+    "id": "g4-science-025", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3162,7 +3162,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "関節が曲がることで、体を動かせるよ。"
   },
   {
-    "id": "g4-science-026",
+    "id": "g4-science-026", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3177,7 +3177,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "条件をそろえると、比べやすくなるよ。"
   },
   {
-    "id": "g4-science-027",
+    "id": "g4-science-027", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3192,7 +3192,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "骨格は体を支え、体の大切な部分を守っているよ。"
   },
   {
-    "id": "g4-science-028",
+    "id": "g4-science-028", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3207,7 +3207,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "雲の様子は天気を考える手がかりになるよ。"
   },
   {
-    "id": "g4-science-029",
+    "id": "g4-science-029", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3222,7 +3222,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "気温を測るときは温度計を使うよ。"
   },
   {
-    "id": "g4-science-030",
+    "id": "g4-science-030", "cat": "その他",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3237,7 +3237,7 @@ window.QUESTION_BANK['4-science'] = [
     "hint": "温度を記録すると変化の関係を調べられるよ。"
   },
   {
-    "id": "g4-science-031",
+    "id": "g4-science-031", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -3255,7 +3255,7 @@ window.QUESTION_BANK['4-science'] = [
 
 window.QUESTION_BANK['4-social'] = [
   {
-    "id": "g4-social-001",
+    "id": "g4-social-001", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3270,7 +3270,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "地図で位置を確かめよう。"
   },
   {
-    "id": "g4-social-002",
+    "id": "g4-social-002", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3285,7 +3285,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "水をきれいにする施設だよ。"
   },
   {
-    "id": "g4-social-003",
+    "id": "g4-social-003", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3300,7 +3300,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "ごみを出さない工夫も大切だよ。"
   },
   {
-    "id": "g4-social-004",
+    "id": "g4-social-004", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3315,7 +3315,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "日ごろの備えが命を守るよ。"
   },
   {
-    "id": "g4-social-005",
+    "id": "g4-social-005", "cat": "地域の文化と伝統",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3330,7 +3330,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "地域の技術や工夫が生きているよ。"
   },
   {
-    "id": "g4-social-006",
+    "id": "g4-social-006", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3345,7 +3345,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "市町村と役割を分担しているよ。"
   },
   {
-    "id": "g4-social-007",
+    "id": "g4-social-007", "cat": "その他",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3360,7 +3360,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "災害や事故に対応するよ。"
   },
   {
-    "id": "g4-social-008",
+    "id": "g4-social-008", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3375,7 +3375,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "環境への影響を小さくするよ。"
   },
   {
-    "id": "g4-social-009",
+    "id": "g4-social-009", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3390,7 +3390,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "日本の北にある広い都道府県だよ。"
   },
   {
-    "id": "g4-social-010",
+    "id": "g4-social-010", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3405,7 +3405,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "浄水場で汚れを取りのぞくなどの処理をするよ。"
   },
   {
-    "id": "g4-social-011",
+    "id": "g4-social-011", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3420,7 +3420,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "下水を処理して環境への影響を減らすよ。"
   },
   {
-    "id": "g4-social-012",
+    "id": "g4-social-012", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3435,7 +3435,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "買いすぎないなど、ごみそのものを減らすことだよ。"
   },
   {
-    "id": "g4-social-013",
+    "id": "g4-social-013", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3450,7 +3450,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "災害が起きる前に避難先を確認しよう。"
   },
   {
-    "id": "g4-social-014",
+    "id": "g4-social-014", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3465,7 +3465,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "同じ高さの地点を結んだ線だよ。"
   },
   {
-    "id": "g4-social-015",
+    "id": "g4-social-015", "cat": "地域の文化と伝統",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3480,7 +3480,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "行事には地域の歴史や願いがつまっているよ。"
   },
   {
-    "id": "g4-social-016",
+    "id": "g4-social-016", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3495,7 +3495,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "災害の危険がある場所などを示す地図だよ。"
   },
   {
-    "id": "g4-social-017",
+    "id": "g4-social-017", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3510,7 +3510,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "地図の方位を確かめよう。"
   },
   {
-    "id": "g4-social-018",
+    "id": "g4-social-018", "cat": "その他",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3525,7 +3525,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "消防車や救急車を呼ぶ番号だよ。"
   },
   {
-    "id": "g4-social-019",
+    "id": "g4-social-019", "cat": "その他",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3540,7 +3540,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "事件や事故などの緊急時に使うよ。"
   },
   {
-    "id": "g4-social-020",
+    "id": "g4-social-020", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3555,7 +3555,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "分別すると資源として使えるものがあるよ。"
   },
   {
-    "id": "g4-social-021",
+    "id": "g4-social-021", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3570,7 +3570,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "日本は47の都道府県に分かれているよ。"
   },
   {
-    "id": "g4-social-022",
+    "id": "g4-social-022", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3585,7 +3585,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "本州には多くの都府県があるよ。"
   },
   {
-    "id": "g4-social-023",
+    "id": "g4-social-023", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3600,7 +3600,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "国会や中央省庁などが集まっている都市だよ。"
   },
   {
-    "id": "g4-social-024",
+    "id": "g4-social-024", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3615,7 +3615,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "落ちてくる物や倒れる家具から身を守ろう。"
   },
   {
-    "id": "g4-social-025",
+    "id": "g4-social-025", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3630,7 +3630,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "地図を使うと場所や位置関係をつかめるよ。"
   },
   {
-    "id": "g4-social-026",
+    "id": "g4-social-026", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3645,7 +3645,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "分けることでリサイクルしやすくなるよ。"
   },
   {
-    "id": "g4-social-027",
+    "id": "g4-social-027", "cat": "地域の文化と伝統",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3660,7 +3660,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "地域の文化を伝えることにつながるよ。"
   },
   {
-    "id": "g4-social-028",
+    "id": "g4-social-028", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3675,7 +3675,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "危険な場所や避難先を前もって確かめよう。"
   },
   {
-    "id": "g4-social-029",
+    "id": "g4-social-029", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3690,7 +3690,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "県の位置や形を同じ地図上で比べられるよ。"
   },
   {
-    "id": "g4-social-030",
+    "id": "g4-social-030", "cat": "その他",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3705,7 +3705,7 @@ window.QUESTION_BANK['4-social'] = [
     "hint": "人や物がどう移動するかが分かるよ。"
   },
   {
-    "id": "g4-social-031",
+    "id": "g4-social-031", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -3723,7 +3723,7 @@ window.QUESTION_BANK['4-social'] = [
 
 window.QUESTION_BANK['5-japanese'] = [
   {
-    "id": "g5-japanese-001",
+    "id": "g5-japanese-001", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3738,7 +3738,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "言いかえやまとめの合図だよ。"
   },
   {
-    "id": "g5-japanese-002",
+    "id": "g5-japanese-002", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3753,7 +3753,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "季語を使う短い詩だよ。"
   },
   {
-    "id": "g5-japanese-003",
+    "id": "g5-japanese-003", "cat": "漢字",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3768,7 +3768,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "役割を果たすことに関わる言葉だよ。"
   },
   {
-    "id": "g5-japanese-004",
+    "id": "g5-japanese-004", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3783,7 +3783,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "主張を支える根拠を示そう。"
   },
   {
-    "id": "g5-japanese-005",
+    "id": "g5-japanese-005", "cat": "よみとり",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3798,7 +3798,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "複数の描写を結びつけよう。"
   },
   {
-    "id": "g5-japanese-006",
+    "id": "g5-japanese-006", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3813,7 +3813,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "前の内容と対比するよ。"
   },
   {
-    "id": "g5-japanese-007",
+    "id": "g5-japanese-007", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3828,7 +3828,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "どこから得た情報か示そう。"
   },
   {
-    "id": "g5-japanese-008",
+    "id": "g5-japanese-008", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3843,7 +3843,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "互いの考えを確かめよう。"
   },
   {
-    "id": "g5-japanese-009",
+    "id": "g5-japanese-009", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3858,7 +3858,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "何がきっかけで何が起きたか整理しよう。"
   },
   {
-    "id": "g5-japanese-010",
+    "id": "g5-japanese-010", "cat": "漢字",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3873,7 +3873,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "考えや方法を出して示すことだよ。"
   },
   {
-    "id": "g5-japanese-011",
+    "id": "g5-japanese-011", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3888,7 +3888,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "引用部分と自分の意見を分け、出典も示そう。"
   },
   {
-    "id": "g5-japanese-012",
+    "id": "g5-japanese-012", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3903,7 +3903,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "大勢が口をそろえて同じことを言うことだよ。"
   },
   {
-    "id": "g5-japanese-013",
+    "id": "g5-japanese-013", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3918,7 +3918,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "敬語には尊敬語・謙譲語・丁寧語があるよ。"
   },
   {
-    "id": "g5-japanese-014",
+    "id": "g5-japanese-014", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3933,7 +3933,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "永久はいつまでも続くこと、一時は短い間のことだよ。"
   },
   {
-    "id": "g5-japanese-015",
+    "id": "g5-japanese-015", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3948,7 +3948,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "主張と根拠がつながっているか確かめよう。"
   },
   {
-    "id": "g5-japanese-016",
+    "id": "g5-japanese-016", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3963,7 +3963,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "俳句などで季節を示す言葉を季語というよ。"
   },
   {
-    "id": "g5-japanese-017",
+    "id": "g5-japanese-017", "cat": "よみとり",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3978,7 +3978,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "文章全体で伝えたいことをつかもう。"
   },
   {
-    "id": "g5-japanese-018",
+    "id": "g5-japanese-018", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -3993,7 +3993,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "意見に同意することと、反対することは反対の関係だよ。"
   },
   {
-    "id": "g5-japanese-019",
+    "id": "g5-japanese-019", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4008,7 +4008,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "数値を根拠として、考えと結びつけよう。"
   },
   {
-    "id": "g5-japanese-020",
+    "id": "g5-japanese-020", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4023,7 +4023,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "状況に応じて適切に行動することだよ。"
   },
   {
-    "id": "g5-japanese-021",
+    "id": "g5-japanese-021", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4038,7 +4038,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "二つの面を比べるときに使えるよ。"
   },
   {
-    "id": "g5-japanese-022",
+    "id": "g5-japanese-022", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4053,7 +4053,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "例や詳しい内容で示すことだよ。"
   },
   {
-    "id": "g5-japanese-023",
+    "id": "g5-japanese-023", "cat": "漢字",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4068,7 +4068,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "いつまでも続くことを表す言葉だよ。"
   },
   {
-    "id": "g5-japanese-024",
+    "id": "g5-japanese-024", "cat": "よみとり",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4083,7 +4083,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "一つの文だけでなく、全体を読んで考えよう。"
   },
   {
-    "id": "g5-japanese-025",
+    "id": "g5-japanese-025", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4098,7 +4098,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "接続語が前後の文をどうつなぐか考えよう。"
   },
   {
-    "id": "g5-japanese-026",
+    "id": "g5-japanese-026", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4113,7 +4113,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "難しい語句や背景を調べると理解しやすいよ。"
   },
   {
-    "id": "g5-japanese-027",
+    "id": "g5-japanese-027", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4128,7 +4128,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "相手の考えを正確に受け止めよう。"
   },
   {
-    "id": "g5-japanese-028",
+    "id": "g5-japanese-028", "cat": "漢字",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4143,7 +4143,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "およその予想や、探す目あてを表すよ。"
   },
   {
-    "id": "g5-japanese-029",
+    "id": "g5-japanese-029", "cat": "その他",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4158,7 +4158,7 @@ window.QUESTION_BANK['5-japanese'] = [
     "hint": "題名や単位、資料の出どころも確かめよう。"
   },
   {
-    "id": "g5-japanese-030",
+    "id": "g5-japanese-030", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -4176,7 +4176,7 @@ window.QUESTION_BANK['5-japanese'] = [
 
 window.QUESTION_BANK['5-math'] = [
   {
-    "id": "g5-math-001",
+    "id": "g5-math-001", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4191,7 +4191,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "割る数と割られる数を同じ数倍しよう。"
   },
   {
-    "id": "g5-math-002",
+    "id": "g5-math-002", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4206,7 +4206,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "分母が同じときは分子をたすよ。"
   },
   {
-    "id": "g5-math-003",
+    "id": "g5-math-003", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4221,7 +4221,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "125×4を考えて小数点を戻そう。"
   },
   {
-    "id": "g5-math-004",
+    "id": "g5-math-004", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4236,7 +4236,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "高さは底辺に垂直な長さだよ。"
   },
   {
-    "id": "g5-math-005",
+    "id": "g5-math-005", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4251,7 +4251,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "全体を同じ大きさに分ける考え方だよ。"
   },
   {
-    "id": "g5-math-006",
+    "id": "g5-math-006", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4266,7 +4266,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "立体の大きさを表す単位だよ。"
   },
   {
-    "id": "g5-math-007",
+    "id": "g5-math-007", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4281,7 +4281,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "百分率を100で割ろう。"
   },
   {
-    "id": "g5-math-008",
+    "id": "g5-math-008", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4296,7 +4296,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "6の倍数と8の倍数を並べてみよう。"
   },
   {
-    "id": "g5-math-009",
+    "id": "g5-math-009", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4311,7 +4311,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "36×4を計算して小数点の位置を考えよう。"
   },
   {
-    "id": "g5-math-010",
+    "id": "g5-math-010", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4326,7 +4326,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "48÷6をもとに小数点の位置を考えよう。"
   },
   {
-    "id": "g5-math-011",
+    "id": "g5-math-011", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4341,7 +4341,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "2/3を6分の4に直して考えよう。"
   },
   {
-    "id": "g5-math-012",
+    "id": "g5-math-012", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4356,7 +4356,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "同じ底辺と高さの平行四辺形の半分だよ。"
   },
   {
-    "id": "g5-math-013",
+    "id": "g5-math-013", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4372,7 +4372,7 @@ window.QUESTION_BANK['5-math'] = [
     "explanation": "0.4×100＝40なので、40%だよ。"
   },
   {
-    "id": "g5-math-014",
+    "id": "g5-math-014", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4388,7 +4388,7 @@ window.QUESTION_BANK['5-math'] = [
     "explanation": "3×3×3＝27なので、体積は27cm³。"
   },
   {
-    "id": "g5-math-015",
+    "id": "g5-math-015", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4403,7 +4403,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "百分率を100で割ると小数で表せるよ。"
   },
   {
-    "id": "g5-math-016",
+    "id": "g5-math-016", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4418,7 +4418,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "同じ時間でどれだけ進むかを考えよう。"
   },
   {
-    "id": "g5-math-017",
+    "id": "g5-math-017", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4433,7 +4433,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "1m²は10 000cm²。3倍してみよう。"
   },
   {
-    "id": "g5-math-018",
+    "id": "g5-math-018", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4448,7 +4448,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "高さは底辺に垂直な長さだよ。"
   },
   {
-    "id": "g5-math-019",
+    "id": "g5-math-019", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4463,7 +4463,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "1立方メートルは1000リットルだよ。"
   },
   {
-    "id": "g5-math-020",
+    "id": "g5-math-020", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4478,7 +4478,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "正多角形は辺も角も同じ大きさだよ。"
   },
   {
-    "id": "g5-math-021",
+    "id": "g5-math-021", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4493,7 +4493,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "8×7を計算し、小数点の位置を考えよう。"
   },
   {
-    "id": "g5-math-022",
+    "id": "g5-math-022", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4508,7 +4508,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "わる数とわられる数を10倍して考えよう。"
   },
   {
-    "id": "g5-math-023",
+    "id": "g5-math-023", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4523,7 +4523,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "百分率は100をもとにした割合だよ。"
   },
   {
-    "id": "g5-math-024",
+    "id": "g5-math-024", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4538,7 +4538,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "底辺×高さ÷2で求めるよ。"
   },
   {
-    "id": "g5-math-025",
+    "id": "g5-math-025", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4553,7 +4553,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "1Lは1000mLだよ。"
   },
   {
-    "id": "g5-math-026",
+    "id": "g5-math-026", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4568,7 +4568,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "0.5をかけるのは、半分にすることだよ。"
   },
   {
-    "id": "g5-math-027",
+    "id": "g5-math-027", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4583,7 +4583,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "分母が同じなので分子どうしを引こう。"
   },
   {
-    "id": "g5-math-028",
+    "id": "g5-math-028", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4598,7 +4598,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "底面積×高さでも求められるよ。"
   },
   {
-    "id": "g5-math-029",
+    "id": "g5-math-029", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4613,7 +4613,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "20÷80を計算して百分率に直そう。"
   },
   {
-    "id": "g5-math-030",
+    "id": "g5-math-030", "cat": "単位・量",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4628,7 +4628,7 @@ window.QUESTION_BANK['5-math'] = [
     "hint": "道のり＝速さ×時間だよ。"
   },
   {
-    "id": "g5-math-031",
+    "id": "g5-math-031", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -4646,7 +4646,7 @@ window.QUESTION_BANK['5-math'] = [
 
 window.QUESTION_BANK['5-science'] = [
   {
-    "id": "g5-science-001",
+    "id": "g5-science-001", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4661,7 +4661,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "発芽と成長に必要な条件は分けて考えよう。"
   },
   {
-    "id": "g5-science-002",
+    "id": "g5-science-002", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4676,7 +4676,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "植物は日光を使って養分を作るよ。"
   },
   {
-    "id": "g5-science-003",
+    "id": "g5-science-003", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4691,7 +4691,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "観察を続けて変化を記録しよう。"
   },
   {
-    "id": "g5-science-004",
+    "id": "g5-science-004", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4706,7 +4706,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "水と食塩を分けて考えよう。"
   },
   {
-    "id": "g5-science-005",
+    "id": "g5-science-005", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4721,7 +4721,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "長さを変えて比べてみよう。"
   },
   {
-    "id": "g5-science-006",
+    "id": "g5-science-006", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4736,7 +4736,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "空気が冷えると水滴ができるよ。"
   },
   {
-    "id": "g5-science-007",
+    "id": "g5-science-007", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4751,7 +4751,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "空気中の酸素を取り入れるよ。"
   },
   {
-    "id": "g5-science-008",
+    "id": "g5-science-008", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4766,7 +4766,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "食べ物は消化されて吸収されるよ。"
   },
   {
-    "id": "g5-science-009",
+    "id": "g5-science-009", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4781,7 +4781,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "種子は発芽するとき、肥料がなくても発芽できるものが多いよ。"
   },
   {
-    "id": "g5-science-010",
+    "id": "g5-science-010", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4796,7 +4796,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "受粉のあと、実ができることがあるよ。"
   },
   {
-    "id": "g5-science-011",
+    "id": "g5-science-011", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4811,7 +4811,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "えらで水にとけている酸素を取り入れるよ。"
   },
   {
-    "id": "g5-science-012",
+    "id": "g5-science-012", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4826,7 +4826,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "流れる水は地面をけずることがあるよ。"
   },
   {
-    "id": "g5-science-013",
+    "id": "g5-science-013", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4841,7 +4841,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "水の流れが弱まると土砂が積もることがあるよ。"
   },
   {
-    "id": "g5-science-014",
+    "id": "g5-science-014", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4856,7 +4856,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "ふりこの長さを変えて比べよう。"
   },
   {
-    "id": "g5-science-015",
+    "id": "g5-science-015", "cat": "電磁石",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4871,7 +4871,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "電流の強さやコイルの巻き数が関係するよ。"
   },
   {
-    "id": "g5-science-016",
+    "id": "g5-science-016", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4886,7 +4886,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "水が蒸発すると食塩が残るよ。"
   },
   {
-    "id": "g5-science-017",
+    "id": "g5-science-017", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4901,7 +4901,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "酸素は体のはたらきに必要だよ。"
   },
   {
-    "id": "g5-science-018",
+    "id": "g5-science-018", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4916,7 +4916,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "発芽した後の成長には日光などが必要だよ。"
   },
   {
-    "id": "g5-science-019",
+    "id": "g5-science-019", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4931,7 +4931,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "気象情報を確かめ、安全に備えよう。"
   },
   {
-    "id": "g5-science-020",
+    "id": "g5-science-020", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4946,7 +4946,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "複数の観測結果を合わせて天気を考えよう。"
   },
   {
-    "id": "g5-science-021",
+    "id": "g5-science-021", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4961,7 +4961,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "受粉のあとに実や種ができる植物があるよ。"
   },
   {
-    "id": "g5-science-022",
+    "id": "g5-science-022", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4976,7 +4976,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "子宮の中で成長するよ。"
   },
   {
-    "id": "g5-science-023",
+    "id": "g5-science-023", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -4991,7 +4991,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "条件をそろえると公平に比べられるよ。"
   },
   {
-    "id": "g5-science-024",
+    "id": "g5-science-024", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5006,7 +5006,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "ふりこの長さが長いほど、1往復の時間は長くなるよ。"
   },
   {
-    "id": "g5-science-025",
+    "id": "g5-science-025", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5021,7 +5021,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "空気中の水蒸気が冷えてできた粒などが集まっているよ。"
   },
   {
-    "id": "g5-science-026",
+    "id": "g5-science-026", "cat": "電磁石",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5036,7 +5036,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "電流の大きさなども磁力に関係するよ。"
   },
   {
-    "id": "g5-science-027",
+    "id": "g5-science-027", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5051,7 +5051,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "同じ対象を続けて観察すると変化が分かるよ。"
   },
   {
-    "id": "g5-science-028",
+    "id": "g5-science-028", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5066,7 +5066,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "体の中でできた二酸化炭素を息とともに出すよ。"
   },
   {
-    "id": "g5-science-029",
+    "id": "g5-science-029", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5081,7 +5081,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "侵食はけずるはたらき、運搬は運ぶはたらきだよ。"
   },
   {
-    "id": "g5-science-030",
+    "id": "g5-science-030", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5096,7 +5096,7 @@ window.QUESTION_BANK['5-science'] = [
     "hint": "複数の観測情報を合わせて考えるよ。"
   },
   {
-    "id": "g5-science-031",
+    "id": "g5-science-031", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -5114,7 +5114,7 @@ window.QUESTION_BANK['5-science'] = [
 
 window.QUESTION_BANK['5-social'] = [
   {
-    "id": "g5-social-001",
+    "id": "g5-social-001", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5124,7 +5124,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "国土の約4分の3を占めているよ。"
   },
   {
-    "id": "g5-social-002",
+    "id": "g5-social-002", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5134,7 +5134,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "だれが、いつ出した情報かを確認しよう。"
   },
   {
-    "id": "g5-social-003",
+    "id": "g5-social-003", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5149,7 +5149,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "水を張った田で育てるよ。"
   },
   {
-    "id": "g5-social-004",
+    "id": "g5-social-004", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5164,7 +5164,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "原料や製品を運ぶ交通も重要だよ。"
   },
   {
-    "id": "g5-social-005",
+    "id": "g5-social-005", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5179,7 +5179,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "輸出と反対の意味だよ。"
   },
   {
-    "id": "g5-social-006",
+    "id": "g5-social-006", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5194,7 +5194,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "地域ごとの自然条件を比べよう。"
   },
   {
-    "id": "g5-social-007",
+    "id": "g5-social-007", "cat": "環境と森林",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5209,7 +5209,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "森林は自然環境を支えているよ。"
   },
   {
-    "id": "g5-social-008",
+    "id": "g5-social-008", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5224,7 +5224,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "情報の確かさを確かめよう。"
   },
   {
-    "id": "g5-social-009",
+    "id": "g5-social-009", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5240,7 +5240,7 @@ window.QUESTION_BANK['5-social'] = [
     "explanation": "等高線は、同じ高さの地点を結んだ線だよ。"
   },
   {
-    "id": "g5-social-010",
+    "id": "g5-social-010", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5250,7 +5250,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "部品工場と組み立て工場が協力しているよ。"
   },
   {
-    "id": "g5-social-011",
+    "id": "g5-social-011", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5266,7 +5266,7 @@ window.QUESTION_BANK['5-social'] = [
     "explanation": "等高線の間隔が広い場所は、同じ高さの差に対して距離が長く、傾斜がゆるやかだよ。"
   },
   {
-    "id": "g5-social-012",
+    "id": "g5-social-012", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5281,7 +5281,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "食料の国内生産と消費の関係を示すよ。"
   },
   {
-    "id": "g5-social-013",
+    "id": "g5-social-013", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5296,7 +5296,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "発信元や根拠を確認しよう。"
   },
   {
-    "id": "g5-social-014",
+    "id": "g5-social-014", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5311,7 +5311,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "船は一度に多くの貨物を運べるよ。"
   },
   {
-    "id": "g5-social-015",
+    "id": "g5-social-015", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5326,7 +5326,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "地域の位置や地形が気候に影響するよ。"
   },
   {
-    "id": "g5-social-016",
+    "id": "g5-social-016", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5341,7 +5341,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "港を利用して原料や製品を運べるよ。"
   },
   {
-    "id": "g5-social-017",
+    "id": "g5-social-017", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5356,7 +5356,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "田んぼには、水をためられる平らな土地が向いているよ。"
   },
   {
-    "id": "g5-social-018",
+    "id": "g5-social-018", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5371,7 +5371,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "外国へ品物を売ることは輸出だよ。"
   },
   {
-    "id": "g5-social-019",
+    "id": "g5-social-019", "cat": "環境と森林",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5386,7 +5386,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "身近な行動も環境保全につながるよ。"
   },
   {
-    "id": "g5-social-020",
+    "id": "g5-social-020", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5401,7 +5401,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "公的機関の情報を確認して行動しよう。"
   },
   {
-    "id": "g5-social-021",
+    "id": "g5-social-021", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5416,7 +5416,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "水田には水を引きやすい平地などが適しているよ。"
   },
   {
-    "id": "g5-social-022",
+    "id": "g5-social-022", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5431,7 +5431,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "工業では原料を加工して製品を作るよ。"
   },
   {
-    "id": "g5-social-023",
+    "id": "g5-social-023", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5446,7 +5446,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "輸出は外国へ売ること、輸入は外国から買うことだよ。"
   },
   {
-    "id": "g5-social-024",
+    "id": "g5-social-024", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5461,7 +5461,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "海流は海水の温度や周辺の環境に影響するよ。"
   },
   {
-    "id": "g5-social-025",
+    "id": "g5-social-025", "cat": "環境と森林",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5476,7 +5476,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "森林は水や土を守る役割もあるよ。"
   },
   {
-    "id": "g5-social-026",
+    "id": "g5-social-026", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5491,7 +5491,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "品物の量や種類に応じて運び方を選ぶよ。"
   },
   {
-    "id": "g5-social-027",
+    "id": "g5-social-027", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5506,7 +5506,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "国内で作った食料がどれくらい使われているかを示すよ。"
   },
   {
-    "id": "g5-social-028",
+    "id": "g5-social-028", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5521,7 +5521,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "等高線がせまいところは高さが短い距離で変わるよ。"
   },
   {
-    "id": "g5-social-029",
+    "id": "g5-social-029", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5536,7 +5536,7 @@ window.QUESTION_BANK['5-social'] = [
     "hint": "最新の情報を確かめ、安全な行動につなげよう。"
   },
   {
-    "id": "g5-social-030",
+    "id": "g5-social-030", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -5554,7 +5554,7 @@ window.QUESTION_BANK['5-social'] = [
 
 window.QUESTION_BANK['6-japanese'] = [
   {
-    "id": "g6-japanese-001",
+    "id": "g6-japanese-001", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5569,7 +5569,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "筆者が伝えたい中心をまとめたものだよ。"
   },
   {
-    "id": "g6-japanese-002",
+    "id": "g6-japanese-002", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5584,7 +5584,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "確かめられる情報か考えよう。"
   },
   {
-    "id": "g6-japanese-003",
+    "id": "g6-japanese-003", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5599,7 +5599,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "何がきっかけで起きたかを考えよう。"
   },
   {
-    "id": "g6-japanese-004",
+    "id": "g6-japanese-004", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5614,7 +5614,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "引用と自分の意見を分けよう。"
   },
   {
-    "id": "g6-japanese-005",
+    "id": "g6-japanese-005", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5629,7 +5629,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "必要な内容をすっきり表す言葉だよ。"
   },
   {
-    "id": "g6-japanese-006",
+    "id": "g6-japanese-006", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5644,7 +5644,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "理由と根拠を示そう。"
   },
   {
-    "id": "g6-japanese-007",
+    "id": "g6-japanese-007", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5659,7 +5659,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "たとえを通してイメージを広げるよ。"
   },
   {
-    "id": "g6-japanese-008",
+    "id": "g6-japanese-008", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5674,7 +5674,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "資料同士を照らし合わせよう。"
   },
   {
-    "id": "g6-japanese-009",
+    "id": "g6-japanese-009", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5689,7 +5689,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "文の中心となる関係を見つけよう。"
   },
   {
-    "id": "g6-japanese-010",
+    "id": "g6-japanese-010", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5699,7 +5699,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "水が水蒸気になることだよ。"
   },
   {
-    "id": "g6-japanese-011",
+    "id": "g6-japanese-011", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5714,7 +5714,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "自分の考えを支える理由や資料を示そう。"
   },
   {
-    "id": "g6-japanese-012",
+    "id": "g6-japanese-012", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5729,7 +5729,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "表現の工夫が読み手に与える印象を考えよう。"
   },
   {
-    "id": "g6-japanese-013",
+    "id": "g6-japanese-013", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5744,7 +5744,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "過去から学んで新しい発見につなげることだよ。"
   },
   {
-    "id": "g6-japanese-014",
+    "id": "g6-japanese-014", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5759,7 +5759,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "情報の出どころを確かめられるようにしよう。"
   },
   {
-    "id": "g6-japanese-015",
+    "id": "g6-japanese-015", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5774,7 +5774,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "物語がどのように進むか整理しよう。"
   },
   {
-    "id": "g6-japanese-016",
+    "id": "g6-japanese-016", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5789,7 +5789,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "互いの根拠を比べながら考えよう。"
   },
   {
-    "id": "g6-japanese-017",
+    "id": "g6-japanese-017", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5804,7 +5804,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "相手の考えや権利を大切にすることだよ。"
   },
   {
-    "id": "g6-japanese-018",
+    "id": "g6-japanese-018", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5819,7 +5819,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "意見を出し合って話し合うことだよ。"
   },
   {
-    "id": "g6-japanese-019",
+    "id": "g6-japanese-019", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5834,7 +5834,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "大切な内容を選んでまとめよう。"
   },
   {
-    "id": "g6-japanese-020",
+    "id": "g6-japanese-020", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5849,7 +5849,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "互いの根拠を比べながら考えよう。"
   },
   {
-    "id": "g6-japanese-021",
+    "id": "g6-japanese-021", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5859,7 +5859,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "自分の生まれ育った土地のことだよ。"
   },
   {
-    "id": "g6-japanese-022",
+    "id": "g6-japanese-022", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5874,7 +5874,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "伝わりやすい表現に直す作業だよ。"
   },
   {
-    "id": "g6-japanese-023",
+    "id": "g6-japanese-023", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5889,7 +5889,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "話や考えに筋が通っている様子だよ。"
   },
   {
-    "id": "g6-japanese-024",
+    "id": "g6-japanese-024", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5904,7 +5904,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "何を伝えたいのか、なぜそう考えるのかを整理しよう。"
   },
   {
-    "id": "g6-japanese-025",
+    "id": "g6-japanese-025", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5919,7 +5919,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "むだがなく、短くまとまっていることだよ。"
   },
   {
-    "id": "g6-japanese-026",
+    "id": "g6-japanese-026", "cat": "その他",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5934,7 +5934,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "比べる前に、何をどう調べた数字か確認しよう。"
   },
   {
-    "id": "g6-japanese-027",
+    "id": "g6-japanese-027", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5949,7 +5949,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "人ではなく意見の内容について話そう。"
   },
   {
-    "id": "g6-japanese-028",
+    "id": "g6-japanese-028", "cat": "よみとり",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5964,7 +5964,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "たとえを使うと、読み手が場面を思い浮かべやすいよ。"
   },
   {
-    "id": "g6-japanese-029",
+    "id": "g6-japanese-029", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5979,7 +5979,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "その場や目的にふさわしいことだよ。"
   },
   {
-    "id": "g6-japanese-030",
+    "id": "g6-japanese-030", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -5994,7 +5994,7 @@ window.QUESTION_BANK['6-japanese'] = [
     "hint": "根拠と自分の考えを分かるように書こう。"
   },
   {
-    "id": "g6-japanese-031",
+    "id": "g6-japanese-031", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -6012,7 +6012,7 @@ window.QUESTION_BANK['6-japanese'] = [
 
 window.QUESTION_BANK['6-math'] = [
   {
-    "id": "g6-math-001",
+    "id": "g6-math-001", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6027,7 +6027,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "割る数の逆数をかけよう。"
   },
   {
-    "id": "g6-math-002",
+    "id": "g6-math-002", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6042,7 +6042,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "円周率を使って面積を求めるよ。"
   },
   {
-    "id": "g6-math-003",
+    "id": "g6-math-003", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6057,7 +6057,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "yがxに比例するときの関係だよ。"
   },
   {
-    "id": "g6-math-004",
+    "id": "g6-math-004", "cat": "単位・量",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6072,7 +6072,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "速さと時間をかけると、進んだ道のりになるよ。"
   },
   {
-    "id": "g6-math-005",
+    "id": "g6-math-005", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6087,7 +6087,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "実際の長さは地図の10000倍だよ。"
   },
   {
-    "id": "g6-math-006",
+    "id": "g6-math-006", "cat": "その他",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6102,7 +6102,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "データを小さい順に並べよう。"
   },
   {
-    "id": "g6-math-007",
+    "id": "g6-math-007", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6117,7 +6117,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "中心の点の周りに180度回して確かめよう。"
   },
   {
-    "id": "g6-math-008",
+    "id": "g6-math-008", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6132,7 +6132,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "両方の数を同じ数倍しよう。"
   },
   {
-    "id": "g6-math-009",
+    "id": "g6-math-009", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6147,7 +6147,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "両方から7を引こう。"
   },
   {
-    "id": "g6-math-010",
+    "id": "g6-math-010", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6162,7 +6162,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "全体を2+3=5等分したうちの2つ分だよ。"
   },
   {
-    "id": "g6-math-011",
+    "id": "g6-math-011", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6178,7 +6178,7 @@ window.QUESTION_BANK['6-math'] = [
     "explanation": "拡大図では対応する角の大きさは同じなので、35度だよ。"
   },
   {
-    "id": "g6-math-012",
+    "id": "g6-math-012", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6193,7 +6193,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "円周は直径の約3.14倍だよ。"
   },
   {
-    "id": "g6-math-013",
+    "id": "g6-math-013", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6208,7 +6208,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "3÷5を計算しよう。"
   },
   {
-    "id": "g6-math-014",
+    "id": "g6-math-014", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6224,7 +6224,7 @@ window.QUESTION_BANK['6-math'] = [
     "explanation": "y＝4×3＝12。"
   },
   {
-    "id": "g6-math-015",
+    "id": "g6-math-015", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6239,7 +6239,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "底面の形に関係なく、底面積と高さを使うよ。"
   },
   {
-    "id": "g6-math-016",
+    "id": "g6-math-016", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6255,7 +6255,7 @@ window.QUESTION_BANK['6-math'] = [
     "explanation": "2/3＝8/12、3/4＝9/12なので、3/4の方が大きいよ。"
   },
   {
-    "id": "g6-math-017",
+    "id": "g6-math-017", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6270,7 +6270,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "3cmの10000倍は30000cmだよ。"
   },
   {
-    "id": "g6-math-018",
+    "id": "g6-math-018", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6285,7 +6285,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "4で割ることは1/4をかけることだよ。"
   },
   {
-    "id": "g6-math-019",
+    "id": "g6-math-019", "cat": "単位・量",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6300,7 +6300,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "道のりは速さ×時間で求められるよ。"
   },
   {
-    "id": "g6-math-020",
+    "id": "g6-math-020", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6316,7 +6316,7 @@ window.QUESTION_BANK['6-math'] = [
     "explanation": "直径は半径の2倍なので、4×2＝8cm。"
   },
   {
-    "id": "g6-math-021",
+    "id": "g6-math-021", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6331,7 +6331,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "両方に4をかけて考えよう。"
   },
   {
-    "id": "g6-math-022",
+    "id": "g6-math-022", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6346,7 +6346,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "比の合計は8。40を8等分した1つ分を3つ分にしよう。"
   },
   {
-    "id": "g6-math-023",
+    "id": "g6-math-023", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6361,7 +6361,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "600×0.15で計算できるよ。"
   },
   {
-    "id": "g6-math-024",
+    "id": "g6-math-024", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6376,7 +6376,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "半径×半径×円周率で求めるよ。"
   },
   {
-    "id": "g6-math-025",
+    "id": "g6-math-025", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6391,7 +6391,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "たて×横×高さで求めよう。"
   },
   {
-    "id": "g6-math-026",
+    "id": "g6-math-026", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6406,7 +6406,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "比例では一方を何倍かすると、もう一方も同じ倍になるよ。"
   },
   {
-    "id": "g6-math-027",
+    "id": "g6-math-027", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6421,7 +6421,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "両方を10倍して24÷6と考えよう。"
   },
   {
-    "id": "g6-math-028",
+    "id": "g6-math-028", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6436,7 +6436,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "1/3を2/6に直してから引こう。"
   },
   {
-    "id": "g6-math-029",
+    "id": "g6-math-029", "cat": "単位・量",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6451,7 +6451,7 @@ window.QUESTION_BANK['6-math'] = [
     "hint": "72kmを分に直し、1000mをかけて考えよう。"
   },
   {
-    "id": "g6-math-030",
+    "id": "g6-math-030", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -6469,7 +6469,7 @@ window.QUESTION_BANK['6-math'] = [
 
 window.QUESTION_BANK['6-science'] = [
   {
-    "id": "g6-science-001",
+    "id": "g6-science-001", "cat": "燃え方と水溶液",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6484,7 +6484,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "燃焼には酸素が関係するよ。"
   },
   {
-    "id": "g6-science-002",
+    "id": "g6-science-002", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6499,7 +6499,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "葉で養分を作るはたらきだよ。"
   },
   {
-    "id": "g6-science-003",
+    "id": "g6-science-003", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6514,7 +6514,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "消化管で養分を取り入れるよ。"
   },
   {
-    "id": "g6-science-004",
+    "id": "g6-science-004", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6529,7 +6529,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "ポンプのようにはたらくよ。"
   },
   {
-    "id": "g6-science-005",
+    "id": "g6-science-005", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6544,7 +6544,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "長い時間をかけて積もるよ。"
   },
   {
-    "id": "g6-science-006",
+    "id": "g6-science-006", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6559,7 +6559,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "地球が回転していることが関係するよ。"
   },
   {
-    "id": "g6-science-007",
+    "id": "g6-science-007", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6574,7 +6574,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "水の流れを利用して発電するよ。"
   },
   {
-    "id": "g6-science-008",
+    "id": "g6-science-008", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6589,7 +6589,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "資源を大切に使おう。"
   },
   {
-    "id": "g6-science-009",
+    "id": "g6-science-009", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6604,7 +6604,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "葉に日光が当たると養分をつくるよ。"
   },
   {
-    "id": "g6-science-010",
+    "id": "g6-science-010", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6619,7 +6619,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "心臓のポンプのようなはたらきで血液が流れるよ。"
   },
   {
-    "id": "g6-science-011",
+    "id": "g6-science-011", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6634,7 +6634,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "小腸で養分が吸収されるよ。"
   },
   {
-    "id": "g6-science-012",
+    "id": "g6-science-012", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6649,7 +6649,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "月は太陽の光を反射して見えているよ。"
   },
   {
-    "id": "g6-science-013",
+    "id": "g6-science-013", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6664,7 +6664,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "水などに運ばれた土砂が積もることがあるよ。"
   },
   {
-    "id": "g6-science-014",
+    "id": "g6-science-014", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6679,7 +6679,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "地下のマグマが地表に出たものを溶岩というよ。"
   },
   {
-    "id": "g6-science-015",
+    "id": "g6-science-015", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6694,7 +6694,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "風で風車を回し、電気をつくるよ。"
   },
   {
-    "id": "g6-science-016",
+    "id": "g6-science-016", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6709,7 +6709,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "生き物は食べ物を通してつながっているよ。"
   },
   {
-    "id": "g6-science-017",
+    "id": "g6-science-017", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6724,7 +6724,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "肺で酸素を取り入れ、二酸化炭素を出すよ。"
   },
   {
-    "id": "g6-science-018",
+    "id": "g6-science-018", "cat": "燃え方と水溶液",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6739,7 +6739,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "リトマス紙で水溶液の性質を調べられるよ。"
   },
   {
-    "id": "g6-science-019",
+    "id": "g6-science-019", "cat": "その他",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6754,7 +6754,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "大気は地球を取り巻く空気の層だよ。"
   },
   {
-    "id": "g6-science-020",
+    "id": "g6-science-020", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6769,7 +6769,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "生き物は互いに関わりながら生きているよ。"
   },
   {
-    "id": "g6-science-021",
+    "id": "g6-science-021", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6784,7 +6784,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "肺で酸素を血液に取り入れ、二酸化炭素を出すよ。"
   },
   {
-    "id": "g6-science-022",
+    "id": "g6-science-022", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6799,7 +6799,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "でんぷんがあると青むらさき色に変化するよ。"
   },
   {
-    "id": "g6-science-023",
+    "id": "g6-science-023", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6814,7 +6814,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "月は太陽の光を反射して見えているよ。"
   },
   {
-    "id": "g6-science-024",
+    "id": "g6-science-024", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6829,7 +6829,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "化石は昔の環境を知る手がかりになるよ。"
   },
   {
-    "id": "g6-science-025",
+    "id": "g6-science-025", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6844,7 +6844,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "電流が流れている間、磁石のようなはたらきをするよ。"
   },
   {
-    "id": "g6-science-026",
+    "id": "g6-science-026", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6859,7 +6859,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "電気は光や音、運動などに変えられるよ。"
   },
   {
-    "id": "g6-science-027",
+    "id": "g6-science-027", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6874,7 +6874,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "食べる・食べられる関係で生き物はつながっているよ。"
   },
   {
-    "id": "g6-science-028",
+    "id": "g6-science-028", "cat": "燃え方と水溶液",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6889,7 +6889,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "水溶液の性質を色の変化で調べる方法があるよ。"
   },
   {
-    "id": "g6-science-029",
+    "id": "g6-science-029", "cat": "その他",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6904,7 +6904,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "地球を取り巻く空気を大気というよ。"
   },
   {
-    "id": "g6-science-030",
+    "id": "g6-science-030", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6919,7 +6919,7 @@ window.QUESTION_BANK['6-science'] = [
     "hint": "血液は酸素や養分などを体の各部へ運ぶよ。"
   },
   {
-    "id": "g6-science-031",
+    "id": "g6-science-031", "cat": "体のつくりと植物のはたらき",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -6937,7 +6937,7 @@ window.QUESTION_BANK['6-science'] = [
 
 window.QUESTION_BANK['6-social'] = [
   {
-    "id": "g6-social-001",
+    "id": "g6-social-001", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -6952,7 +6952,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国民主権の考え方だよ。"
   },
   {
-    "id": "g6-social-002",
+    "id": "g6-social-002", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -6967,7 +6967,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国の法律や予算を話し合うよ。"
   },
   {
-    "id": "g6-social-003",
+    "id": "g6-social-003", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -6982,7 +6982,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "行政を担当する機関だよ。"
   },
   {
-    "id": "g6-social-004",
+    "id": "g6-social-004", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -6997,7 +6997,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "司法を担当するよ。"
   },
   {
-    "id": "g6-social-005",
+    "id": "g6-social-005", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7012,7 +7012,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "選挙は政治参加の方法だよ。"
   },
   {
-    "id": "g6-social-006",
+    "id": "g6-social-006", "cat": "世界と国際",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7027,7 +7027,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国境をこえる課題は協力が必要だよ。"
   },
   {
-    "id": "g6-social-007",
+    "id": "g6-social-007", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7042,7 +7042,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "1603年に征夷大将軍になった人物だよ。"
   },
   {
-    "id": "g6-social-008",
+    "id": "g6-social-008", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7057,7 +7057,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "政治や社会の仕組みが大きく変わったよ。"
   },
   {
-    "id": "g6-social-009",
+    "id": "g6-social-009", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7072,7 +7072,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国民主権は憲法の三つの基本原則の一つだよ。"
   },
   {
-    "id": "g6-social-010",
+    "id": "g6-social-010", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7087,7 +7087,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国会は唯一の立法機関だよ。"
   },
   {
-    "id": "g6-social-011",
+    "id": "g6-social-011", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7102,7 +7102,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "内閣は行政を担当するよ。"
   },
   {
-    "id": "g6-social-012",
+    "id": "g6-social-012", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7118,7 +7118,7 @@ window.QUESTION_BANK['6-social'] = [
     "explanation": "国会議事堂は、国会の会議が行われる建物だよ。"
   },
   {
-    "id": "g6-social-013",
+    "id": "g6-social-013", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7133,7 +7133,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "日本では満18歳以上の人が選挙権を持つよ。"
   },
   {
-    "id": "g6-social-014",
+    "id": "g6-social-014", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7148,7 +7148,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "源頼朝は鎌倉に武士の政権を開いたよ。"
   },
   {
-    "id": "g6-social-015",
+    "id": "g6-social-015", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7163,7 +7163,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "1603年に征夷大将軍になった人物だよ。"
   },
   {
-    "id": "g6-social-016",
+    "id": "g6-social-016", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7178,7 +7178,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "三つの基本原則をセットで覚えよう。"
   },
   {
-    "id": "g6-social-017",
+    "id": "g6-social-017", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7193,7 +7193,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "明治政府は政治や社会の仕組みを大きく変えたよ。"
   },
   {
-    "id": "g6-social-018",
+    "id": "g6-social-018", "cat": "世界と国際",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7208,7 +7208,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国際連合は平和や国際協力を進める組織だよ。"
   },
   {
-    "id": "g6-social-019",
+    "id": "g6-social-019", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7223,7 +7223,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "選挙は国民が政治に参加する大切な方法だよ。"
   },
   {
-    "id": "g6-social-020",
+    "id": "g6-social-020", "cat": "世界と国際",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7238,7 +7238,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国境をこえる課題には国際協力が必要だよ。"
   },
   {
-    "id": "g6-social-021",
+    "id": "g6-social-021", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7253,7 +7253,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "長崎ではオランダや中国との貿易が行われたよ。"
   },
   {
-    "id": "g6-social-022",
+    "id": "g6-social-022", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7268,7 +7268,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "明治時代には、服装や建物、制度などに西洋の影響が広がったよ。"
   },
   {
-    "id": "g6-social-023",
+    "id": "g6-social-023", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7283,7 +7283,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "聖徳太子は飛鳥時代に活躍した人物だよ。"
   },
   {
-    "id": "g6-social-024",
+    "id": "g6-social-024", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7298,7 +7298,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "源頼朝が鎌倉に幕府を開いたよ。"
   },
   {
-    "id": "g6-social-025",
+    "id": "g6-social-025", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7313,7 +7313,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "足利尊氏が室町幕府を開いたよ。"
   },
   {
-    "id": "g6-social-026",
+    "id": "g6-social-026", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7328,7 +7328,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "大名が江戸と領地を行き来する制度だよ。"
   },
   {
-    "id": "g6-social-027",
+    "id": "g6-social-027", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7343,7 +7343,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "地方のしくみを改め、府県を置いたよ。"
   },
   {
-    "id": "g6-social-028",
+    "id": "g6-social-028", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7358,7 +7358,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "日本国憲法の三つの基本原則の一つだよ。"
   },
   {
-    "id": "g6-social-029",
+    "id": "g6-social-029", "cat": "世界と国際",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7373,7 +7373,7 @@ window.QUESTION_BANK['6-social'] = [
     "hint": "国どうしが協力して平和を守ることを目指すよ。"
   },
   {
-    "id": "g6-social-030",
+    "id": "g6-social-030", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -7391,7 +7391,7 @@ window.QUESTION_BANK['6-social'] = [
 
 window.QUESTION_BANK['3-english'] = [
   {
-    "id": "g3-english-001",
+    "id": "g3-english-001", "cat": "あいさつと自己紹介",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7406,7 +7406,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "会ったときなどに使う基本のあいさつだよ。"
   },
   {
-    "id": "g3-english-002",
+    "id": "g3-english-002", "cat": "あいさつと自己紹介",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7421,7 +7421,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "朝のあいさつだよ。"
   },
   {
-    "id": "g3-english-003",
+    "id": "g3-english-003", "cat": "あいさつと自己紹介",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7436,7 +7436,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "感謝を伝える表現だよ。"
   },
   {
-    "id": "g3-english-004",
+    "id": "g3-english-004", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7451,7 +7451,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "信号の赤もredだよ。"
   },
   {
-    "id": "g3-english-005",
+    "id": "g3-english-005", "cat": "食べ物と動物",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7466,7 +7466,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "ミャーと鳴く動物だよ。"
   },
   {
-    "id": "g3-english-006",
+    "id": "g3-english-006", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7481,7 +7481,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "英語で数を順番に言ってみよう。"
   },
   {
-    "id": "g3-english-007",
+    "id": "g3-english-007", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7496,7 +7496,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "数をたずねるときに使うよ。"
   },
   {
-    "id": "g3-english-008",
+    "id": "g3-english-008", "cat": "好きなこと・できること",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7511,7 +7511,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "I like ～で「～が好きです」だよ。"
   },
   {
-    "id": "g3-english-009",
+    "id": "g3-english-009", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7526,7 +7526,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "colorは「色」という意味だよ。"
   },
   {
-    "id": "g3-english-010",
+    "id": "g3-english-010", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7541,7 +7541,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "授業などで使う指示の表現だよ。"
   },
   {
-    "id": "g3-english-011",
+    "id": "g3-english-011", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7556,7 +7556,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "sitは「座る」という意味だよ。"
   },
   {
-    "id": "g3-english-012",
+    "id": "g3-english-012", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7571,7 +7571,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "My name is ～で名前を伝えられるよ。"
   },
   {
-    "id": "g3-english-013",
+    "id": "g3-english-013", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7586,7 +7586,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "blueは青色だよ。"
   },
   {
-    "id": "g3-english-014",
+    "id": "g3-english-014", "cat": "食べ物と動物",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7601,7 +7601,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "くだものの名前だよ。"
   },
   {
-    "id": "g3-english-015",
+    "id": "g3-english-015", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7616,7 +7616,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "元気かどうかをたずねる表現だよ。"
   },
   {
-    "id": "g3-english-016",
+    "id": "g3-english-016", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7631,7 +7631,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "thisは「これ」という意味だよ。"
   },
   {
-    "id": "g3-english-017",
+    "id": "g3-english-017", "cat": "好きなこと・できること",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7646,7 +7646,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "canは「～できる」という意味だよ。"
   },
   {
-    "id": "g3-english-018",
+    "id": "g3-english-018", "cat": "あいさつと自己紹介",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7661,7 +7661,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "別れるときのあいさつだよ。"
   },
   {
-    "id": "g3-english-019",
+    "id": "g3-english-019", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7676,7 +7676,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "yellowは黄色だよ。"
   },
   {
-    "id": "g3-english-020",
+    "id": "g3-english-020", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7691,7 +7691,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "好きかどうかをたずねているよ。"
   },
   {
-    "id": "g3-english-021",
+    "id": "g3-english-021", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7706,7 +7706,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "fourの次の数だよ。"
   },
   {
-    "id": "g3-english-022",
+    "id": "g3-english-022", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7721,7 +7721,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "木や草の色だよ。"
   },
   {
-    "id": "g3-english-023",
+    "id": "g3-english-023", "cat": "食べ物と動物",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7736,7 +7736,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "英語の動物の名前を覚えよう。"
   },
   {
-    "id": "g3-english-024",
+    "id": "g3-english-024", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7751,7 +7751,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "one, two, three, fourと数えよう。"
   },
   {
-    "id": "g3-english-025",
+    "id": "g3-english-025", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7766,7 +7766,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "「どういたしまして」という返事だよ。"
   },
   {
-    "id": "g3-english-026",
+    "id": "g3-english-026", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7781,7 +7781,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "What colorは「何色」をたずねる表現だよ。"
   },
   {
-    "id": "g3-english-027",
+    "id": "g3-english-027", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7796,7 +7796,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "教室にある物の英語を覚えよう。"
   },
   {
-    "id": "g3-english-028",
+    "id": "g3-english-028", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7811,7 +7811,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "教室で使う指示の表現だよ。"
   },
   {
-    "id": "g3-english-029",
+    "id": "g3-english-029", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7826,7 +7826,7 @@ window.QUESTION_BANK['3-english'] = [
     "hint": "色の名前を英語でも言ってみよう。"
   },
   {
-    "id": "g3-english-030",
+    "id": "g3-english-030", "cat": "その他",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -7844,7 +7844,7 @@ window.QUESTION_BANK['3-english'] = [
 
 window.QUESTION_BANK['4-english'] = [
   {
-    "id": "g4-english-001",
+    "id": "g4-english-001", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7859,7 +7859,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "How manyは数をたずねる表現だよ。"
   },
   {
-    "id": "g4-english-002",
+    "id": "g4-english-002", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7874,7 +7874,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I like ～で好きなものを伝えられるよ。"
   },
   {
-    "id": "g4-english-003",
+    "id": "g4-english-003", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7889,7 +7889,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "dayは「日」や「曜日」に関係する言葉だよ。"
   },
   {
-    "id": "g4-english-004",
+    "id": "g4-english-004", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7904,7 +7904,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の名前を覚えよう。"
   },
   {
-    "id": "g4-english-005",
+    "id": "g4-english-005", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7919,7 +7919,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "can playで「～をすることができる」と伝えられるよ。"
   },
   {
-    "id": "g4-english-006",
+    "id": "g4-english-006", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7934,7 +7934,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "好きなものをたずねる表現だよ。"
   },
   {
-    "id": "g4-english-007",
+    "id": "g4-english-007", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7944,7 +7944,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "snowy は雪の様子を表すよ。"
   },
   {
-    "id": "g4-english-008",
+    "id": "g4-english-008", "cat": "あいさつと自己紹介",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7959,7 +7959,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "別れるときに使う表現だよ。"
   },
   {
-    "id": "g4-english-009",
+    "id": "g4-english-009", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7974,7 +7974,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "colorは色という意味だよ。"
   },
   {
-    "id": "g4-english-010",
+    "id": "g4-english-010", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -7989,7 +7989,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I like ～で好きなものを伝えるよ。"
   },
   {
-    "id": "g4-english-011",
+    "id": "g4-english-011", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8004,7 +8004,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の名前を覚えよう。"
   },
   {
-    "id": "g4-english-012",
+    "id": "g4-english-012", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8014,7 +8014,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "天気を聞かれたら、天気を答えよう。"
   },
   {
-    "id": "g4-english-013",
+    "id": "g4-english-013", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8029,7 +8029,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "timeは時刻という意味だよ。"
   },
   {
-    "id": "g4-english-014",
+    "id": "g4-english-014", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8039,7 +8039,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "cook は「料理する」だよ。"
   },
   {
-    "id": "g4-english-015",
+    "id": "g4-english-015", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8054,7 +8054,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "orangeはくだものの名前でもあり、色の名前でもあるよ。"
   },
   {
-    "id": "g4-english-016",
+    "id": "g4-english-016", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8069,7 +8069,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "Do you like ～?にはNo, I don't.と答えられるよ。"
   },
   {
-    "id": "g4-english-017",
+    "id": "g4-english-017", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8084,7 +8084,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の名前を覚えよう。"
   },
   {
-    "id": "g4-english-018",
+    "id": "g4-english-018", "cat": "食べ物と動物",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8099,7 +8099,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I have ～で持っているものや飼っているものを伝えられるよ。"
   },
   {
-    "id": "g4-english-019",
+    "id": "g4-english-019", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8114,7 +8114,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "名前をたずねる表現だよ。"
   },
   {
-    "id": "g4-english-020",
+    "id": "g4-english-020", "cat": "あいさつと自己紹介",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8129,7 +8129,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "午後に使うあいさつだよ。"
   },
   {
-    "id": "g4-english-021",
+    "id": "g4-english-021", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8144,7 +8144,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の英語を順番に覚えよう。"
   },
   {
-    "id": "g4-english-022",
+    "id": "g4-english-022", "cat": "あいさつと自己紹介",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8159,7 +8159,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "oldは年れいをたずねるときに使うよ。"
   },
   {
-    "id": "g4-english-023",
+    "id": "g4-english-023", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8174,7 +8174,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I have ～で「～を持っています」と言えるよ。"
   },
   {
-    "id": "g4-english-024",
+    "id": "g4-english-024", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8189,7 +8189,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "cloudyは雲が多い天気だよ。"
   },
   {
-    "id": "g4-english-025",
+    "id": "g4-english-025", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8204,7 +8204,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "openは「開く」という意味だよ。"
   },
   {
-    "id": "g4-english-026",
+    "id": "g4-english-026", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8219,7 +8219,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "物をたずねられたらIt's a ～で答えられるよ。"
   },
   {
-    "id": "g4-english-027",
+    "id": "g4-english-027", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8234,7 +8234,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "曜日の順番を思い出そう。"
   },
   {
-    "id": "g4-english-028",
+    "id": "g4-english-028", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8249,7 +8249,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "I like ～で好きなものを伝えるよ。"
   },
   {
-    "id": "g4-english-029",
+    "id": "g4-english-029", "cat": "あいさつと自己紹介",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8264,7 +8264,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "very muchをつけると感謝を強められるよ。"
   },
   {
-    "id": "g4-english-030",
+    "id": "g4-english-030", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8279,7 +8279,7 @@ window.QUESTION_BANK['4-english'] = [
     "hint": "Can you ～?にはYes, I can.と答えられるよ。"
   },
   {
-    "id": "g4-english-031",
+    "id": "g4-english-031", "cat": "あいさつと自己紹介",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -8297,7 +8297,7 @@ window.QUESTION_BANK['4-english'] = [
 
 window.QUESTION_BANK['5-english'] = [
   {
-    "id": "g5-english-001",
+    "id": "g5-english-001", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8307,7 +8307,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "reading は「読むこと」だよ。"
   },
   {
-    "id": "g5-english-002",
+    "id": "g5-english-002", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8322,7 +8322,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "sportはスポーツのことだよ。"
   },
   {
-    "id": "g5-english-003",
+    "id": "g5-english-003", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8332,7 +8332,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "skate は「スケートをする」だよ。"
   },
   {
-    "id": "g5-english-004",
+    "id": "g5-english-004", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8347,7 +8347,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "want to beで「～になりたい」という気持ちを表せるよ。"
   },
   {
-    "id": "g5-english-005",
+    "id": "g5-english-005", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8362,7 +8362,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "本を借りたり読んだりする場所だよ。"
   },
   {
-    "id": "g5-english-006",
+    "id": "g5-english-006", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8377,7 +8377,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "ふだんよくすることを表す言葉だよ。"
   },
   {
-    "id": "g5-english-007",
+    "id": "g5-english-007", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8392,7 +8392,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "wentはgoの過去形だよ。"
   },
   {
-    "id": "g5-english-008",
+    "id": "g5-english-008", "cat": "あいさつと自己紹介",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8407,7 +8407,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "Whenは「いつ」をたずねる言葉だよ。"
   },
   {
-    "id": "g5-english-009",
+    "id": "g5-english-009", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8422,7 +8422,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "曜日を順番に思い出そう。"
   },
   {
-    "id": "g5-english-010",
+    "id": "g5-english-010", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8437,7 +8437,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "How manyは数をたずねる表現だよ。"
   },
   {
-    "id": "g5-english-011",
+    "id": "g5-english-011", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8452,7 +8452,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "brotherは兄または弟のことだよ。"
   },
   {
-    "id": "g5-english-012",
+    "id": "g5-english-012", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8467,7 +8467,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "timeは時間のことだよ。"
   },
   {
-    "id": "g5-english-013",
+    "id": "g5-english-013", "cat": "食べ物と動物",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8482,7 +8482,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "野菜の名前を覚えよう。"
   },
   {
-    "id": "g5-english-014",
+    "id": "g5-english-014", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8497,7 +8497,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "every dayは「毎日」だよ。"
   },
   {
-    "id": "g5-english-015",
+    "id": "g5-english-015", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8512,7 +8512,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "相手にていねいにお願いするときの表現だよ。"
   },
   {
-    "id": "g5-english-016",
+    "id": "g5-english-016", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8527,7 +8527,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "There are ～で複数のものがあることを表せるよ。"
   },
   {
-    "id": "g5-english-017",
+    "id": "g5-english-017", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8542,7 +8542,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "seasonは季節のことだよ。"
   },
   {
-    "id": "g5-english-018",
+    "id": "g5-english-018", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8557,7 +8557,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "景色などをほめるときにも使う言葉だよ。"
   },
   {
-    "id": "g5-english-019",
+    "id": "g5-english-019", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8572,7 +8572,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "want to visitで「訪れたい」と言えるよ。"
   },
   {
-    "id": "g5-english-020",
+    "id": "g5-english-020", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8587,7 +8587,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "Whyは理由をたずねる言葉。Becauseで理由を答えられるよ。"
   },
   {
-    "id": "g5-english-021",
+    "id": "g5-english-021", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8602,7 +8602,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "on Sundaysは「日曜日には」という意味だよ。"
   },
   {
-    "id": "g5-english-022",
+    "id": "g5-english-022", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8617,7 +8617,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "subjectは教科のことだよ。"
   },
   {
-    "id": "g5-english-023",
+    "id": "g5-english-023", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8632,7 +8632,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "want to beで将来なりたいものを言えるよ。"
   },
   {
-    "id": "g5-english-024",
+    "id": "g5-english-024", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8647,7 +8647,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "libraryは図書館だよ。"
   },
   {
-    "id": "g5-english-025",
+    "id": "g5-english-025", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8662,7 +8662,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "get upは「起きる」という意味だよ。"
   },
   {
-    "id": "g5-english-026",
+    "id": "g5-english-026", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8677,7 +8677,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "inのあとに月を置いて、何月かを表せるよ。"
   },
   {
-    "id": "g5-english-027",
+    "id": "g5-english-027", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8692,7 +8692,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "Whichは選択肢からどれかをたずねる言葉だよ。"
   },
   {
-    "id": "g5-english-028",
+    "id": "g5-english-028", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8707,7 +8707,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "yesterdayは「昨日」、wentはgoの過去形だよ。"
   },
   {
-    "id": "g5-english-029",
+    "id": "g5-english-029", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8722,7 +8722,7 @@ window.QUESTION_BANK['5-english'] = [
     "hint": "道案内で使う表現だよ。"
   },
   {
-    "id": "g5-english-030",
+    "id": "g5-english-030", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -8740,7 +8740,7 @@ window.QUESTION_BANK['5-english'] = [
 
 window.QUESTION_BANK['6-english'] = [
   {
-    "id": "g6-english-001",
+    "id": "g6-english-001", "cat": "数・色・曜日",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8755,7 +8755,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "usuallyは「たいてい」、get upは「起きる」だよ。"
   },
   {
-    "id": "g6-english-002",
+    "id": "g6-english-002", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8770,7 +8770,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "didがあるので、過去のことをたずねているよ。"
   },
   {
-    "id": "g6-english-003",
+    "id": "g6-english-003", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8785,7 +8785,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "visitedはvisit（訪ねる）の過去形だよ。"
   },
   {
-    "id": "g6-english-004",
+    "id": "g6-english-004", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8800,7 +8800,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "道順をたずねる表現だよ。"
   },
   {
-    "id": "g6-english-005",
+    "id": "g6-english-005", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8815,7 +8815,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "大事なことを説明するときに使うよ。"
   },
   {
-    "id": "g6-english-006",
+    "id": "g6-english-006", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8830,7 +8830,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "want to beで将来の希望を伝えられるよ。"
   },
   {
-    "id": "g6-english-007",
+    "id": "g6-english-007", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8845,7 +8845,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "過ごした時間の感想をたずねる表現だよ。"
   },
   {
-    "id": "g6-english-008",
+    "id": "g6-english-008", "cat": "好きなこと・できること",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8860,7 +8860,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "enjoyedは「楽しんだ」という意味だよ。"
   },
   {
-    "id": "g6-english-009",
+    "id": "g6-english-009", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8875,7 +8875,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "How longは長さや時間をたずねることがあるよ。"
   },
   {
-    "id": "g6-english-010",
+    "id": "g6-english-010", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8890,7 +8890,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "shouldは助言をするときに使えるよ。"
   },
   {
-    "id": "g6-english-011",
+    "id": "g6-english-011", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8905,7 +8905,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "same（同じ）と反対に近い意味だよ。"
   },
   {
-    "id": "g6-english-012",
+    "id": "g6-english-012", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8920,7 +8920,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "have never been to ～で「～へ行ったことがない」と表せるよ。"
   },
   {
-    "id": "g6-english-013",
+    "id": "g6-english-013", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8935,7 +8935,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "道順をたずねるていねいな表現だよ。"
   },
   {
-    "id": "g6-english-014",
+    "id": "g6-english-014", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8950,7 +8950,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "理由を説明するときに使うよ。"
   },
   {
-    "id": "g6-english-015",
+    "id": "g6-english-015", "cat": "好きなこと・できること",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8965,7 +8965,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "favoriteは「いちばん好きな」という意味だよ。"
   },
   {
-    "id": "g6-english-016",
+    "id": "g6-english-016", "cat": "好きなこと・できること",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8980,7 +8980,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "Ifは「もし～なら」という条件を表すよ。"
   },
   {
-    "id": "g6-english-017",
+    "id": "g6-english-017", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -8995,7 +8995,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "think aboutで「～について考える」という意味だよ。"
   },
   {
-    "id": "g6-english-018",
+    "id": "g6-english-018", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9010,7 +9010,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "mustは「～しなければならない」という意味だよ。"
   },
   {
-    "id": "g6-english-019",
+    "id": "g6-english-019", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9025,7 +9025,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "look forward to ～で「～を楽しみにする」と言えるよ。"
   },
   {
-    "id": "g6-english-020",
+    "id": "g6-english-020", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9040,7 +9040,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "save waterは「水を節約する」という意味だよ。"
   },
   {
-    "id": "g6-english-021",
+    "id": "g6-english-021", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9055,7 +9055,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "willは未来の予定や意思を表すときに使えるよ。"
   },
   {
-    "id": "g6-english-022",
+    "id": "g6-english-022", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9070,7 +9070,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "wasはamの過去形だよ。"
   },
   {
-    "id": "g6-english-023",
+    "id": "g6-english-023", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9085,7 +9085,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "biggerはbigの比較級で「より大きい」だよ。"
   },
   {
-    "id": "g6-english-024",
+    "id": "g6-english-024", "cat": "好きなこと・できること",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9100,7 +9100,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "helpedはhelpの過去形だよ。"
   },
   {
-    "id": "g6-english-025",
+    "id": "g6-english-025", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9115,7 +9115,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "How oftenは行動の頻度をたずねる表現だよ。"
   },
   {
-    "id": "g6-english-026",
+    "id": "g6-english-026", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9130,7 +9130,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "mustは「～しなければならない」という意味だよ。"
   },
   {
-    "id": "g6-english-027",
+    "id": "g6-english-027", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9145,7 +9145,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "be going toで予定やつもりを表せるよ。"
   },
   {
-    "id": "g6-english-028",
+    "id": "g6-english-028", "cat": "数・色・曜日",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9160,7 +9160,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "映画の感想を聞かれたら、内容や感じを答えよう。"
   },
   {
-    "id": "g6-english-029",
+    "id": "g6-english-029", "cat": "あいさつと自己紹介",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9175,7 +9175,7 @@ window.QUESTION_BANK['6-english'] = [
     "hint": "別れ際などに相手を気づかう表現だよ。"
   },
   {
-    "id": "g6-english-030",
+    "id": "g6-english-030", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -9194,7 +9194,7 @@ window.QUESTION_BANK['6-english'] = [
 // 追加問題（2026-11-01 点検での拡充）
 window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
   {
-    "id": "g3-japanese-a01",
+    "id": "g3-japanese-a01", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -9209,7 +9209,7 @@ window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
     "hint": "「何が」に「どうする」と聞いてみよう。"
   },
   {
-    "id": "g3-japanese-a02",
+    "id": "g3-japanese-a02", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -9224,7 +9224,7 @@ window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
     "hint": "「声」がどんな様子かを表しているよ。"
   },
   {
-    "id": "g3-japanese-a03",
+    "id": "g3-japanese-a03", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -9239,7 +9239,7 @@ window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
     "hint": "「ます」をつける言い方だよ。"
   },
   {
-    "id": "g3-japanese-a04",
+    "id": "g3-japanese-a04", "cat": "ことば",
     "grade": 3,
     "subject": "国語",
     "type": "choice",
@@ -9256,7 +9256,7 @@ window.QUESTION_BANK['3-japanese'] = window.QUESTION_BANK['3-japanese'].concat([
 ]);
 window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
   {
-    "id": "g3-math-a01",
+    "id": "g3-math-a01", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -9271,7 +9271,7 @@ window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
     "hint": "40×3 と 8×3 に分けて考えよう。"
   },
   {
-    "id": "g3-math-a02",
+    "id": "g3-math-a02", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -9286,7 +9286,7 @@ window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
     "hint": "100cmで1mだよ。"
   },
   {
-    "id": "g3-math-a03",
+    "id": "g3-math-a03", "cat": "単位・量",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -9301,7 +9301,7 @@ window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
     "hint": "20分＋40分は60分で、1時間になるよ。"
   },
   {
-    "id": "g3-math-a04",
+    "id": "g3-math-a04", "cat": "計算",
     "grade": 3,
     "subject": "算数",
     "type": "choice",
@@ -9318,7 +9318,7 @@ window.QUESTION_BANK['3-math'] = window.QUESTION_BANK['3-math'].concat([
 ]);
 window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
   {
-    "id": "g3-science-a01",
+    "id": "g3-science-a01", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -9333,7 +9333,7 @@ window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
     "hint": "朝日はどちらの方角から来るかな。"
   },
   {
-    "id": "g3-science-a02",
+    "id": "g3-science-a02", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -9348,7 +9348,7 @@ window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
     "hint": "あしは「むね」についているよ。"
   },
   {
-    "id": "g3-science-a03",
+    "id": "g3-science-a03", "cat": "太陽と地面",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -9363,7 +9363,7 @@ window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
     "hint": "太陽の光が当たると温かくなるよ。"
   },
   {
-    "id": "g3-science-a04",
+    "id": "g3-science-a04", "cat": "昆虫と植物",
     "grade": 3,
     "subject": "理科",
     "type": "choice",
@@ -9380,7 +9380,7 @@ window.QUESTION_BANK['3-science'] = window.QUESTION_BANK['3-science'].concat([
 ]);
 window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
   {
-    "id": "g3-social-a01",
+    "id": "g3-social-a01", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -9395,7 +9395,7 @@ window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
     "hint": "方位記号を確認しよう。"
   },
   {
-    "id": "g3-social-a02",
+    "id": "g3-social-a02", "cat": "安全をまもる",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -9410,7 +9410,7 @@ window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
     "hint": "命とくらしを守る仕事だよ。"
   },
   {
-    "id": "g3-social-a03",
+    "id": "g3-social-a03", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -9425,7 +9425,7 @@ window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
     "hint": "記号は、形や文字で場所を表しているよ。"
   },
   {
-    "id": "g3-social-a04",
+    "id": "g3-social-a04", "cat": "まちの様子と仕事",
     "grade": 3,
     "subject": "社会",
     "type": "choice",
@@ -9442,7 +9442,7 @@ window.QUESTION_BANK['3-social'] = window.QUESTION_BANK['3-social'].concat([
 ]);
 window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
   {
-    "id": "g3-english-a01",
+    "id": "g3-english-a01", "cat": "あいさつと自己紹介",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -9457,7 +9457,7 @@ window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
     "hint": "「どういたしまして」という意味だよ。"
   },
   {
-    "id": "g3-english-a02",
+    "id": "g3-english-a02", "cat": "好きなこと・できること",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -9472,7 +9472,7 @@ window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
     "hint": "Let's は「いっしょに〜しよう」という誘いの言葉だよ。"
   },
   {
-    "id": "g3-english-a03",
+    "id": "g3-english-a03", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -9482,7 +9482,7 @@ window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
     "hint": "英語の数の言い方を確認しよう。"
   },
   {
-    "id": "g3-english-a04",
+    "id": "g3-english-a04", "cat": "数・色・曜日",
     "grade": 3,
     "subject": "英語",
     "type": "choice",
@@ -9499,7 +9499,7 @@ window.QUESTION_BANK['3-english'] = window.QUESTION_BANK['3-english'].concat([
 ]);
 window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
   {
-    "id": "g4-japanese-a01",
+    "id": "g4-japanese-a01", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -9514,7 +9514,7 @@ window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
     "hint": "「ありさま」という意味の言葉だよ。"
   },
   {
-    "id": "g4-japanese-a02",
+    "id": "g4-japanese-a02", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -9529,7 +9529,7 @@ window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
     "hint": "反対の意味になる言葉を考えよう。"
   },
   {
-    "id": "g4-japanese-a03",
+    "id": "g4-japanese-a03", "cat": "ことば",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -9544,7 +9544,7 @@ window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
     "hint": "ここでは天気について言っているよ。"
   },
   {
-    "id": "g4-japanese-a04",
+    "id": "g4-japanese-a04", "cat": "漢字",
     "grade": 4,
     "subject": "国語",
     "type": "choice",
@@ -9561,7 +9561,7 @@ window.QUESTION_BANK['4-japanese'] = window.QUESTION_BANK['4-japanese'].concat([
 ]);
 window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
   {
-    "id": "g4-math-a01",
+    "id": "g4-math-a01", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -9576,7 +9576,7 @@ window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
     "hint": "小数点の位置をそろえて計算しよう。"
   },
   {
-    "id": "g4-math-a02",
+    "id": "g4-math-a02", "cat": "計算",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -9591,7 +9591,7 @@ window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
     "hint": "6×30=180 を確かめよう。"
   },
   {
-    "id": "g4-math-a03",
+    "id": "g4-math-a03", "cat": "図形",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -9606,7 +9606,7 @@ window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
     "hint": "直角の大きさだよ。"
   },
   {
-    "id": "g4-math-a04",
+    "id": "g4-math-a04", "cat": "その他",
     "grade": 4,
     "subject": "算数",
     "type": "choice",
@@ -9623,7 +9623,7 @@ window.QUESTION_BANK['4-math'] = window.QUESTION_BANK['4-math'].concat([
 ]);
 window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
   {
-    "id": "g4-science-a01",
+    "id": "g4-science-a01", "cat": "電気のはたらき",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -9638,7 +9638,7 @@ window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
     "hint": "電気が一周できる道が必要だよ。"
   },
   {
-    "id": "g4-science-a02",
+    "id": "g4-science-a02", "cat": "体のつくりと生き物",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -9653,7 +9653,7 @@ window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
     "hint": "めばなのもとがふくらんで実になるよ。"
   },
   {
-    "id": "g4-science-a03",
+    "id": "g4-science-a03", "cat": "月と星・空気と水",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -9668,7 +9668,7 @@ window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
     "hint": "太陽や月と同じ向きに動いて見えるよ。"
   },
   {
-    "id": "g4-science-a04",
+    "id": "g4-science-a04", "cat": "天気と水の変化",
     "grade": 4,
     "subject": "理科",
     "type": "choice",
@@ -9685,7 +9685,7 @@ window.QUESTION_BANK['4-science'] = window.QUESTION_BANK['4-science'].concat([
 ]);
 window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
   {
-    "id": "g4-social-a01",
+    "id": "g4-social-a01", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -9700,7 +9700,7 @@ window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
     "hint": "県の名前と市の名前が違うこともあるよ。"
   },
   {
-    "id": "g4-social-a02",
+    "id": "g4-social-a02", "cat": "ごみと水",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -9715,7 +9715,7 @@ window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
     "hint": "安全に保管するための方法だよ。"
   },
   {
-    "id": "g4-social-a03",
+    "id": "g4-social-a03", "cat": "その他",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -9730,7 +9730,7 @@ window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
     "hint": "板のギザギザを使ったよ。"
   },
   {
-    "id": "g4-social-a04",
+    "id": "g4-social-a04", "cat": "県の地形と災害",
     "grade": 4,
     "subject": "社会",
     "type": "choice",
@@ -9747,7 +9747,7 @@ window.QUESTION_BANK['4-social'] = window.QUESTION_BANK['4-social'].concat([
 ]);
 window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
   {
-    "id": "g4-english-a01",
+    "id": "g4-english-a01", "cat": "数・色・曜日",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -9762,7 +9762,7 @@ window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
     "hint": "好きな教科を答えよう。"
   },
   {
-    "id": "g4-english-a02",
+    "id": "g4-english-a02", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -9777,7 +9777,7 @@ window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
     "hint": "本を読む場所だよ。"
   },
   {
-    "id": "g4-english-a03",
+    "id": "g4-english-a03", "cat": "その他",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -9792,7 +9792,7 @@ window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
     "hint": "rainy は雨の様子を表すよ。"
   },
   {
-    "id": "g4-english-a04",
+    "id": "g4-english-a04", "cat": "好きなこと・できること",
     "grade": 4,
     "subject": "英語",
     "type": "choice",
@@ -9811,7 +9811,7 @@ window.QUESTION_BANK['4-english'] = window.QUESTION_BANK['4-english'].concat([
 // 追加問題（2026-11-01 点検での拡充・第2弾）
 window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
   {
-    "id": "g5-japanese-a01",
+    "id": "g5-japanese-a01", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -9826,7 +9826,7 @@ window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
     "hint": "「何がどうする」の「何が」だよ。"
   },
   {
-    "id": "g5-japanese-a02",
+    "id": "g5-japanese-a02", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -9841,7 +9841,7 @@ window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
     "hint": "動作の様子をくわしくする言葉だよ。"
   },
   {
-    "id": "g5-japanese-a03",
+    "id": "g5-japanese-a03", "cat": "ことば",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -9856,7 +9856,7 @@ window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
     "hint": "「ます」をつけた言い方だよ。"
   },
   {
-    "id": "g5-japanese-a04",
+    "id": "g5-japanese-a04", "cat": "漢字",
     "grade": 5,
     "subject": "国語",
     "type": "choice",
@@ -9873,7 +9873,7 @@ window.QUESTION_BANK['5-japanese'] = window.QUESTION_BANK['5-japanese'].concat([
 ]);
 window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
   {
-    "id": "g5-math-a01",
+    "id": "g5-math-a01", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -9888,7 +9888,7 @@ window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
     "hint": "分母はそのままで、分子を足そう。"
   },
   {
-    "id": "g5-math-a02",
+    "id": "g5-math-a02", "cat": "図形",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -9903,7 +9903,7 @@ window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
     "hint": "どの三角形でも同じだよ。"
   },
   {
-    "id": "g5-math-a03",
+    "id": "g5-math-a03", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -9918,7 +9918,7 @@ window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
     "hint": "8÷2=4 の小数点の位置を考えよう。"
   },
   {
-    "id": "g5-math-a04",
+    "id": "g5-math-a04", "cat": "計算",
     "grade": 5,
     "subject": "算数",
     "type": "choice",
@@ -9935,7 +9935,7 @@ window.QUESTION_BANK['5-math'] = window.QUESTION_BANK['5-math'].concat([
 ]);
 window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
   {
-    "id": "g5-science-a01",
+    "id": "g5-science-a01", "cat": "電磁石",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -9950,7 +9950,7 @@ window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
     "hint": "巻き数と電流の大きさが関係しているよ。"
   },
   {
-    "id": "g5-science-a02",
+    "id": "g5-science-a02", "cat": "もののとけ方と振り子",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -9965,7 +9965,7 @@ window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
     "hint": "長いほどゆっくり動くよ。"
   },
   {
-    "id": "g5-science-a03",
+    "id": "g5-science-a03", "cat": "植物と動物・人のたんじょう",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -9980,7 +9980,7 @@ window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
     "hint": "めしべに花粉がつくことだよ。"
   },
   {
-    "id": "g5-science-a04",
+    "id": "g5-science-a04", "cat": "天気と流れる水",
     "grade": 5,
     "subject": "理科",
     "type": "choice",
@@ -9997,7 +9997,7 @@ window.QUESTION_BANK['5-science'] = window.QUESTION_BANK['5-science'].concat([
 ]);
 window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
   {
-    "id": "g5-social-a01",
+    "id": "g5-social-a01", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -10012,7 +10012,7 @@ window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
     "hint": "愛知県を中心とした地域だよ。"
   },
   {
-    "id": "g5-social-a02",
+    "id": "g5-social-a02", "cat": "国土と農業・水産業",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -10027,7 +10027,7 @@ window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
     "hint": "広い平野と雪どけ水が関係しているよ。"
   },
   {
-    "id": "g5-social-a03",
+    "id": "g5-social-a03", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -10042,7 +10042,7 @@ window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
     "hint": "エネルギー資源は海外に頼っているよ。"
   },
   {
-    "id": "g5-social-a04",
+    "id": "g5-social-a04", "cat": "工業・運輸・情報",
     "grade": 5,
     "subject": "社会",
     "type": "choice",
@@ -10059,7 +10059,7 @@ window.QUESTION_BANK['5-social'] = window.QUESTION_BANK['5-social'].concat([
 ]);
 window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
   {
-    "id": "g5-english-a01",
+    "id": "g5-english-a01", "cat": "その他",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -10074,7 +10074,7 @@ window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
     "hint": "want to be は「〜になりたい」だよ。"
   },
   {
-    "id": "g5-english-a02",
+    "id": "g5-english-a02", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -10089,7 +10089,7 @@ window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
     "hint": "一年の最初の月だよ。"
   },
   {
-    "id": "g5-english-a03",
+    "id": "g5-english-a03", "cat": "好きなこと・できること",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -10104,7 +10104,7 @@ window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
     "hint": "He は「彼は」だよ。"
   },
   {
-    "id": "g5-english-a04",
+    "id": "g5-english-a04", "cat": "数・色・曜日",
     "grade": 5,
     "subject": "英語",
     "type": "choice",
@@ -10121,7 +10121,7 @@ window.QUESTION_BANK['5-english'] = window.QUESTION_BANK['5-english'].concat([
 ]);
 window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
   {
-    "id": "g6-japanese-a01",
+    "id": "g6-japanese-a01", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -10136,7 +10136,7 @@ window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
     "hint": "また会うという意味だよ。"
   },
   {
-    "id": "g6-japanese-a02",
+    "id": "g6-japanese-a02", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -10151,7 +10151,7 @@ window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
     "hint": "聞きたくないことを聞く様子だよ。"
   },
   {
-    "id": "g6-japanese-a03",
+    "id": "g6-japanese-a03", "cat": "ことば",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -10166,7 +10166,7 @@ window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
     "hint": "形のない考えを表す言葉だよ。"
   },
   {
-    "id": "g6-japanese-a04",
+    "id": "g6-japanese-a04", "cat": "漢字",
     "grade": 6,
     "subject": "国語",
     "type": "choice",
@@ -10183,7 +10183,7 @@ window.QUESTION_BANK['6-japanese'] = window.QUESTION_BANK['6-japanese'].concat([
 ]);
 window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
   {
-    "id": "g6-math-a01",
+    "id": "g6-math-a01", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -10198,7 +10198,7 @@ window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
     "hint": "一方が増えると、他方も同じ割合で増えるよ。"
   },
   {
-    "id": "g6-math-a02",
+    "id": "g6-math-a02", "cat": "図形",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -10213,7 +10213,7 @@ window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
     "hint": "半径×半径×3.14 で求めよう。"
   },
   {
-    "id": "g6-math-a03",
+    "id": "g6-math-a03", "cat": "計算",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -10228,7 +10228,7 @@ window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
     "hint": "分子を3で割るか、逆数をかけて考えよう。"
   },
   {
-    "id": "g6-math-a04",
+    "id": "g6-math-a04", "cat": "その他",
     "grade": 6,
     "subject": "算数",
     "type": "choice",
@@ -10245,7 +10245,7 @@ window.QUESTION_BANK['6-math'] = window.QUESTION_BANK['6-math'].concat([
 ]);
 window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
   {
-    "id": "g6-science-a01",
+    "id": "g6-science-a01", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -10260,7 +10260,7 @@ window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
     "hint": "月自体の形は変わっていないよ。"
   },
   {
-    "id": "g6-science-a02",
+    "id": "g6-science-a02", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -10275,7 +10275,7 @@ window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
     "hint": "てこのはたらきは距離で変わるよ。"
   },
   {
-    "id": "g6-science-a03",
+    "id": "g6-science-a03", "cat": "月と太陽・環境",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -10290,7 +10290,7 @@ window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
     "hint": "つながりの向きを確かめよう。"
   },
   {
-    "id": "g6-science-a04",
+    "id": "g6-science-a04", "cat": "電気・てこ・土地の変化",
     "grade": 6,
     "subject": "理科",
     "type": "choice",
@@ -10307,7 +10307,7 @@ window.QUESTION_BANK['6-science'] = window.QUESTION_BANK['6-science'].concat([
 ]);
 window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
   {
-    "id": "g6-social-a01",
+    "id": "g6-social-a01", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -10322,7 +10322,7 @@ window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
     "hint": "行政を担当する機関だよ。"
   },
   {
-    "id": "g6-social-a02",
+    "id": "g6-social-a02", "cat": "歴史",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -10337,7 +10337,7 @@ window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
     "hint": "まだ米づくりが始まっていない時代だよ。"
   },
   {
-    "id": "g6-social-a03",
+    "id": "g6-social-a03", "cat": "世界と国際",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -10352,7 +10352,7 @@ window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
     "hint": "アメリカの都市だよ。"
   },
   {
-    "id": "g6-social-a04",
+    "id": "g6-social-a04", "cat": "政治と憲法",
     "grade": 6,
     "subject": "社会",
     "type": "choice",
@@ -10369,7 +10369,7 @@ window.QUESTION_BANK['6-social'] = window.QUESTION_BANK['6-social'].concat([
 ]);
 window.QUESTION_BANK['6-english'] = window.QUESTION_BANK['6-english'].concat([
   {
-    "id": "g6-english-a01",
+    "id": "g6-english-a01", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -10384,7 +10384,7 @@ window.QUESTION_BANK['6-english'] = window.QUESTION_BANK['6-english'].concat([
     "hint": "went は go の過去の形だよ。"
   },
   {
-    "id": "g6-english-a02",
+    "id": "g6-english-a02", "cat": "その他",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -10399,7 +10399,7 @@ window.QUESTION_BANK['6-english'] = window.QUESTION_BANK['6-english'].concat([
     "hint": "big の比べる形（比較級）だよ。"
   },
   {
-    "id": "g6-english-a03",
+    "id": "g6-english-a03", "cat": "好きなこと・できること",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
@@ -10414,7 +10414,7 @@ window.QUESTION_BANK['6-english'] = window.QUESTION_BANK['6-english'].concat([
     "hint": "She は「彼女は」、well は「上手に」だよ。"
   },
   {
-    "id": "g6-english-a04",
+    "id": "g6-english-a04", "cat": "数・色・曜日",
     "grade": 6,
     "subject": "英語",
     "type": "choice",
