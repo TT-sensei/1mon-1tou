@@ -54,7 +54,31 @@ window.QUESTION_BANK['2-math'] = [
 {id:'g2-math-n21', cat:'計算',grade:2,subject:'算数',type:'choice',question:'47 + 28 は いくつ？',choices:['75','65','76','74'],answer:'75',hint:'一のくらいから 計算しよう。'},
 {id:'g2-math-n22', cat:'計算',grade:2,subject:'算数',type:'choice',question:'83 - 46 は いくつ？',choices:['36','43','37','47'],answer:'37',hint:'くり下がりに 気をつけよう。'},
 {id:'g2-math-n23', cat:'計算',grade:2,subject:'算数',type:'choice',question:'7 × 3 は いくつ？',choices:['18','24','21','27'],answer:'21',hint:'7の 段を おもいだそう。'},
-{id:'g2-math-n24', cat:'計算',grade:2,subject:'算数',type:'choice',question:'4 × 6 は いくつ？',choices:['24','28','26','20'],answer:'24',hint:'4の 段だよ。'}
+{id:'g2-math-n24', cat:'計算',grade:2,subject:'算数',type:'choice',question:'4 × 6 は いくつ？',choices:['24','28','26','20'],answer:'24',hint:'4の 段だよ。'},
+{id:'g2-math-n25', cat:'図形',grade:2,subject:'算数',type:'choice',question:'五角形の かどは いくつ？',choices:['5つ','4つ','6つ','3つ'],answer:'5つ',hint:'「五」の 数だよ。'},
+{id:'g2-math-n26', cat:'図形',grade:2,subject:'算数',type:'choice',question:'六角形の 辺は 何本？',choices:['6本','7本','5本','4本'],answer:'6本',hint:'えんぴつの 断面を 思い出そう。'},
+{id:'g2-math-n27', cat:'図形',grade:2,subject:'算数',type:'choice',question:'長方形を 対角線で 半分に 切ると できる 形は？',choices:['三角形','五角形','円','正方形'],answer:'三角形',hint:'角と角を 結ぶ線だよ。'},
+{id:'g2-math-n28', cat:'図形',grade:2,subject:'算数',type:'choice',question:'正方形を 対角線で 半分に 切ると できる 形は？',choices:['三角形','長方形','円','六角形'],answer:'三角形',hint:'対角線で 分けよう。'},
+{id:'g2-math-n29', cat:'図形',grade:2,subject:'算数',type:'choice',question:'丸を 半分に 切った 形は？',choices:['おうぎだけ','四角形','半円','三角形'],answer:'半円',hint:'まるの 半分だよ。'},
+{id:'g2-math-n30', cat:'図形',grade:2,subject:'算数',type:'choice',question:'直線と 直線が 交わって できる ものは？',choices:['面','点だけ','角','円'],answer:'角',hint:'交わると 角が できるよ。'},
+{id:'g2-math-n31', cat:'図形',grade:2,subject:'算数',type:'choice',question:'三角形と 四角形の ちがいは？',choices:['辺の 数','色','大きさ','名前の 長さ'],answer:'辺の 数',hint:'辺の 数が 3本と 4本だよ。'},
+{id:'g2-math-n32', cat:'図形',grade:2,subject:'算数',type:'choice',question:'はこの 形で、面が 全部 正方形なのは？',choices:['三角柱','円柱','立方体','直方体'],answer:'立方体',hint:'サイコロの 形だよ。'},
+{id:'g2-math-n33', cat:'図形',grade:2,subject:'算数',type:'choice',question:'ティッシュの 箱の 形は？',choices:['円柱','立方体','球','直方体'],answer:'直方体',hint:'面は 長方形だよ。'},
+{id:'g2-math-n34', cat:'図形',grade:2,subject:'算数',type:'choice',question:'円柱を 上から 見た 形は？',choices:['正方形','円','長方形','三角形'],answer:'円',hint:'上と 下の 面が 円だよ。'},
+{id:'g2-math-n35', cat:'図形',grade:2,subject:'算数',type:'choice',question:'球を どの 方向から 見ても 見える 形は？',choices:['円','四角形','三角形','楕円だけ'],answer:'円',hint:'ボールは どこから見ても 丸いよ。'},
+{id:'g2-math-n36', cat:'図形',grade:2,subject:'算数',type:'choice',question:'定規（ものさし）の 形は？',choices:['正方形','三角形','長方形','円'],answer:'長方形',hint:'細長い 四角だよ。'},
+{id:'g2-math-n37', cat:'図形',grade:2,subject:'算数',type:'choice',question:'四角形の 内側の 角は 全部で いくつ？',choices:['3つ','2つ','5つ','4つ'],answer:'4つ',hint:'四角形には 角が 4つだよ。'},
+{id:'g2-math-n38', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1時間は 何分？',choices:['60分','30分','100分','12分'],answer:'60分',hint:'時間と 分の 関係だよ。'},
+{id:'g2-math-n39', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1分は 何秒？',choices:['60秒','10秒','100秒','30秒'],answer:'60秒',hint:'秒は 小さい 単位だよ。'},
+{id:'g2-math-n40', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'午前11時の 2時間 後は？',choices:['午後11時','午前9時','午後1時','午前1時'],answer:'午後1時',hint:'午前から 午後へ 進むよ。'},
+{id:'g2-math-n41', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'2dL は 何mL？',choices:['2mL','2000mL','200mL','20mL'],answer:'200mL',hint:'1dL=100mL だよ。'},
+{id:'g2-math-n42', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'800mL は 何dL？',choices:['0.8dL','8dL','80dL','800dL'],answer:'8dL',hint:'100mL=1dL だよ。'},
+{id:'g2-math-n43', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'150cm は 何m何cm？',choices:['15m','1m5cm','1m50cm','150m'],answer:'1m50cm',hint:'100cm=1m だよ。'},
+{id:'g2-math-n44', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'4m は 何cm？',choices:['104cm','4000cm','400cm','40cm'],answer:'400cm',hint:'1m=100cm だよ。'},
+{id:'g2-math-n45', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'時計の 長い はりが 1周 すると、何分 たつ？',choices:['60分','12分','30分','24分'],answer:'60分',hint:'長い はりは 分を 表すよ。'},
+{id:'g2-math-n46', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1週間は 何日？',choices:['10日','30日','7日','5日'],answer:'7日',hint:'曜日は 7つだよ。'},
+{id:'g2-math-n47', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'1年は 何か月？',choices:['7か月','10か月','12か月','365か月'],answer:'12か月',hint:'月は 1月から 12月だよ。'},
+{id:'g2-math-n48', cat:'単位・量',grade:2,subject:'算数',type:'choice',question:'水の かさを 表す 単位で、一番 大きいのは？',choices:['L','dL','同じ','mL'],answer:'L',hint:'リットルが 一番 大きいよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

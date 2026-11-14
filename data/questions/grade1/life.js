@@ -54,7 +54,31 @@ window.QUESTION_BANK['1-life'] = [
 {id:'g1-life-n21', cat:'せいかつと安全',grade:1,subject:'生活',type:'choice',question:'そとから かえったら、まず することは？',choices:['あそぶ','ごはんを たべる','てを あらう','ねる'],answer:'てを あらう',hint:'ばいきんを おとそう。'},
 {id:'g1-life-n22', cat:'せいかつと安全',grade:1,subject:'生活',type:'choice',question:'どうろを わたるとき、みる じゅんは？',choices:['みぎだけ','みぎ・ひだり・みぎ','みない','ひだりだけ'],answer:'みぎ・ひだり・みぎ',hint:'車が こないか たしかめよう。'},
 {id:'g1-life-n23', cat:'せいかつと安全',grade:1,subject:'生活',type:'choice',question:'しらない 人に こえを かけられたら？',choices:['いっしょに あそぶ','ものを もらう','ついて いかない','ついて いく'],answer:'ついて いかない',hint:'あんぜんの ためだよ。'},
-{id:'g1-life-n24', cat:'せいかつと安全',grade:1,subject:'生活',type:'choice',question:'はを みがくのは どんなとき？',choices:['あそぶ まえ','ごはんの まえだけ','ねる まえだけ','ごはんの あと'],answer:'ごはんの あと',hint:'たべた あとに みがこう。'}
+{id:'g1-life-n24', cat:'せいかつと安全',grade:1,subject:'生活',type:'choice',question:'はを みがくのは どんなとき？',choices:['あそぶ まえ','ごはんの まえだけ','ねる まえだけ','ごはんの あと'],answer:'ごはんの あと',hint:'たべた あとに みがこう。'},
+{id:'g1-life-n25', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'がっこうで けがを したとき いく へやは？',choices:['おんがくしつ','としょしつ','きゅうしょくしつ','ほけんしつ'],answer:'ほけんしつ',hint:'先生が てあてを してくれるよ。'},
+{id:'g1-life-n26', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'がっこうで うたを うたう じゅぎょうを する へやは？',choices:['ほけんしつ','たいいくかん','おんがくしつ','しょくいんしつ'],answer:'おんがくしつ',hint:'ピアノが ある へやだよ。'},
+{id:'g1-life-n27', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'まちで 本を かりられる たてものは？',choices:['こうばん','としょかん','えき','ゆうびんきょく'],answer:'としょかん',hint:'まちの 本の たてものだよ。'},
+{id:'g1-life-n28', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'まちで 手紙や にもつを だす たてものは？',choices:['としょかん','こうえん','ゆうびんきょく','びょういん'],answer:'ゆうびんきょく',hint:'切手を はって だすよ。'},
+{id:'g1-life-n29', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'まちで でんしゃに のる ばしょは？',choices:['みなと','くうこう','えき','バスていだけ'],answer:'えき',hint:'電車の 止まる 所だよ。'},
+{id:'g1-life-n30', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'みちを わたる 白い せんが ある ばしょは？',choices:['こせんきょう','ほどうだけ','おうだんほどう','しゃどう'],answer:'おうだんほどう',hint:'白い しまもようの ばしょだよ。'},
+{id:'g1-life-n31', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'がっこうの かえりに あんぜんなのは どちら？',choices:['走って かえる','みちの まんなかを あるく','しゃどうを あるく','ほどうを あるく'],answer:'ほどうを あるく',hint:'車の こない 所を あるこう。'},
+{id:'g1-life-n32', cat:'がっこうとまち',grade:1,subject:'生活',type:'choice',question:'クラスで つかった ものを かたづけると？',choices:['ちらかって いる','つぎに つかう 人が つかいやすい','なくなる','こわれる'],answer:'つぎに つかう 人が つかいやすい',hint:'みんなの ものを 大切に しよう。'},
+{id:'g1-life-n33', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'なつに さく、はなの まわりが 大きな たねに なる 花は？',choices:['すみれ','ひまわり','チューリップ','さくら'],answer:'ひまわり',hint:'大きな 黄色い 花だよ。'},
+{id:'g1-life-n34', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'あきに 山で みられる 木の はの 色は？',choices:['赤や きいろ','黒','青','むらさき'],answer:'赤や きいろ',hint:'もみじは 赤く なるよ。'},
+{id:'g1-life-n35', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'ふゆに つく、やねから さがる こおりは？',choices:['つらら','しも','ひょう','あられ'],answer:'つらら',hint:'寒い 日に できるよ。'},
+{id:'g1-life-n36', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'はるに かわの そばで さく 木の 花は？',choices:['さくら','ひまわり','コスモス','パンジー'],answer:'さくら',hint:'春の 花の 代表だよ。'},
+{id:'g1-life-n37', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'あめの 日に きる、体が ぬれない 服は？',choices:['セーター','水着','カッパ','ゆかた'],answer:'カッパ',hint:'レインコートとも いうよ。'},
+{id:'g1-life-n38', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'なつの あつい 日に、木の かげが すずしく かんじるのは なぜ？',choices:['日光を さえぎるから','風が つよいから','水が あるから','夜だから'],answer:'日光を さえぎるから',hint:'日かげは 日が 当たらないよ。'},
+{id:'g1-life-n39', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'はるに たんぽぽの わたげを ふくと、どうなる？',choices:['花が さく','たねが とんでいく','はが おちる','くきが のびる'],answer:'たねが とんでいく',hint:'わたげは たねを はこぶよ。'},
+{id:'g1-life-n40', cat:'自然と季節',grade:1,subject:'生活',type:'choice',question:'ふゆに 鳥が みられなく なる りゆうの ひとつは？',choices:['暖かい 地方へ いどうする から','色が かわるから','ねているから','小さいから'],answer:'暖かい 地方へ いどうする から',hint:'渡り鳥は 移動するよ。'},
+{id:'g1-life-n41', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'あさがおの 花が しぼんだ あとに できるものは？',choices:['み','は','ね','たね'],answer:'たね',hint:'花の あとには 種が できるよ。'},
+{id:'g1-life-n42', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'植物が そだつのに ひつような ものは？',choices:['日光と 水','寒さだけ','音','暗闇だけ'],answer:'日光と 水',hint:'ひかりと 水が 大切だよ。'},
+{id:'g1-life-n43', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'かたつむりが すんでいる 所は？',choices:['乾燥した 所','空','水の 中','じめじめした 所'],answer:'じめじめした 所',hint:'雨の 日に よく 見かけるよ。'},
+{id:'g1-life-n44', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'てんとうむしが 食べる むしは？',choices:['せみ','はち','ちょう','アブラムシ'],answer:'アブラムシ',hint:'葉の むしを 食べるよ。'},
+{id:'g1-life-n45', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'さかなの およぐのに つかう ものは？',choices:['はね','あし','ひれ','つの'],answer:'ひれ',hint:'ひれで 水を かくよ。'},
+{id:'g1-life-n46', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'植物の 根は どこに ある？',choices:['花の 中','土の 中','葉の 上','空の 中'],answer:'土の 中',hint:'根は 土に あるよ。'},
+{id:'g1-life-n47', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'いきものを 観察した あとは どうする？',choices:['別の 場所に すてる','水に 入れたまま','もとの 場所に かえす','家に 持って帰る'],answer:'もとの 場所に かえす',hint:'命を 大切に しよう。'},
+{id:'g1-life-n48', cat:'生き物と植物',grade:1,subject:'生活',type:'choice',question:'あさがおの つぼみが 開くのは どんな とき？',choices:['雨の 日だけ','真夜中','寒い 日','明るく なってきた あさ'],answer:'明るく なってきた あさ',hint:'朝に 開く 花だよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

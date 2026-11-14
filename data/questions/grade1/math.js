@@ -54,7 +54,31 @@ window.QUESTION_BANK['1-math'] = [
 {id:'g1-math-n21', cat:'計算',grade:1,subject:'算数',type:'choice',question:'5 と 5を あわせると いくつ？',choices:['10','9','11','8'],answer:'10',hint:'5が 2つで 10だよ。'},
 {id:'g1-math-n22', cat:'計算',grade:1,subject:'算数',type:'choice',question:'10から 3ひくと いくつ？',choices:['6','13','8','7'],answer:'7',hint:'10から かぞえて ひこう。'},
 {id:'g1-math-n23', cat:'計算',grade:1,subject:'算数',type:'choice',question:'3、6、9の つぎは？',choices:['12','13','10','11'],answer:'12',hint:'3ずつ ふえているよ。'},
-{id:'g1-math-n24', cat:'計算',grade:1,subject:'算数',type:'choice',question:'7 と 8、どちらが ちいさい？',choices:['わからない','8','おなじ','7'],answer:'7',hint:'かずの 大きさを くらべよう。'}
+{id:'g1-math-n24', cat:'計算',grade:1,subject:'算数',type:'choice',question:'7 と 8、どちらが ちいさい？',choices:['わからない','8','おなじ','7'],answer:'7',hint:'かずの 大きさを くらべよう。'},
+{id:'g1-math-n25', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'とけいの みじかい はりが 2、ながい はりが 12のときは なんじ？',choices:['10じ','2じ','12じ','2じはん'],answer:'2じ',hint:'みじかい はりが じこくだよ。'},
+{id:'g1-math-n26', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'とけいの みじかい はりが 11、ながい はりが 12のときは？',choices:['11じはん','12じ','11じ','1じ'],answer:'11じ',hint:'はりの ばしょを よく みよう。'},
+{id:'g1-math-n27', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'とけいの みじかい はりが 8を すこし すぎ、ながい はりが 6のときは？',choices:['6じはん','8じはん','6じ','8じ'],answer:'8じはん',hint:'ながい はりが 6のときは「はん」だよ。'},
+{id:'g1-math-n28', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'クーピーと マーカーでは、ふつう ながいのは どちら？',choices:['おなじ','マーカー','クーピー','わからない'],answer:'マーカー',hint:'ぶんぼうぐを おもいうかべよう。'},
+{id:'g1-math-n29', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'やかんの みずと ペットボトルの みずでは、おおいのは どちら？',choices:['わからない','ペットボトルの みず','おなじ','やかんの みず'],answer:'やかんの みず',hint:'いれものの 大きさを くらべよう。'},
+{id:'g1-math-n30', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'よる ねる まえに たべる ごはんは？',choices:['おやつ','あさごはん','ばんごはん','ひるごはん'],answer:'ばんごはん',hint:'いちにちの おわりの ごはんだよ。'},
+{id:'g1-math-n31', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'あしたの つぎは なんと いう？',choices:['おととい','きのう','あさって','せんじつ'],answer:'あさって',hint:'ひの 名まえの じゅんだよ。'},
+{id:'g1-math-n32', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'1ばん 重いのは どれ？',choices:['ねずみ','ぞう','いぬ','ねこ'],answer:'ぞう',hint:'どうぶつの 大きさを かんがえよう。'},
+{id:'g1-math-n33', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'水が いちばん すくないのは どれ？',choices:['バケツ','コップ','おふろ','スプーン'],answer:'スプーン',hint:'いれものの 大きさの じゅんだよ。'},
+{id:'g1-math-n34', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'がっこうに いる じかんが ながいのは どちら？',choices:['ひる','おなじ','ゆうがた だけ','あさ だけ'],answer:'ひる',hint:'ひるは じゅぎょうが あるよ。'},
+{id:'g1-math-n35', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'えんぴつ 2本を つなげた ながさと、1本では、ながいのは？',choices:['1本','おなじ','2本 つなげたほう','わからない'],answer:'2本 つなげたほう',hint:'つなげると ながくなるよ。'},
+{id:'g1-math-n36', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'おかねで 1ばん 大きい 金がくは どれ？',choices:['10えん','1000えん','1えん','100えん'],answer:'1000えん',hint:'おかねの じゅんを おもいだそう。'},
+{id:'g1-math-n37', cat:'単位・量',grade:1,subject:'算数',type:'choice',question:'きのうの まえの ひは？',choices:['まいにち','おととい','あさって','あした'],answer:'おととい',hint:'ひの じゅんばんだよ。'},
+{id:'g1-math-n38', cat:'図形',grade:1,subject:'算数',type:'choice',question:'しかくの かどは いくつ？',choices:['4つ','3つ','0','5つ'],answer:'4つ',hint:'かどを かぞえて みよう。'},
+{id:'g1-math-n39', cat:'図形',grade:1,subject:'算数',type:'choice',question:'さんかくの へんは なんぼん？',choices:['4ぼん','2ぼん','3ぼん','5ぼん'],answer:'3ぼん',hint:'「さん」の かずだよ。'},
+{id:'g1-math-n40', cat:'図形',grade:1,subject:'算数',type:'choice',question:'まるを はんぶんに きると、かたちは どうなる？',choices:['ほし','しかく','さんかく','はんえん'],answer:'はんえん',hint:'まるの はんぶんだよ。'},
+{id:'g1-math-n41', cat:'図形',grade:1,subject:'算数',type:'choice',question:'つぎの うち、ころがりやすい かたちは？',choices:['ながしかく','さんかく','しかく','まる'],answer:'まる',hint:'まるは ころころ ころがるよ。'},
+{id:'g1-math-n42', cat:'図形',grade:1,subject:'算数',type:'choice',question:'どらやきの かたちは どれに ちかい？',choices:['ほし','ながしかく','まる','さんかく'],answer:'まる',hint:'まるい おかしだよ。'},
+{id:'g1-math-n43', cat:'図形',grade:1,subject:'算数',type:'choice',question:'テレビの がめんの かたちは どれに ちかい？',choices:['まる','ほし','ながしかく','さんかく'],answer:'ながしかく',hint:'よこに ながい 四角だよ。'},
+{id:'g1-math-n44', cat:'図形',grade:1,subject:'算数',type:'choice',question:'つみきで たてた とうは、どんな かさねかたを すると たかく なる？',choices:['上に まっすぐ つむ','ねかせて おく','よこに 広げる','2つに わける'],answer:'上に まっすぐ つむ',hint:'上に つむと たかくなるよ。'},
+{id:'g1-math-n45', cat:'図形',grade:1,subject:'算数',type:'choice',question:'はんかちを たたむと どんな かたちに なりやすい？',choices:['しかく','まる','さんかく だけ','ほし'],answer:'しかく',hint:'四角く たためるよ。'},
+{id:'g1-math-n46', cat:'図形',grade:1,subject:'算数',type:'choice',question:'風船の かたちは どれに ちかい？',choices:['さんかく','ながしかく','しかく','まる'],answer:'まる',hint:'ふくらんだ 風船は まるいね。'},
+{id:'g1-math-n47', cat:'図形',grade:1,subject:'算数',type:'choice',question:'クレヨンの 箱の かたちは どれに ちかい？',choices:['ながしかく','ほし','まる','さんかく'],answer:'ながしかく',hint:'箱の かたちを おもいうかべよう。'},
+{id:'g1-math-n48', cat:'図形',grade:1,subject:'算数',type:'choice',question:'ビー玉の かたちは？',choices:['ほし','しかく','さんかく','まる（たま）'],answer:'まる（たま）',hint:'ころがる たまだよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

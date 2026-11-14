@@ -821,6 +821,366 @@ window.QUESTION_BANK['3-japanese'] = [
     ],
     "answer": "読みます",
     "hint": "文の終わりを丁寧にした形だよ。"
+  },
+  {
+    "id": "g3-japanese-n25", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語のクライマックス（山場）の前に来る部分は？",
+    "choices": [
+      "事件が起こり、話が展開する部分",
+      "作者のあいさつ",
+      "目次",
+      "登場人物の紹介だけ"
+    ],
+    "answer": "事件が起こり、話が展開する部分",
+    "hint": "物語の構成を意識しよう。"
+  },
+  {
+    "id": "g3-japanese-n26", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "説明文でグラフや表が使われるのはなぜ？",
+    "choices": [
+      "難しくするため",
+      "感想を書くため",
+      "内容を分かりやすく示すため",
+      "紙面を埋めるため"
+    ],
+    "answer": "内容を分かりやすく示すため",
+    "hint": "資料は内容の理解を助けるよ。"
+  },
+  {
+    "id": "g3-japanese-n27", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "筆者の意見に賛成・反対を考えるとき、見るべきものは？",
+    "choices": [
+      "意見の根拠",
+      "段落の数",
+      "文字の大きさ",
+      "題名だけ"
+    ],
+    "answer": "意見の根拠",
+    "hint": "根拠の確かさで判断しよう。"
+  },
+  {
+    "id": "g3-japanese-n28", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "登場人物の気持ちの変化が分かる手がかりは？",
+    "choices": [
+      "場所",
+      "時間",
+      "行動や表情の描写",
+      "天気"
+    ],
+    "answer": "行動や表情の描写",
+    "hint": "変化の前後を比べよう。"
+  },
+  {
+    "id": "g3-japanese-n29", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "問いかけの文が説明文のはじめにある目的は？",
+    "choices": [
+      "絵を入れるため",
+      "答えを隠す",
+      "読者の興味を引き、問いを示す",
+      "短くするため"
+    ],
+    "answer": "読者の興味を引き、問いを示す",
+    "hint": "問いは文章の出発点だよ。"
+  },
+  {
+    "id": "g3-japanese-n30", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "接続語「つまり」が表すのは？",
+    "choices": [
+      "言いかえ・まとめ",
+      "理由",
+      "反対",
+      "例"
+    ],
+    "answer": "言いかえ・まとめ",
+    "hint": "「つまり」の後はまとめが来るよ。"
+  },
+  {
+    "id": "g3-japanese-n31", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "読み取ったことを図に整理するよさは？",
+    "choices": [
+      "関係が目で見て分かる",
+      "感想が書けるだけ",
+      "速く読める",
+      "覚えなくてよい"
+    ],
+    "answer": "関係が目で見て分かる",
+    "hint": "図解すると関係がはっきりするよ。"
+  },
+  {
+    "id": "g3-japanese-n32", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語の主題に近づく手がかりは？",
+    "choices": [
+      "ページ数",
+      "さし絵の数",
+      "題名の色",
+      "中心人物の変化や結末"
+    ],
+    "answer": "中心人物の変化や結末",
+    "hint": "結末での人物の変わり方を見よう。"
+  },
+  {
+    "id": "g3-japanese-n33", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "段落の役割が「例」であることを示す言葉は？",
+    "choices": [
+      "例えば",
+      "結論として",
+      "なぜなら",
+      "しかし"
+    ],
+    "answer": "例えば",
+    "hint": "「例えば」の後は例だよ。"
+  },
+  {
+    "id": "g3-japanese-n34", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "文章の構成で「中」の部分の役割は？",
+    "choices": [
+      "内容をくわしく展開する",
+      "題名を決める",
+      "感想を書く",
+      "目次を作る"
+    ],
+    "answer": "内容をくわしく展開する",
+    "hint": "はじめ・中・終わりの構成だよ。"
+  },
+  {
+    "id": "g3-japanese-n35", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "自分の考えを書くときに、説得力を高めるのは？",
+    "choices": [
+      "人の意見を写す",
+      "体験や資料を根拠にする",
+      "長く書くだけ",
+      "大きな声で言う"
+    ],
+    "answer": "体験や資料を根拠にする",
+    "hint": "根拠があると伝わるよ。"
+  },
+  {
+    "id": "g3-japanese-n36", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "場面の様子を表す描写に多いのは？",
+    "choices": [
+      "数字",
+      "目次",
+      "景色や音、光の様子",
+      "略歴"
+    ],
+    "answer": "景色や音、光の様子",
+    "hint": "情景描写が場面を作るよ。"
+  },
+  {
+    "id": "g3-japanese-n37", "cat": "よみとり",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "読み聞かせで大切な読み方は？",
+    "choices": [
+      "場面の様子が伝わるように読む",
+      "速く読む",
+      "小さく読む",
+      "止まらずに読む"
+    ],
+    "answer": "場面の様子が伝わるように読む",
+    "hint": "気持ちを込めて読もう。"
+  },
+  {
+    "id": "g3-japanese-n38", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「漢字」の「漢」の読み方は？",
+    "choices": [
+      "かん",
+      "か",
+      "から",
+      "あや"
+    ],
+    "answer": "かん",
+    "hint": "「かん字」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n39", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「実習」の「実」の読み方は？",
+    "choices": [
+      "さね",
+      "じつ",
+      "み",
+      "じ"
+    ],
+    "answer": "じつ",
+    "hint": "「じっ習」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n40", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「炭」の読み方は、「すみ」以外に音読みでは？",
+    "choices": [
+      "こげ",
+      "す",
+      "たんき",
+      "タン"
+    ],
+    "answer": "タン",
+    "hint": "「石炭」の「タン」だよ。"
+  },
+  {
+    "id": "g3-japanese-n41", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「曲」の読み方で、「まがる」の送りがなは？",
+    "choices": [
+      "曲がる",
+      "曲ぐ",
+      "曲る",
+      "曲なる"
+    ],
+    "answer": "曲がる",
+    "hint": "「ま・がる」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n42", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「安い」の反対の漢字の言葉は？",
+    "choices": [
+      "強い",
+      "速い",
+      "重い",
+      "高い"
+    ],
+    "answer": "高い",
+    "hint": "値段の反対だよ。"
+  },
+  {
+    "id": "g3-japanese-n43", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「島」の部首は？",
+    "choices": [
+      "川",
+      "鳥",
+      "山",
+      "日"
+    ],
+    "answer": "山",
+    "hint": "島は山の部に入るよ。"
+  },
+  {
+    "id": "g3-japanese-n44", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「急ぐ」の読み方は？",
+    "choices": [
+      "せく",
+      "きゅうぐ",
+      "いそぐ",
+      "はやまる"
+    ],
+    "answer": "いそぐ",
+    "hint": "「急ぐ」は「いそぐ」だよ。"
+  },
+  {
+    "id": "g3-japanese-n45", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「様子」の「様」の読み方は？",
+    "choices": [
+      "よう",
+      "さま",
+      "よ",
+      "もく"
+    ],
+    "answer": "よう",
+    "hint": "「よう子」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n46", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「決して」の「決」の読み方は？",
+    "choices": [
+      "き",
+      "けつ",
+      "けっ",
+      "さ"
+    ],
+    "answer": "けっ",
+    "hint": "「けっして」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n47", "cat": "漢字",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「温度」の「温」の読み方は？",
+    "choices": [
+      "お",
+      "ぬく",
+      "あたた",
+      "おん"
+    ],
+    "answer": "おん",
+    "hint": "「おん度」と読むよ。"
+  },
+  {
+    "id": "g3-japanese-n48", "cat": "ことば",
+    "grade": 3,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「ばたばた」のように、慌ただしい様子を表す言葉は？",
+    "choices": [
+      "擬態語",
+      "助詞",
+      "接続語",
+      "擬音語"
+    ],
+    "answer": "擬態語",
+    "hint": "様子を表すのが擬態語だよ。"
   }
 ];
 
@@ -1649,6 +2009,366 @@ window.QUESTION_BANK['3-math'] = [
     ],
     "answer": "3/4",
     "hint": "1は4/4とみられるよ。"
+  },
+  {
+    "id": "g3-math-n25", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "直角三角形の特徴は？",
+    "choices": [
+      "全部の角が直角",
+      "辺が全部等しい",
+      "1つの角が直角",
+      "角が3つない"
+    ],
+    "answer": "1つの角が直角",
+    "hint": "直角を1つ持つ三角形だよ。"
+  },
+  {
+    "id": "g3-math-n26", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "二等辺三角形の2つの底角の大きさは？",
+    "choices": [
+      "片方が直角",
+      "違う",
+      "等しい",
+      "測れない"
+    ],
+    "answer": "等しい",
+    "hint": "等しい辺の向かいの角だよ。"
+  },
+  {
+    "id": "g3-math-n27", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "コンパスで長さを測り取ることができるのはなぜ？",
+    "choices": [
+      "開きが固定されるから",
+      "音がするから",
+      "軽いから",
+      "色が付くから"
+    ],
+    "answer": "開きが固定されるから",
+    "hint": "コンパスは長さを写し取れるよ。"
+  },
+  {
+    "id": "g3-math-n28", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "円の周りの長さを何という？",
+    "choices": [
+      "面積",
+      "直径",
+      "半径",
+      "円周"
+    ],
+    "answer": "円周",
+    "hint": "周りの長さが円周だよ。"
+  },
+  {
+    "id": "g3-math-n29", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "三角形の頂点の数は？",
+    "choices": [
+      "4つ",
+      "5つ",
+      "2つ",
+      "3つ"
+    ],
+    "answer": "3つ",
+    "hint": "三角の頂点だよ。"
+  },
+  {
+    "id": "g3-math-n30", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "四角形を2本の対角線で分けると何個の三角形ができる？",
+    "choices": [
+      "4個",
+      "2個",
+      "3個",
+      "6個"
+    ],
+    "answer": "4個",
+    "hint": "対角線2本で4つだよ。"
+  },
+  {
+    "id": "g3-math-n31", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "球の形をしたものの例は？",
+    "choices": [
+      "缶",
+      "箱",
+      "ビー玉",
+      "サイコロ"
+    ],
+    "answer": "ビー玉",
+    "hint": "丸い玉の形だよ。"
+  },
+  {
+    "id": "g3-math-n32", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "円柱の側面を切り開いた形は？",
+    "choices": [
+      "長方形",
+      "五角形",
+      "円",
+      "三角形"
+    ],
+    "answer": "長方形",
+    "hint": "缶のラベルを思い出そう。"
+  },
+  {
+    "id": "g3-math-n33", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "正三角形の一辺が4cmのとき、周りの長さは？",
+    "choices": [
+      "16cm",
+      "4cm",
+      "8cm",
+      "12cm"
+    ],
+    "answer": "12cm",
+    "hint": "3辺全部が4cmだよ。"
+  },
+  {
+    "id": "g3-math-n34", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "分度器を使わずに直角を見つける方法は？",
+    "choices": [
+      "三角定規を使う",
+      "比べない",
+      "目で測る",
+      "手で触る"
+    ],
+    "answer": "三角定規を使う",
+    "hint": "定規には直角があるよ。"
+  },
+  {
+    "id": "g3-math-n35", "cat": "図形",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "長方形の向かい合う辺の長さは？",
+    "choices": [
+      "片方だけ長い",
+      "等しい",
+      "全部違う",
+      "測れない"
+    ],
+    "answer": "等しい",
+    "hint": "長方形の特徴だよ。"
+  },
+  {
+    "id": "g3-math-n36", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2時間は何分？",
+    "choices": [
+      "100分",
+      "60分",
+      "120分",
+      "200分"
+    ],
+    "answer": "120分",
+    "hint": "1時間=60分だよ。"
+  },
+  {
+    "id": "g3-math-n37", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "75分は何時間何分？",
+    "choices": [
+      "75時間",
+      "7時間5分",
+      "1時間15分",
+      "1時間5分"
+    ],
+    "answer": "1時間15分",
+    "hint": "60分=1時間だよ。"
+  },
+  {
+    "id": "g3-math-n38", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1kg200g は何g？",
+    "choices": [
+      "12000g",
+      "1200g",
+      "120g",
+      "10200g"
+    ],
+    "answer": "1200g",
+    "hint": "1kg=1000gだよ。"
+  },
+  {
+    "id": "g3-math-n39", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "500m の5倍は何km？",
+    "choices": [
+      "5km",
+      "25km",
+      "2.5km",
+      "2500km"
+    ],
+    "answer": "2.5km",
+    "hint": "500×5=2500m=2.5kmだよ。"
+  },
+  {
+    "id": "g3-math-n40", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "水のかさの単位で、1Lの次に小さい単位は？",
+    "choices": [
+      "kL",
+      "mL",
+      "dL",
+      "cm"
+    ],
+    "answer": "dL",
+    "hint": "L>dL>mLの順だよ。"
+  },
+  {
+    "id": "g3-math-n41", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "重さの単位「mg」が使われるのは？",
+    "choices": [
+      "とても軽いものの重さ",
+      "重い車の重さ",
+      "米の重さ",
+      "人の体重"
+    ],
+    "answer": "とても軽いものの重さ",
+    "hint": "薬など軽いものに使うよ。"
+  },
+  {
+    "id": "g3-math-n42", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "長さの単位を小さい順に並べたとき最初は？",
+    "choices": [
+      "cm",
+      "m",
+      "mm",
+      "km"
+    ],
+    "answer": "mm",
+    "hint": "ミリメートルが一番小さいよ。"
+  },
+  {
+    "id": "g3-math-n43", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "午後3時20分の40分前は？",
+    "choices": [
+      "午後2時20分",
+      "午後3時",
+      "午後4時",
+      "午後2時40分"
+    ],
+    "answer": "午後2時40分",
+    "hint": "40分もどそう。"
+  },
+  {
+    "id": "g3-math-n44", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "10dL は何L？",
+    "choices": [
+      "100L",
+      "1L",
+      "10L",
+      "0.1L"
+    ],
+    "answer": "1L",
+    "hint": "10dL=1Lだよ。"
+  },
+  {
+    "id": "g3-math-n45", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3000m は何km？",
+    "choices": [
+      "300km",
+      "3km",
+      "0.3km",
+      "30km"
+    ],
+    "answer": "3km",
+    "hint": "1000m=1kmだよ。"
+  },
+  {
+    "id": "g3-math-n46", "cat": "単位・量",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1日を時間で表すと？",
+    "choices": [
+      "10時間",
+      "60時間",
+      "24時間",
+      "12時間"
+    ],
+    "answer": "24時間",
+    "hint": "午前12時間＋午後12時間だよ。"
+  },
+  {
+    "id": "g3-math-n47", "cat": "計算",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "28 × 4 は？",
+    "choices": [
+      "112",
+      "104",
+      "124",
+      "96"
+    ],
+    "answer": "112",
+    "hint": "28×4は 30×4-2×4でも考えられるよ。"
+  },
+  {
+    "id": "g3-math-n48", "cat": "計算",
+    "grade": 3,
+    "subject": "算数",
+    "type": "choice",
+    "question": "54 ÷ 6 は？",
+    "choices": [
+      "6",
+      "9",
+      "8",
+      "7"
+    ],
+    "answer": "9",
+    "hint": "6の段だよ。"
   }
 ];
 
@@ -2467,6 +3187,366 @@ window.QUESTION_BANK['3-science'] = [
     ],
     "answer": "キャベツなどの葉",
     "hint": "幼虫の食べ物になる葉に産むよ。"
+  },
+  {
+    "id": "g3-science-n25", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "風で動くおもちゃで、風を受ける部分を大きくすると？",
+    "choices": [
+      "色が変わる",
+      "止まる",
+      "よく進む",
+      "軽くなる"
+    ],
+    "answer": "よく進む",
+    "hint": "受ける風が増えるからだよ。"
+  },
+  {
+    "id": "g3-science-n26", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ゴムをねじると力がたまる。その力で動くものは？",
+    "choices": [
+      "プロペラのおもちゃ",
+      "こま",
+      "風船",
+      "けん玉"
+    ],
+    "answer": "プロペラのおもちゃ",
+    "hint": "ねじったゴムが戻る力を使うよ。"
+  },
+  {
+    "id": "g3-science-n27", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "うちわの大きさを変えると、風の強さは？",
+    "choices": [
+      "小さいほど強い",
+      "大きいほど強い風が起こりやすい",
+      "変わらない",
+      "関係ない"
+    ],
+    "answer": "大きいほど強い風が起こりやすい",
+    "hint": "動かす空気の量が違うよ。"
+  },
+  {
+    "id": "g3-science-n28", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "帆かけ車で、進む向きを決めるのは？",
+    "choices": [
+      "車の色",
+      "風の吹く向き",
+      "車輪の数",
+      "帆の色"
+    ],
+    "answer": "風の吹く向き",
+    "hint": "風に押される向きに進むよ。"
+  },
+  {
+    "id": "g3-science-n29", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ゴムの力の実験で、伸ばす長さだけを変える理由は？",
+    "choices": [
+      "速く終わるため",
+      "安全のため",
+      "記録のため",
+      "比べる条件を1つにするため"
+    ],
+    "answer": "比べる条件を1つにするため",
+    "hint": "条件をそろえるのが実験の決まりだよ。"
+  },
+  {
+    "id": "g3-science-n30", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "風の力で電気を作る装置は？",
+    "choices": [
+      "モーターだけ",
+      "風車（風力発電）",
+      "乾電池",
+      "太陽電池"
+    ],
+    "answer": "風車（風力発電）",
+    "hint": "風車は発電にも使うよ。"
+  },
+  {
+    "id": "g3-science-n31", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ゴムはしを引っぱると、もとの形に戻ろうとする性質は？",
+    "choices": [
+      "弾性",
+      "磁性",
+      "熱",
+      "電気"
+    ],
+    "answer": "弾性",
+    "hint": "ゴムには弾性があるよ。"
+  },
+  {
+    "id": "g3-science-n32", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "風が強い日に洗濯物がよく乾くのはなぜ？",
+    "choices": [
+      "水が蒸発しやすいから",
+      "色が変わるから",
+      "太陽が強いから",
+      "布が軽くなるから"
+    ],
+    "answer": "水が蒸発しやすいから",
+    "hint": "風は蒸発を助けるよ。"
+  },
+  {
+    "id": "g3-science-n33", "cat": "風とゴムのはたらき",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "パラシュートがゆっくり落ちるのは、空気の何を受けるから？",
+    "choices": [
+      "重力だけ",
+      "電気",
+      "空気の抵抗（支える力）",
+      "磁力"
+    ],
+    "answer": "空気の抵抗（支える力）",
+    "hint": "広い面で空気を受けるよ。"
+  },
+  {
+    "id": "g3-science-n34", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "夏に日なたの地面が熱くなるのはなぜ？",
+    "choices": [
+      "風が止まるから",
+      "太陽の光を長く強く受けるから",
+      "色が濃いから",
+      "地面が動くから"
+    ],
+    "answer": "太陽の光を長く強く受けるから",
+    "hint": "日光が地面を温めるよ。"
+  },
+  {
+    "id": "g3-science-n35", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "かげの長さが一番長くなる時間帯は？",
+    "choices": [
+      "正午",
+      "昼過ぎ",
+      "朝方や夕方",
+      "夜"
+    ],
+    "answer": "朝方や夕方",
+    "hint": "太陽が低いと影は長いよ。"
+  },
+  {
+    "id": "g3-science-n36", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太陽の通り道を記録する道具は？",
+    "choices": [
+      "透明半球",
+      "温度計",
+      "虫めがね",
+      "方位磁針だけ"
+    ],
+    "answer": "透明半球",
+    "hint": "透明な半球に記録するよ。"
+  },
+  {
+    "id": "g3-science-n37", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "冬は夏より太陽の高さは？",
+    "choices": [
+      "低い",
+      "同じ",
+      "見えない",
+      "高い"
+    ],
+    "answer": "低い",
+    "hint": "冬の太陽は低く通るよ。"
+  },
+  {
+    "id": "g3-science-n38", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "日かげの温度が上がりにくいのはなぜ？",
+    "choices": [
+      "空気がないから",
+      "風が強いから",
+      "直射日光が当たらないから",
+      "地面が冷たいから"
+    ],
+    "answer": "直射日光が当たらないから",
+    "hint": "日光が熱の元だよ。"
+  },
+  {
+    "id": "g3-science-n39", "cat": "太陽と地面",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太陽が南の空にあるのは、だいたい何時ごろ？",
+    "choices": [
+      "夜12時",
+      "夕方6時",
+      "正午ごろ",
+      "朝6時"
+    ],
+    "answer": "正午ごろ",
+    "hint": "南中は正午ごろだよ。"
+  },
+  {
+    "id": "g3-science-n40", "cat": "光・音・電気・磁石",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電気の回路で「+極」と「-極」をつなぐと電流はどうなる？",
+    "choices": [
+      "たまる",
+      "流れる",
+      "止まる",
+      "逆になる"
+    ],
+    "answer": "流れる",
+    "hint": "電池の両極をつなぐと回路ができるよ。"
+  },
+  {
+    "id": "g3-science-n41", "cat": "光・音・電気・磁石",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "音の高さは、弦をはじく強さではなく何で変わる？",
+    "choices": [
+      "部屋の広さ",
+      "箱の色",
+      "弦の振動の速さ（長さや張り）",
+      "音の大きさだけ"
+    ],
+    "answer": "弦の振動の速さ（長さや張り）",
+    "hint": "振動が速いと高い音になるよ。"
+  },
+  {
+    "id": "g3-science-n42", "cat": "光・音・電気・磁石",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "日光を集めると起こることは？",
+    "choices": [
+      "冷える",
+      "音が出る",
+      "暗くなる",
+      "明るく、熱くなる"
+    ],
+    "answer": "明るく、熱くなる",
+    "hint": "虫めがねで光を集める実験だよ。"
+  },
+  {
+    "id": "g3-science-n43", "cat": "光・音・電気・磁石",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "磁石を半分に割ると、極はどうなる？",
+    "choices": [
+      "両方にN極とS極ができる",
+      "両方ともN極だけになる",
+      "片方だけ極が残る",
+      "極は消える"
+    ],
+    "answer": "両方にN極とS極ができる",
+    "hint": "磁石は割れても極があるよ。"
+  },
+  {
+    "id": "g3-science-n44", "cat": "光・音・電気・磁石",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太鼓の音が遠くまで聞こえるのは、音が何を伝わるから？",
+    "choices": [
+      "水だけ",
+      "磁石",
+      "光",
+      "空気"
+    ],
+    "answer": "空気",
+    "hint": "音は空気を伝わるよ。"
+  },
+  {
+    "id": "g3-science-n45", "cat": "昆虫と植物",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "アゲハチョウの幼虫が食べる葉は？",
+    "choices": [
+      "ミカンなどの柑橘の葉",
+      "キャベツ",
+      "松",
+      "竹"
+    ],
+    "answer": "ミカンなどの柑橘の葉",
+    "hint": "柑橘系の葉が好物だよ。"
+  },
+  {
+    "id": "g3-science-n46", "cat": "昆虫と植物",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "昆虫のあしは胸から出ている。あしは何本？",
+    "choices": [
+      "4本",
+      "8本",
+      "6本",
+      "10本"
+    ],
+    "answer": "6本",
+    "hint": "昆虫のあしは6本だよ。"
+  },
+  {
+    "id": "g3-science-n47", "cat": "昆虫と植物",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ホウセンカの種がはじけて飛ぶのはなぜ？",
+    "choices": [
+      "色を見せるため",
+      "虫を驚かすため",
+      "種を遠くへ広げるため",
+      "音を出すため"
+    ],
+    "answer": "種を遠くへ広げるため",
+    "hint": "植物の種の広がり方だよ。"
+  },
+  {
+    "id": "g3-science-n48", "cat": "昆虫と植物",
+    "grade": 3,
+    "subject": "理科",
+    "type": "choice",
+    "question": "植物の根のはたらきは？",
+    "choices": [
+      "水を吸い、体を支える",
+      "実を作る",
+      "花粉を運ぶ",
+      "光を受ける"
+    ],
+    "answer": "水を吸い、体を支える",
+    "hint": "根は土の中で働くよ。"
   }
 ];
 
@@ -3295,6 +4375,366 @@ window.QUESTION_BANK['3-social'] = [
     ],
     "answer": "市場や農協",
     "hint": "作物は市場などを通って店に届くよ。"
+  },
+  {
+    "id": "g3-social-n25", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の人が米をたくのに使った燃料は？",
+    "choices": [
+      "石油ストーブだけ",
+      "薪や炭",
+      "電気",
+      "ガス"
+    ],
+    "answer": "薪や炭",
+    "hint": "木や炭で火を起こしたよ。"
+  },
+  {
+    "id": "g3-social-n26", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の冷蔵庫の代わりに使われた工夫は？",
+    "choices": [
+      "井戸水で冷やす、氷室",
+      "冷凍庫",
+      "エアコン",
+      "電気で冷やす"
+    ],
+    "answer": "井戸水で冷やす、氷室",
+    "hint": "氷や冷たい水を使ったよ。"
+  },
+  {
+    "id": "g3-social-n27", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "古い地図と今の地図を比べて分かることは？",
+    "choices": [
+      "人口だけ",
+      "土地の利用の変化",
+      "天気",
+      "店の値段"
+    ],
+    "answer": "土地の利用の変化",
+    "hint": "地図比べは有効な調べ方だよ。"
+  },
+  {
+    "id": "g3-social-n28", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の交通で、荷物を運んだ動物は？",
+    "choices": [
+      "馬",
+      "象",
+      "ラクダだけ",
+      "犬"
+    ],
+    "answer": "馬",
+    "hint": "馬車や馬の背で運んだよ。"
+  },
+  {
+    "id": "g3-social-n29", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "町に道路が整備されると増えやすいのは？",
+    "choices": [
+      "田畑",
+      "自動車の通行と店",
+      "川",
+      "人口の減少"
+    ],
+    "answer": "自動車の通行と店",
+    "hint": "交通の発達は町を変えるよ。"
+  },
+  {
+    "id": "g3-social-n30", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の通信手段として使われたのは？",
+    "choices": [
+      "メール",
+      "テレビ電話",
+      "SNS",
+      "手紙や伝令"
+    ],
+    "answer": "手紙や伝令",
+    "hint": "届くまで時間がかかったよ。"
+  },
+  {
+    "id": "g3-social-n31", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地域の古い写真を集める場所は？",
+    "choices": [
+      "スーパー",
+      "郵便局",
+      "図書館や資料館",
+      "駅"
+    ],
+    "answer": "図書館や資料館",
+    "hint": "地域資料は図書館などにあるよ。"
+  },
+  {
+    "id": "g3-social-n32", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の家に多かった屋根の材料は？",
+    "choices": [
+      "プラスチック",
+      "わらや瓦",
+      "鉄板だけ",
+      "ガラス"
+    ],
+    "answer": "わらや瓦",
+    "hint": "茅葺き屋根などがあったよ。"
+  },
+  {
+    "id": "g3-social-n33", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "町の人口が増えると必要になるのは？",
+    "choices": [
+      "船",
+      "学校や病院などの施設",
+      "山道",
+      "田畑だけ"
+    ],
+    "answer": "学校や病院などの施設",
+    "hint": "人が増えると施設が必要だよ。"
+  },
+  {
+    "id": "g3-social-n34", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の店の形として多かったのは？",
+    "choices": [
+      "コンビニ",
+      "家族で営む小さな店",
+      "大型スーパー",
+      "通販"
+    ],
+    "answer": "家族で営む小さな店",
+    "hint": "昔は個人商店が中心だったよ。"
+  },
+  {
+    "id": "g3-social-n35", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "市の歴史を伝える建物の例は？",
+    "choices": [
+      "新しいマンション",
+      "駅ビル",
+      "昔の役所や学校の建物",
+      "工場だけ"
+    ],
+    "answer": "昔の役所や学校の建物",
+    "hint": "残された建物が歴史を語るよ。"
+  },
+  {
+    "id": "g3-social-n36", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の人のくらしを聞き取る方法は？",
+    "choices": [
+      "写真だけを見る",
+      "本だけを読む",
+      "地域のお年寄りにインタビュー",
+      "想像する"
+    ],
+    "answer": "地域のお年寄りにインタビュー",
+    "hint": "聞き取り調査が大切だよ。"
+  },
+  {
+    "id": "g3-social-n37", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ダムができる前の川と、できた後の違いで起こりやすいのは？",
+    "choices": [
+      "水の量の調節ができるようになる",
+      "魚が必ず増える",
+      "橋がなくなる",
+      "雨が降らなくなる"
+    ],
+    "answer": "水の量の調節ができるようになる",
+    "hint": "ダムは水をためて調節するよ。"
+  },
+  {
+    "id": "g3-social-n38", "cat": "市の移り変わり",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔の遊び道具の例は？",
+    "choices": [
+      "めんこやお手玉",
+      "ドローン",
+      "スマートフォン",
+      "ゲーム機"
+    ],
+    "answer": "めんこやお手玉",
+    "hint": "身近な材料で遊んだよ。"
+  },
+  {
+    "id": "g3-social-n39", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "消防車が火事現場で使う水は、どこから取る？",
+    "choices": [
+      "雨水だけ",
+      "プールだけ",
+      "水道の蛇口だけ",
+      "消火栓や防火水槽、川など"
+    ],
+    "answer": "消火栓や防火水槽、川など",
+    "hint": "消火栓が町にあるよ。"
+  },
+  {
+    "id": "g3-social-n40", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "救急車を呼ぶ番号は？",
+    "choices": [
+      "110番",
+      "119番",
+      "117番",
+      "118番"
+    ],
+    "answer": "119番",
+    "hint": "救急も消防と同じ119番だよ。"
+  },
+  {
+    "id": "g3-social-n41", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "学校の防火設備の例は？",
+    "choices": [
+      "机",
+      "黒板",
+      "本棚",
+      "消火器や火災報知器"
+    ],
+    "answer": "消火器や火災報知器",
+    "hint": "校内に備えてあるよ。"
+  },
+  {
+    "id": "g3-social-n42", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "火遊びが危険なのはなぜ？",
+    "choices": [
+      "煙が出るだけ",
+      "服が汚れるから",
+      "音が大きいから",
+      "思わぬ火事になるから"
+    ],
+    "answer": "思わぬ火事になるから",
+    "hint": "火は広がりやすいよ。"
+  },
+  {
+    "id": "g3-social-n43", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "警察の110番で伝えることは？",
+    "choices": [
+      "学校の名前だけ",
+      "時計の時刻",
+      "自分の住所だけ",
+      "何が起きたか、場所"
+    ],
+    "answer": "何が起きたか、場所",
+    "hint": "正確に伝えることが大切だよ。"
+  },
+  {
+    "id": "g3-social-n44", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "通学路の安全を守ってくれる人の例は？",
+    "choices": [
+      "運転手だけ",
+      "交通指導員や地域の見守り隊",
+      "郵便配達員だけ",
+      "店員"
+    ],
+    "answer": "交通指導員や地域の見守り隊",
+    "hint": "地域の人が見守っているよ。"
+  },
+  {
+    "id": "g3-social-n45", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "火災報知器が鳴ったら、まずすることは？",
+    "choices": [
+      "荷物を取りに行く",
+      "走って一人で逃げる",
+      "先生の指示で避難する",
+      "教室に戻る"
+    ],
+    "answer": "先生の指示で避難する",
+    "hint": "落ち着いて避難しよう。"
+  },
+  {
+    "id": "g3-social-n46", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "防犯ブザーはどんなときに使う？",
+    "choices": [
+      "身の危険を感じたとき",
+      "遊ぶとき",
+      "音楽のとき",
+      "時間を測るとき"
+    ],
+    "answer": "身の危険を感じたとき",
+    "hint": "大きな音で助けを呼ぶよ。"
+  },
+  {
+    "id": "g3-social-n47", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "消防署の見学で分かることは？",
+    "choices": [
+      "病院の仕事",
+      "消防士の仕事と道具",
+      "市役所の仕事",
+      "警察の仕事"
+    ],
+    "answer": "消防士の仕事と道具",
+    "hint": "見学で仕事を学ぶよ。"
+  },
+  {
+    "id": "g3-social-n48", "cat": "安全をまもる",
+    "grade": 3,
+    "subject": "社会",
+    "type": "choice",
+    "question": "火事のとき、煙を吸わない工夫は？",
+    "choices": [
+      "ハンカチで口を押さえ、姿勢を低くする",
+      "窓を全部開ける",
+      "走って息を大きくする",
+      "エレベーターを使う"
+    ],
+    "answer": "ハンカチで口を押さえ、姿勢を低くする",
+    "hint": "煙は上にたまるよ。"
   }
 ];
 
@@ -4113,6 +5553,366 @@ window.QUESTION_BANK['4-japanese'] = [
     ],
     "answer": "大事なことを打ち明けるとき",
     "hint": "秘密や本音を言う前に使うよ。"
+  },
+  {
+    "id": "g4-japanese-n25", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「材料」の「材」の読み方は？",
+    "choices": [
+      "き",
+      "さい",
+      "ざい",
+      "もく"
+    ],
+    "answer": "ざい",
+    "hint": "「ざい料」と読むよ。"
+  },
+  {
+    "id": "g4-japanese-n26", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「漁業」の「漁」の読み方は？",
+    "choices": [
+      "さかな",
+      "りょう",
+      "うみ",
+      "ぎょ"
+    ],
+    "answer": "ぎょ",
+    "hint": "「ぎょ業」と読むよ。"
+  },
+  {
+    "id": "g4-japanese-n27", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「戦い」の読み方は？",
+    "choices": [
+      "いくさだけ",
+      "たたか",
+      "せんい",
+      "たたかい"
+    ],
+    "answer": "たたかい",
+    "hint": "「戦う」は「たたかう」だよ。"
+  },
+  {
+    "id": "g4-japanese-n28", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「清流」の「清」の読み方は？",
+    "choices": [
+      "せい",
+      "し",
+      "さや",
+      "きよ"
+    ],
+    "answer": "せい",
+    "hint": "「せい流」と読むよ。"
+  },
+  {
+    "id": "g4-japanese-n29", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「関心」の「関」の読み方は？",
+    "choices": [
+      "かか",
+      "げん",
+      "かん",
+      "せき"
+    ],
+    "answer": "かん",
+    "hint": "「かん心」と読むよ。"
+  },
+  {
+    "id": "g4-japanese-n30", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「最上」の「最」の読み方は？",
+    "choices": [
+      "さ",
+      "さい",
+      "つい",
+      "もっと"
+    ],
+    "answer": "さい",
+    "hint": "「さい上」と読むよ。"
+  },
+  {
+    "id": "g4-japanese-n31", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「働く」の読み方は？",
+    "choices": [
+      "はたらく",
+      "ら",
+      "はた",
+      "どうく"
+    ],
+    "answer": "はたらく",
+    "hint": "「働く」は「はたらく」だよ。"
+  },
+  {
+    "id": "g4-japanese-n32", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「加える」の読み方は？",
+    "choices": [
+      "くわえる",
+      "かえる",
+      "まぜる",
+      "たす"
+    ],
+    "answer": "くわえる",
+    "hint": "「加える」は「くわえる」だよ。"
+  },
+  {
+    "id": "g4-japanese-n33", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「隊」の部首は？",
+    "choices": [
+      "こざとへん",
+      "おおざと",
+      "さんずい",
+      "てへん"
+    ],
+    "answer": "こざとへん",
+    "hint": "部首は耳に関係する形だよ。"
+  },
+  {
+    "id": "g4-japanese-n34", "cat": "漢字",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「固い」の反対の漢字の言葉は？",
+    "choices": [
+      "弱い",
+      "浅い",
+      "柔らかい（軟らかい）",
+      "細い"
+    ],
+    "answer": "柔らかい（軟らかい）",
+    "hint": "「固い⇔柔らかい」だよ。"
+  },
+  {
+    "id": "g4-japanese-n35", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "要約とは、文章の何を短くまとめること？",
+    "choices": [
+      "感想",
+      "あらすじだけ",
+      "例の全部",
+      "中心となる内容"
+    ],
+    "answer": "中心となる内容",
+    "hint": "要旨を残すのが要約だよ。"
+  },
+  {
+    "id": "g4-japanese-n36", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語の構成で、結末の前に来る部分は？",
+    "choices": [
+      "題名",
+      "事件が解決に向かう部分",
+      "目次",
+      "登場人物の紹介"
+    ],
+    "answer": "事件が解決に向かう部分",
+    "hint": "解決への流れを読もう。"
+  },
+  {
+    "id": "g4-japanese-n37", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "筆者の考えに対する自分の意見を書くとき必要なのは？",
+    "choices": [
+      "長い文",
+      "大きな文字",
+      "理由と根拠",
+      "感想だけ"
+    ],
+    "answer": "理由と根拠",
+    "hint": "理由があると伝わるよ。"
+  },
+  {
+    "id": "g4-japanese-n38", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "接続語「したがって」が表すのは？",
+    "choices": [
+      "理由",
+      "結論",
+      "反対",
+      "例"
+    ],
+    "answer": "結論",
+    "hint": "結果・結論を導くよ。"
+  },
+  {
+    "id": "g4-japanese-n39", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "中心人物の性格が変わる場面で大切なのは？",
+    "choices": [
+      "天気",
+      "時間帯",
+      "変わるきっかけの出来事",
+      "場所"
+    ],
+    "answer": "変わるきっかけの出来事",
+    "hint": "変化には理由があるよ。"
+  },
+  {
+    "id": "g4-japanese-n40", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "比喩「雪のような白さ」が表すのは？",
+    "choices": [
+      "冬の景色だけ",
+      "とても白い様子",
+      "雪そのもの",
+      "冷たさだけ"
+    ],
+    "answer": "とても白い様子",
+    "hint": "たとえで様子を伝えるよ。"
+  },
+  {
+    "id": "g4-japanese-n41", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "インタビューの記事で、事実として扱うのは？",
+    "choices": [
+      "予想",
+      "記者の想像",
+      "聞いた内容そのままの発言",
+      "感想"
+    ],
+    "answer": "聞いた内容そのままの発言",
+    "hint": "発言は事実として示すよ。"
+  },
+  {
+    "id": "g4-japanese-n42", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "複数の段落を比べて読むときの観点は？",
+    "choices": [
+      "漢字の数",
+      "長さだけ",
+      "段落の番号",
+      "共通点と違い"
+    ],
+    "answer": "共通点と違い",
+    "hint": "比べると内容が整理できるよ。"
+  },
+  {
+    "id": "g4-japanese-n43", "cat": "よみとり",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "読みを深める質問として適切なのは？",
+    "choices": [
+      "題名を聞く質問",
+      "作者の年齢を聞く質問",
+      "なぜ主人公はそうしたのか考える質問",
+      "ページ数を聞く質問"
+    ],
+    "answer": "なぜ主人公はそうしたのか考える質問",
+    "hint": "理由を考えると深く読めるよ。"
+  },
+  {
+    "id": "g4-japanese-n44", "cat": "ことば",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「目を見張る」の意味は？",
+    "choices": [
+      "目が疲れる",
+      "眠くなる",
+      "目が大きくなる",
+      "驚いて注目する"
+    ],
+    "answer": "驚いて注目する",
+    "hint": "慣用句だよ。"
+  },
+  {
+    "id": "g4-japanese-n45", "cat": "ことば",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「がやがや」のような音や声を表す言葉は？",
+    "choices": [
+      "敬語",
+      "擬態語",
+      "接続語",
+      "擬音語"
+    ],
+    "answer": "擬音語",
+    "hint": "音や声は擬音語だよ。"
+  },
+  {
+    "id": "g4-japanese-n46", "cat": "ことば",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「わざわざ」の意味として適切なのは？",
+    "choices": [
+      "急いで",
+      "偶然に",
+      "特にそのために時間や手間をかけて",
+      "こっそり"
+    ],
+    "answer": "特にそのために時間や手間をかけて",
+    "hint": "「わざわざ来てくれた」のように使うよ。"
+  },
+  {
+    "id": "g4-japanese-n47", "cat": "ことば",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "外来語「エネルギー」の意味は？",
+    "choices": [
+      "色の名前",
+      "力や活動のもとになるもの",
+      "乗り物",
+      "食べ物の名前"
+    ],
+    "answer": "力や活動のもとになるもの",
+    "hint": "日常でもよく使われる外来語だよ。"
+  },
+  {
+    "id": "g4-japanese-n48", "cat": "ことば",
+    "grade": 4,
+    "subject": "国語",
+    "type": "choice",
+    "question": "丁寧語「です・ます」を使う場面は？",
+    "choices": [
+      "命令のとき",
+      "友達同士のくだけた場面だけ",
+      "独り言のとき",
+      "目上の人や改まった場面"
+    ],
+    "answer": "目上の人や改まった場面",
+    "hint": "丁寧な言葉遣いだよ。"
   }
 ];
 
@@ -4942,6 +6742,366 @@ window.QUESTION_BANK['4-math'] = [
     ],
     "answer": "845",
     "hint": "くり上がりに気をつけよう。"
+  },
+  {
+    "id": "g4-math-n25", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1.2km は何m？",
+    "choices": [
+      "1200m",
+      "120m",
+      "12000m",
+      "12m"
+    ],
+    "answer": "1200m",
+    "hint": "km→mは1000倍だよ。"
+  },
+  {
+    "id": "g4-math-n26", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "4500m は何km？",
+    "choices": [
+      "450km",
+      "4.5km",
+      "0.45km",
+      "45km"
+    ],
+    "answer": "4.5km",
+    "hint": "m→kmは1000で割るよ。"
+  },
+  {
+    "id": "g4-math-n27", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "5m² は何cm²？",
+    "choices": [
+      "50cm²",
+      "500cm²",
+      "50000cm²",
+      "5000cm²"
+    ],
+    "answer": "50000cm²",
+    "hint": "1m²=10000cm²、その5倍だよ。"
+  },
+  {
+    "id": "g4-math-n28", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2時間45分 は何分？",
+    "choices": [
+      "145分",
+      "245分",
+      "120分",
+      "165分"
+    ],
+    "answer": "165分",
+    "hint": "2時間=120分だよ。"
+  },
+  {
+    "id": "g4-math-n29", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1週間は何時間？",
+    "choices": [
+      "168時間",
+      "70時間",
+      "100時間",
+      "24時間"
+    ],
+    "answer": "168時間",
+    "hint": "24×7だよ。"
+  },
+  {
+    "id": "g4-math-n30", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1.5L は何mL？",
+    "choices": [
+      "15mL",
+      "15000mL",
+      "150mL",
+      "1500mL"
+    ],
+    "answer": "1500mL",
+    "hint": "1L=1000mLだよ。"
+  },
+  {
+    "id": "g4-math-n31", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2.4kg は何g？",
+    "choices": [
+      "24000g",
+      "24g",
+      "2400g",
+      "240g"
+    ],
+    "answer": "2400g",
+    "hint": "1kg=1000gだよ。"
+  },
+  {
+    "id": "g4-math-n32", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "600秒 は何分？",
+    "choices": [
+      "10分",
+      "100分",
+      "6分",
+      "60分"
+    ],
+    "answer": "10分",
+    "hint": "60秒=1分だよ。"
+  },
+  {
+    "id": "g4-math-n33", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "90000cm² は何m²？",
+    "choices": [
+      "90m²",
+      "900m²",
+      "9m²",
+      "0.9m²"
+    ],
+    "answer": "9m²",
+    "hint": "10000cm²=1m²だよ。"
+  },
+  {
+    "id": "g4-math-n34", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "午前9時半から正午まで何時間何分？",
+    "choices": [
+      "2時間30分",
+      "1時間30分",
+      "2時間",
+      "3時間"
+    ],
+    "answer": "2時間30分",
+    "hint": "正午は12時だよ。"
+  },
+  {
+    "id": "g4-math-n35", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "350cm は何m？",
+    "choices": [
+      "0.35m",
+      "3.5m",
+      "350m",
+      "35m"
+    ],
+    "answer": "3.5m",
+    "hint": "100cm=1mだよ。"
+  },
+  {
+    "id": "g4-math-n36", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1aの土地は一辺何mの正方形？",
+    "choices": [
+      "100m",
+      "1000m",
+      "10m",
+      "1m"
+    ],
+    "answer": "10m",
+    "hint": "1a=100m²、一辺は10mだよ。"
+  },
+  {
+    "id": "g4-math-n37", "cat": "単位・量",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "25分×4 は何時間何分？",
+    "choices": [
+      "40分",
+      "1時間40分",
+      "1時間",
+      "100時間"
+    ],
+    "answer": "1時間40分",
+    "hint": "25×4=100分だよ。"
+  },
+  {
+    "id": "g4-math-n38", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "たて4cm、よこ9cmの長方形の面積は？",
+    "choices": [
+      "40cm²",
+      "26cm²",
+      "36cm²",
+      "13cm²"
+    ],
+    "answer": "36cm²",
+    "hint": "面積は たて×よこ だよ。"
+  },
+  {
+    "id": "g4-math-n39", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "一辺が7cmの正方形の面積は？",
+    "choices": [
+      "56cm²",
+      "28cm²",
+      "14cm²",
+      "49cm²"
+    ],
+    "answer": "49cm²",
+    "hint": "7×7だよ。"
+  },
+  {
+    "id": "g4-math-n40", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "立方体の表面（展開図）にある面は全部でいくつ？",
+    "choices": [
+      "6つ",
+      "8つ",
+      "12つ",
+      "4つ"
+    ],
+    "answer": "6つ",
+    "hint": "サイコロの面だよ。"
+  },
+  {
+    "id": "g4-math-n41", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "円の中心を通り、両端が円周にある線は？",
+    "choices": [
+      "直径",
+      "弧",
+      "円周",
+      "半径"
+    ],
+    "answer": "直径",
+    "hint": "中心を通るのが直径だよ。"
+  },
+  {
+    "id": "g4-math-n42", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "分度器で90度より大きい角を測るときに使うめもりは？",
+    "choices": [
+      "0だけ",
+      "測れない",
+      "90をこえた目盛り",
+      "180だけ"
+    ],
+    "answer": "90をこえた目盛り",
+    "hint": "角の大きさを読むよ。"
+  },
+  {
+    "id": "g4-math-n43", "cat": "図形",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "台形の面積の考え方で使うのは？",
+    "choices": [
+      "4辺の合計",
+      "（上底+下底）×高さ÷2",
+      "一辺×一辺",
+      "底辺×高さだけ"
+    ],
+    "answer": "（上底+下底）×高さ÷2",
+    "hint": "台形の公式だよ。"
+  },
+  {
+    "id": "g4-math-n44", "cat": "計算",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3.6 ÷ 3 は？",
+    "choices": [
+      "0.12",
+      "3.3",
+      "1.2",
+      "12"
+    ],
+    "answer": "1.2",
+    "hint": "36÷3=12と考えて小数点を戻すよ。"
+  },
+  {
+    "id": "g4-math-n45", "cat": "計算",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1/3 + 1/3 は？",
+    "choices": [
+      "2/6",
+      "1/3",
+      "3/3",
+      "2/3"
+    ],
+    "answer": "2/3",
+    "hint": "分母はそのままだよ。"
+  },
+  {
+    "id": "g4-math-n46", "cat": "計算",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "245 × 6 は？",
+    "choices": [
+      "1230",
+      "147",
+      "1470",
+      "1440"
+    ],
+    "answer": "1470",
+    "hint": "200×6+45×6と分けられるよ。"
+  },
+  {
+    "id": "g4-math-n47", "cat": "計算",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "7.8 - 2.9 は？",
+    "choices": [
+      "5.1",
+      "5.9",
+      "4.1",
+      "4.9"
+    ],
+    "answer": "4.9",
+    "hint": "くり下がりに注意しよう。"
+  },
+  {
+    "id": "g4-math-n48", "cat": "計算",
+    "grade": 4,
+    "subject": "算数",
+    "type": "choice",
+    "question": "96 ÷ 6 は？",
+    "choices": [
+      "12",
+      "16",
+      "14",
+      "18"
+    ],
+    "answer": "16",
+    "hint": "6の段だよ。"
   }
 ];
 
@@ -5770,6 +7930,366 @@ window.QUESTION_BANK['4-science'] = [
     ],
     "answer": "日かげで風通しのよい場所",
     "hint": "直射日光を避けて測るよ。"
+  },
+  {
+    "id": "g4-science-n25", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "モーターカーが速く走る回路はどんなつなぎ方？",
+    "choices": [
+      "導線を切る",
+      "並列だけ",
+      "電池なし",
+      "直列つなぎで電池を増やす"
+    ],
+    "answer": "直列つなぎで電池を増やす",
+    "hint": "直列で力が強くなるよ。"
+  },
+  {
+    "id": "g4-science-n26", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "乾電池の向きを逆にすると、モーターはどうなる？",
+    "choices": [
+      "止まる",
+      "速くなる",
+      "逆向きに回る",
+      "壊れる"
+    ],
+    "answer": "逆向きに回る",
+    "hint": "電流の向きが逆になるよ。"
+  },
+  {
+    "id": "g4-science-n27", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "回路に豆電球を2つ直列につなぐと、明るさは？",
+    "choices": [
+      "2倍明るくなる",
+      "同じ",
+      "消える",
+      "1つのときより暗くなる"
+    ],
+    "answer": "1つのときより暗くなる",
+    "hint": "直列だと分け合うよ。"
+  },
+  {
+    "id": "g4-science-n28", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電気を通すかどうかを調べる道具は？",
+    "choices": [
+      "方位磁針だけ",
+      "温度計",
+      "はかり",
+      "回路と豆電球（検電の仕組み）"
+    ],
+    "answer": "回路と豆電球（検電の仕組み）",
+    "hint": "つないで点くかで判断するよ。"
+  },
+  {
+    "id": "g4-science-n29", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太陽光が強い日、光電池で動くモーターは？",
+    "choices": [
+      "逆に回る",
+      "速く回りやすい",
+      "変わらない",
+      "止まる"
+    ],
+    "answer": "速く回りやすい",
+    "hint": "光が強いほど電気が増えるよ。"
+  },
+  {
+    "id": "g4-science-n30", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "回路の導線が途中で切れると、豆電球は？",
+    "choices": [
+      "明るくなる",
+      "消える",
+      "同じ",
+      "点滅だけ"
+    ],
+    "answer": "消える",
+    "hint": "輪が切れると電流は流れないよ。"
+  },
+  {
+    "id": "g4-science-n31", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電気をためることができる部品は？",
+    "choices": [
+      "豆電球",
+      "導線",
+      "スイッチ",
+      "コンデンサー（充電できる電池など）"
+    ],
+    "answer": "コンデンサー（充電できる電池など）",
+    "hint": "電池は電気をためるよ。"
+  },
+  {
+    "id": "g4-science-n32", "cat": "電気のはたらき",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "身の回りで電気のはたらきを使っているものは？",
+    "choices": [
+      "扇風機",
+      "紙",
+      "自転車のペダルだけ",
+      "木の机"
+    ],
+    "answer": "扇風機",
+    "hint": "モーターが使われているよ。"
+  },
+  {
+    "id": "g4-science-n33", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "新月から満月まで、およそ何日かかる？",
+    "choices": [
+      "約1日",
+      "約7日",
+      "約30日だけ",
+      "約15日"
+    ],
+    "answer": "約15日",
+    "hint": "半月ほどで満ちるよ。"
+  },
+  {
+    "id": "g4-science-n34", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "星の明るさや色が違うのはなぜ？",
+    "choices": [
+      "目の疲れ",
+      "空気の色",
+      "雲のせいだけ",
+      "星までの距離や星そのものの性質が違うから"
+    ],
+    "answer": "星までの距離や星そのものの性質が違うから",
+    "hint": "星ごとに性質が違うよ。"
+  },
+  {
+    "id": "g4-science-n35", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水を冷やすと体積は？",
+    "choices": [
+      "変わらない",
+      "なくなる",
+      "大きくなる",
+      "小さくなる（普通の温度では）"
+    ],
+    "answer": "小さくなる（普通の温度では）",
+    "hint": "多くの液体は冷やすと縮むよ。ただし凍ると別だよ。"
+  },
+  {
+    "id": "g4-science-n36", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "空気を温めると体積は？",
+    "choices": [
+      "変わらない",
+      "大きくなる",
+      "小さくなる",
+      "重くなるだけ"
+    ],
+    "answer": "大きくなる",
+    "hint": "温めると膨らむよ。"
+  },
+  {
+    "id": "g4-science-n37", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "注射器に閉じ込めた水は、押しても縮みにくいのはなぜ？",
+    "choices": [
+      "水は空気より縮みにくいから",
+      "水が固いから",
+      "色があるから",
+      "重いから"
+    ],
+    "answer": "水は空気より縮みにくいから",
+    "hint": "液体は縮みにくいよ。"
+  },
+  {
+    "id": "g4-science-n38", "cat": "月と星・空気と水",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "月が見える位置は、毎日同じ時刻に見るとどうなる？",
+    "choices": [
+      "逆になる",
+      "まったく同じ",
+      "少しずつずれていく",
+      "消える"
+    ],
+    "answer": "少しずつずれていく",
+    "hint": "月は日に日に位置が変わるよ。"
+  },
+  {
+    "id": "g4-science-n39", "cat": "体のつくりと生き物",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "人が走るとき、主に使う筋肉はどこにある？",
+    "choices": [
+      "髪",
+      "爪",
+      "足",
+      "耳"
+    ],
+    "answer": "足",
+    "hint": "足の筋肉が体を進めるよ。"
+  },
+  {
+    "id": "g4-science-n40", "cat": "体のつくりと生き物",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "骨のはたらきとして正しいのは？",
+    "choices": [
+      "食べ物を溶かす",
+      "血液を全部作る場所だけ",
+      "熱を出すだけ",
+      "体を支え、内臓を守る"
+    ],
+    "answer": "体を支え、内臓を守る",
+    "hint": "骨は体の支柱だよ。"
+  },
+  {
+    "id": "g4-science-n41", "cat": "体のつくりと生き物",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "春に芽を出す植物が多いのはなぜ？",
+    "choices": [
+      "暗いから",
+      "暖かくなり、成長が始まるから",
+      "雨だけのせい",
+      "寒いから"
+    ],
+    "answer": "暖かくなり、成長が始まるから",
+    "hint": "季節と成長は関係するよ。"
+  },
+  {
+    "id": "g4-science-n42", "cat": "体のつくりと生き物",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "鳥が冬を越す方法の一つは？",
+    "choices": [
+      "暖かい地方へ移動する（渡り）",
+      "羽を抜く",
+      "冬眠だけ",
+      "卵を産む"
+    ],
+    "answer": "暖かい地方へ移動する（渡り）",
+    "hint": "ツバメなどは渡りをするよ。"
+  },
+  {
+    "id": "g4-science-n43", "cat": "体のつくりと生き物",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ヘチマの種は、実のどこにある？",
+    "choices": [
+      "実の中",
+      "葉の裏",
+      "花びら",
+      "根"
+    ],
+    "answer": "実の中",
+    "hint": "実の中に種があるよ。"
+  },
+  {
+    "id": "g4-science-n44", "cat": "天気と水の変化",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水を冷やしていくと何度で凍る？",
+    "choices": [
+      "100℃",
+      "-100℃",
+      "10℃",
+      "0℃"
+    ],
+    "answer": "0℃",
+    "hint": "水は0℃で凍るよ。"
+  },
+  {
+    "id": "g4-science-n45", "cat": "天気と水の変化",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "やかんの口から出る白い湯気の正体は？",
+    "choices": [
+      "水蒸気が冷えてできた小さな水のつぶ",
+      "煙",
+      "二酸化炭素",
+      "酸素"
+    ],
+    "answer": "水蒸気が冷えてできた小さな水のつぶ",
+    "hint": "湯気は水のつぶだよ。"
+  },
+  {
+    "id": "g4-science-n46", "cat": "天気と水の変化",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水が水蒸気になるのは、水面だけ？",
+    "choices": [
+      "水面だけ",
+      "起こらない",
+      "水全体からも泡として出る（沸騰時）",
+      "底だけ"
+    ],
+    "answer": "水全体からも泡として出る（沸騰時）",
+    "hint": "沸騰では中からも気体になるよ。"
+  },
+  {
+    "id": "g4-science-n47", "cat": "天気と水の変化",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "雨が降る日の雲の特徴は？",
+    "choices": [
+      "厚く暗い雲が多い",
+      "星が見える",
+      "雲がない",
+      "雲が白く薄いだけ"
+    ],
+    "answer": "厚く暗い雲が多い",
+    "hint": "雨雲は厚いよ。"
+  },
+  {
+    "id": "g4-science-n48", "cat": "天気と水の変化",
+    "grade": 4,
+    "subject": "理科",
+    "type": "choice",
+    "question": "気温の測り方で正しいのは？",
+    "choices": [
+      "箱に閉じ込める",
+      "日なたに置く",
+      "風通しのよい日かげで、地面から離して測る",
+      "地面に置く"
+    ],
+    "answer": "風通しのよい日かげで、地面から離して測る",
+    "hint": "正しい測り方があるよ。"
   }
 ];
 
@@ -6598,6 +9118,366 @@ window.QUESTION_BANK['4-social'] = [
     ],
     "answer": "危険な場所と避難場所",
     "hint": "命を守る地図だよ。"
+  },
+  {
+    "id": "g4-social-n25", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "伝統工芸「漆器」に使う漆はどこから取る？",
+    "choices": [
+      "漆の木の樹液",
+      "海の水",
+      "動物の油",
+      "鉱物だけ"
+    ],
+    "answer": "漆の木の樹液",
+    "hint": "漆は木から取るよ。"
+  },
+  {
+    "id": "g4-social-n26", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地域に残る古い町並みを守る取り組みは？",
+    "choices": [
+      "観光客を入れない",
+      "新しいビルだけにする",
+      "全部取り壊す",
+      "保存地区として景観を守る"
+    ],
+    "answer": "保存地区として景観を守る",
+    "hint": "町並み保存が行われているよ。"
+  },
+  {
+    "id": "g4-social-n27", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "祭りの山車（だし）が引かれる目的は？",
+    "choices": [
+      "競争だけ",
+      "祭りを盛り上げ、地域の繁栄を願う",
+      "観光バスの代わり",
+      "荷物運び"
+    ],
+    "answer": "祭りを盛り上げ、地域の繁栄を願う",
+    "hint": "山車は祭りの象徴だよ。"
+  },
+  {
+    "id": "g4-social-n28", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "伝統芸能の例は？",
+    "choices": [
+      "映画",
+      "アニメ",
+      "テレビドラマ",
+      "歌舞伎や能"
+    ],
+    "answer": "歌舞伎や能",
+    "hint": "昔から伝わる舞台芸術だよ。"
+  },
+  {
+    "id": "g4-social-n29", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地域の食文化の例は？",
+    "choices": [
+      "宇宙食",
+      "各地の郷土料理",
+      "ファストフードだけ",
+      "輸入品だけ"
+    ],
+    "answer": "各地の郷土料理",
+    "hint": "郷土料理は文化だよ。"
+  },
+  {
+    "id": "g4-social-n30", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "県の花や県の鳥を決める理由は？",
+    "choices": [
+      "地域のシンボルとして親しむため",
+      "法律で罰するため",
+      "色を決めるため",
+      "観光のためだけ"
+    ],
+    "answer": "地域のシンボルとして親しむため",
+    "hint": "県民の象徴だよ。"
+  },
+  {
+    "id": "g4-social-n31", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "昔から続く年中行事の例は？",
+    "choices": [
+      "避難訓練",
+      "節分や七夕",
+      "運動会",
+      "入学式だけ"
+    ],
+    "answer": "節分や七夕",
+    "hint": "季節の行事が伝統だよ。"
+  },
+  {
+    "id": "g4-social-n32", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "文化財の建物を修理するときに大切なのは？",
+    "choices": [
+      "大きくする",
+      "全部新しく作り替える",
+      "色を変える",
+      "元の姿をできるだけ残す"
+    ],
+    "answer": "元の姿をできるだけ残す",
+    "hint": "保存の考え方だよ。"
+  },
+  {
+    "id": "g4-social-n33", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地域の伝統を守る活動に参加する子どもたちの姿としてよいのは？",
+    "choices": [
+      "見物だけする",
+      "祭りの準備や発表に参加する",
+      "関係ない",
+      "記録を捨てる"
+    ],
+    "answer": "祭りの準備や発表に参加する",
+    "hint": "参加が継承になるよ。"
+  },
+  {
+    "id": "g4-social-n34", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "方言が地域に残る理由は？",
+    "choices": [
+      "地域の言葉として受け継がれてきたから",
+      "新しい言葉だけのため",
+      "標準語がないから",
+      "テレビがないから"
+    ],
+    "answer": "地域の言葉として受け継がれてきたから",
+    "hint": "方言も文化だよ。"
+  },
+  {
+    "id": "g4-social-n35", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "歴史ある神社やお寺が地域で果たす役割は？",
+    "choices": [
+      "祭りや行事の中心になる",
+      "店として使う",
+      "駐車場にする",
+      "学校の代わり"
+    ],
+    "answer": "祭りや行事の中心になる",
+    "hint": "地域の行事の場だよ。"
+  },
+  {
+    "id": "g4-social-n36", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "伝統工芸品の後継者が少なくなる問題を何という？",
+    "choices": [
+      "材料不足だけ",
+      "輸出超過",
+      "後継者不足",
+      "人気過剰"
+    ],
+    "answer": "後継者不足",
+    "hint": "技を継ぐ人が減っているよ。"
+  },
+  {
+    "id": "g4-social-n37", "cat": "地域の文化と伝統",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地域の文化を紹介する方法は？",
+    "choices": [
+      "写真を禁止する",
+      "パンフレットや発表会",
+      "売るだけ",
+      "秘密にする"
+    ],
+    "answer": "パンフレットや発表会",
+    "hint": "発信することで守れるよ。"
+  },
+  {
+    "id": "g4-social-n38", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "水道の蛇口から出る水が安全なのはなぜ？",
+    "choices": [
+      "色がないから",
+      "もともと全部きれいだから",
+      "浄水場で処理され、検査されているから",
+      "冷たいから"
+    ],
+    "answer": "浄水場で処理され、検査されているから",
+    "hint": "水質検査が行われているよ。"
+  },
+  {
+    "id": "g4-social-n39", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ごみの収集日に出すときの決まりは？",
+    "choices": [
+      "いつでも出してよい",
+      "夜中に出す",
+      "決められた時間と場所に出す",
+      "近所の公園に出す"
+    ],
+    "answer": "決められた時間と場所に出す",
+    "hint": "収集のルールを守ろう。"
+  },
+  {
+    "id": "g4-social-n40", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "資源ごみのリサイクルで、アルミ缶はどう生まれ変わる？",
+    "choices": [
+      "新しいアルミ製品",
+      "肥料",
+      "紙",
+      "ガラスびん"
+    ],
+    "answer": "新しいアルミ製品",
+    "hint": "金属は溶かして再利用するよ。"
+  },
+  {
+    "id": "g4-social-n41", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "下水道が整備されると川はどうなる？",
+    "choices": [
+      "汚れた水が直接流れず、きれいになりやすい",
+      "水が減るだけ",
+      "工場が増える",
+      "魚が消える"
+    ],
+    "answer": "汚れた水が直接流れず、きれいになりやすい",
+    "hint": "下水処理が川を守るよ。"
+  },
+  {
+    "id": "g4-social-n42", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "エコバッグを使うよさは？",
+    "choices": [
+      "買い物が速くなる",
+      "重くなる",
+      "安くなるだけ",
+      "レジ袋のごみが減る"
+    ],
+    "answer": "レジ袋のごみが減る",
+    "hint": "ごみ減量の工夫だよ。"
+  },
+  {
+    "id": "g4-social-n43", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ダムの役割として正しいのは？",
+    "choices": [
+      "魚を育てるだけ",
+      "橋の土台",
+      "船の通路",
+      "水をためて、水道や農業、発電に使う"
+    ],
+    "answer": "水をためて、水道や農業、発電に使う",
+    "hint": "ダムは多目的だよ。"
+  },
+  {
+    "id": "g4-social-n44", "cat": "ごみと水",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ごみ焼却場で燃やした後の灰はどうする？",
+    "choices": [
+      "最終処分場に埋めるなど適切に処理",
+      "公園にまく",
+      "そのまま放置",
+      "川に流す"
+    ],
+    "answer": "最終処分場に埋めるなど適切に処理",
+    "hint": "灰も処理が必要だよ。"
+  },
+  {
+    "id": "g4-social-n45", "cat": "県の地形と災害",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地図で標高を表す工夫は？",
+    "choices": [
+      "写真",
+      "記号だけ",
+      "文字の大きさ",
+      "等高線や色分け"
+    ],
+    "answer": "等高線や色分け",
+    "hint": "等高線で高さが分かるよ。"
+  },
+  {
+    "id": "g4-social-n46", "cat": "県の地形と災害",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "山地が多い県で発展しやすい産業は？",
+    "choices": [
+      "林業",
+      "航空業",
+      "製鉄だけ",
+      "漁業だけ"
+    ],
+    "answer": "林業",
+    "hint": "山は林業に向くよ。"
+  },
+  {
+    "id": "g4-social-n47", "cat": "県の地形と災害",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "台風に備えるために家でできることは？",
+    "choices": [
+      "窓を開けておく",
+      "外で遊ぶ",
+      "飛びやすい物を片付ける",
+      "川を見に行く"
+    ],
+    "answer": "飛びやすい物を片付ける",
+    "hint": "事前の備えが大切だよ。"
+  },
+  {
+    "id": "g4-social-n48", "cat": "県の地形と災害",
+    "grade": 4,
+    "subject": "社会",
+    "type": "choice",
+    "question": "都道府県庁所在地とは？",
+    "choices": [
+      "一番大きな山",
+      "県の政治の中心となる市",
+      "県の港",
+      "県の駅"
+    ],
+    "answer": "県の政治の中心となる市",
+    "hint": "県庁のある市だよ。"
   }
 ];
 
@@ -7411,6 +10291,366 @@ window.QUESTION_BANK['5-japanese'] = [
     ],
     "answer": "冬",
     "hint": "雪は冬の季語だよ。"
+  },
+  {
+    "id": "g5-japanese-n25", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "新聞記事で、見出しの役割は？",
+    "choices": [
+      "著者を紹介する",
+      "広告を出す",
+      "記事の内容を短く伝える",
+      "感想を書く"
+    ],
+    "answer": "記事の内容を短く伝える",
+    "hint": "見出しで内容が分かるよ。"
+  },
+  {
+    "id": "g5-japanese-n26", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語の伏線とは？",
+    "choices": [
+      "題名の説明",
+      "結末の要約",
+      "後の展開の手がかりを先に示すこと",
+      "人物紹介"
+    ],
+    "answer": "後の展開の手がかりを先に示すこと",
+    "hint": "伏線は後で回収されるよ。"
+  },
+  {
+    "id": "g5-japanese-n27", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "説明文で筆者の主張を裏付ける部分は？",
+    "choices": [
+      "あいさつの部分",
+      "感想の部分",
+      "事実やデータの部分",
+      "目次"
+    ],
+    "answer": "事実やデータの部分",
+    "hint": "根拠は事実で示すよ。"
+  },
+  {
+    "id": "g5-japanese-n28", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "人物の対立が物語をどうする？",
+    "choices": [
+      "人物を減らす",
+      "話を終わらせる",
+      "緊張感を生み、話を展開させる",
+      "場面を固定する"
+    ],
+    "answer": "緊張感を生み、話を展開させる",
+    "hint": "対立が物語を動かすよ。"
+  },
+  {
+    "id": "g5-japanese-n29", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "要旨をつかむために段落ごとにすることは？",
+    "choices": [
+      "絵を描く",
+      "中心文を見つけてメモする",
+      "感想だけを書く",
+      "全部書き写す"
+    ],
+    "answer": "中心文を見つけてメモする",
+    "hint": "段落の要点を集めよう。"
+  },
+  {
+    "id": "g5-japanese-n30", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "グラフの読み取りで注意することは？",
+    "choices": [
+      "色を見る",
+      "大きさだけを見る",
+      "単位や目盛りを確かめる",
+      "題名だけを見る"
+    ],
+    "answer": "単位や目盛りを確かめる",
+    "hint": "数値の意味を確かめよう。"
+  },
+  {
+    "id": "g5-japanese-n31", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "自分の立場を決めて書くときに大切なのは？",
+    "choices": [
+      "反対の意見にも目を向ける",
+      "賛成だけを並べる",
+      "例を省く",
+      "感情だけを書く"
+    ],
+    "answer": "反対の意見にも目を向ける",
+    "hint": "多面的に考えると深まるよ。"
+  },
+  {
+    "id": "g5-japanese-n32", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語の時代背景が分かる部分は？",
+    "choices": [
+      "服装や道具、言葉遣いの描写",
+      "著者名",
+      "題名",
+      "ページ数"
+    ],
+    "answer": "服装や道具、言葉遣いの描写",
+    "hint": "描写から時代を読み取ろう。"
+  },
+  {
+    "id": "g5-japanese-n33", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "接続語「一方で」が示すのは？",
+    "choices": [
+      "結論",
+      "理由",
+      "対比する内容",
+      "例示"
+    ],
+    "answer": "対比する内容",
+    "hint": "二つを比べる接続語だよ。"
+  },
+  {
+    "id": "g5-japanese-n34", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "インタビュー記事で質問者の意図が分かるのは？",
+    "choices": [
+      "紙面の大きさ",
+      "質問の内容",
+      "見出しの色",
+      "写真"
+    ],
+    "answer": "質問の内容",
+    "hint": "質問が記事を方向づけるよ。"
+  },
+  {
+    "id": "g5-japanese-n35", "cat": "よみとり",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "結末が読み手に与えるものは？",
+    "choices": [
+      "主題について考える余韻",
+      "作者の住所",
+      "次の本の広告",
+      "答えの暗記"
+    ],
+    "answer": "主題について考える余韻",
+    "hint": "余韻が主題を深めるよ。"
+  },
+  {
+    "id": "g5-japanese-n36", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「複雑」の「複」の読み方は？",
+    "choices": [
+      "ぶく",
+      "ふく",
+      "ほく",
+      "ふ"
+    ],
+    "answer": "ふく",
+    "hint": "「ふく雑」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n37", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「建築」の「築」の読み方は？",
+    "choices": [
+      "つく",
+      "ちく",
+      "ち",
+      "きず"
+    ],
+    "answer": "ちく",
+    "hint": "「建ちく」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n38", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「余分」の「余」の読み方は？",
+    "choices": [
+      "よ",
+      "や",
+      "よぶ",
+      "あま"
+    ],
+    "answer": "よ",
+    "hint": "「よ分」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n39", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「志す」の読み方は？",
+    "choices": [
+      "こころざす",
+      "もくす",
+      "しす",
+      "のぞむ"
+    ],
+    "answer": "こころざす",
+    "hint": "「志」は「こころざし」だよ。"
+  },
+  {
+    "id": "g5-japanese-n40", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「解釈」の「釈」の読み方は？",
+    "choices": [
+      "しゃく",
+      "しゃ",
+      "せき",
+      "と"
+    ],
+    "answer": "しゃく",
+    "hint": "「解しゃく」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n41", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「容易」の「易」の読み方は？",
+    "choices": [
+      "やす",
+      "い",
+      "やさ",
+      "えき"
+    ],
+    "answer": "い",
+    "hint": "「容い」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n42", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「圧力」の「圧」の読み方は？",
+    "choices": [
+      "お",
+      "あっ",
+      "あつ",
+      "あ"
+    ],
+    "answer": "あつ",
+    "hint": "「あつ力」と読むよ。"
+  },
+  {
+    "id": "g5-japanese-n43", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「逆らう」の読み方は？",
+    "choices": [
+      "さかう",
+      "ぎゃくらう",
+      "あらがう",
+      "さからう"
+    ],
+    "answer": "さからう",
+    "hint": "「逆らう」は「さからう」だよ。"
+  },
+  {
+    "id": "g5-japanese-n44", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「設ける」の読み方は？",
+    "choices": [
+      "つくる",
+      "もうける",
+      "たてる",
+      "せつける"
+    ],
+    "answer": "もうける",
+    "hint": "「設ける」は「もうける」だよ。"
+  },
+  {
+    "id": "g5-japanese-n45", "cat": "漢字",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「恩」の部首は？",
+    "choices": [
+      "人",
+      "心（したごころ）",
+      "言",
+      "日"
+    ],
+    "answer": "心（したごころ）",
+    "hint": "気持ちに関わる部首だよ。"
+  },
+  {
+    "id": "g5-japanese-n46", "cat": "ことば",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「客観的」の意味は？",
+    "choices": [
+      "大きく",
+      "自分の気持ち中心に",
+      "自分の感情を入れず、事実に基づいて",
+      "速く"
+    ],
+    "answer": "自分の感情を入れず、事実に基づいて",
+    "hint": "「主観的」の反対だよ。"
+  },
+  {
+    "id": "g5-japanese-n47", "cat": "ことば",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「相変わらず」の意味は？",
+    "choices": [
+      "急に",
+      "大きく変わって",
+      "初めて",
+      "以前と変わらず、同じ様子で"
+    ],
+    "answer": "以前と変わらず、同じ様子で",
+    "hint": "「相変わらず元気だ」のように使うよ。"
+  },
+  {
+    "id": "g5-japanese-n48", "cat": "ことば",
+    "grade": 5,
+    "subject": "国語",
+    "type": "choice",
+    "question": "四季の季語「蛙（かわず）」が表す季節は？",
+    "choices": [
+      "冬",
+      "夏",
+      "春",
+      "秋"
+    ],
+    "answer": "春",
+    "hint": "蛙は春の季語だよ。"
   }
 ];
 
@@ -8241,6 +11481,366 @@ window.QUESTION_BANK['5-math'] = [
     ],
     "answer": "5.7",
     "hint": "両方を10倍して456÷80と考えるよ。"
+  },
+  {
+    "id": "g5-math-n25", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "秒速3mは分速何m？",
+    "choices": [
+      "分速3m",
+      "分速180m",
+      "分速1800m",
+      "分速30m"
+    ],
+    "answer": "分速180m",
+    "hint": "60秒分を考えるよ。"
+  },
+  {
+    "id": "g5-math-n26", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "分速240mは秒速何m？",
+    "choices": [
+      "秒速4m",
+      "秒速24m",
+      "秒速240m",
+      "秒速40m"
+    ],
+    "answer": "秒速4m",
+    "hint": "60で割るよ。"
+  },
+  {
+    "id": "g5-math-n27", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "時速45kmの車が20分で進む道のりは？",
+    "choices": [
+      "15km",
+      "9km",
+      "45km",
+      "20km"
+    ],
+    "answer": "15km",
+    "hint": "20分は1/3時間だよ。"
+  },
+  {
+    "id": "g5-math-n28", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1500mを12分で走る速さは分速何m？",
+    "choices": [
+      "分速180m",
+      "分速120m",
+      "分速150m",
+      "分速125m"
+    ],
+    "answer": "分速125m",
+    "hint": "1500÷12だよ。"
+  },
+  {
+    "id": "g5-math-n29", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "3.2km は何m？",
+    "choices": [
+      "32m",
+      "32000m",
+      "3200m",
+      "320m"
+    ],
+    "answer": "3200m",
+    "hint": "km→mは1000倍だよ。"
+  },
+  {
+    "id": "g5-math-n30", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "体積の単位「L」は何cm³？",
+    "choices": [
+      "100cm³",
+      "10000cm³",
+      "1000cm³",
+      "10cm³"
+    ],
+    "answer": "1000cm³",
+    "hint": "1L=1000cm³だよ。"
+  },
+  {
+    "id": "g5-math-n31", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "24kmを時速8kmで進むと何時間かかる？",
+    "choices": [
+      "4時間",
+      "8時間",
+      "3時間",
+      "2時間"
+    ],
+    "answer": "3時間",
+    "hint": "時間＝道のり÷速さだよ。"
+  },
+  {
+    "id": "g5-math-n32", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "分速60mの人が1.5時間歩くと何km？",
+    "choices": [
+      "6km",
+      "90km",
+      "4km",
+      "5.4km"
+    ],
+    "answer": "5.4km",
+    "hint": "60m×90分=5400mだよ。"
+  },
+  {
+    "id": "g5-math-n33", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2.75時間は何時間何分？",
+    "choices": [
+      "2時間25分",
+      "2時間75分",
+      "2時間45分",
+      "3時間15分"
+    ],
+    "answer": "2時間45分",
+    "hint": "0.75時間=45分だよ。"
+  },
+  {
+    "id": "g5-math-n34", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "密度の問題で、水1cm³の重さは？",
+    "choices": [
+      "100g",
+      "0.1g",
+      "1g",
+      "10g"
+    ],
+    "answer": "1g",
+    "hint": "水の密度は1g/cm³だよ。"
+  },
+  {
+    "id": "g5-math-n35", "cat": "単位・量",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "面積7200cm² は何m²？",
+    "choices": [
+      "72m²",
+      "720m²",
+      "7.2m²",
+      "0.72m²"
+    ],
+    "answer": "0.72m²",
+    "hint": "10000cm²=1m²だよ。"
+  },
+  {
+    "id": "g5-math-n36", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "一辺が6cmの正方形の周りの長さは？",
+    "choices": [
+      "18cm",
+      "12cm",
+      "36cm",
+      "24cm"
+    ],
+    "answer": "24cm",
+    "hint": "周りは4辺の合計だよ。"
+  },
+  {
+    "id": "g5-math-n37", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "縦8cm、横5cmの長方形の面積は？",
+    "choices": [
+      "80cm²",
+      "26cm²",
+      "40cm²",
+      "13cm²"
+    ],
+    "answer": "40cm²",
+    "hint": "面積は縦×横だよ。"
+  },
+  {
+    "id": "g5-math-n38", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "高さが7cm、底辺が4cmの三角形の面積は？",
+    "choices": [
+      "28cm²",
+      "56cm²",
+      "14cm²",
+      "11cm²"
+    ],
+    "answer": "14cm²",
+    "hint": "底辺×高さ÷2だよ。"
+  },
+  {
+    "id": "g5-math-n39", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "直方体の体積の公式は？",
+    "choices": [
+      "周りの長さ×高さ",
+      "底辺×高さ",
+      "一辺×一辺",
+      "縦×横×高さ"
+    ],
+    "answer": "縦×横×高さ",
+    "hint": "箱の体積だよ。"
+  },
+  {
+    "id": "g5-math-n40", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "円の面積の公式は？",
+    "choices": [
+      "一辺×一辺",
+      "半径×円周率",
+      "直径×円周率",
+      "半径×半径×円周率"
+    ],
+    "answer": "半径×半径×円周率",
+    "hint": "面積は半径を使うよ。"
+  },
+  {
+    "id": "g5-math-n41", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "多角形の内角の和の求め方で、五角形は？",
+    "choices": [
+      "540度",
+      "360度",
+      "720度",
+      "180度"
+    ],
+    "answer": "540度",
+    "hint": "(5-2)×180だよ。"
+  },
+  {
+    "id": "g5-math-n42", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "正六角形の1つの内角の大きさは？",
+    "choices": [
+      "60度",
+      "90度",
+      "120度",
+      "108度"
+    ],
+    "answer": "120度",
+    "hint": "六角形の内角の和は720度、それを6で割るよ。"
+  },
+  {
+    "id": "g5-math-n43", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "平行四辺形を対角線で分けると、できる三角形の面積は？",
+    "choices": [
+      "測れない",
+      "もとの半分ずつ",
+      "全部違う",
+      "もとの2倍"
+    ],
+    "answer": "もとの半分ずつ",
+    "hint": "対角線は面積を半分にするよ。"
+  },
+  {
+    "id": "g5-math-n44", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "合同な三角形を書くときに必要な条件の組み合わせでないのは？",
+    "choices": [
+      "2辺とその間の角",
+      "1辺と両端の角",
+      "3辺の長さ",
+      "3つの角の大きさだけ"
+    ],
+    "answer": "3つの角の大きさだけ",
+    "hint": "角だけでは大きさが決まらないよ。"
+  },
+  {
+    "id": "g5-math-n45", "cat": "図形",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "ひし形の面積は対角線を使って？",
+    "choices": [
+      "底辺×高さ÷2",
+      "対角線×対角線÷2",
+      "対角線の合計",
+      "対角線×4"
+    ],
+    "answer": "対角線×対角線÷2",
+    "hint": "ひし形の公式だよ。"
+  },
+  {
+    "id": "g5-math-n46", "cat": "計算",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1/2 ÷ 4 は？",
+    "choices": [
+      "2",
+      "1/4",
+      "8",
+      "1/8"
+    ],
+    "answer": "1/8",
+    "hint": "割る数は分母にかけるよ。"
+  },
+  {
+    "id": "g5-math-n47", "cat": "計算",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "45%引きの「45%」を小数で表すと？",
+    "choices": [
+      "45",
+      "4.5",
+      "0.045",
+      "0.45"
+    ],
+    "answer": "0.45",
+    "hint": "%は100で割るよ。"
+  },
+  {
+    "id": "g5-math-n48", "cat": "計算",
+    "grade": 5,
+    "subject": "算数",
+    "type": "choice",
+    "question": "6.3 × 0.5 は？",
+    "choices": [
+      "0.315",
+      "3.15",
+      "6.8",
+      "31.5"
+    ],
+    "answer": "3.15",
+    "hint": "63×5=315から小数点を戻すよ。"
   }
 ];
 
@@ -9069,6 +12669,366 @@ window.QUESTION_BANK['5-science'] = [
     ],
     "answer": "約10か月",
     "hint": "およそ十月十日と言われるよ。"
+  },
+  {
+    "id": "g5-science-n25", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石のコイルに鉄心を入れると磁力は？",
+    "choices": [
+      "弱くなる",
+      "強くなる",
+      "変わらない",
+      "消える"
+    ],
+    "answer": "強くなる",
+    "hint": "鉄心が磁力を集めるよ。"
+  },
+  {
+    "id": "g5-science-n26", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石で極を調べる道具は？",
+    "choices": [
+      "温度計",
+      "はかり",
+      "虫めがね",
+      "方位磁針"
+    ],
+    "answer": "方位磁針",
+    "hint": "磁針の向きで極が分かるよ。"
+  },
+  {
+    "id": "g5-science-n27", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石を弱くする方法は？",
+    "choices": [
+      "導線を太くする",
+      "巻き数を増やす",
+      "電池を減らす（電流を小さくする）",
+      "鉄心を入れる"
+    ],
+    "answer": "電池を減らす（電流を小さくする）",
+    "hint": "電流が小さいと弱くなるよ。"
+  },
+  {
+    "id": "g5-science-n28", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "クレーンで鉄を持ち上げる機械に使われるのは？",
+    "choices": [
+      "ゴム",
+      "永久磁石だけ",
+      "電磁石",
+      "バネ"
+    ],
+    "answer": "電磁石",
+    "hint": "電磁石は付け外しができるよ。"
+  },
+  {
+    "id": "g5-science-n29", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石の導線を巻く向きを逆にすると、極は？",
+    "choices": [
+      "増える",
+      "入れ替わる",
+      "変わらない",
+      "消える"
+    ],
+    "answer": "入れ替わる",
+    "hint": "巻き方で極が決まるよ。"
+  },
+  {
+    "id": "g5-science-n30", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石が引きつけるものは？",
+    "choices": [
+      "プラスチック",
+      "鉄製品",
+      "木製品",
+      "紙製品"
+    ],
+    "answer": "鉄製品",
+    "hint": "磁石と同じく鉄を引きつけるよ。"
+  },
+  {
+    "id": "g5-science-n31", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ブザーやベルが鳴る仕組みに使われるのは？",
+    "choices": [
+      "電磁石の引く力",
+      "重力だけ",
+      "水圧",
+      "風の力"
+    ],
+    "answer": "電磁石の引く力",
+    "hint": "電磁石が鉄片を引いて音が出るよ。"
+  },
+  {
+    "id": "g5-science-n32", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石の実験で発熱に注意する理由は？",
+    "choices": [
+      "音が出るから",
+      "電池が爆発するから",
+      "磁石が燃えるから",
+      "導線に大きな電流を長く流すと熱くなるから"
+    ],
+    "answer": "導線に大きな電流を長く流すと熱くなるから",
+    "hint": "長時間の通電は避けよう。"
+  },
+  {
+    "id": "g5-science-n33", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "モーターの中のコイルに電流を流すとどうなる？",
+    "choices": [
+      "溶ける",
+      "止まる",
+      "光るだけ",
+      "磁石との力で回転する"
+    ],
+    "answer": "磁石との力で回転する",
+    "hint": "電磁石の力で回るよ。"
+  },
+  {
+    "id": "g5-science-n34", "cat": "電磁石",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "電磁石の強さ比べで、そろえる条件は？",
+    "choices": [
+      "全部変える",
+      "色だけそろえる",
+      "何も決めない",
+      "変える条件以外は同じにする"
+    ],
+    "answer": "変える条件以外は同じにする",
+    "hint": "条件制御が大切だよ。"
+  },
+  {
+    "id": "g5-science-n35", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水溶液を蒸発させると、溶けていた物は？",
+    "choices": [
+      "気体になる",
+      "残る",
+      "水と一緒に消える",
+      "消える"
+    ],
+    "answer": "残る",
+    "hint": "蒸発では水だけが出ていくよ。"
+  },
+  {
+    "id": "g5-science-n36", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "食塩は水の温度を上げても溶ける量があまり増えない理由として正しいのは？",
+    "choices": [
+      "水が増えるから",
+      "食塩が特別に重いから",
+      "物質によって溶け方が違うから",
+      "温度が測れないから"
+    ],
+    "answer": "物質によって溶け方が違うから",
+    "hint": "溶け方は物質で違うよ。"
+  },
+  {
+    "id": "g5-science-n37", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "振り子の長さを2倍にすると、往復の時間は？",
+    "choices": [
+      "長くなる",
+      "同じ",
+      "半分になる",
+      "短くなる"
+    ],
+    "answer": "長くなる",
+    "hint": "長いほどゆっくりだよ。"
+  },
+  {
+    "id": "g5-science-n38", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "振り子の実験で10往復を測って1往復を出す理由は？",
+    "choices": [
+      "誤差を小さくするため",
+      "見やすくするため",
+      "記録を増やすため",
+      "速く終わるため"
+    ],
+    "answer": "誤差を小さくするため",
+    "hint": "まとめて測ると正確になるよ。"
+  },
+  {
+    "id": "g5-science-n39", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ミョウバンの結晶が育つのは、どんなとき？",
+    "choices": [
+      "溶けきれなくなった分が結晶として出てくるとき",
+      "水を足したとき",
+      "温め続けたとき",
+      "かき混ぜたとき"
+    ],
+    "answer": "溶けきれなくなった分が結晶として出てくるとき",
+    "hint": "冷やすと結晶が出るよ。"
+  },
+  {
+    "id": "g5-science-n40", "cat": "もののとけ方と振り子",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水に溶ける量の限度を何という？",
+    "choices": [
+      "溶解度（溶ける限界）",
+      "比重",
+      "沸点",
+      "濃度だけ"
+    ],
+    "answer": "溶解度（溶ける限界）",
+    "hint": "限界まで溶けた状態を飽和というよ。"
+  },
+  {
+    "id": "g5-science-n41", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "川の下流に土がたまってできる地形は？",
+    "choices": [
+      "断崖",
+      "山脈",
+      "三角州や平野",
+      "峡谷"
+    ],
+    "answer": "三角州や平野",
+    "hint": "運ばれた土がたまるよ。"
+  },
+  {
+    "id": "g5-science-n42", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "台風の進路を予想するために使う情報は？",
+    "choices": [
+      "気象衛星や天気図",
+      "地震計",
+      "星の位置",
+      "潮位だけ"
+    ],
+    "answer": "気象衛星や天気図",
+    "hint": "気象データで予想するよ。"
+  },
+  {
+    "id": "g5-science-n43", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "前線が通過すると天気がどうなりやすい？",
+    "choices": [
+      "必ず晴れる",
+      "変わらない",
+      "雪だけになる",
+      "雨が降り、天気が変わる"
+    ],
+    "answer": "雨が降り、天気が変わる",
+    "hint": "前線は天気の境目だよ。"
+  },
+  {
+    "id": "g5-science-n44", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "川の堤防の役割は？",
+    "choices": [
+      "魚を育てる",
+      "水を止めるだけ",
+      "洪水から人々の暮らしを守る",
+      "船を通す"
+    ],
+    "answer": "洪水から人々の暮らしを守る",
+    "hint": "防災のための施設だよ。"
+  },
+  {
+    "id": "g5-science-n45", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "流れる水のはたらき「運搬」とは？",
+    "choices": [
+      "雨を降らせること",
+      "水を温めること",
+      "削った土や石を運ぶこと",
+      "雲を作ること"
+    ],
+    "answer": "削った土や石を運ぶこと",
+    "hint": "侵食・運搬・堆積の3つだよ。"
+  },
+  {
+    "id": "g5-science-n46", "cat": "天気と流れる水",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "日本の梅雨の時期に雨が多い理由は？",
+    "choices": [
+      "台風だけのせい",
+      "雪が溶けるから",
+      "海が近いから",
+      "梅雨前線が停滞するから"
+    ],
+    "answer": "梅雨前線が停滞するから",
+    "hint": "前線が長く居座るよ。"
+  },
+  {
+    "id": "g5-science-n47", "cat": "植物と動物・人のたんじょう",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "受粉の手助けをする生き物の例は？",
+    "choices": [
+      "ヘビ",
+      "昆虫や鳥",
+      "魚",
+      "カエル"
+    ],
+    "answer": "昆虫や鳥",
+    "hint": "花粉を運ぶよ。"
+  },
+  {
+    "id": "g5-science-n48", "cat": "植物と動物・人のたんじょう",
+    "grade": 5,
+    "subject": "理科",
+    "type": "choice",
+    "question": "種子の中にある、芽になる部分は？",
+    "choices": [
+      "果肉",
+      "胚（はい）",
+      "子葉だけ",
+      "種皮"
+    ],
+    "answer": "胚（はい）",
+    "hint": "胚が新しい植物になるよ。"
   }
 ];
 
@@ -9869,6 +13829,366 @@ window.QUESTION_BANK['5-social'] = [
     ],
     "answer": "船",
     "hint": "船は大量輸送に向くよ。"
+  },
+  {
+    "id": "g5-social-n25", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "森林が土砂崩れを防ぐ理由は？",
+    "choices": [
+      "動物がいるから",
+      "色が緑だから",
+      "木の根が地面を支えるから",
+      "葉が雨を受けるだけ"
+    ],
+    "answer": "木の根が地面を支えるから",
+    "hint": "根が土を固定するよ。"
+  },
+  {
+    "id": "g5-social-n26", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地球温暖化の主な原因とされる気体は？",
+    "choices": [
+      "ちっ素",
+      "二酸化炭素",
+      "酸素",
+      "水素"
+    ],
+    "answer": "二酸化炭素",
+    "hint": "温室効果ガスだよ。"
+  },
+  {
+    "id": "g5-social-n27", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "再生可能エネルギーの例は？",
+    "choices": [
+      "太陽光発電",
+      "石油発電",
+      "原子力だけ",
+      "石炭火力"
+    ],
+    "answer": "太陽光発電",
+    "hint": "自然の力を使うよ。"
+  },
+  {
+    "id": "g5-social-n28", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "水俣病の原因となったのは？",
+    "choices": [
+      "工場排水に含まれた有害物質",
+      "自然の毒",
+      "塩分",
+      "農薬だけ"
+    ],
+    "answer": "工場排水に含まれた有害物質",
+    "hint": "公害の代表例だよ。"
+  },
+  {
+    "id": "g5-social-n29", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "森林の木を計画的に切って使うことが大切な理由は？",
+    "choices": [
+      "全部切るため",
+      "森をなくすため",
+      "価格を上げるためだけ",
+      "資源を将来も使い続けるため"
+    ],
+    "answer": "資源を将来も使い続けるため",
+    "hint": "持続可能な利用だよ。"
+  },
+  {
+    "id": "g5-social-n30", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "生物多様性を守る意味は？",
+    "choices": [
+      "植物を減らすこと",
+      "多くの生き物が互いに関わって生きる環境を守ること",
+      "動物園を増やすこと",
+      "珍しい動物だけを守ること"
+    ],
+    "answer": "多くの生き物が互いに関わって生きる環境を守ること",
+    "hint": "生態系のバランスだよ。"
+  },
+  {
+    "id": "g5-social-n31", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "外来種が問題になる理由は？",
+    "choices": [
+      "色が違うから",
+      "在来の生き物の生活を脅かすことがあるから",
+      "鳴き声がうるさいから",
+      "大きいから"
+    ],
+    "answer": "在来の生き物の生活を脅かすことがあるから",
+    "hint": "生態系を乱すよ。"
+  },
+  {
+    "id": "g5-social-n32", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "川や海の水を汚さないために家庭でできることは？",
+    "choices": [
+      "油を直接流さない",
+      "何でも流す",
+      "ごみを流す",
+      "洗剤を増やす"
+    ],
+    "answer": "油を直接流さない",
+    "hint": "家庭の排水も川につながるよ。"
+  },
+  {
+    "id": "g5-social-n33", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "環境ラベル「エコマーク」が付いた商品は？",
+    "choices": [
+      "輸入品",
+      "新しい商品",
+      "環境への負荷が少ないと認められた商品",
+      "安い商品"
+    ],
+    "answer": "環境への負荷が少ないと認められた商品",
+    "hint": "環境配慮の目印だよ。"
+  },
+  {
+    "id": "g5-social-n34", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "里山が人の手で守られてきた理由は？",
+    "choices": [
+      "畑だけのため",
+      "燃料や肥料など、暮らしに必要な資源を得る場だったから",
+      "観光のためだけ",
+      "動物を飼うため"
+    ],
+    "answer": "燃料や肥料など、暮らしに必要な資源を得る場だったから",
+    "hint": "里山は暮らしと結びついたよ。"
+  },
+  {
+    "id": "g5-social-n35", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "二酸化炭素の排出を減らす工夫は？",
+    "choices": [
+      "省エネ家電を使う",
+      "車だけを使う",
+      "電気を使い放題にする",
+      "暖房を強くする"
+    ],
+    "answer": "省エネ家電を使う",
+    "hint": "省エネが大切だよ。"
+  },
+  {
+    "id": "g5-social-n36", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "森林認証制度の目的は？",
+    "choices": [
+      "木を全部切る",
+      "輸入を禁止する",
+      "適切に管理された森林の木材を広める",
+      "価格を固定する"
+    ],
+    "answer": "適切に管理された森林の木材を広める",
+    "hint": "持続可能な森林管理だよ。"
+  },
+  {
+    "id": "g5-social-n37", "cat": "環境と森林",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地球サミットなどで話し合われることは？",
+    "choices": [
+      "戦争の方法",
+      "環境と開発の両立",
+      "宇宙旅行",
+      "貿易の関税だけ"
+    ],
+    "answer": "環境と開発の両立",
+    "hint": "国際的な環境会議だよ。"
+  },
+  {
+    "id": "g5-social-n38", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "北海道の農業の特徴は？",
+    "choices": [
+      "狭い畑だけ",
+      "水田だけ",
+      "広い土地で大規模な農業",
+      "茶畑"
+    ],
+    "answer": "広い土地で大規模な農業",
+    "hint": "大規模経営が特徴だよ。"
+  },
+  {
+    "id": "g5-social-n39", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の漁獲量が減っている理由の一つは？",
+    "choices": [
+      "乱獲や環境の変化",
+      "船が速くなった",
+      "魚が増えすぎた",
+      "港が増えた"
+    ],
+    "answer": "乱獲や環境の変化",
+    "hint": "資源管理が必要だよ。"
+  },
+  {
+    "id": "g5-social-n40", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "千曲川はどの川の別名・上流部分？",
+    "choices": [
+      "利根川",
+      "木曽川",
+      "淀川",
+      "信濃川"
+    ],
+    "answer": "信濃川",
+    "hint": "日本一長い川だよ。"
+  },
+  {
+    "id": "g5-social-n41", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の最高峰・富士山の標高は？",
+    "choices": [
+      "3776m",
+      "2900m",
+      "4000m",
+      "3000m"
+    ],
+    "answer": "3776m",
+    "hint": "富士山の高さだよ。"
+  },
+  {
+    "id": "g5-social-n42", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "瀬戸内海の気候の特徴は？",
+    "choices": [
+      "雨が少なく晴れの日が多い",
+      "雪が多い",
+      "台風だけが多い",
+      "雨が多い"
+    ],
+    "answer": "雨が少なく晴れの日が多い",
+    "hint": "瀬戸内式気候だよ。"
+  },
+  {
+    "id": "g5-social-n43", "cat": "国土と農業・水産業",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の食料自給率（カロリーベース）はおよそ？",
+    "choices": [
+      "約4割",
+      "約9割",
+      "約1割",
+      "約7割"
+    ],
+    "answer": "約4割",
+    "hint": "輸入に頼る部分が大きいよ。"
+  },
+  {
+    "id": "g5-social-n44", "cat": "工業・運輸・情報",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "京浜工業地帯の中心となる都市は？",
+    "choices": [
+      "東京・横浜",
+      "福岡",
+      "大阪",
+      "名古屋"
+    ],
+    "answer": "東京・横浜",
+    "hint": "太平洋ベルトの一つだよ。"
+  },
+  {
+    "id": "g5-social-n45", "cat": "工業・運輸・情報",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "インターネットで情報を発信するときの注意は？",
+    "choices": [
+      "何でも書いてよい",
+      "うそを広める",
+      "個人情報をむやみに公開しない",
+      "他人の写真を勝手に使う"
+    ],
+    "answer": "個人情報をむやみに公開しない",
+    "hint": "情報モラルを守ろう。"
+  },
+  {
+    "id": "g5-social-n46", "cat": "工業・運輸・情報",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の高速道路や新幹線が発達した理由は？",
+    "choices": [
+      "景色のため",
+      "競争のため",
+      "人や物を速く運ぶため",
+      "観光のためだけ"
+    ],
+    "answer": "人や物を速く運ぶため",
+    "hint": "輸送の効率化だよ。"
+  },
+  {
+    "id": "g5-social-n47", "cat": "工業・運輸・情報",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ICカードや電子マネーが広がった分野は？",
+    "choices": [
+      "漁業だけ",
+      "農業だけ",
+      "林業",
+      "交通や買い物の支払い"
+    ],
+    "answer": "交通や買い物の支払い",
+    "hint": "情報技術の活用だよ。"
+  },
+  {
+    "id": "g5-social-n48", "cat": "工業・運輸・情報",
+    "grade": 5,
+    "subject": "社会",
+    "type": "choice",
+    "question": "臨海部に工場が多い理由は？",
+    "choices": [
+      "船で原料や製品を運びやすいから",
+      "人が少ないから",
+      "山に近いから",
+      "景色がよいから"
+    ],
+    "answer": "船で原料や製品を運びやすいから",
+    "hint": "港の近くが便利だよ。"
   }
 ];
 
@@ -10687,6 +15007,366 @@ window.QUESTION_BANK['6-japanese'] = [
     ],
     "answer": "ふさわしい",
     "hint": "場面に合っているという意味だよ。"
+  },
+  {
+    "id": "g6-japanese-n25", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「姿勢」の「姿」の読み方は？",
+    "choices": [
+      "しせいだけ",
+      "すがた",
+      "し",
+      "さ"
+    ],
+    "answer": "し",
+    "hint": "「し勢」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n26", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「視点」の「視」の読み方は？",
+    "choices": [
+      "けん",
+      "し",
+      "み",
+      "さ"
+    ],
+    "answer": "し",
+    "hint": "「し点」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n27", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「純粋」の「純」の読み方は？",
+    "choices": [
+      "じゅん",
+      "じゅ",
+      "まじ",
+      "す"
+    ],
+    "answer": "じゅん",
+    "hint": "「じゅん粋」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n28", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「己」の読み方は？",
+    "choices": [
+      "おのれ",
+      "お",
+      "み",
+      "き"
+    ],
+    "answer": "おのれ",
+    "hint": "「己」は「おのれ」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n29", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「寸法」の「寸」の読み方は？",
+    "choices": [
+      "ずん",
+      "せん",
+      "す",
+      "すん"
+    ],
+    "answer": "すん",
+    "hint": "「すん法」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n30", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「推す」の読み方は？",
+    "choices": [
+      "おす",
+      "すいす",
+      "すすめる",
+      "たたく"
+    ],
+    "answer": "おす",
+    "hint": "「推す」は「おす」だよ。"
+  },
+  {
+    "id": "g6-japanese-n31", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「盛ん」の読み方は？",
+    "choices": [
+      "さかん",
+      "もり",
+      "さか",
+      "せい"
+    ],
+    "answer": "さかん",
+    "hint": "「盛ん」は「さかん」だよ。"
+  },
+  {
+    "id": "g6-japanese-n32", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「訪れる」の読み方は？",
+    "choices": [
+      "ゆく",
+      "ほうれる",
+      "たずねる",
+      "おとずれる"
+    ],
+    "answer": "おとずれる",
+    "hint": "「訪れる」は「おとずれる」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n33", "cat": "漢字",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「孝行」の「孝」の読み方は？",
+    "choices": [
+      "たか",
+      "きょう",
+      "こ",
+      "こう"
+    ],
+    "answer": "こう",
+    "hint": "「こう行」と読むよ。"
+  },
+  {
+    "id": "g6-japanese-n34", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "複数の資料を統合して読むとは？",
+    "choices": [
+      "一番長い資料だけを読む",
+      "情報を結びつけて全体像をつかむこと",
+      "新しい資料だけを信じる",
+      "絵のある資料だけを使う"
+    ],
+    "answer": "情報を結びつけて全体像をつかむこと",
+    "hint": "統合は組み合わせる読みだよ。"
+  },
+  {
+    "id": "g6-japanese-n35", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "筆者と話者の立場が違う文章を比べるとき大切なのは？",
+    "choices": [
+      "誰の視点で書かれているか確かめる",
+      "段落数",
+      "文字数",
+      "題名"
+    ],
+    "answer": "誰の視点で書かれているか確かめる",
+    "hint": "立場で内容が変わるよ。"
+  },
+  {
+    "id": "g6-japanese-n36", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "物語の結末が「開かれた結末」の場合、読み手は？",
+    "choices": [
+      "読み直せない",
+      "何も分からない",
+      "作者に聞くしかない",
+      "その後を想像する余地がある"
+    ],
+    "answer": "その後を想像する余地がある",
+    "hint": "解釈が開かれているよ。"
+  },
+  {
+    "id": "g6-japanese-n37", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "要約と感想の違いは？",
+    "choices": [
+      "要約は意見、感想は事実",
+      "要約は長く、感想は短い",
+      "要約は本文の中心内容、感想は自分の受け止め",
+      "違いはない"
+    ],
+    "answer": "要約は本文の中心内容、感想は自分の受け止め",
+    "hint": "要約に自分の意見は入れないよ。"
+  },
+  {
+    "id": "g6-japanese-n38", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "論の展開で「具体→抽象」の流れとは？",
+    "choices": [
+      "質問から始める",
+      "例から一般的な考えへ進む",
+      "感想から始める",
+      "結論から始める"
+    ],
+    "answer": "例から一般的な考えへ進む",
+    "hint": "帰納的な進め方だよ。"
+  },
+  {
+    "id": "g6-japanese-n39", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "引用の出典を示す理由は？",
+    "choices": [
+      "字数を増やすため",
+      "格好よく見せるため",
+      "自分の意見にするため",
+      "情報の確かさを確かめられるようにするため"
+    ],
+    "answer": "情報の確かさを確かめられるようにするため",
+    "hint": "出典明示は信頼性だよ。"
+  },
+  {
+    "id": "g6-japanese-n40", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "広告の表現で注意して読むべき点は？",
+    "choices": [
+      "文字の色",
+      "価格だけ",
+      "誇張や都合のよい部分だけの強調",
+      "写真の大きさ"
+    ],
+    "answer": "誇張や都合のよい部分だけの強調",
+    "hint": "広告は売るための表現だよ。"
+  },
+  {
+    "id": "g6-japanese-n41", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "中心人物と対比される人物の役割は？",
+    "choices": [
+      "中心人物の特徴を引き立てる",
+      "人数を増やす",
+      "話を終わらせる",
+      "場面を変える"
+    ],
+    "answer": "中心人物の特徴を引き立てる",
+    "hint": "対比で人物像が際立つよ。"
+  },
+  {
+    "id": "g6-japanese-n42", "cat": "よみとり",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "記録文と感想文の違いで正しいのは？",
+    "choices": [
+      "違いはない",
+      "記録は事実中心、感想は気持ち中心",
+      "記録は短い",
+      "感想は写真だけ"
+    ],
+    "answer": "記録は事実中心、感想は気持ち中心",
+    "hint": "目的が違う文章だよ。"
+  },
+  {
+    "id": "g6-japanese-n43", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「曖昧」の意味は？",
+    "choices": [
+      "正確な様子",
+      "はっきりしない様子",
+      "速い様子",
+      "明るい様子"
+    ],
+    "answer": "はっきりしない様子",
+    "hint": "「曖昧な返事」のように使うよ。"
+  },
+  {
+    "id": "g6-japanese-n44", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「貢献」の意味は？",
+    "choices": [
+      "約束を破ること",
+      "物を集めること",
+      "競争に勝つこと",
+      "社会や人のために力を尽くすこと"
+    ],
+    "answer": "社会や人のために力を尽くすこと",
+    "hint": "「社会に貢献する」だよ。"
+  },
+  {
+    "id": "g6-japanese-n45", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「台頭」の意味に近いのは？",
+    "choices": [
+      "頭を下げること",
+      "勢力を伸ばして目立ってくること",
+      "後退すること",
+      "台の上に立つこと"
+    ],
+    "answer": "勢力を伸ばして目立ってくること",
+    "hint": "新しい力が伸びることだよ。"
+  },
+  {
+    "id": "g6-japanese-n46", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "尊敬語「召し上がる」は、元の動詞は？",
+    "choices": [
+      "見る",
+      "食べる・飲む",
+      "言う",
+      "行く"
+    ],
+    "answer": "食べる・飲む",
+    "hint": "目上の人の食事に使うよ。"
+  },
+  {
+    "id": "g6-japanese-n47", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "「ひいては」の意味は？",
+    "choices": [
+      "すぐに",
+      "例えば",
+      "その結果として、さらに進んで",
+      "ところが"
+    ],
+    "answer": "その結果として、さらに進んで",
+    "hint": "結果を広げるときに使うよ。"
+  },
+  {
+    "id": "g6-japanese-n48", "cat": "ことば",
+    "grade": 6,
+    "subject": "国語",
+    "type": "choice",
+    "question": "季語「蝉（せみ）」が表す季節は？",
+    "choices": [
+      "冬",
+      "秋",
+      "春",
+      "夏"
+    ],
+    "answer": "夏",
+    "hint": "蝉しぐれは夏だよ。"
   }
 ];
 
@@ -11504,6 +16184,366 @@ window.QUESTION_BANK['6-math'] = [
     ],
     "answer": "データを大きさの順に並べたときの真ん中の値",
     "hint": "中央値は真ん中の値だよ。"
+  },
+  {
+    "id": "g6-math-n25", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "時速36kmは秒速何m？",
+    "choices": [
+      "秒速100m",
+      "秒速360m",
+      "秒速36m",
+      "秒速10m"
+    ],
+    "answer": "秒速10m",
+    "hint": "36000m÷3600秒だよ。"
+  },
+  {
+    "id": "g6-math-n26", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "秒速15mの電車が3分で進む距離は？",
+    "choices": [
+      "3000m",
+      "45m",
+      "900m",
+      "2700m"
+    ],
+    "answer": "2700m",
+    "hint": "3分=180秒だよ。"
+  },
+  {
+    "id": "g6-math-n27", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "分速900mは時速何km？",
+    "choices": [
+      "時速90km",
+      "時速15km",
+      "時速9km",
+      "時速54km"
+    ],
+    "answer": "時速54km",
+    "hint": "900×60=54000mだよ。"
+  },
+  {
+    "id": "g6-math-n28", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "縮尺1/1000の図で、実際の長さ8mは図上で何mm？",
+    "choices": [
+      "8mm",
+      "80mm",
+      "800mm",
+      "0.8mm"
+    ],
+    "answer": "8mm",
+    "hint": "8m=8000mm、その1/1000だよ。"
+  },
+  {
+    "id": "g6-math-n29", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "720秒は何分？",
+    "choices": [
+      "12分",
+      "7.2分",
+      "72分",
+      "120分"
+    ],
+    "answer": "12分",
+    "hint": "60秒=1分だよ。"
+  },
+  {
+    "id": "g6-math-n30", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "0.6km は何m？",
+    "choices": [
+      "6m",
+      "6000m",
+      "600m",
+      "60m"
+    ],
+    "answer": "600m",
+    "hint": "km→mは1000倍だよ。"
+  },
+  {
+    "id": "g6-math-n31", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "2時間15分は何時間？",
+    "choices": [
+      "2.5時間",
+      "3時間",
+      "2.15時間",
+      "2.25時間"
+    ],
+    "answer": "2.25時間",
+    "hint": "15分は0.25時間だよ。"
+  },
+  {
+    "id": "g6-math-n32", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "速さが分速75mで、道のりが600mの時間は？",
+    "choices": [
+      "8分",
+      "4分",
+      "600分",
+      "75分"
+    ],
+    "answer": "8分",
+    "hint": "時間＝道のり÷速さだよ。"
+  },
+  {
+    "id": "g6-math-n33", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "1m³の水の重さは？",
+    "choices": [
+      "1000kg（1t）",
+      "100kg",
+      "1000g",
+      "10kg"
+    ],
+    "answer": "1000kg（1t）",
+    "hint": "大きな体積の水だよ。"
+  },
+  {
+    "id": "g6-math-n34", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "45分は時間に直すと？",
+    "choices": [
+      "45時間",
+      "0.75時間",
+      "4.5時間",
+      "0.45時間"
+    ],
+    "answer": "0.75時間",
+    "hint": "45÷60だよ。"
+  },
+  {
+    "id": "g6-math-n35", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "面積0.24m² は何cm²？",
+    "choices": [
+      "24cm²",
+      "24000cm²",
+      "240cm²",
+      "2400cm²"
+    ],
+    "answer": "2400cm²",
+    "hint": "1m²=10000cm²だよ。"
+  },
+  {
+    "id": "g6-math-n36", "cat": "単位・量",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "時速120kmの新幹線が15分で進む距離は？",
+    "choices": [
+      "8km",
+      "45km",
+      "30km",
+      "120km"
+    ],
+    "answer": "30km",
+    "hint": "15分は0.25時間だよ。"
+  },
+  {
+    "id": "g6-math-n37", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "5/6 ÷ 2/3 は？",
+    "choices": [
+      "4/5",
+      "3/4",
+      "10/18",
+      "5/4"
+    ],
+    "answer": "5/4",
+    "hint": "割る数の分母分子を入れ替えてかけるよ。"
+  },
+  {
+    "id": "g6-math-n38", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "比の値で、6:9 の比の値は？",
+    "choices": [
+      "6/9 のまま9",
+      "2/3",
+      "15",
+      "3/2"
+    ],
+    "answer": "2/3",
+    "hint": "比の値は前÷後だよ。"
+  },
+  {
+    "id": "g6-math-n39", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "文字式 x+7 で、x=5 のときの値は？",
+    "choices": [
+      "35",
+      "7",
+      "57",
+      "12"
+    ],
+    "answer": "12",
+    "hint": "xに5を当てはめるよ。"
+  },
+  {
+    "id": "g6-math-n40", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "平均が12、個数が5のデータの合計は？",
+    "choices": [
+      "17",
+      "60",
+      "7",
+      "2.4"
+    ],
+    "answer": "60",
+    "hint": "合計＝平均×個数だよ。"
+  },
+  {
+    "id": "g6-math-n41", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "最頻値（モード）とは？",
+    "choices": [
+      "最も多く現れる値",
+      "平均の値",
+      "最大の値",
+      "真ん中の値"
+    ],
+    "answer": "最も多く現れる値",
+    "hint": "データの代表値だよ。"
+  },
+  {
+    "id": "g6-math-n42", "cat": "計算",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "反比例の関係で、xが2倍になるとyは？",
+    "choices": [
+      "半分になる",
+      "2増える",
+      "変わらない",
+      "2倍になる"
+    ],
+    "answer": "半分になる",
+    "hint": "反比例は、xとyの積が一定だよ。"
+  },
+  {
+    "id": "g6-math-n43", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "底面の半径が2cm、高さが6cmの円柱の体積は？（円周率3.14）",
+    "choices": [
+      "37.68cm³",
+      "12.56cm³",
+      "75.36cm³",
+      "150.72cm³"
+    ],
+    "answer": "75.36cm³",
+    "hint": "底面積×高さだよ。"
+  },
+  {
+    "id": "g6-math-n44", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "一辺が10cmの正方形を2倍に拡大すると、面積は何倍？",
+    "choices": [
+      "100倍",
+      "10倍",
+      "4倍",
+      "2倍"
+    ],
+    "answer": "4倍",
+    "hint": "面積は倍率の2乗だよ。"
+  },
+  {
+    "id": "g6-math-n45", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "点対称な図形の例は？",
+    "choices": [
+      "半円",
+      "平行四辺形",
+      "ひし形は違う",
+      "正三角形だけ"
+    ],
+    "answer": "平行四辺形",
+    "hint": "平行四辺形は点対称だよ。"
+  },
+  {
+    "id": "g6-math-n46", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "円の中心角が90度の扇形は、円全体のどれだけ？",
+    "choices": [
+      "1/8",
+      "1/2",
+      "1/3",
+      "1/4"
+    ],
+    "answer": "1/4",
+    "hint": "360度の中の90度だよ。"
+  },
+  {
+    "id": "g6-math-n47", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "角柱の体積の公式は？",
+    "choices": [
+      "底辺×高さ÷2",
+      "縦×横だけ",
+      "底面積×高さ",
+      "周りの長さ×高さ"
+    ],
+    "answer": "底面積×高さ",
+    "hint": "柱体は底面積×高さだよ。"
+  },
+  {
+    "id": "g6-math-n48", "cat": "図形",
+    "grade": 6,
+    "subject": "算数",
+    "type": "choice",
+    "question": "立体の見取図と展開図の違いは？",
+    "choices": [
+      "展開図は立体",
+      "見取図は立体の全体像、展開図は広げた形",
+      "違いはない",
+      "見取図は平ら"
+    ],
+    "answer": "見取図は立体の全体像、展開図は広げた形",
+    "hint": "目的が違う図だよ。"
   }
 ];
 
@@ -12332,6 +17372,366 @@ window.QUESTION_BANK['6-science'] = [
     ],
     "answer": "口→胃→小腸",
     "hint": "食べ物は胃から小腸へ進むよ。"
+  },
+  {
+    "id": "g6-science-n25", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "二酸化炭素を集める方法として適しているのは？",
+    "choices": [
+      "上方置換だけ",
+      "下方置換や水上置換",
+      "手であおぐ",
+      "放置"
+    ],
+    "answer": "下方置換や水上置換",
+    "hint": "二酸化炭素は空気より重いよ。"
+  },
+  {
+    "id": "g6-science-n26", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水溶液を加熱して溶質を取り出す方法は？",
+    "choices": [
+      "ろ過だけ",
+      "冷やすだけ",
+      "蒸発させる",
+      "磁石"
+    ],
+    "answer": "蒸発させる",
+    "hint": "蒸発で水を飛ばすよ。"
+  },
+  {
+    "id": "g6-science-n27", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "酸性の雨が建物や森林に与える影響は？",
+    "choices": [
+      "何もない",
+      "建物を強くする",
+      "植物を育てる",
+      "腐食や枯死の原因になる"
+    ],
+    "answer": "腐食や枯死の原因になる",
+    "hint": "酸性雨は環境問題だよ。"
+  },
+  {
+    "id": "g6-science-n28", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "リトマス紙が両方とも変化しない水溶液は？",
+    "choices": [
+      "塩酸",
+      "アルカリ性の液",
+      "酸性の液",
+      "中性の液"
+    ],
+    "answer": "中性の液",
+    "hint": "中性では色が変わらないよ。"
+  },
+  {
+    "id": "g6-science-n29", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "BTB液が青色になるのは、どんな液？",
+    "choices": [
+      "アルカリ性の液",
+      "食塩水",
+      "酸性の液",
+      "中性だけ"
+    ],
+    "answer": "アルカリ性の液",
+    "hint": "BTBは青がアルカリだよ。"
+  },
+  {
+    "id": "g6-science-n30", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "物が燃えるのに必要な酸素は、空気の約何割？",
+    "choices": [
+      "約9割",
+      "約8割",
+      "約2割",
+      "約半分"
+    ],
+    "answer": "約2割",
+    "hint": "空気の約78%はちっ素だよ。"
+  },
+  {
+    "id": "g6-science-n31", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "ろうそくの炎で一番温度が高い部分は？",
+    "choices": [
+      "下部",
+      "炎の中心",
+      "炎の外側（外炎）",
+      "芯の近く"
+    ],
+    "answer": "炎の外側（外炎）",
+    "hint": "外側が最も熱いよ。"
+  },
+  {
+    "id": "g6-science-n32", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "金属を燃やすと、重さはどうなることが多い？",
+    "choices": [
+      "変わらない",
+      "なくなる",
+      "酸素と結びついて重くなる",
+      "軽くなる"
+    ],
+    "answer": "酸素と結びついて重くなる",
+    "hint": "燃焼で酸化するよ。"
+  },
+  {
+    "id": "g6-science-n33", "cat": "燃え方と水溶液",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水溶液の性質を調べるとき、味見をしてはいけないのはなぜ？",
+    "choices": [
+      "有害な液があるため危険だから",
+      "味がないから",
+      "色が変わるから",
+      "時間がかかるから"
+    ],
+    "answer": "有害な液があるため危険だから",
+    "hint": "安全第一だよ。"
+  },
+  {
+    "id": "g6-science-n34", "cat": "体のつくりと植物のはたらき",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "肺で取り入れた酸素は、体のどこへ運ばれる？",
+    "choices": [
+      "胃だけへ",
+      "骨だけへ",
+      "血液によって全身へ",
+      "皮膚だけへ"
+    ],
+    "answer": "血液によって全身へ",
+    "hint": "血液が運ぶよ。"
+  },
+  {
+    "id": "g6-science-n35", "cat": "体のつくりと植物のはたらき",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "でんぷんが体の中で消化されると何になる？",
+    "choices": [
+      "ブドウ糖などの養分",
+      "二酸化炭素",
+      "酸素",
+      "水だけ"
+    ],
+    "answer": "ブドウ糖などの養分",
+    "hint": "消化で吸収できる形になるよ。"
+  },
+  {
+    "id": "g6-science-n36", "cat": "体のつくりと植物のはたらき",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "植物の蒸散とは？",
+    "choices": [
+      "実が熟すこと",
+      "花が開くこと",
+      "根から水を吸うこと",
+      "葉から水蒸気が出ること"
+    ],
+    "answer": "葉から水蒸気が出ること",
+    "hint": "蒸散は葉の気孔からだよ。"
+  },
+  {
+    "id": "g6-science-n37", "cat": "体のつくりと植物のはたらき",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "光合成に必要なものに含まれないのは？",
+    "choices": [
+      "酸素",
+      "日光",
+      "二酸化炭素",
+      "水"
+    ],
+    "answer": "酸素",
+    "hint": "酸素は光合成で出る方だよ。"
+  },
+  {
+    "id": "g6-science-n38", "cat": "体のつくりと植物のはたらき",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "肝臓のはたらきの一つは？",
+    "choices": [
+      "空気を取り入れる",
+      "骨を作る",
+      "血液を送り出す",
+      "養分を蓄え、有害なものを処理する"
+    ],
+    "answer": "養分を蓄え、有害なものを処理する",
+    "hint": "肝臓は化学工場のような臓器だよ。"
+  },
+  {
+    "id": "g6-science-n39", "cat": "電気・てこ・土地の変化",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "てこの「力点」を支点から遠ざけると、力はどうなる？",
+    "choices": [
+      "小さい力で動かせる",
+      "大きな力が必要",
+      "動かなくなる",
+      "変わらない"
+    ],
+    "answer": "小さい力で動かせる",
+    "hint": "距離が長いほど有利だよ。"
+  },
+  {
+    "id": "g6-science-n40", "cat": "電気・てこ・土地の変化",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "化石が見つかる地層から分かることは？",
+    "choices": [
+      "今の人口",
+      "未来の天気",
+      "山の高さだけ",
+      "昔の環境や生き物"
+    ],
+    "answer": "昔の環境や生き物",
+    "hint": "化石は過去の証拠だよ。"
+  },
+  {
+    "id": "g6-science-n41", "cat": "電気・てこ・土地の変化",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水力発電で使うエネルギーは？",
+    "choices": [
+      "地熱だけ",
+      "太陽の熱",
+      "水の落下する力",
+      "風だけ"
+    ],
+    "answer": "水の落下する力",
+    "hint": "ダムの水を使うよ。"
+  },
+  {
+    "id": "g6-science-n42", "cat": "電気・てこ・土地の変化",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "地震のときに津波が起こるのは、震源がどこにあるとき？",
+    "choices": [
+      "内陸だけ",
+      "海底",
+      "山の上",
+      "空"
+    ],
+    "answer": "海底",
+    "hint": "海底の地震で海水が動くよ。"
+  },
+  {
+    "id": "g6-science-n43", "cat": "電気・てこ・土地の変化",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "活断層が動くと起こることは？",
+    "choices": [
+      "津波だけ",
+      "台風",
+      "地震",
+      "火山の噴火だけ"
+    ],
+    "answer": "地震",
+    "hint": "断層のずれが地震だよ。"
+  },
+  {
+    "id": "g6-science-n44", "cat": "月と太陽・環境",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "月の満ち欠けの周期はおよそ？",
+    "choices": [
+      "約1週間",
+      "約1年",
+      "約1か月（29.5日）",
+      "約1日"
+    ],
+    "answer": "約1か月（29.5日）",
+    "hint": "新月から次の新月までだよ。"
+  },
+  {
+    "id": "g6-science-n45", "cat": "月と太陽・環境",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "太陽系で地球の内側を回る惑星は？",
+    "choices": [
+      "土星",
+      "木星",
+      "海王星",
+      "金星や水星"
+    ],
+    "answer": "金星や水星",
+    "hint": "内惑星だよ。"
+  },
+  {
+    "id": "g6-science-n46", "cat": "月と太陽・環境",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "生態系で、死んだ生き物を分解する者のはたらきは？",
+    "choices": [
+      "栄養分を土に返し、循環させる",
+      "増殖する",
+      "光合成する",
+      "捕食する"
+    ],
+    "answer": "栄養分を土に返し、循環させる",
+    "hint": "分解者が循環を支えるよ。"
+  },
+  {
+    "id": "g6-science-n47", "cat": "月と太陽・環境",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "水の循環で、海の水が雨になって陸に降るまでの流れに含まれるのは？",
+    "choices": [
+      "消化",
+      "燃焼",
+      "蒸発と凝結（雲の生成）",
+      "発酵"
+    ],
+    "answer": "蒸発と凝結（雲の生成）",
+    "hint": "水は循環しているよ。"
+  },
+  {
+    "id": "g6-science-n48", "cat": "月と太陽・環境",
+    "grade": 6,
+    "subject": "理科",
+    "type": "choice",
+    "question": "人が環境に与える影響を減らす取り組みは？",
+    "choices": [
+      "ごみを増やす",
+      "自然を放置して壊す",
+      "開発だけを進める",
+      "リサイクルや省エネ"
+    ],
+    "answer": "リサイクルや省エネ",
+    "hint": "持続可能な社会を目指そう。"
   }
 ];
 
@@ -13146,6 +18546,366 @@ window.QUESTION_BANK['6-social'] = [
     ],
     "answer": "候補者の考えを比べて選ぶ",
     "hint": "公約や考えを比べよう。"
+  },
+  {
+    "id": "g6-social-n25", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本国憲法の基本原則に含まれないのは？",
+    "choices": [
+      "平和主義",
+      "君主主権",
+      "国民主権",
+      "基本的人権の尊重"
+    ],
+    "answer": "君主主権",
+    "hint": "主権は国民にあるよ。"
+  },
+  {
+    "id": "g6-social-n26", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "裁判員制度で、裁判に参加するのは？",
+    "choices": [
+      "議員",
+      "国民から選ばれた人",
+      "警察官",
+      "大臣"
+    ],
+    "answer": "国民から選ばれた人",
+    "hint": "国民が司法に参加するよ。"
+  },
+  {
+    "id": "g6-social-n27", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "国会の仕事として正しいのは？",
+    "choices": [
+      "裁判をする",
+      "選挙を管理するだけ",
+      "行政だけを行う",
+      "法律を作る"
+    ],
+    "answer": "法律を作る",
+    "hint": "立法は国会の仕事だよ。"
+  },
+  {
+    "id": "g6-social-n28", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "内閣総理大臣を選ぶのは？",
+    "choices": [
+      "裁判所",
+      "国会",
+      "国民の直接投票",
+      "都道府県知事"
+    ],
+    "answer": "国会",
+    "hint": "国会の指名で決まるよ。"
+  },
+  {
+    "id": "g6-social-n29", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "憲法で保障される「教育を受ける権利」と対応する義務は？",
+    "choices": [
+      "選挙の義務",
+      "子どもに教育を受けさせる義務",
+      "税金の支払いだけ",
+      "労働だけ"
+    ],
+    "answer": "子どもに教育を受けさせる義務",
+    "hint": "三大義務の一つだよ。"
+  },
+  {
+    "id": "g6-social-n30", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "地方議会の議員を選ぶ選挙は、誰が投票する？",
+    "choices": [
+      "国会議員",
+      "裁判官",
+      "その地域の住民（有権者）",
+      "市長"
+    ],
+    "answer": "その地域の住民（有権者）",
+    "hint": "地方自治は住民が支えるよ。"
+  },
+  {
+    "id": "g6-social-n31", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "三権分立で、行政を担当するのは？",
+    "choices": [
+      "国会",
+      "内閣",
+      "選挙管理委員会",
+      "裁判所"
+    ],
+    "answer": "内閣",
+    "hint": "立法・行政・司法の分担だよ。"
+  },
+  {
+    "id": "g6-social-n32", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "条約を結ぶ権限を持つのは？",
+    "choices": [
+      "国民投票だけ",
+      "地方議会",
+      "裁判所",
+      "内閣（国会の承認を得る）"
+    ],
+    "answer": "内閣（国会の承認を得る）",
+    "hint": "外交は内閣の仕事だよ。"
+  },
+  {
+    "id": "g6-social-n33", "cat": "政治と憲法",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "国民の三大義務に含まれるのは？",
+    "choices": [
+      "転職の義務",
+      "寄付の義務",
+      "兵役の義務",
+      "納税の義務"
+    ],
+    "answer": "納税の義務",
+    "hint": "憲法の三大義務だよ。"
+  },
+  {
+    "id": "g6-social-n34", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "WHOの活動分野は？",
+    "choices": [
+      "軍事",
+      "貿易",
+      "宇宙",
+      "世界の保健・医療"
+    ],
+    "answer": "世界の保健・医療",
+    "hint": "WHOは保健機関だよ。"
+  },
+  {
+    "id": "g6-social-n35", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "オリンピックの理念に含まれるのは？",
+    "choices": [
+      "記録だけ",
+      "スポーツを通じた平和と友好",
+      "利益の追求",
+      "国の競争だけ"
+    ],
+    "answer": "スポーツを通じた平和と友好",
+    "hint": "平和の祭典と言われるよ。"
+  },
+  {
+    "id": "g6-social-n36", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本が輸入に頼るエネルギー資源は？",
+    "choices": [
+      "太陽光だけ",
+      "石油や天然ガス",
+      "地熱だけ",
+      "水力だけ"
+    ],
+    "answer": "石油や天然ガス",
+    "hint": "化石燃料は輸入が多いよ。"
+  },
+  {
+    "id": "g6-social-n37", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "国連の公用語に含まれるのは？",
+    "choices": [
+      "ドイツ語だけ",
+      "日本語だけ",
+      "英語や中国語など",
+      "イタリア語だけ"
+    ],
+    "answer": "英語や中国語など",
+    "hint": "6つの公用語があるよ。"
+  },
+  {
+    "id": "g6-social-n38", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "難民とは、どんな人たち？",
+    "choices": [
+      "出稼ぎ労働者だけ",
+      "旅行者",
+      "留学生",
+      "戦争や迫害から逃れた人たち"
+    ],
+    "answer": "戦争や迫害から逃れた人たち",
+    "hint": "保護が必要な人たちだよ。"
+  },
+  {
+    "id": "g6-social-n39", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "フェアトレードの考え方は？",
+    "choices": [
+      "安く買い叩く",
+      "適正な価格で取引し、生産者を支える",
+      "国内だけで売る",
+      "輸入を止める"
+    ],
+    "answer": "適正な価格で取引し、生産者を支える",
+    "hint": "公正な貿易だよ。"
+  },
+  {
+    "id": "g6-social-n40", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の在留外国人が増えている理由の一つは？",
+    "choices": [
+      "観光だけ",
+      "気候のため",
+      "言語が同じだから",
+      "働く場や学ぶ場を求めて来日する人が多いから"
+    ],
+    "answer": "働く場や学ぶ場を求めて来日する人が多いから",
+    "hint": "国際化が進んでいるよ。"
+  },
+  {
+    "id": "g6-social-n41", "cat": "世界と国際",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "国際社会で日本の役割として期待されるのは？",
+    "choices": [
+      "貿易の独占",
+      "孤立",
+      "平和や開発への協力",
+      "軍事力の拡大"
+    ],
+    "answer": "平和や開発への協力",
+    "hint": "国際貢献が求められるよ。"
+  },
+  {
+    "id": "g6-social-n42", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "鎖国中も貿易を続けた国は？",
+    "choices": [
+      "イギリス",
+      "フランス",
+      "オランダと中国",
+      "アメリカ"
+    ],
+    "answer": "オランダと中国",
+    "hint": "長崎の出島が窓口だったよ。"
+  },
+  {
+    "id": "g6-social-n43", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "ペリーが来航して日本に求めたことは？",
+    "choices": [
+      "戦争",
+      "植民地化の即時実施",
+      "移民の受け入れ",
+      "開国と通商"
+    ],
+    "answer": "開国と通商",
+    "hint": "1853年の来航だよ。"
+  },
+  {
+    "id": "g6-social-n44", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "大日本帝国憲法が発布された年は？",
+    "choices": [
+      "1912年",
+      "1868年",
+      "1947年",
+      "1889年"
+    ],
+    "answer": "1889年",
+    "hint": "明治時代の憲法だよ。"
+  },
+  {
+    "id": "g6-social-n45", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "鎌倉時代に元（蒙古）が攻めてきた出来事は？",
+    "choices": [
+      "元寇",
+      "応仁の乱",
+      "関ヶ原の戦い",
+      "大化の改新"
+    ],
+    "answer": "元寇",
+    "hint": "文永の役・弘安の役だよ。"
+  },
+  {
+    "id": "g6-social-n46", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "江戸時代の参勤交代の目的は？",
+    "choices": [
+      "商業の自由化",
+      "観光の振興",
+      "大名の力を抑える",
+      "農民の移動"
+    ],
+    "answer": "大名の力を抑える",
+    "hint": "幕府の支配の仕組みだよ。"
+  },
+  {
+    "id": "g6-social-n47", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "第二次世界大戦が終わった年は？",
+    "choices": [
+      "1918年",
+      "1945年",
+      "1950年",
+      "1939年"
+    ],
+    "answer": "1945年",
+    "hint": "1945年に終戦したよ。"
+  },
+  {
+    "id": "g6-social-n48", "cat": "歴史",
+    "grade": 6,
+    "subject": "社会",
+    "type": "choice",
+    "question": "日本の産業革命が進んだ時期は？",
+    "choices": [
+      "平安時代",
+      "明治時代後半から",
+      "戦国時代",
+      "江戸時代初期"
+    ],
+    "answer": "明治時代後半から",
+    "hint": "工場制機械工業が広がったよ。"
   }
 ];
 

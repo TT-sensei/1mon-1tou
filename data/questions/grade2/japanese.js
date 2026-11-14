@@ -54,7 +54,31 @@ window.QUESTION_BANK['2-japanese'] = [
 {id:'g2-jp-n21', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「明るい」の 反対の ことばは？',choices:['暗い','重い','寒い','早い'],answer:'暗い',hint:'明るさの 反対だよ。'},
 {id:'g2-jp-n22', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「始まる」の 反対の ことばは？',choices:['止まる','終わる','回る','集まる'],answer:'終わる',hint:'「始まり」と「終わり」は 反対だよ。'},
 {id:'g2-jp-n23', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「にぎやか」に 近い いみの ことばは？',choices:['しずか','さわがしい','くらい','さびしい'],answer:'さわがしい',hint:'人が 多くて 元気な ようすだよ。'},
-{id:'g2-jp-n24', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「ゆっくり」の 反対に 近い ことばは？',choices:['はやく','すぐに ではなく','そっと','しずかに'],answer:'はやく',hint:'速さの ようすを あらわす ことばだよ。'}
+{id:'g2-jp-n24', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「ゆっくり」の 反対に 近い ことばは？',choices:['はやく','すぐに ではなく','そっと','しずかに'],answer:'はやく',hint:'速さの ようすを あらわす ことばだよ。'},
+{id:'g2-jp-n25', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「弟は 雨の 日に かさを わすれた。」で、わすれたのは だれ？',choices:['ぼく','姉','兄','弟'],answer:'弟',hint:'文の はじめの 人に 注目しよう。'},
+{id:'g2-jp-n26', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「大きな 犬が 庭を 走り回った。」で、走り回った 所は？',choices:['川','公園','庭','山'],answer:'庭',hint:'場所を あらわす ことばだよ。'},
+{id:'g2-jp-n27', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「寒いので、まどを 閉めた。」で、まどを 閉めた 理由は？',choices:['うるさいから','暑いから','暗いから','寒いから'],answer:'寒いから',hint:'「ので」の 前が 理由だよ。'},
+{id:'g2-jp-n28', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「鳥が 空高く 飛んでいった。」で、飛んだ 方こうは？',choices:['下へ','横へ','空高く 上へ','後ろへ'],answer:'空高く 上へ',hint:'ようすを あらわす ことばを 見よう。'},
+{id:'g2-jp-n29', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「祖母の 家は 山の 近くに ある。」で、家が ある 所は？',choices:['山の 近く','海の 近く','町の 中','川の 中'],answer:'山の 近く',hint:'「に」の 前が 場所だよ。'},
+{id:'g2-jp-n30', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「春に なると、花が たくさん 咲く。」で、花が 咲く 季節は？',choices:['夏','春','冬','秋'],answer:'春',hint:'文の はじめの 季節の ことばだよ。'},
+{id:'g2-jp-n31', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「カメは ゆっくり 歩く。」で、歩く ようすは？',choices:['ゆっくり','元気に','はやく','上手に'],answer:'ゆっくり',hint:'ようすを あらわす ことばだよ。'},
+{id:'g2-jp-n32', cat:'よみとり',grade:2,subject:'国語',type:'choice',question:'「夕方、兄が 自転車で 帰ってきた。」で、帰ってきた じこくは？',choices:['夕方','朝','夜中','昼'],answer:'夕方',hint:'時間の ことばを さがそう。'},
+{id:'g2-jp-n33', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「強風」の「強」の 読み方は？',choices:['つよ','ごう','きょう','き'],answer:'きょう',hint:'「きょう風」と 読むよ。'},
+{id:'g2-jp-n34', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「遠足」の「遠」の 読み方は？',choices:['とお','え','えん','おん'],answer:'えん',hint:'「えん足」と 読むよ。'},
+{id:'g2-jp-n35', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「冬休み」の「冬」の 音読みは？',choices:['ふゆ','ドン','とうき','トウ'],answer:'トウ',hint:'音読みは「トウ」だよ。'},
+{id:'g2-jp-n36', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「歌う」の 読み方で 正しいのは？',choices:['かう','うたう','うだう','しょうか'],answer:'うたう',hint:'「歌」は「うた」と 読むよ。'},
+{id:'g2-jp-n37', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「売る」の 反対の 意味の ことばは？',choices:['作る','見る','買う','聞く'],answer:'買う',hint:'「売る⇔買う」だよ。'},
+{id:'g2-jp-n38', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「思う」の「思」の 部首は？',choices:['心（したごころ）','手','目','言'],answer:'心（したごころ）',hint:'気持ちに 関わる 部首だよ。'},
+{id:'g2-jp-n39', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「明るい」の「明」の へんと つくりは？',choices:['山と川','日と日','月と月','日と月'],answer:'日と月',hint:'「明」は 日と 月で できているよ。'},
+{id:'g2-jp-n40', cat:'漢字',grade:2,subject:'国語',type:'choice',question:'「つよい」を 漢字で 書くと？',choices:['強らい','強い','強ゐ','強きい'],answer:'強い',hint:'送りがなは「い」だよ。'},
+{id:'g2-jp-n41', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「重い」の 反対の ことばは？',choices:['厚い','固い','強い','軽い'],answer:'軽い',hint:'持ち上げた ときの ようすだよ。'},
+{id:'g2-jp-n42', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「短い」の 反対の ことばは？',choices:['細い','広い','太い','長い'],answer:'長い',hint:'長さの 反対だよ。'},
+{id:'g2-jp-n43', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「入る」の 反対の ことばは？',choices:['閉まる','開く','出る','立つ'],answer:'出る',hint:'「入る⇔出る」だよ。'},
+{id:'g2-jp-n44', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「安全」の 反対に 近い ことばは？',choices:['丈夫な物','丈夫','安心','危険'],answer:'危険',hint:'「安全」の 反対は「危険」だよ。'},
+{id:'g2-jp-n45', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「せっかく」の 使い方が 正しいのは？',choices:['せっかく 来たのに 雨だった','せっかく 速く 走った','せっかく 赤い 花','せっかく 大きい 山'],answer:'せっかく 来たのに 雨だった',hint:'「せっかく〜のに」の 形で 使うよ。'},
+{id:'g2-jp-n46', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「とつぜん」の 意味は？',choices:['いつも','急に 思いがけなく','必ず','ゆっくり'],answer:'急に 思いがけなく',hint:'「突然」は 急な 出来事だよ。'},
+{id:'g2-jp-n47', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「元気」の 反対に 近い 表現は？',choices:['明るい','疲れている','強い','丈夫'],answer:'疲れている',hint:'元気が ない ようすだよ。'},
+{id:'g2-jp-n48', cat:'ことば',grade:2,subject:'国語',type:'choice',question:'「まっくら」に 近い 意味は？',choices:['とても 暗い','とても 速い','とても 静か','とても 明るい'],answer:'とても 暗い',hint:'「真っ暗」は 強調の 表現だよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

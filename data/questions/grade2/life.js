@@ -54,7 +54,31 @@ window.QUESTION_BANK['2-life'] = [
 {id:'g2-life-n21', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'まち たんけんで 見つけられる たてものは？',choices:['山','郵便局','雲','海'],answer:'郵便局',hint:'まちの 施設だよ。'},
 {id:'g2-life-n22', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'まちで はたらく 人の ひとつは？',choices:['パン屋さん','王子さま','農家だけ','漁師だけ'],answer:'パン屋さん',hint:'まちの 店の 人だよ。'},
 {id:'g2-life-n23', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'町の 見学で 守る 約束は？',choices:['走り回る','静かに 見学する','勝手に さわる','大きな 声を 出す'],answer:'静かに 見学する',hint:'見学先の 迷惑に ならないように しよう。'},
-{id:'g2-life-n24', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'公園を 使った あとは？',choices:['ベンチを 汚す','花を 摘む','ごみを 置いて いく','ごみを 持ち帰る'],answer:'ごみを 持ち帰る',hint:'次に 使う 人の ことを 考えよう。'}
+{id:'g2-life-n24', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'公園を 使った あとは？',choices:['ベンチを 汚す','花を 摘む','ごみを 置いて いく','ごみを 持ち帰る'],answer:'ごみを 持ち帰る',hint:'次に 使う 人の ことを 考えよう。'},
+{id:'g2-life-n25', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'夏に 咲く 大きな 花で、種が 食べられるのは？',choices:['ひまわり','すみれ','チューリップ','さくら'],answer:'ひまわり',hint:'種は おやつにも なるよ。'},
+{id:'g2-life-n26', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'秋に 実る 穀物で、ご飯に なるのは？',choices:['じゃがいも','麦だけ','米','豆だけ'],answer:'米',hint:'稲の 実だよ。'},
+{id:'g2-life-n27', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'冬に 家の 中で 暖かく 過ごす 工夫は？',choices:['水着を 着る','扇風機を 回す','窓を 開け放つ','厚い 服を 着る'],answer:'厚い 服を 着る',hint:'寒さ 対策だよ。'},
+{id:'g2-life-n28', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'春に 生まれ変わる 虫の 例は？',choices:['あり','ちょう（さなぎから）','せみだけ','かぶとむしだけ'],answer:'ちょう（さなぎから）',hint:'さなぎから 羽化するよ。'},
+{id:'g2-life-n29', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'雨の 日に 見られる 生き物は？',choices:['せみの ぬけがら','ひまわりの 花','かたつむり','つらら'],answer:'かたつむり',hint:'湿った 場所が 好きだよ。'},
+{id:'g2-life-n30', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'秋の 夜に 鳴く 虫の 音は？',choices:['せみの 声','ほたるの 音','ちょうの 音','こおろぎの 声'],answer:'こおろぎの 声',hint:'秋の 虫の 声だよ。'},
+{id:'g2-life-n31', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'夏の 夕方に 見られる 雲の 名前は？',choices:['雪雲','霧','入道雲','うろこ雲だけ'],answer:'入道雲',hint:'もくもく 大きな 雲だよ。'},
+{id:'g2-life-n32', cat:'自然と季節',grade:2,subject:'生活',type:'choice',question:'冬の 朝、草に つく 白い ものは？',choices:['花粉','露だけ','霜','黄砂'],answer:'霜',hint:'冷え込む 朝に できるよ。'},
+{id:'g2-life-n33', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'トマトの 花の 色は？',choices:['黄色','青色','紫色','赤色'],answer:'黄色',hint:'実は 赤く なるよ。'},
+{id:'g2-life-n34', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'じゃがいもは 植物の どの 部分？',choices:['茎（地中の）','花','実','葉'],answer:'茎（地中の）',hint:'土の 中の 茎だよ。'},
+{id:'g2-life-n35', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'アリの 体は 頭・胸・あと 何で できている？',choices:['角','尾','羽','腹'],answer:'腹',hint:'虫の 体は 3つの 部分だよ。'},
+{id:'g2-life-n36', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'チョウの 幼虫が 食べるのは？',choices:['葉','土','他の 虫だけ','花の 蜜'],answer:'葉',hint:'青虫は 葉を 食べるよ。'},
+{id:'g2-life-n37', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'メダカを 飼う 水そうに 必要なのは？',choices:['油','塩','水草や 隠れる 場所','砂糖'],answer:'水草や 隠れる 場所',hint:'生き物の 住みかだよ。'},
+{id:'g2-life-n38', cat:'生き物と植物',grade:2,subject:'生活',type:'choice',question:'植物の 葉が 緑色なのは、太陽の 光を 受けるため。これを 何という？',choices:['香り','光合成に 関わる 色','虫よけ','飾り'],answer:'光合成に 関わる 色',hint:'葉の 緑は 光合成の 証拠だよ。'},
+{id:'g2-life-n39', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'道を わたる 前に 立ち止まる 場所は？',choices:['歩道の 端（横断歩道の 手前）','友達の 家','車の 前','道の 真ん中'],answer:'歩道の 端（横断歩道の 手前）',hint:'安全な 場所で 確認しよう。'},
+{id:'g2-life-n40', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'自転車に 乗る とき、頭を 守る ものは？',choices:['何も 付けない','帽子だけ','ヘルメット','タオル'],answer:'ヘルメット',hint:'安全の 装備だよ。'},
+{id:'g2-life-n41', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'家の 人が いない ときに 来客が 来たら？',choices:['ドアを 開けないで 対応する','中へ 入れる','何も 言わないで 開ける','遊びに 行く'],answer:'ドアを 開けないで 対応する',hint:'安全の 約束だよ。'},
+{id:'g2-life-n42', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'病気に ならない ための 習慣は？',choices:['夜更かし する','よく 寝て、よく 食べる','運動しない','朝ごはんを 抜く'],answer:'よく 寝て、よく 食べる',hint:'生活の リズムだよ。'},
+{id:'g2-life-n43', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'友達と 遊ぶ ときの 約束で 大切なのは？',choices:['危ない 場所で 遊ぶ','帰る 時刻を 守る','一人で 遠くへ 行く','遅くまで 遊ぶ'],answer:'帰る 時刻を 守る',hint:'約束を 守ることが 安全だよ。'},
+{id:'g2-life-n44', cat:'せいかつと安全',grade:2,subject:'生活',type:'choice',question:'雨の 日の 登校で 気をつける ことは？',choices:['水たまりで 遊ぶ','走って 行く','傘で 前を 隠す','足元が 滑りやすいので ゆっくり 歩く'],answer:'足元が 滑りやすいので ゆっくり 歩く',hint:'滑って 転ばないように しよう。'},
+{id:'g2-life-n45', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'町の お店で、パンを 作って 売る 店は？',choices:['花屋','パン屋','本屋','魚屋'],answer:'パン屋',hint:'焼きたての パンの 店だよ。'},
+{id:'g2-life-n46', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'町の 見学で、はたらく 人に すると よい ことは？',choices:['あいさつと お礼を 言う','物を 触る','勝手に 写真を 撮る','大きな 声で 話す'],answer:'あいさつと お礼を 言う',hint:'礼儀が 大切だよ。'},
+{id:'g2-life-n47', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'公園の 遊具を 使う ときの ルールは？',choices:['一人で 長く 使う','順番を 守って 使う','壊して 遊ぶ','占領する'],answer:'順番を 守って 使う',hint:'みんなの 公園だよ。'},
+{id:'g2-life-n48', cat:'がっこうとまち',grade:2,subject:'生活',type:'choice',question:'駅の 近くに あると 便利な ものは？',choices:['暗い 道','高い 壁','大きな 音','地図や 案内板'],answer:'地図や 案内板',hint:'町の 案内だよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）

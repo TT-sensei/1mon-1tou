@@ -54,7 +54,31 @@ window.QUESTION_BANK['1-japanese'] = [
 {id:'g1-jp-n21', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ひろい」の はんたいは どれ？',choices:['ながい','せまい','おおきい','たかい'],answer:'せまい',hint:'はんたいの いみの ことばを かんがえよう。'},
 {id:'g1-jp-n22', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「くらい」の はんたいは どれ？',choices:['あかるい','しろい','つよい','まるい'],answer:'あかるい',hint:'あかるさの はんたいだよ。'},
 {id:'g1-jp-n23', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「カ」ではじまる ことばは どれ？',choices:['あめ','かさ','うみ','いぬ'],answer:'かさ',hint:'さいしょの おとを こえに だして みよう。'},
-{id:'g1-jp-n24', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ありがとう」の あいさつを いうのは どんなとき？',choices:['ねるとき','たすけて もらったとき','あさ おきたとき','ごはんの まえ'],answer:'たすけて もらったとき',hint:'かんしゃの きもちを つたえる ことばだよ。'}
+{id:'g1-jp-n24', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ありがとう」の あいさつを いうのは どんなとき？',choices:['ねるとき','たすけて もらったとき','あさ おきたとき','ごはんの まえ'],answer:'たすけて もらったとき',hint:'かんしゃの きもちを つたえる ことばだよ。'},
+{id:'g1-jp-n25', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「うみで さかなが およいだ。」で、およいだ ばしょは？',choices:['かわ','やま','いけ','うみ'],answer:'うみ',hint:'「で」の まえが ばしょだよ。'},
+{id:'g1-jp-n26', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「はなが にわに さいた。」で、さいた ばしょは？',choices:['きょうしつ','にわ','のはら','はち'],answer:'にわ',hint:'「に」の まえを みよう。'},
+{id:'g1-jp-n27', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ぞうが みずを のんだ。」で、のんだのは だれ？',choices:['かば','きりん','ぞう','しまうま'],answer:'ぞう',hint:'「が」の まえの どうぶつだよ。'},
+{id:'g1-jp-n28', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「かみが かぜで とんだ。」で、とんだ ものは？',choices:['ちょう','ぼうし','かみ','はっぱ'],answer:'かみ',hint:'さいしょの ことばに ちゅうもくしよう。'},
+{id:'g1-jp-n29', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ねこが やねの 上で ねた。」で、ねた ばしょは？',choices:['やねの 上','いえの なか','にわ','木の 下'],answer:'やねの 上',hint:'「で」の まえが ばしょだよ。'},
+{id:'g1-jp-n30', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「おとうさんが さかなを つった。」で、つった ものは？',choices:['かい','わかめ','さかな','エビ'],answer:'さかな',hint:'「を」の まえの ことばだよ。'},
+{id:'g1-jp-n31', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「ちいさな ありが すなを はこんだ。」で、はこんだ ものは？',choices:['いし','すな','たね','はっぱ'],answer:'すな',hint:'「を」の まえを みよう。'},
+{id:'g1-jp-n32', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「そらが あかるく はれた。」で、はれたのは どこ？',choices:['かわ','うみ','そら','やま'],answer:'そら',hint:'文の はじめの ことばだよ。'},
+{id:'g1-jp-n33', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「かえるが いけに とびこんだ。」で、とびこんだ ばしょは？',choices:['うみ','いけ','かわ','みずたまり'],answer:'いけ',hint:'「に」の まえが ばしょだよ。'},
+{id:'g1-jp-n34', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「いもうとが えを かいた。」で、かいたのは だれ？',choices:['いもうと','おかあさん','あに','え'],answer:'いもうと',hint:'「が」の まえの 人だよ。'},
+{id:'g1-jp-n35', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「かぜが 木を ゆらした。」で、ゆれたのは なに？',choices:['木','はっぱだけ','やま','かぜ'],answer:'木',hint:'「を」の まえの ものが ゆらされたよ。'},
+{id:'g1-jp-n36', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「たぬきが 山に すんでいる。」で、すんでいる ばしょは？',choices:['むら','山','川','森の どうくつだけ'],answer:'山',hint:'「に」の まえを みよう。'},
+{id:'g1-jp-n37', cat:'よみとり',grade:1,subject:'国語',type:'choice',question:'「白い くもが そらに うかんだ。」で、くもは どうなった？',choices:['かくれた','おちた','うかんだ','きえた'],answer:'うかんだ',hint:'うごきを あらわす ことばだよ。'},
+{id:'g1-jp-n38', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「つめたい」の はんたいは どれ？',choices:['あたたかいだけ','あつい','ひえる','ぬるい'],answer:'あつい',hint:'水の あつさの はんたいだよ。おゆは あついね。'},
+{id:'g1-jp-n39', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「おもい」の はんたいは どれ？',choices:['つよい','かるい','ひくい','かたい'],answer:'かるい',hint:'にもつの ようすだよ。'},
+{id:'g1-jp-n40', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「はやい」の はんたいは どれ？',choices:['くらい','おそい','まるい','よわい'],answer:'おそい',hint:'スピードの はんたいだよ。'},
+{id:'g1-jp-n41', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「たかい」の はんたいは どれ？',choices:['ひくい','あかるい','あつい','ひろい'],answer:'ひくい',hint:'たかさの はんたいだよ。'},
+{id:'g1-jp-n42', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ながい」の はんたいは どれ？',choices:['たかい','あつい','みじかい','ひろい'],answer:'みじかい',hint:'長さの はんたいだよ。'},
+{id:'g1-jp-n43', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「サ」ではじまる ことばは どれ？',choices:['いちご','あおい','うた','さくら'],answer:'さくら',hint:'さいしょの おとを きいて みよう。'},
+{id:'g1-jp-n44', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ネコ」の さいごの おとは？',choices:['コ','ネ','カ','ク'],answer:'コ',hint:'ことばを ゆっくり よんで みよう。'},
+{id:'g1-jp-n45', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「かぜを ひく」とは どういうこと？',choices:['そとで あそぶこと','びょうきに なること','かぜが ふくこと','はしること'],answer:'びょうきに なること',hint:'びょうきの「かぜ」の ことだよ。'},
+{id:'g1-jp-n46', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'「ぎゅうにゅう」は どんな 飲みもの？',choices:['牛の おちち','ぶどうの ジュース','水','おちゃ'],answer:'牛の おちち',hint:'牛から とれる 白い 飲みものだよ。'},
+{id:'g1-jp-n47', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'あさの あいさつは どれ？',choices:['おやすみ','おはよう','いただきます','さようなら'],answer:'おはよう',hint:'あさ 人に 会ったときの ことばだよ。'},
+{id:'g1-jp-n48', cat:'ことば',grade:1,subject:'国語',type:'choice',question:'ものを たべる まえの あいさつは？',choices:['おはよう','いただきます','ごちそうさま','ただいま'],answer:'いただきます',hint:'たべものへの かんしゃの ことばだよ。'}
 ];
 
 // 追加問題（2026-11-01 点検での拡充）
