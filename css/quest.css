@@ -221,3 +221,9 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .battle-layout[data-boss="true"] .health-track{height:14px}
 .battle-layout[data-boss="true"] .enemy-health strong{font-size:13px;color:#a33b2e}
 .battle-layout[data-boss="true"] .enemy-panel{border:1px solid #f0d9b5}
+
+/* 分野選択（2026-11-14 統合） */
+.category-choices{display:flex;flex-wrap:wrap;gap:8px}
+.category-choice{min-height:42px;padding:8px 14px;border:1px solid #dce4e5;border-radius:99px;background:#fbfcfc;color:var(--ink);font-size:12px;font-weight:900;box-shadow:0 2px 0 #e2e7e6}
+.category-choice small{color:var(--muted);font-size:10px;font-weight:800}
+.category-choice.selected{background:var(--blue-soft);border:2px solid #71afcf;color:#1f6488;padding:7px 13px}

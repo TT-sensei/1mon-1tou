@@ -94,6 +94,8 @@ function syncFuriganaMode() {
 let state = readState();
 let selectedGrade = 1;
 let selectedSubject = '国語';
+let selectedCategory = '';
+let setupBanks = {};
 let selectedWorld = state.world || 'forest';
 let runMode = 'quest';
 let active = null;
@@ -277,23 +279,42 @@ async function renderSetup() {
   const mixed = createButton('', 'subject-choice mix' + (selectedSubject === '__mix' ? ' selected' : ''), { 'data-subject': '__mix', 'aria-pressed': String(selectedSubject === '__mix') });
   mixed.innerHTML = '<span class="subject-symbol">✧</span><span>ミックス</span><small>全教科から出題</small>';
   $('#subjectChoices').appendChild(mixed);
+  setupBanks = {};
+  results.forEach((result) => { setupBanks[result.name] = result.questions; });
+  const catCounts = {};
+  if (selectedSubject !== '__mix') {
+    (setupBanks[selectedSubject] || []).forEach((q) => { const c = q.cat || 'その他'; catCounts[c] = (catCounts[c] || 0) + 1; });
+  }
+  const catNames = Object.keys(catCounts).filter((c) => catCounts[c] >= 3).sort((a, b) => (a === 'その他' ? 1 : 0) - (b === 'その他' ? 1 : 0));
+  if (selectedCategory && !catNames.includes(selectedCategory)) selectedCategory = '';
+  const catBlock = $('#categoryBlock');
+  if (catBlock) {
+    catBlock.hidden = catNames.length === 0;
+    if (catNames.length) {
+      $('#categoryChoices').innerHTML = [''].concat(catNames).map((c) => '<button type="button" class="category-choice' + (selectedCategory === c ? ' selected' : '') + '" data-category="' + c + '" aria-pressed="' + String(selectedCategory === c) + '">' + (c === '' ? 'おまかせ（全部）' : c + ' <small>' + catCounts[c] + '問</small>') + '</button>').join('');
+    }
+  }
   const worldBlock = $('#worldBlock');
   if (worldBlock) {
     worldBlock.hidden = runMode !== 'quest';
+    const wsn = $('#worldStepNum');
+    if (wsn) wsn.textContent = catBlock && !catBlock.hidden ? '04' : '03';
     if (runMode === 'quest') {
       const today = todayWorldId();
       $('#worldChoices').innerHTML = WORLDS.map((w) => '<button type="button" class="world-choice' + (selectedWorld === w.id ? ' selected' : '') + '" data-world="' + w.id + '" aria-pressed="' + String(selectedWorld === w.id) + '"><img src="' + BG_BASE + w.bg + '" alt=""><span class="world-choice-body"><strong>' + w.icon + ' ' + w.name + '</strong><small>' + (w.hpBonus ? '敵が少し強い' : '敵の強さはふつう') + '</small></span>' + (today === w.id ? '<span class="world-today">今日のおすすめ</span>' : '') + '</button>').join('');
     }
   }
   const count = selectedSubject === '__mix' ? mixedCount : (setupCounts[selectedSubject] || 0);
-  const questionCount = Math.min(8, count);
+  const effectiveCount = selectedCategory ? (catCounts[selectedCategory] || 0) : count;
+  const subjectLabel = (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + (selectedCategory ? '・' + selectedCategory : '');
+  const questionCount = Math.min(8, effectiveCount);
   $('#setupQuestionCount').textContent = runMode === 'quest' ? '全3戦' : questionCount + '問';
   $('#setupModeText').textContent = runMode === 'quest' ? '・クエストバトル' : '・特訓モード';
   $('#startSetupButton').innerHTML = (runMode === 'quest' ? 'クエスト開始' : '特訓をはじめる') + ' <span class="button-arrow">→</span>';
-  $('#setupMessage').textContent = count ? (runMode === 'quest'
-    ? (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + '、' + worldFor(selectedWorld).name + 'の敵3体を、全部倒すまでバトルします。')
-    : (gradeForRender + '年生・' + (selectedSubject === '__mix' ? 'ミックス' : selectedSubject) + 'から、' + questionCount + '問出題します。')) : 'この学年には、まだ選べる問題がありません。';
-  $('#startSetupButton').disabled = count < 1;
+  $('#setupMessage').textContent = effectiveCount ? (runMode === 'quest'
+    ? (gradeForRender + '年生・' + subjectLabel + '、' + worldFor(selectedWorld).name + 'の敵3体を、全部倒すまでバトルします。')
+    : (gradeForRender + '年生・' + subjectLabel + 'から、' + questionCount + '問出題します。')) : 'この学年には、まだ選べる問題がありません。';
+  $('#startSetupButton').disabled = effectiveCount < 1;
 }
 
 function shuffle(items) {
@@ -319,8 +340,10 @@ async function beginSetupRun() {
   button.disabled = true;
   const startGrade = selectedGrade;
   const startSubject = selectedSubject;
-  const pool = await questionsForSetup();
-  if (startGrade !== selectedGrade || startSubject !== selectedSubject) {
+  const startCategory = selectedCategory;
+  const poolAll = await questionsForSetup();
+  const pool = startCategory ? poolAll.filter((q) => (q.cat || 'その他') === startCategory) : poolAll;
+  if (startGrade !== selectedGrade || startSubject !== selectedSubject || startCategory !== selectedCategory) {
     button.disabled = false;
     return;
   }
@@ -331,7 +354,7 @@ async function beginSetupRun() {
   }
   const limit = runMode === 'quest' ? pool.length : 8;
   const questions = shuffle(pool).slice(0, Math.min(limit, pool.length));
-  lastConfig = { mode: runMode, grade: selectedGrade, subject: selectedSubject };
+  lastConfig = { mode: runMode, grade: selectedGrade, subject: selectedSubject, cat: selectedCategory };
   startRun(runMode, questions, selectedGrade, selectedSubject);
   button.disabled = false;
 }
@@ -1469,11 +1492,18 @@ document.addEventListener('click', (event) => {
   if (button.dataset.action) { handleAction(button.dataset.action, button); return; }
   if (button.dataset.grade) {
     selectedGrade = Number(button.dataset.grade);
+    selectedCategory = '';
     renderSetup();
     return;
   }
   if (button.dataset.subject) {
     selectedSubject = button.dataset.subject;
+    selectedCategory = '';
+    renderSetup();
+    return;
+  }
+  if ('category' in button.dataset) {
+    selectedCategory = button.dataset.category || '';
     renderSetup();
     return;
   }
