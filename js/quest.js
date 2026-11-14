@@ -380,6 +380,9 @@ function startRun(mode, questions, grade, subject) {
     firstTryCount: 0,
     combo: 0,
     comboBonusUsed: false,
+    maxCombo: 0,
+    cardStats: {},
+    leveledCards: [],
     skillUsed: [],
     team: selectedTeam,
     cardIndex: 0,
@@ -471,7 +474,7 @@ function drawHand() {
     const charge = Math.min(cost, Number(active.charges[id]) || 0);
     const charged = charge >= cost;
     const pips = '●'.repeat(charge) + '○'.repeat(Math.max(0, cost - charge));
-    return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + (charged && !used ? ' charged' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
+    return '<button type="button" class="hand-card' + (selected ? ' selected' : '') + (used ? ' used' : '') + (charged && !used ? ' charged' : '') + (active.leveledCards && active.leveledCards.includes(id) ? ' leveled' : '') + '" data-action="select-card" data-index="' + index + '"' + (used || active.locked ? ' disabled' : '') + ' aria-pressed="' + selected + '">' +
       '<span class="hand-card-art">' + renderCard(card, { showInfo: false, mini: true }) + '</span>' +
       '<span class="hand-card-info"><strong>' + card.name + '</strong><small>得意：' + card.subject + ' ・ Lv.' + level + '</small>' +
       '<span class="skill-chip">' + skill.icon + ' ' + skill.name + '：' + skill.short + '</span>' +
@@ -544,7 +547,7 @@ function drawQuestion() {
   $('#questionNumber').textContent = String(active.index + 1).padStart(2, '0');
   $('#questionBadge').textContent = (q.grade || active.grade) + '年・' + (q.subject || active.subject);
   $('#questionText').textContent = q.question;
-  $('#comboBadge').textContent = '連続正解 ' + active.combo;
+  updateComboBadge();
   $('#runProgress').innerHTML = active.mode === 'quest'
     ? active.waves.map((_, index) => '<span class="progress-step' + (index < active.waveIndex || (index === active.waveIndex && active.enemyHp <= 0) ? ' done' : index === active.waveIndex ? ' current' : '') + '"></span>').join('')
     : active.questions.map((_, index) => '<span class="progress-step' + (index < active.index ? ' done' : index === active.index ? ' current' : '') + '"></span>').join('');
@@ -692,10 +695,50 @@ function checkLevelUp(cardId) {
   const newLevel = levelFor(state.xp[cardId]);
   if (newLevel > oldLevel) {
     playSe('levelup');
+    if (active && !active.leveledCards.includes(cardId)) active.leveledCards.push(cardId);
     state.points += 3;
     active.pointsEarned += 3;
     active.levelUps.push({ id: cardId, name: (cardFor(cardId) || {}).name || 'ナビアン', from: oldLevel, to: newLevel });
   }
+}
+
+const CHAIN_TIERS = [
+  { at: 8, name: 'スーパーチェイン！', cls: 'tier-3' },
+  { at: 5, name: 'グレートチェイン！', cls: 'tier-2' },
+  { at: 3, name: 'チェイン！', cls: 'tier-1' }
+];
+let chainBannerTimer = null;
+function chainTierFor(combo) {
+  return CHAIN_TIERS.find((tier) => combo >= tier.at) || null;
+}
+function updateComboBadge() {
+  const badge = $('#comboBadge');
+  if (!badge || !active) return;
+  badge.textContent = '連続正解 ' + active.combo;
+  const tier = chainTierFor(active.combo);
+  badge.classList.remove('tier-1', 'tier-2', 'tier-3');
+  if (tier) badge.classList.add(tier.cls);
+}
+function showChainBanner(tier) {
+  const banner = $('#chainBanner');
+  if (!banner) return;
+  banner.textContent = tier.name;
+  banner.className = 'chain-banner show ' + tier.cls;
+  banner.hidden = false;
+  if (chainBannerTimer) clearTimeout(chainBannerTimer);
+  chainBannerTimer = setTimeout(() => { banner.hidden = true; banner.className = 'chain-banner'; }, 1150);
+}
+function trackChain() {
+  if (!active) return;
+  active.maxCombo = Math.max(active.maxCombo || 0, active.combo);
+  const tier = chainTierFor(active.combo);
+  if (tier && active.combo === tier.at) showChainBanner(tier);
+  updateComboBadge();
+}
+function trackCardStat(cardId, key, amount) {
+  if (!active || !cardId || !amount) return;
+  if (!active.cardStats[cardId]) active.cardStats[cardId] = { damage: 0, heal: 0 };
+  active.cardStats[cardId][key] += amount;
 }
 
 function castAnswer(value, expected) {
@@ -758,6 +801,7 @@ function handleCorrect(q, firstTry) {
   const notes = ['カードP +' + points + '。'];
   if (isQuest && active.enemyHp > 0) {
     active.combo = firstTry ? active.combo + 1 : 0;
+    trackChain();
     const card = cardFor(cardId);
     const skill = card ? (card.skill || 'attack') : 'attack';
     const skillInfo = SKILLS[skill] || SKILLS.attack;
@@ -800,6 +844,7 @@ function handleCorrect(q, firstTry) {
       active.cheerMult = 0;
     }
     active.enemyHp = Math.max(0, active.enemyHp - damage);
+    trackCardStat(cardId, 'damage', damage);
     notes.push(card.name + 'の「' + skillInfo.name + '」！ ' + damage + 'ダメージ。' + (subjectMatch ? '（得意教科 +1）' : '') + (chainBonus ? '（チェイン +' + chainBonus + '）' : '') + (speedBonus ? '（はやい +1）' : '') + effectNote);
     if (active.enemyHp <= 0) {
       if (active.waveIndex >= active.waves.length - 1) {
@@ -816,6 +861,7 @@ function handleCorrect(q, firstTry) {
       healedAmount = active.teamHp - before;
       notes.push('チームパワーが ' + healedAmount + ' 回復した。');
     }
+    if (healedAmount > 0) trackCardStat(cardId, 'heal', healedAmount);
     if (skill === 'guard') {
       active.guardBlocks = special ? 2 : 1;
       notes.push(special ? '次の2回の攻撃をふせぐよ。' : '次の相手の攻撃をふせぐよ。');
@@ -842,6 +888,7 @@ function handleCorrect(q, firstTry) {
     if (skill === 'cheer') spawnFloater($('#teamPower'), 'おうえん！', 'buff');
   } else {
     active.combo = firstTry ? active.combo + 1 : 0;
+    trackChain();
   }
   applyReviewCorrect(q, firstTry);
   saveState();
@@ -855,7 +902,7 @@ function handleCorrect(q, firstTry) {
     }
     active.firedIndex = null;
   }
-  $('#comboBadge').textContent = '連続正解 ' + active.combo;
+  updateComboBadge();
   feedback(firstTry ? '正解！' : 'よく考えたね！', notes.join('\n') + '\n' + explanationText(q), [
     { name: 'next-question', label: '次の問題へ →', className: 'primary' }
   ], false);
@@ -867,7 +914,7 @@ function handleWrong(q) {
   if (active.attempts === 0) {
     active.attempts = 1;
     active.combo = 0;
-    $('#comboBadge').textContent = '連続正解 0';
+    updateComboBadge();
     playSe('softFail');
     feedback('おしい！ ヒントを見よう', hintText(q), [
       { name: 'retry-question', label: 'もう一度こたえる', className: 'primary' },
@@ -875,7 +922,7 @@ function handleWrong(q) {
     ], true);
   } else {
     active.combo = 0;
-    $('#comboBadge').textContent = '連続正解 0';
+    updateComboBadge();
     feedback('答えを確認しよう', '正解：' + String(q.answer) + '\n' + explanationText(q), [
       { name: 'next-question', label: '次の問題へ →', className: 'primary' }
     ], true);
@@ -893,6 +940,7 @@ function revealAnswer() {
 
 function advanceQuestion() {
   if (!active) return;
+  active.leveledCards = [];
   active.index += 1;
   if (active.mode === 'quest' && active.questCleared) {
     finishRun();
@@ -1013,10 +1061,26 @@ function renderResult(cleared) {
   const stats = [
     { value: active.correctCount + ' / ' + active.questions.length, label: '正解した問題' },
     { value: active.firstTryCount, label: 'ヒントなしで正解' },
+    { value: active.maxCombo || 0, label: 'さいこう連続正解' },
     { value: '+' + active.pointsEarned, label: 'カードP' }
   ];
   $('#resultStats').innerHTML = stats.map((item) => '<div class="result-stat"><strong>' + item.value + '</strong><span>' + item.label + '</span></div>').join('');
-  $('#resultLevelUps').innerHTML = active.levelUps.map((item) => '<div class="levelup-note">' + item.name + 'が Lv.' + item.to + ' にレベルアップ！ +10P</div>').join('');
+  const mvpEl = $('#resultMvp');
+  if (mvpEl) {
+    const entries = Object.entries(active.cardStats || {}).map(([id, s]) => ({ id, damage: s.damage || 0, heal: s.heal || 0, total: (s.damage || 0) + (s.heal || 0) })).filter((e) => e.total > 0).sort((a, b) => b.total - a.total);
+    if (entries.length) {
+      const top = entries[0];
+      const mvpCard = cardFor(top.id);
+      const parts = [];
+      if (top.damage) parts.push(top.damage + 'ダメージ');
+      if (top.heal) parts.push(top.heal + '回復');
+      mvpEl.textContent = 'いちばん活躍したのは ' + ((mvpCard && mvpCard.name) || 'ナビアン') + '（' + parts.join('・') + '）';
+      mvpEl.hidden = false;
+    } else {
+      mvpEl.hidden = true;
+    }
+  }
+  $('#resultLevelUps').innerHTML = active.levelUps.map((item) => '<div class="levelup-note">' + item.name + 'が Lv.' + item.to + ' にレベルアップ！ +3P</div>').join('');
   let note = isQuest ? (cleared ? '得意教科のカードと、連続正解が勝利を助けたよ。次は別の教科にも挑戦してみよう。' : 'まちがえた問題は復習リストに保存されます。ヒントを使って練習し、時間をおいてもう一度挑戦しよう。') : '正解した問題は、1日後・3日後・7日後・14日後・30日後と復習の間隔が広がります。';
   if (active.masteredThisRun > 0) note += '\n' + active.masteredThisRun + '問が定着レベルに到達したよ。これからも間隔をあけて復習しよう。';
   $('#resultLearningNote').textContent = note;

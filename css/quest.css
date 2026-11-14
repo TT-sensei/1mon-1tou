@@ -154,3 +154,21 @@ main{padding-top:20px}.screen{display:none}.screen.active{display:block}
 .chip-button[aria-pressed="false"]{color:var(--muted);background:#f6f4ec}
 ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 @media(max-width:560px){.chip-button{min-height:30px;padding:5px 8px;font-size:9px}.enemy-panel .enemy-status{grid-column:1/-1}.enemy-panel .enemy-next{grid-column:1/-1}}
+
+/* フェーズ1（2026-11-14）: チェイン段階演出・レベルアップ演出・結果画面の拡張 */
+.question-panel{position:relative}
+.chain-banner{position:absolute;top:56px;left:50%;transform:translateX(-50%);z-index:25;padding:10px 22px;border-radius:99px;font-size:clamp(17px,2vw,24px);font-weight:1000;letter-spacing:.04em;color:#fff;pointer-events:none;white-space:nowrap;box-shadow:0 8px 22px #1f344533}
+.chain-banner.tier-1{background:linear-gradient(90deg,#3f9d78,#69b96f)}
+.chain-banner.tier-2{background:linear-gradient(90deg,#3a7bd5,#7a5fd0)}
+.chain-banner.tier-3{background:linear-gradient(90deg,#f0a13a,#e2483a)}
+.chain-banner.show{animation:chainPop 1.15s ease-out forwards}
+@keyframes chainPop{0%{opacity:0;transform:translateX(-50%) scale(.6)}18%{opacity:1;transform:translateX(-50%) scale(1.12)}32%{transform:translateX(-50%) scale(1)}78%{opacity:1}100%{opacity:0;transform:translateX(-50%) scale(1.02)}}
+.combo-badge.tier-1{background:#e3f2e4;color:#2e7d4f}
+.combo-badge.tier-2{background:#e4e9fb;color:#3a55a5}
+.combo-badge.tier-3{background:#fdeeda;color:#b45f16}
+.hand-card{position:relative}
+.hand-card.leveled{border-color:#e9b949;animation:levelGlow 1s ease-in-out 2}
+.hand-card.leveled::after{content:'Lv.UP!';position:absolute;top:-9px;right:8px;padding:2px 8px;border-radius:99px;background:#e9a13a;color:#fff;font-size:9px;font-weight:1000;box-shadow:0 2px 6px #0002}
+@keyframes levelGlow{0%,100%{box-shadow:0 0 0 2px #f6d67c}50%{box-shadow:0 0 0 4px #f9e29a,0 8px 20px #e9b94977}}
+.result-stats{grid-template-columns:repeat(4,minmax(0,1fr))}
+.result-mvp{margin-top:12px;padding:11px 14px;border-radius:13px;background:#eef7f1;color:#2e6b4f;font-size:13px;font-weight:900;text-align:center}
