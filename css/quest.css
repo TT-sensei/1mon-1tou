@@ -272,3 +272,25 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .collection-progress p{margin:8px 0 0;font-size:11px}
 @media(max-width:560px){.today-adventure img{width:96px;height:64px}.today-adventure-copy strong{font-size:16px}.today-adventure-go{padding:8px 10px;font-size:11px}}
 @media (prefers-reduced-motion: reduce){.hero-card .battle-card,.hero-sparkles i,.hero-actions .button.primary,#screen-home.active .hero,#screen-home.active .today-adventure,#screen-home.active .dashboard,#screen-home.active .home-favorites,#screen-home.active .home-shortcuts{animation:none}}
+
+/* ホームに少し色を足す（2026-11-14） */
+.hero{background:
+  radial-gradient(420px 240px at 12% 0%, #ffe9d6cc, transparent 70%),
+  radial-gradient(460px 300px at 96% 12%, #dcefffcc, transparent 70%),
+  radial-gradient(520px 320px at 55% 115%, #d9f2e2b3, transparent 70%),
+  radial-gradient(300px 200px at 38% 30%, #f3e8ffb3, transparent 70%),
+  linear-gradient(115deg,#fff 0%,#fff 48%,#edf5f2 100%)}
+.hero-copy h1 span{background:linear-gradient(92deg,#2e8b6e,#3f8fbf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sparkles i:nth-child(2){color:#7fc4e8}
+.hero-sparkles i:nth-child(4){color:#f2a65a}
+.hero-sparkles i:nth-child(6){color:#ef8f7d}
+.hero-sparkles i:nth-child(7){color:#9ac5b6}
+.today-adventure{background:linear-gradient(100deg,#fff8ea,#fff 62%)}
+.stats-grid .stat-card:nth-child(1){background:#f2f9f4}
+.stats-grid .stat-card:nth-child(2){background:#fdf7e3}
+.stats-grid .stat-card:nth-child(3){background:#eef6fb}
+.stats-grid .stat-card:nth-child(4){background:#fdf1ec}
+.collection-progress-track i{background:linear-gradient(90deg,#5cac8c,#7fc4e8,#e9b949)}
+.home-shortcuts .shortcut-card:nth-child(1):hover{background:#eef6fb}
+.home-shortcuts .shortcut-card:nth-child(2):hover{background:#fdf7e3}
+.home-shortcuts .shortcut-card:nth-child(3):hover{background:#f2f9f4}
