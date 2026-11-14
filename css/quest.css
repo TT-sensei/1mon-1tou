@@ -294,3 +294,39 @@ ruby rt{font-size:.52em;color:#7a6a3a;font-weight:700}
 .home-shortcuts .shortcut-card:nth-child(1):hover{background:#eef6fb}
 .home-shortcuts .shortcut-card:nth-child(2):hover{background:#fdf7e3}
 .home-shortcuts .shortcut-card:nth-child(3):hover{background:#f2f9f4}
+
+/* スタート画面の形＋明るい空テーマ（2026-11-15） */
+.hero{color:var(--ink);background:
+  radial-gradient(340px 200px at 88% 6%, #ffedb8 0%, rgba(255,237,184,0) 70%),
+  radial-gradient(500px 300px at 100% 100%, #ffe3c2 0%, rgba(255,227,194,0) 65%),
+  linear-gradient(180deg,#a8d8ff 0%,#cfeaff 42%,#eef9ff 78%,#fff6e0 100%)}
+.hero::after{content:"";position:absolute;left:-5%;right:-5%;bottom:-46px;height:104px;border-radius:50% 50% 0 0;background:#bfe3c8;opacity:.85;z-index:0}
+.hero-copy{position:relative;z-index:2}
+.hero-showcase{z-index:1}
+.hero .eyebrow{color:#a86e00}
+.hero-copy h1{text-shadow:none}
+.hero-copy h1 span{background:#ffd23f;color:#4a3200;-webkit-text-fill-color:#4a3200;-webkit-background-clip:initial;background-clip:initial;padding:0 .25em;border-radius:.25em;display:inline-block;transform:rotate(-2deg)}
+.hero-note{color:#5b6b72}
+.hero .button.primary{background:#ffd23f;color:#4a3200;box-shadow:0 6px 0 #e9a800,0 12px 24px rgba(233,168,0,.35);animation:ctaScale 2.4s ease-in-out infinite}
+.hero .button.primary:active{transform:translateY(5px);box-shadow:0 1px 0 #e9a800}
+@keyframes ctaScale{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.hero .button.quiet{background:rgba(255,255,255,.65);color:var(--ink);border:1px solid #fff;box-shadow:0 3px 0 #d8e6ee}
+.hero-card-stack{align-items:flex-end;padding-bottom:24px}
+.hero-card{width:clamp(92px,10.5vw,118px);margin-left:-30px;transform-origin:50% 115%;transition:transform .25s ease}
+.hero-card:first-child{margin-left:0;--tilt:-13deg;--lift:14px}
+.hero-card:nth-child(2){--tilt:-6deg;--lift:2px;z-index:2}
+.hero-card:nth-child(3){--tilt:0deg;--lift:-4px;z-index:3}
+.hero-card:nth-child(4){--tilt:6deg;--lift:2px;z-index:2}
+.hero-card:nth-child(5){--tilt:13deg;--lift:14px;z-index:1}
+.hero-card-stack:has(> :nth-child(3):last-child) .hero-card:nth-child(1){--tilt:-11deg;--lift:10px}
+.hero-card-stack:has(> :nth-child(3):last-child) .hero-card:nth-child(2){--tilt:0deg;--lift:-4px;z-index:3}
+.hero-card-stack:has(> :nth-child(3):last-child) .hero-card:nth-child(3){--tilt:11deg;--lift:10px;z-index:1}
+.hero-card:hover{transform:rotate(0deg) translateY(-14px) scale(1.05);z-index:6}
+.hero-card-name{display:none}
+.hero-sticker{background:#ff6b6b;box-shadow:0 4px 0 #d84f4f}
+.today-adventure{border-radius:24px;box-shadow:0 8px 0 rgba(31,29,74,.10),var(--shadow)}
+.today-adventure img{width:76px;height:76px;border-radius:18px}
+.today-adventure-copy strong{font-size:21px}
+.shortcut-card{box-shadow:0 5px 0 rgba(31,29,74,.10)}
+.shortcut-card:active{transform:translateY(3px);box-shadow:0 2px 0 rgba(31,29,74,.10)}
+@media(max-width:820px){.hero-card{width:92px;margin-left:-24px}}
